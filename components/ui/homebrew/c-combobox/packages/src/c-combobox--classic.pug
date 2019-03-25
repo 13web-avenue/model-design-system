@@ -1,0 +1,10 @@
+v-combobox(  :value="value"
+    :label="label"
+    :outline="true"
+    color="info"
+    :disabled="disabled"
+    :readonly="readonly"
+    :chips="chips"
+    :items="items ? items : ['Programming','Design','Vue','Vuetify']"
+    @change="change($event)"
+)

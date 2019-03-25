@@ -1,0 +1,18 @@
+{
+    "name": "c-combobox",
+    "version": "1.0.0",
+    "description": "Custom combobox",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "repository": {
+        "type": "git",
+        "url": ""
+    },
+    "publishConfig": {
+        "registry": ""
+    },
+    "keywords": [],
+    "author": "manjunath.b@amaris.com",
+    "license": "ISC"
+ }

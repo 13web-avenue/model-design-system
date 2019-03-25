@@ -1,0 +1,7 @@
+div
+  v-snackbar(v-model='snackbar', :bottom="y === 'bottom'", :left="x === 'left'", :multi-line="mode === 'multi-line'", :right="x === 'right'", :timeout='timeout', :top="y === 'top'", :vertical="mode === 'vertical'")
+    | {{ text }}
+    v-btn(color='pink', flat='', @click='snackbar = false')
+      | Close
+  v-btn(block='', color='primary', dark='', @click='snackbar = true')
+    | Show Snackbar

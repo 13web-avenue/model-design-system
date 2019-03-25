@@ -1,0 +1,15 @@
+<template lang="pug">
+v-alert( :value="value ? value : true", :type="type ? type : 'success'")
+      slot(name="default") This is a success alert.
+</template>
+
+<script>
+export default {
+  props : {
+    value: String,
+    type: String,
+  }
+}
+</script>
+
+

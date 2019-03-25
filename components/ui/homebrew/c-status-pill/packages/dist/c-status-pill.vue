@@ -1,0 +1,68 @@
+<template lang="pug">
+v-chip(:class="color")
+  slot
+</template>
+
+<script>
+
+export default {
+  name: 'c-status-pill',
+  props : {
+    color : {
+      type : String,
+      default : 'default'
+    }
+  }
+}
+
+</script>
+
+<!-- Add "scoped" attribute to limit CSS to this component only -->
+
+
+<style lang="scss" scoped>
+
+%pills-default , .pills-default {
+  font-weight: bold;
+  size: 12px;
+  font-family: sans-serif;
+  height: 25px;
+  text-transform: capitalize;
+}
+
+.blue {
+  @extend %pills-default;
+  background-color: #e3f2fd !important;
+  color: #2196f3 !important;
+}
+
+.green {
+  @extend %pills-default;
+  background-color: #e8f5e9 !important;
+  color: #4caf50 !important;
+}
+
+.orange {
+  @extend %pills-default;
+  background-color: #fff3e0 !important;
+  color: #ff9800 !important;
+}
+
+.red {
+  @extend %pills-default;
+  background-color: #ffebee !important;
+  color: #f44336 !important;
+}
+
+.grey {
+  @extend %pills-default;
+  background-color: #f5f5f5 !important;
+  color: #757575 !important;
+}
+
+.default {
+  @extend %pills-default;
+  background-color: #f5f5f5 !important;
+  color: black !important;
+}
+</style>

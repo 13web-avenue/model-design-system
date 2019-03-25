@@ -1,0 +1,18 @@
+{
+    "name": "v-navigation-drawer",
+    "version": "1.0.0",
+    "description": "Vuetify v-navigation-drawer",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "repository": {
+        "type": "git",
+        "url": ""
+    },
+    "publishConfig": {
+        "registry": ""
+    },
+    "keywords": [],
+    "author": "p.pravinkumar@amaris.com",
+    "license": "ISC"
+ }

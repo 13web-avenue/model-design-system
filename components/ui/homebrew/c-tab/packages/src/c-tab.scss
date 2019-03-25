@@ -1,0 +1,33 @@
+.customTab {
+  /deep/ .v-tabs__container {
+        border-bottom: 1px solid rgba(0,0,0, 0.12);
+      }
+
+  /deep/ .v-tabs__item {
+    font-weight: bold;
+    font-size: 14px;
+    text-transform: capitalize;
+    padding: 2px 36px;
+    color: rgba(0,0,0, 0.38);
+  }
+
+  /deep/ .v-tabs__item:hover {
+    background-color: rgba(0,0,0, 0.05);
+  }
+
+  /deep/ .v-tabs__item:active {
+    background-color: rgba(0,0,0, 0.08);
+  }
+
+  /deep/ .v-tabs__item.v-tabs__item--active {
+    color: #2196F3;
+  }
+
+  /deep/ .v-tabs__item:active{
+    color: rgba(0,0,0, 0.38);
+  }
+
+  /deep/ .v-tabs__slider {
+    height: 4px;
+  }
+}

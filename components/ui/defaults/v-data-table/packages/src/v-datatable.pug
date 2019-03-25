@@ -1,0 +1,10 @@
+v-data-table(:headers="headers",
+  :items="desserts",
+  class="elevation-1")
+  template(slot="items", slot-scope="props")
+    td {{ props.item.name }}
+    td(class="text-xs-right") {{ props.item.calories }}
+    td(class="text-xs-right") {{ props.item.fat }}
+    td(class="text-xs-right") {{ props.item.carbs }}
+    td(class="text-xs-right") {{ props.item.protein }}
+    td(class="text-xs-right") {{ props.item.iron }}

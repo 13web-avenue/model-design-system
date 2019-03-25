@@ -1,0 +1,24 @@
+<template lang="pug">
+
+v-tooltip(bottom='')
+  template(v-slot:activator='{ on }')
+    v-btn(color='#363636', dark='', v-on='on')
+      slot Text
+  slot(name='tooltipText')
+    span Lorem ipsum dolor sit amet
+
+</template>
+
+<script>
+export default {
+  name: 'c-callout',
+   props: {
+    bottom: {
+      type: Boolean,
+      default: true
+    }
+  }
+}
+</script>
+
+
