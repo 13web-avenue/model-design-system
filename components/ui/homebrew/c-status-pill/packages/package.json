@@ -5,14 +5,15 @@
     "scripts": {
         "test": "echo \"Error: no test specified\" && exit 1"
     },
-    "repository": {
+      "repository": {
         "type": "git",
-        "url": ""
+        "url": "https://tfs.amaris.com/tfs/FrontEnd/UI%20Components/_git/unify-components"
     },
     "publishConfig": {
         "registry": ""
     },
     "keywords": [],
     "author": "vchandran@amaris.com",
-    "license": "ISC"
+    "license": "ISC",
+    "gitHead": "52ba3efa7d05bda63ae3dd357d10bdc0748eb2cc"
 }
