@@ -1,6 +1,6 @@
 <template lang="pug">
 v-checkbox(
-  :label="label ? label : 'Checkbox 1'", :input-value='checkbox_status', :disabled='disable',
+    :label="label ? label : 'Checkbox 1'", :input-value='checkbox_status', :disabled='disable',
   )
 </template>
 

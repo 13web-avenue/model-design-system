@@ -3,7 +3,7 @@
 
 
 ### **v-timeline component @Vuetify:**
-> [![v-timeline](../../../../assets/logo/vuetify-180.webp)](https://vuetifyjs.com/en/components/timelines#timelines)
+> [![v-timeline](../../../../assets/logo/V_Image.png)](https://vuetifyjs.com/en/components/timelines#timelines)
 
 
 ### **v-timeline component @Bootstrap:**

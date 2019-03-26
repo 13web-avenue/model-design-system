@@ -7,10 +7,7 @@
     },
     "repository": {
         "type": "git",
-        "url": ""
-    },
-    "publishConfig": {
-        "registry": ""
+        "url": "https://tfs.amaris.com/tfs/FrontEnd/UI%20Components/_git/unify-components"
     },
     "keywords": [],
     "author": "p.pravinkumar@amaris.com",

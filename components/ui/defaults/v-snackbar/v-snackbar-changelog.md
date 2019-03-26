@@ -3,7 +3,7 @@
 
 
 ### **v-snackbar component @Vuetify:**
-> [![v-snackbar](../../../../assets/logo/vuetify-180.webp)](https://vuetifyjs.com/en/components/snackbars#snackbar)
+> [![v-snackbar](../../../../assets/logo/V_Image.png)](https://vuetifyjs.com/en/components/snackbars#snackbar)
 
 
 ### **v-snackbar component @Bootstrap:**
