@@ -1,6 +1,6 @@
 {
     "name": "v-badge-component",
-    "version": "1.0.0",
+    "version": "0.0.1",
     "description": "Vuetify v-badge-component",
     "scripts": {
         "test": "echo \"Error: no test specified\" && exit 1"
@@ -15,4 +15,4 @@
     "keywords": [],
     "author": "p.pravinkumar@amaris.com",
     "license": "ISC"
- }
+}
