@@ -184,11 +184,11 @@ storiesOf('UI KIT | Vuetify - ready / v-alert', module)
             },
             template: `
                 <div>
-                <v-alert type="success">This is a success alert.</v-alert>
-                <v-alert type="info">This is a info alert.</v-alert>
-                <v-alert type="warning">This is a warning alert.</v-alert>
-                <v-alert type="error">This is a error alert.</v-alert>
-                    </div>           
+                    <v-alert type="success">This is a success alert.</v-alert>
+                    <v-alert type="info">This is a info alert.</v-alert>
+                    <v-alert type="warning">This is a warning alert.</v-alert>
+                    <v-alert type="error">This is a error alert.</v-alert>
+                </div>           
             `,
             propsDescription: {
                 VAlert: {

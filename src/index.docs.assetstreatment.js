@@ -14,7 +14,6 @@ import { storiesOf } from '@storybook/vue'
  *  
  */
 
-
 import Typography from '../views/assets-treatment/typography/typography.vue'
 
 import icons from '../views/assets-treatment/icons/icons.vue'
@@ -34,45 +33,43 @@ storiesOf('Assets Treatment | Images', module)
         info: {
             components: {
                 'assets': assets,
-                'icons': icons,
-                'typo': Typography,
             },
             docsInPanel: false,
             source: false,
         },
     })
-    .add('Usage', () => ({
+    .add('Default', () => ({
         components: {
             'assets': assets,
         },
         template: `<assets />`,
     }))
 
-storiesOf('Assets Treatment | Icons', module)
-    .addParameters({
-        readme: {
-            codeTheme: 'monokai-sublime',
-            // sidebar: BButtontSetup,
-            theme: {
-                textColor: '#bb255a'
-            },
-        },
-        info: {
-            components: {
-                'assets': assets,
-                'icons': icons,
-                'typo': Typography,
-            },
-            docsInPanel: false,
-            source: false,
-        },
-    })
-    .add('FontAwesome v4', () => ({
-        components: { 
-            'icons': icons,
-         },
-        template: `<assets />`,
-    }))
+// storiesOf('Assets Treatment | Icons', module)
+//     .addParameters({
+//         readme: {
+//             codeTheme: 'monokai-sublime',
+//             // sidebar: BButtontSetup,
+//             theme: {
+//                 textColor: '#bb255a'
+//             },
+//         },
+//         info: {
+//             components: {
+//                 'assets': assets,
+//                 'icons': icons,
+//                 'typo': Typography,
+//             },
+//             docsInPanel: false,
+//             source: false,
+//         },
+//     })
+//     .add('FontAwesome v4', () => ({
+//         components: { 
+//             'icons': icons,
+//          },
+//         template: `<assets />`,
+//     }))
 
 storiesOf('Assets Treatment | Typography', module)
     .addParameters({
@@ -85,8 +82,6 @@ storiesOf('Assets Treatment | Typography', module)
         },
         info: {
             components: {
-                'assets': assets,
-                'icons': icons,
                 'typo': Typography,
             },
             docsInPanel: false,
@@ -96,7 +91,7 @@ storiesOf('Assets Treatment | Typography', module)
     .add('Base Font', () => ({
         components: { 
             'typo': Typography,
-         },
+        },
         template: `<typo />`,
     }))
 

@@ -1,25 +1,17 @@
-<template lang="pug">
+<template>
+  <div class="font__list" @mouseout="hoverItem = ''">
+    <div v-for="i in icons" :key="i" class="font__container" :style="{
+      'color': hoverItem == i ? background : color,
+      'background': hoverItem == i ? color : background 
+      }">
 
-  .font__list(
-      @mouseout="hoverItem = ''"
-    )
-    .font__container(
-        v-for="i in icons", 
-        :key="i", 
+      <div class="font__icon" @mouseover="hoverItem = i"  :title="i">
+        <i class="fa" :class="i" :style="{ 'font-size': size + 'px'}"></i>
+      </div>
 
-      )
-      .font__icon(
-        @mouseover="hoverItem = i",
-        :title="i"
-      )
-        i(
-          class="fa",
-          :class="i",
-
-        )
-      .font__text
-        | \{{i}}
-
+      <div class="font__text">\{{i}}</div>
+    </div>
+  </div>
 </template>
 
 <script>

@@ -5,6 +5,7 @@
   "version": "1.0.0",
   "private": true,
   "scripts": {
+    "lint": "vue-cli-service lint",
     "storybook:build": "vue-cli-service storybook:build -c config/storybook",
     "storybook:serve": "vue-cli-service storybook:serve -p 6006 -c config/storybook"
   },
@@ -55,7 +56,6 @@
     "markdown-loader": "^5.0.0",
     "node-sass": "^4.11.0",
     "postcss-loader": "^3.0.0",
-    "prettier": "1.16.4",
     "pug": "^2.0.3",
     "pug-plain-loader": "^1.0.0",
     "sass-loader": "^7.1.0",
