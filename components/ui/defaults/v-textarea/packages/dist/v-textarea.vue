@@ -1,13 +1,14 @@
 <template lang="pug">
-        v-textarea( :value="value"
-                    :label="label ? label : 'Default'"
-                    :outline="outline ? outline : false"
-                    :color="color ? color : 'primary'"
-                    :disabled="disabled ? disabled : false"
-                    :readonly="readonly ? readonly : false"
-                    :hint="hint ? hint : 'Hint text'"
-                    :rules="rules"
-                    :class="className")
+v-textarea( :value="value"
+            :label="label ? label : 'Default'"
+            :outline="outline ? outline : false"
+            :color="color ? color : 'primary'"
+            :disabled="disabled ? disabled : false"
+            :readonly="readonly ? readonly : false"
+            :hint="hint ? hint : 'Hint text'"
+            :rules="rules"
+            :class="className"
+        )
 </template>
 
 <script>

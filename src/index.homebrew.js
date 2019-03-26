@@ -93,7 +93,6 @@ const appDecorator = () => {
 
 // c-callout 
 storiesOf('UI KIT | Vuetify - homebrewed / c-callout', module)
-    // v-alert
     .addDecorator(appDecorator) 
     .addParameters({
         readme: {
@@ -132,7 +131,6 @@ storiesOf('UI KIT | Vuetify - homebrewed / c-callout', module)
 
 // c-checkbox 
 storiesOf('UI KIT | Vuetify - homebrewed / c-checkbox', module)
-    // v-alert
     .addDecorator(appDecorator) 
     .addParameters({
         readme: {
@@ -173,8 +171,7 @@ storiesOf('UI KIT | Vuetify - homebrewed / c-checkbox', module)
     )
 
 // c-combobox-classic 
-storiesOf('UI KIT | Vuetify - homebrewed / c-combobox--classic', module)
-    // v-alert
+storiesOf('UI KIT | Vuetify - homebrewed / c-combobox-classic', module)
     .addDecorator(appDecorator) 
     .addParameters({
         readme: {
@@ -219,7 +216,6 @@ storiesOf('UI KIT | Vuetify - homebrewed / c-combobox--classic', module)
 
 // c-modal
 storiesOf('UI KIT | Vuetify - homebrewed / c-modal', module)
-    // v-alert
     .addDecorator(appDecorator) 
     .addParameters({
         readme: {

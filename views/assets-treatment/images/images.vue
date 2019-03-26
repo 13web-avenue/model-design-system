@@ -1,0 +1,163 @@
+<template lang="pug">
+div
+  h2.title
+    strong HTML element type : inline
+  ul
+    li https://developer.mozilla.org/en-US/docs/Web/HTML/Inline_elements
+  h4
+    em Dealing with fluid images
+  p
+    | Example :
+    strong
+      img.img-responsive(
+        src='http://lorempixel.com/1920/1080/sports/1/',
+        style='max-width:100%;height:auto;',
+        width='1920',
+        height='1080',
+        alt='my test image'
+      )
+
+  p 
+    | Above image code:
+  pre
+    code
+      img(
+          src="http://lorempixel.com/1920/1080/sports/1/", 
+          style="max-width:100%;height:auto;",
+          width="1920",
+          height="1080", 
+          alt="my test image"
+        )
+
+  h4 Test it :
+  blockquote
+    p
+      em
+        | Inspect the image above with your most favorite browser debugger and play with the inline style attributes and see how the responsive behaves when you resize !
+  p
+    | Note that the CSS is inline for the purpose of this demo.
+    | In most CSS frameworks where there is a
+     
+    strong normalize.css
+    |  or a
+
+    strong reset.css
+    |  these inline CSS would show up for an image as :
+
+  pre.code-toolbar.language-markup.
+    img, object {
+        max-width: 100%
+    }
+    img {
+        height: auto
+    }    
+  p
+    | These selectors &amp; properties should not be removed from any CSS frameworks as they are used to make fluid images
+
+  p 
+    | Images rules to follow while developping :
+
+  ul
+    li set proper width and height attributes for loading time.
+    li set alternate text and do not leave it blank.
+    li DO NOT set height attributes in CSS
+    li
+      | make an assessment on the weight of the image before pushing to production, optimization is mandatory although we need to have a balance between quality and performance.
+  p
+    strong 
+      | Multiple images techniques for multiple resolutions with new HTML5 markup.
+    strong 
+      | An overview of what an ideal implementation of responsive image
+
+  pre.code-toolbar.language-markup.
+    
+  p More information about the above :
+  ul
+    li
+      | https://developer.mozilla.org/en-US/docs/Learn/HTML/Multimedia_and_embedding/Responsive_images
+
+</template>
+
+<script>
+
+export default {
+  name: 'typography'
+}
+
+</script>
+
+
+<style lang="scss" scoped>
+*{
+  font-family: 'Montserrat', sans-serif;
+}
+.layout-uds-usg {
+  border-collapse: collapse;
+
+  text-align: left;
+  margin-top: 2rem;
+  width: 100%;
+
+  th{
+    background: #ccc;
+
+    padding: 1rem 5rem 1rem 1rem;
+  }
+
+  td{
+    padding: 1rem 3rem 1rem 1rem;
+    border-bottom: 1px dashed #ccc;
+    border-right: 1px dashed #ccc;
+
+    &:last-child {
+      border-right: 0
+    }
+  }
+
+}
+/* global heading sizing */
+h1 {
+  font-size: 6rem;
+  font-weight: bold
+}
+
+h2 {
+  font-size: 3.75rem;
+  font-weight: bold
+}
+
+h3 {
+  font-size: 3rem;
+  font-weight: bold
+}
+
+h4 {
+  font-size: 2.125rem;
+  font-weight: bold
+}
+
+h5 {
+  font-size: 1.5rem;
+  font-weight: bold
+}
+
+h6 {
+  font-size: 1.25rem;
+  font-weight: 600
+}
+
+.semi-bold {
+  font-weight: 600;
+}
+
+button,
+.body,
+.labels-1,
+.labels-2,
+.subtitle-1,
+.subtitle-2,
+.subtitle-2 {
+  font-family: 'Open Sans', sans-serif;
+}
+
+</style>

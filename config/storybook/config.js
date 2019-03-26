@@ -6,7 +6,7 @@ import { configure, addDecorator, addParameters } from '@storybook/vue'
 
 // ------------------------------------------------------------------
 
-import '../../plugins/vuetify';
+// import '../../plugins/vuetify';
 
 
 // ------------------------------------------------------------------
@@ -67,10 +67,10 @@ import { themes } from '@storybook/theming'
 addParameters({
   options: {
     /**
-         * name to display in the top left corner
-         * @type {String}
-         */
-    name: 'Unify Design System & Style Guide',
+     * name to display in the top left corner
+     * @type {String}
+     */
+    name: 'Unify Design System',
     /**
      * URL for name in top left corner to link to
      * @type {String}
