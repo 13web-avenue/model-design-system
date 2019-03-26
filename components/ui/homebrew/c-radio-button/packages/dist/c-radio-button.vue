@@ -15,7 +15,6 @@ export default {
   name: 'c-radio-button',
   props: {
     disable: {
-      type: Boolean,
       default: false
     },
     radioOptions: {

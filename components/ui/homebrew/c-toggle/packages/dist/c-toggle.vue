@@ -1,8 +1,8 @@
 <template lang="pug">
 v-switch(
-        :label="label ? label : 'Switch 1'", 
-        :input-value='switch_status', 
-        :disabled='disable'
+          :label="label ? label : 'Switch 1'", 
+          :input-value='switch_status', 
+          :disabled='disable'
         )
 </template>
 

@@ -32,10 +32,6 @@ import CStatusPill from '../components/ui/homebrew/c-status-pill/packages/dist/c
 import CStatusPillChangelog from '../components/ui/homebrew/c-status-pill/c-status-pill-changelog.md'
 import CStatusPillSetup from '../components/ui/homebrew/c-status-pill/c-status-pill-setup.md'
 
-import CRadioButton from '../components/ui/homebrew/c-radio-button/packages/dist/c-radio-button.vue'
-import CRadioButtonChangelog from '../components/ui/homebrew/c-radio-button/c-radio-button-changelog.md'
-import CRadioButtonSetup from '../components/ui/homebrew/c-radio-button/c-radio-button-setup.md'
-
 import CModal from '../components/ui/homebrew/c-modal/packages/dist/c-modal.vue'
 import CModalChangelog from '../components/ui/homebrew/c-modal/c-modal-changelog.md'
 import CModalSetup from '../components/ui/homebrew/c-modal/c-modal-setup.md'
@@ -260,48 +256,6 @@ storiesOf('UI KIT | Vuetify - homebrewed / c-modal', module)
     },
         {
             notes: CModalChangelog
-        }
-    )
-
-// c-radio-button
-storiesOf('UI KIT | Vuetify - homebrewed / c-radio-button', module)
-    // v-alert
-    .addDecorator(appDecorator) 
-    .addParameters({
-        readme: {
-            codeTheme: 'monokai-sublime',
-            sidebar: CRadioButtonSetup,
-            theme: {
-                textColor: '#bb255a'
-            },
-        },
-        info: {
-            components: {
-                'c-radio-button': CRadioButton
-            },
-            docsInPanel: false,
-            source: false,
-            // wrapperComponent: VueInfoWrapper,
-        },
-    })  
-    .add('Classic', () => {
-        return {
-            components: {
-                'c-radio-button': CRadioButton
-            },
-            template: `<c-radio-button />`,
-            methods: { secondaryClick: action(), primaryClick: action() },
-            propsDescription: {
-                CRadioButton: {
-                    disable: 'Disable the input',
-                    radioOptions: 'Sets input labels',
-                    selected: 'Sets the value of the selection control component',
-                },
-            }
-        };
-    },
-        {
-            notes: CRadioButtonChangelog
         }
     )
 
@@ -577,5 +531,4 @@ storiesOf('UI KIT | Vuetify - homebrewed / c-toggle', module)
             notes: CToggleChangelog
         }
     )
-                                          
 /* eslint-enable react/react-in-jsx-scope */

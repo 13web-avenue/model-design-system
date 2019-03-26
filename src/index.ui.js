@@ -11,13 +11,13 @@ import { storiesOf } from '@storybook/vue'
  */
 
 
-import VTreeview from '../components/ui/defaults/v-treeview/packages/dist/v-treeview.vue'
-import VTreeviewChangelog from '../components/ui/defaults/v-treeview/v-treeview-changelog.md'
-import VTreeviewSetup from '../components/ui/defaults/v-treeview/v-treeview-setup.md'
-
 import VToggle from '../components/ui/defaults/v-toggle/packages/dist/v-toggle.vue'
 import VToggleChangelog from '../components/ui/defaults/v-toggle/v-toggle-changelog.md'
 import VToggleSetup from '../components/ui/defaults/v-toggle/v-toggle-setup.md'
+
+import VTreeview from '../components/ui/defaults/v-treeview/packages/dist/v-treeview.vue'
+import VTreeviewChangelog from '../components/ui/defaults/v-treeview/v-treeview-changelog.md'
+import VTreeviewSetup from '../components/ui/defaults/v-treeview/v-treeview-setup.md'
 
 import VTimeline from '../components/ui/defaults/v-timeline/packages/dist/v-timeline.vue'
 import VTimelineChangelog from '../components/ui/defaults/v-timeline/v-timeline-changelog.md'
@@ -43,10 +43,6 @@ import VRatings from '../components/ui/defaults/v-ratings/packages/dist/v-rating
 import VRatingsChangelog from '../components/ui/defaults/v-ratings/v-ratings-changelog.md'
 import VRatingsSetup from '../components/ui/defaults/v-ratings/v-ratings-setup.md'
 
-import VRadioButton from '../components/ui/defaults/v-radio-button/packages/dist/v-radio-button.vue'
-import VRadioButtonChangelog from '../components/ui/defaults/v-radio-button/v-radio-button-changelog.md'
-import VRadioButtonSetup from '../components/ui/defaults/v-radio-button/v-radio-button-setup.md'
-
 import VNavigationDrawer from '../components/ui/defaults/v-navigation-drawer/packages/dist/v-navigation-drawer.vue'
 import VNavigationDrawerChangelog from '../components/ui/defaults/v-navigation-drawer/v-navigation-drawer-changelog.md'
 import VNavigationDrawerSetup from '../components/ui/defaults/v-navigation-drawer/v-navigation-drawer-setup.md'
@@ -66,10 +62,6 @@ import VDatatableSetup from '../components/ui/defaults/v-data-table/v-datatable-
 import VCombobox from '../components/ui/defaults/v-combobox/packages/dist/v-combobox.vue'
 import VComboboxChangelog from '../components/ui/defaults/v-combobox/v-combobox-changelog.md'
 import VComboboxSetup from '../components/ui/defaults/v-combobox/v-combobox-setup.md'
-
-import VCheckbox from '../components/ui/defaults/v-checkbox/packages/dist/v-checkbox.vue'
-import VCheckboxChangelog from '../components/ui/defaults/v-checkbox/v-checkbox-changelog.md'
-import VCheckboxSetup from '../components/ui/defaults/v-checkbox/v-checkbox-setup.md'
 
 import VCard from '../components/ui/defaults/v-card/packages/dist/v-card.vue'
 import VCardChangelog from '../components/ui/defaults/v-card/v-card-changelog.md'
@@ -330,47 +322,7 @@ storiesOf('UI KIT | Vuetify - ready / v-card', module)
         }
     ) 
     
-// v-checkbox
-storiesOf('UI KIT | Vuetify - ready / v-checkbox', module)
-    .addDecorator(appDecorator)
-    .addParameters({
-        readme: {
-            codeTheme: 'monokai-sublime',
-            sidebar: VCheckboxSetup,
-            theme: {
-                textColor: '#bb255a'
-            },
-        },
-        info: {
-            components: {
-                'v-checkbox': VCheckbox
-            },
-            docsInPanel: false,
-            source: false,
-        },
-    })
-    .add('Default', () => {
-        return {
-            components: {
-                'v-checkbox': VCheckbox
-            },
-            template: `<v-checkbox disable="true"/>`,
-            propsDescription: {
-                VCheckbox:{
-                    disable : 'Sets Boolean type',
-                    type : 'Sets input type',
-                    checkbox_status : 'Sets Boolean type',
-                    label : 'Sets String type',
-                }
-            }
-        };
-    },
-        {
-            notes: VCheckboxChangelog
-        }
-    )         
-    
-// v-checkbox
+// v-combobox
 storiesOf('UI KIT | Vuetify - ready / v-combobox', module)
     .addDecorator(appDecorator)
     .addParameters({
@@ -585,64 +537,6 @@ storiesOf('UI KIT | Vuetify - ready / v-navigation-drawer', module)
         }
     ) 
    
-// v-radio-button
-storiesOf('UI KIT | Vuetify - ready / v-radio-button', module)
-    .addDecorator(appDecorator)
-    .addParameters({
-        readme: {
-            codeTheme: 'monokai-sublime',
-            sidebar: VRadioButtonSetup,
-            theme: {
-                textColor: '#bb255a'
-            },
-        },
-        info: {
-            components: {
-                'v-radio-button': VRadioButton
-            },
-            docsInPanel: false,
-            source: false,
-        }
-    })
-    .add('Default', () => {
-        return {
-            components: {
-                'v-radio-button': VRadioButton
-            },
-            template: `<v-radio-button />`,
-            propsDescription : {
-                VRadioButton: {
-                    disable : 'Sets Boolean type',
-                    selected : 'Sets String type',
-                    radioOptions : 'Sets Object type',
-                }
-            }            
-        };
-    },
-        {
-            notes: VRadioButtonChangelog
-        }
-    ) 
-    .add('Disable', () => {
-        return {
-            components: {
-                'v-radio-button': VRadioButton
-            },
-            template: `<v-radio-button disable=true />`,
-            propsDescription : {
-                VRadioButton: {
-                    disable : 'Sets Boolean type',
-                    selected : 'Sets String type',
-                    radioOptions : 'Sets Object type',
-                }
-            }            
-        };
-    },
-        {
-            notes: VRadioButtonChangelog
-        }
-    ) 
-   
 // v-ratings
 storiesOf('UI KIT | Vuetify - ready / v-ratings', module)
     .addDecorator(appDecorator)
@@ -656,7 +550,7 @@ storiesOf('UI KIT | Vuetify - ready / v-ratings', module)
         },
         info: {
             components: {
-                'v-ratings': VRadioButton
+                'v-ratings': VRatings
             },
             docsInPanel: false,
             source: false,
@@ -978,6 +872,7 @@ storiesOf('UI KIT | Vuetify - ready / v-toggle', module)
             // docsInPanel: false,
             // source: false,
         },
+        
     })
     .add('Default', () => {
         return {
