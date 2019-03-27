@@ -13,7 +13,7 @@ import { storiesOf } from '@storybook/vue'
  */
 
 
-import BButton from '../core/components/base/b-button/packages/dist/b-button.vue'
+import BButton from '../core/ui-base-components/b-button/packages/dist/b-button.vue'
 
 
 storiesOf('Base Components | Button', module)

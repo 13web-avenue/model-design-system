@@ -12,47 +12,46 @@ import { action } from '@storybook/addon-actions';
  */
 
 
-import CToggle from '../components/ui/homebrew/c-toggle/packages/dist/c-toggle.vue'
-import CToggleChangelog from '../components/ui/homebrew/c-toggle/c-toggle-changelog.md'
-import CToggleSetup from '../components/ui/homebrew/c-toggle/c-toggle-setup.md'
+import CToggle from '../core/ui-kit-custom-components/c-toggle/packages/dist/c-toggle.vue'
+import CToggleChangelog from '../core/ui-kit-custom-components/c-toggle/c-toggle-changelog.md'
+import CToggleSetup from '../core/ui-kit-custom-components/c-toggle/c-toggle-setup.md'
 
-import CTextfield from '../components/ui/homebrew/c-textfield/packages/dist/c-textfield.vue'
-import CTextfieldChangelog from '../components/ui/homebrew/c-textfield/c-textfield-changelog.md'
-import CTextfieldSetup from '../components/ui/homebrew/c-textfield/c-textfield-setup.md'
+import CTextfield from '../core/ui-kit-custom-components/c-textfield/packages/dist/c-textfield.vue'
+import CTextfieldChangelog from '../core/ui-kit-custom-components/c-textfield/c-textfield-changelog.md'
+import CTextfieldSetup from '../core/ui-kit-custom-components/c-textfield/c-textfield-setup.md'
 
-import CTextarea from '../components/ui/homebrew/c-textarea/packages/dist/c-textarea.vue'
-import CTextareaChangelog from '../components/ui/homebrew/c-textarea/c-textarea-changelog.md'
-import CTextareaSetup from '../components/ui/homebrew/c-textarea/c-textarea-setup.md'
+import CTextarea from '../core/ui-kit-custom-components/c-textarea/packages/dist/c-textarea.vue'
+import CTextareaChangelog from '../core/ui-kit-custom-components/c-textarea/c-textarea-changelog.md'
+import CTextareaSetup from '../core/ui-kit-custom-components/c-textarea/c-textarea-setup.md'
 
-import CTab from '../components/ui/homebrew/c-tab/packages/dist/c-tab.vue'
-import CTabChangelog from '../components/ui/homebrew/c-tab/c-tab-changelog.md'
-import CTabSetup from '../components/ui/homebrew/c-tab/c-tab-setup.md'
+import CTab from '../core/ui-kit-custom-components/c-tab/packages/dist/c-tab.vue'
+import CTabChangelog from '../core/ui-kit-custom-components/c-tab/c-tab-changelog.md'
+import CTabSetup from '../core/ui-kit-custom-components/c-tab/c-tab-setup.md'
 
-import CStatusPill from '../components/ui/homebrew/c-status-pill/packages/dist/c-status-pill.vue'
-import CStatusPillChangelog from '../components/ui/homebrew/c-status-pill/c-status-pill-changelog.md'
-import CStatusPillSetup from '../components/ui/homebrew/c-status-pill/c-status-pill-setup.md'
+import CStatusPill from '../core/ui-kit-custom-components/c-status-pill/packages/dist/c-status-pill.vue'
+import CStatusPillChangelog from '../core/ui-kit-custom-components/c-status-pill/c-status-pill-changelog.md'
+import CStatusPillSetup from '../core/ui-kit-custom-components/c-status-pill/c-status-pill-setup.md'
 
-import CModal from '../components/ui/homebrew/c-modal/packages/dist/c-modal.vue'
-import CModalChangelog from '../components/ui/homebrew/c-modal/c-modal-changelog.md'
-import CModalSetup from '../components/ui/homebrew/c-modal/c-modal-setup.md'
+import CModal from '../core/ui-kit-custom-components/c-modal/packages/dist/c-modal.vue'
+import CModalChangelog from '../core/ui-kit-custom-components/c-modal/c-modal-changelog.md'
+import CModalSetup from '../core/ui-kit-custom-components/c-modal/c-modal-setup.md'
 
-import CComboBoxClassic from '../components/ui/homebrew/c-combobox/packages/dist/c-combobox--classic.vue'
-import CComboBoxClassicChangelog from '../components/ui/homebrew/c-combobox/c-combobox-changelog.md'
-import CComboBoxClassicSetup from '../components/ui/homebrew/c-combobox/c-combobox-setup.md'
+import CComboBoxClassic from '../core/ui-kit-custom-components/c-combobox/packages/dist/c-combobox--classic.vue'
+import CComboBoxClassicChangelog from '../core/ui-kit-custom-components/c-combobox/c-combobox-changelog.md'
+import CComboBoxClassicSetup from '../core/ui-kit-custom-components/c-combobox/c-combobox-setup.md'
 
-import CCallOut from '../components/ui/homebrew/c-callout/packages/dist/c-callout.vue'
-import CCallOutChangelog from '../components/ui/homebrew/c-callout/c-callout-changelog.md'
-import CCallOutSetup from '../components/ui/homebrew/c-callout/c-callout-setup.md'
+import CCallOut from '../core/ui-kit-custom-components/c-callout/packages/dist/c-callout.vue'
+import CCallOutChangelog from '../core/ui-kit-custom-components/c-callout/c-callout-changelog.md'
+import CCallOutSetup from '../core/ui-kit-custom-components/c-callout/c-callout-setup.md'
 
 
-import CCheckBox from '../components/ui/homebrew/c-checkbox/packages/dist/c-checkbox.vue'
-import CCheckBoxChangelog from '../components/ui/homebrew/c-checkbox/c-checkbox-changelog.md'
-import CCheckBoxSetup from '../core/components/ui/homebrew/c-checkbox/c-checkbox-setup.md'
+import CCheckBox from '../core/ui-kit-custom-components/c-checkbox/packages/dist/c-checkbox.vue'
+import CCheckBoxChangelog from '../core/ui-kit-custom-components/c-checkbox/c-checkbox-changelog.md'
+import CCheckBoxSetup from '../core/ui-kit-custom-components/c-checkbox/c-checkbox-setup.md'
 
 
 // Add custom wrappers here 
 // import VueInfoWrapper from '../plugins/vue-info-wrapper/table.vue'
-
 
 import Vue from 'vue'
 import Vuetify from 'vuetify'
