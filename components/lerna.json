@@ -15,6 +15,9 @@
       ]
     }
   },
+  "publishConfig": {
+    "registry": "https://tfs.amaris.com/tfs/FrontEnd/UI%20Components/_git/unify-components"
+  },
   "packages": [
     "*/**"
   ]
