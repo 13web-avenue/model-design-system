@@ -1,6 +1,0 @@
-v-tabs.customTab(:value='active', slider-color='#2196F3')
-  v-tab(v-for='(value,key) in tabContents', :key='key', ripple='')
-    | {{ value.item }}
-  v-tab-item(v-for='(value,key) in tabContents', :key='key')
-    v-card(flat='')
-      v-card-text {{ value.content }}   

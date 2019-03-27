@@ -51,7 +51,7 @@ import CCheckBoxSetup from '../components/ui/homebrew/c-checkbox/c-checkbox-setu
 
 
 // Add custom wrappers here 
-// import VueInfoWrapper from '../plugins/vue-info-wrapper/vue-info-wrapper.vue'
+import VueInfoWrapper from '../plugins/vue-info-wrapper/table.vue'
 
 
 import Vue from 'vue'
@@ -108,7 +108,7 @@ storiesOf('UI KIT | Vuetify - homebrewed / c-callout', module)
             },
             docsInPanel: false,
             source: false,
-            // wrapperComponent: VueInfoWrapper,
+            wrapperComponent: VueInfoWrapper,
         },
     })  
     .add('Default', () => {
