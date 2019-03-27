@@ -47,11 +47,11 @@ import CCallOutSetup from '../components/ui/homebrew/c-callout/c-callout-setup.m
 
 import CCheckBox from '../components/ui/homebrew/c-checkbox/packages/dist/c-checkbox.vue'
 import CCheckBoxChangelog from '../components/ui/homebrew/c-checkbox/c-checkbox-changelog.md'
-import CCheckBoxSetup from '../components/ui/homebrew/c-checkbox/c-checkbox-setup.md'
+import CCheckBoxSetup from '../core/components/ui/homebrew/c-checkbox/c-checkbox-setup.md'
 
 
 // Add custom wrappers here 
-import VueInfoWrapper from '../plugins/vue-info-wrapper/table.vue'
+// import VueInfoWrapper from '../plugins/vue-info-wrapper/table.vue'
 
 
 import Vue from 'vue'
@@ -108,7 +108,7 @@ storiesOf('UI KIT | Vuetify - homebrewed / c-callout', module)
             },
             docsInPanel: false,
             source: false,
-            wrapperComponent: VueInfoWrapper,
+            // wrapperComponent: VueInfoWrapper,
         },
     })  
     .add('Default', () => {
