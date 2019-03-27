@@ -1,7 +1,7 @@
 {
     "name": "v-alert",
     "author": "p.pravinkumar@amaris.com",
-    "version": "0.0.4",
+    "version": "0.1.0",
     "description": "Vuetify v-alert",
     "scripts": {
         "test": "echo \"Error: no test specified\" && exit 1"
