@@ -1,11 +1,10 @@
 {
     "name": "b-button",
-    "version": "0.0.2",
+    "version": "0.0.3",
     "description": "Custom checkbox",
     "scripts": {
         "test": "echo \"Error: no test specified\" && exit 1"
     },
-
     "publishConfig": {
         "registry": "https://tfs.amaris.com/tfs/FrontEnd/UI%20Components/_git/unify-components"
     },

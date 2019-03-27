@@ -1,6 +1,6 @@
 {
     "name": "v-navigation-drawer",
-    "version": "0.0.2",
+    "version": "0.0.3",
     "description": "Vuetify v-navigation-drawer",
     "scripts": {
         "test": "echo \"Error: no test specified\" && exit 1"
