@@ -1,16 +1,16 @@
 {
     "name": "c-toggle",
-    "version": "0.0.2",
+    "version": "0.0.1",
     "description": "Custom toggle",
     "scripts": {
         "test": "echo \"Error: no test specified\" && exit 1"
     },
-    "repository": {
+      "repository": {
         "type": "git",
-        "url": "https://tfs.amaris.com/tfs/FrontEnd/UI%20Components/_git/unify-components"
+        "url": ""
     },
     "publishConfig": {
-        "registry": ""
+        "registry": "https://tfs.amaris.com/tfs/FrontEnd/UI%20Components/_git/unify-components"
     },
     "keywords": [],
     "author": "manjunath.b@amaris.com",
