@@ -79,7 +79,7 @@ storiesOf('About Unify | Design System', module)
         template: `<welcome />`,
     }))    
 
-storiesOf('About Unify | User Manual / UDS platform', module)
+storiesOf('User Manual | UDS platform', module)
     .addParameters({
         options: { showAddonPanel: false },
         info: {
@@ -95,7 +95,7 @@ storiesOf('About Unify | User Manual / UDS platform', module)
         template: `<welcome />`,
     }))
 
-storiesOf('About Unify | User Manual / Collaboration', module)
+storiesOf('User Manual | Collaboration', module)
     .addParameters({
         options: { showAddonPanel: false },
         info: {
@@ -116,7 +116,7 @@ storiesOf('About Unify | User Manual / Collaboration', module)
     }))
 
     
-storiesOf('About Unify | User Manual / Technical Workflow', module)
+storiesOf('User Manual | Technical Workflow', module)
     .addParameters({
         options: { showAddonPanel: false },
         info: {
@@ -129,7 +129,7 @@ storiesOf('About Unify | User Manual / Technical Workflow', module)
     }))  
 
 
-storiesOf('About Unify | User Manual / Development Workflow', module)
+storiesOf('User Manual | Development Workflow', module)
     .addParameters({
         options: { showAddonPanel: false },
         info: {
