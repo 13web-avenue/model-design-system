@@ -23,21 +23,11 @@ import assets from '../views/assets-treatment/images/images.vue'
 
 storiesOf('Assets Treatment | Images', module)
     .addParameters({
-        readme: {
-            codeTheme: 'monokai-sublime',
-            // sidebar: BButtontSetup,
-            theme: {
-                textColor: '#bb255a'
-            },
-        },
+        options: { showAddonPanel: false },
         info: {
-            components: {
-                'assets': assets,
-            },
-            docsInPanel: false,
-            source: false,
+            // wrapperComponent: VueInfoWrapper,
         },
-    })
+    })  
     .add('Default', () => ({
         components: {
             'assets': assets,
@@ -73,21 +63,11 @@ storiesOf('Assets Treatment | Images', module)
 
 storiesOf('Assets Treatment | Typography', module)
     .addParameters({
-        readme: {
-            codeTheme: 'monokai-sublime',
-            // sidebar: BButtontSetup,
-            theme: {
-                textColor: '#bb255a'
-            },
-        },
+        options: { showAddonPanel: false },
         info: {
-            components: {
-                'typo': Typography,
-            },
-            docsInPanel: false,
-            source: false,
+            // wrapperComponent: VueInfoWrapper,
         },
-    })    
+    })  
     .add('Base Font', () => ({
         components: { 
             'typo': Typography,

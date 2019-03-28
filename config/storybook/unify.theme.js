@@ -3,12 +3,12 @@ import { create } from '@storybook/theming';
 export default create({
     base: 'light',
 
-    colorPrimary: 'orange',
+    colorPrimary: 'hotpink',
     colorSecondary: 'deepskyblue',
 
     // UI
-    appBg: 'silverwhite',
-    appContentBg: 'white',
+    appBg: 'white',
+    appContentBg: 'silver',
     appBorderColor: 'grey',
     appBorderRadius: 4,
 
@@ -23,7 +23,7 @@ export default create({
     // Toolbar default and active colors
     barTextColor: 'silver',
     barSelectedColor: 'black',
-    barBg: 'blue',
+    barBg: 'hotpink',
 
     // Form colors
     inputBg: 'white',
@@ -31,7 +31,7 @@ export default create({
     inputTextColor: 'black',
     inputBorderRadius: 4,
 
-    brandTitle: 'Unify Design System & Style Guide',
-    brandUrl: '/',
+    brandTitle: 'My custom storybook',
+    brandUrl: 'https://example.com',
     brandImage: 'https://placehold.it/350x150',
 });
