@@ -21,7 +21,7 @@ import icons from '../views/assets-treatment/icons/icons.vue'
 import assets from '../views/assets-treatment/images/images.vue'
 
 
-storiesOf('Assets Treatment | Images', module)
+storiesOf('Asset Treatment | Images', module)
     .addParameters({
         options: { showAddonPanel: false },
         info: {
@@ -35,7 +35,7 @@ storiesOf('Assets Treatment | Images', module)
         template: `<assets />`,
     }))
 
-// storiesOf('Assets Treatment | Icons', module)
+// storiesOf('Asset Treatment | Iconset', module)
 //     .addParameters({
 //         readme: {
 //             codeTheme: 'monokai-sublime',
@@ -61,7 +61,7 @@ storiesOf('Assets Treatment | Images', module)
 //         template: `<assets />`,
 //     }))
 
-storiesOf('Assets Treatment | Typography', module)
+storiesOf('Asset Treatment | Typography', module)
     .addParameters({
         options: { showAddonPanel: false },
         info: {
