@@ -3,34 +3,19 @@ import { storiesOf } from '@storybook/vue';
 
 import welcome from '../views/introduction/welcome.vue';
 
-storiesOf('About Unify / Introduction', module)
+import CodeOfConduct from '../views/static/code-of-conduct.md'
+
+storiesOf('About UNIFY  / Introduction', module)
     .addParameters({
-        options: { showAddonPanel: false },
+        options: {
+            showAddonPanel: false,
+            isToolshown: false
+        },
         info: {
-            // wrapperComponent: VueInfoWrapper,
+            // base-static-layout: BaseStaticLayout,
         },
     })
-    .add('The Unify Project', () => ({
-        components: { welcome },
-        template: `<welcome />`,
-    }))
-    .add('Value Driven Development', () => ({
-        components: { welcome },
-        template: `<welcome />`,
-    }))
-    .add('Purpose & Objectives', () => ({
-        components: { welcome },
-        template: `<welcome />`,
-    }))
-    
-storiesOf('About Unify  / Introduction', module)
-    .addParameters({
-        options: { showAddonPanel: false },
-        info: {
-            // wrapperComponent: VueInfoWrapper,
-        },
-    })
-    .add('The Unify Project', () => ({
+    .add('The UNIFY Project', () => ({
         components: { welcome },
         template: `<welcome />`,
     }))
@@ -42,12 +27,19 @@ storiesOf('About Unify  / Introduction', module)
         components: { welcome },
         template: `<welcome />`,
     }))
+    .add('UNIFY Technical / Component Driven Development', () => ({
+        components: { welcome },
+        template: `<welcome />`,
+    }))
 
-storiesOf('About Unify / Timelines', module)
+storiesOf('About Unify | Timelines', module)
     .addParameters({
-        options: { showAddonPanel: false },
+        options: {
+            showAddonPanel: false,
+            isToolshown: false
+        },
         info: {
-            // wrapperComponent: VueInfoWrapper,
+            // base-static-layout: BaseStaticLayout,
         },
     })
     .add('A brief history', () => ({
@@ -65,9 +57,12 @@ storiesOf('About Unify / Timelines', module)
 
 storiesOf('About Unify | Design System', module)
     .addParameters({
-        options: { showAddonPanel: false },
+        options: {
+            showAddonPanel: false,
+            isToolshown: false
+        },
         info: {
-            // wrapperComponent: VueInfoWrapper,
+            // base-static-layout: BaseStaticLayout,
         },
     })   
     .add('What is a Design System?', () => ({
@@ -81,31 +76,45 @@ storiesOf('About Unify | Design System', module)
 
 storiesOf('User Manual | UDS platform', module)
     .addParameters({
-        options: { showAddonPanel: false },
+        options: {
+            showAddonPanel: false,
+            isToolshown: false
+        },
         info: {
-            // wrapperComponent: VueInfoWrapper,
+            // base-static-layout: BaseStaticLayout,
         },
     })  
     .add('Usage', () => ({
         components: { welcome },
         template: `<welcome />`,
     }))
-    .add('Resources', () => ({
-        components: { welcome },
-        template: `<welcome />`,
+    .addParameters({
+        options: {
+            showAddonPanel: false,
+            isToolshown: false
+        },
+        readme: {
+            codeTheme: 'monokai-sublime',
+            content: CodeOfConduct,
+        },        
+        info: {
+            // base-static-layout: BaseStaticLayout,
+        },
+    }) 
+    .add('Code of conduct', () => ({
+        template: `<CodeOfConduct />`,
     }))
 
 storiesOf('User Manual | Collaboration', module)
     .addParameters({
-        options: { showAddonPanel: false },
-        info: {
-            // wrapperComponent: VueInfoWrapper,
+        options: {
+            showAddonPanel: false,
+            isToolshown: false
         },
-    })  
-    .add('Code of conduct', () => ({
-        components: { welcome },
-        template: `<welcome />`,
-    }))
+        info: {
+            // base-static-layout: BaseStaticLayout,
+        },
+    })
     .add('Support & Feedbacks', () => ({
         components: { welcome },
         template: `<welcome />`,
@@ -116,11 +125,14 @@ storiesOf('User Manual | Collaboration', module)
     }))
 
     
-storiesOf('User Manual | Technical Workflow', module)
+storiesOf('User Manual | Contributing / Technical Workflow', module)
     .addParameters({
-        options: { showAddonPanel: false },
+        options: {
+            showAddonPanel: false,
+            isToolshown: false
+        },
         info: {
-            // wrapperComponent: VueInfoWrapper,
+            // base-static-layout: BaseStaticLayout,
         },
     })  
     .add('Working with pull requests', () => ({
@@ -129,16 +141,66 @@ storiesOf('User Manual | Technical Workflow', module)
     }))  
 
 
+storiesOf('User Manual | Contributing / Tecshare Development', module)
+    .addParameters({
+        options: {
+            showAddonPanel: false,
+            isToolshown: false
+        },
+        info: {
+            // base-static-layout: BaseStaticLayout,
+        },
+    })
+    .add('DocFile', () => ({
+        components: { welcome },
+        template: `<welcome />`,
+    }))  
+
 storiesOf('User Manual | Development Workflow', module)
     .addParameters({
-        options: { showAddonPanel: false },
-        info: {
-            // wrapperComponent: VueInfoWrapper,
+        options: { 
+            showAddonPanel: false,
+            isToolshown: false
         },
-    })  
-    .add('Integration', () => ({
+        info: {
+            // base-static-layout: BaseStaticLayout,
+        },
+    })
+    .add('Using the workflow', () => ({
+        components: { welcome },
+        template: `<welcome />`,
+    }))      
+
+
+storiesOf('User Manual | Development Workflow / Solution Architecture ', module)
+    .addParameters({
+        options: {
+            showAddonPanel: false,
+            isToolshown: false
+        },
+        info: {
+            // base-static-layout: BaseStaticLayout,
+        },
+    })
+    .add('Integrating UNIFY Components', () => ({
         components: { welcome },
         template: `<welcome />`,
     }))
 
+
+
+storiesOf('Author\'s note | Contributors', module)
+    .addParameters({
+        options: {
+            showAddonPanel: false,
+            isToolshown: false
+        },
+        info: {
+            // base-static-layout: BaseStaticLayout,
+        },
+    })
+    .add('DocFile', () => ({
+        components: { welcome },
+        template: `<welcome />`,
+    }))
 /* eslint-enable react/react-in-jsx-scope */
