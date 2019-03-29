@@ -121,8 +121,7 @@ const appDecorator = () => {
 };
 
  
-storiesOf('UI KIT | Vuetify - ready / v-alert', module)
-    // v-alert
+storiesOf('Library | UI KIT vuetify ready / v-alert', module)
     .addDecorator(appDecorator) 
     .addParameters({
         readme: {
@@ -143,20 +142,20 @@ storiesOf('UI KIT | Vuetify - ready / v-alert', module)
     })  
     .add('Default', () => {
         return {
-            components: {
-                'v-alert': VAlert
-            },
-            template: `<v-alert type="success">
-                    This is a success alert.
-                    </v-alert>`,
-            propsDescription: {
-                VAlert: {
-                    value: 'Sets Boolean type',
-                    type: 'Sets input type',
+                components: {
+                    'v-alert': VAlert
                 },
-            }
-        };
-    },
+                template: `<v-alert type="success">
+                        This is a success alert.
+                        </v-alert>`,
+                propsDescription: {
+                    VAlert: {
+                        value: 'Sets Boolean type',
+                        type: 'Sets input type',
+                    },
+                }
+            };
+        },
         {
             notes: VAlertChangelog
         }
@@ -203,7 +202,7 @@ storiesOf('UI KIT | Vuetify - ready / v-alert', module)
         }
     )
 
-storiesOf('UI KIT | Vuetify - ready / v-badge', module)
+storiesOf('Library | UI KIT (vuetify ready)/ v-badge', module)
     .addDecorator(appDecorator)
     .addParameters({
         readme: {
@@ -244,7 +243,7 @@ storiesOf('UI KIT | Vuetify - ready / v-badge', module)
     )    
 
 // v-breadcrumbs
-storiesOf('UI KIT | Vuetify - ready / v-breadcrumbs', module)
+storiesOf('Library | UI KIT (vuetify ready)/ v-breadcrumbs', module)
     .addDecorator(appDecorator)
     .addParameters({
         readme: {
@@ -283,7 +282,7 @@ storiesOf('UI KIT | Vuetify - ready / v-breadcrumbs', module)
         }
     )
 
-storiesOf('UI KIT | Vuetify - ready / v-card', module)
+storiesOf('Library | UI KIT (vuetify ready)/ v-card', module)
     .addDecorator(appDecorator)
     .addParameters({
         readme: {
@@ -323,7 +322,7 @@ storiesOf('UI KIT | Vuetify - ready / v-card', module)
     ) 
     
 // v-combobox
-storiesOf('UI KIT | Vuetify - ready / v-combobox', module)
+storiesOf('Library | UI KIT (vuetify ready)/ v-combobox', module)
     .addDecorator(appDecorator)
     .addParameters({
         readme: {
@@ -381,9 +380,10 @@ storiesOf('UI KIT | Vuetify - ready / v-combobox', module)
             notes: VComboboxChangelog
         }
     )
+
     
 // v-datable
-storiesOf('UI KIT | Vuetify - ready / v-datatable', module)
+storiesOf('Library | UI KIT (vuetify ready)/ v-datatable', module)
     .addDecorator(appDecorator)
     .addParameters({
         readme: {
@@ -421,9 +421,10 @@ storiesOf('UI KIT | Vuetify - ready / v-datatable', module)
             notes: VDatatableChangelog
         }
     )
+
     
 // v-divider
-storiesOf('UI KIT | Vuetify - ready / v-divider', module)
+storiesOf('Library | UI KIT (vuetify ready)/ v-divider', module)
     .addDecorator(appDecorator)
     .addParameters({
         readme: {
@@ -457,9 +458,10 @@ storiesOf('UI KIT | Vuetify - ready / v-divider', module)
             notes: VDividerChangelog
         }
     )
-   
+
+    
 // v-expansion-panel
-storiesOf('UI KIT | Vuetify - ready / v-expansion-panel', module)
+storiesOf('Library | UI KIT (vuetify ready)/ v-expansion-panel', module)
     .addDecorator(appDecorator)
     .addParameters({
         readme: {
@@ -511,9 +513,10 @@ storiesOf('UI KIT | Vuetify - ready / v-expansion-panel', module)
             notes: VExpansionPanelChangelog
         }
     )
-   
+
+    
 // v-navigation-drawer
-storiesOf('UI KIT | Vuetify - ready / v-navigation-drawer', module)
+storiesOf('Library | UI KIT (vuetify ready)/ v-navigation-drawer', module)
     .addDecorator(appDecorator)
     .addParameters({
         readme: {
@@ -536,9 +539,10 @@ storiesOf('UI KIT | Vuetify - ready / v-navigation-drawer', module)
             notes: VNavigationDrawerChangelog
         }
     ) 
-   
+
+    
 // v-ratings
-storiesOf('UI KIT | Vuetify - ready / v-ratings', module)
+storiesOf('Library | UI KIT (vuetify ready)/ v-ratings', module)
     .addDecorator(appDecorator)
     .addParameters({
         readme: {
@@ -579,9 +583,10 @@ storiesOf('UI KIT | Vuetify - ready / v-ratings', module)
             notes: VRatingsChangelog
         }
     )
-   
+
+    
 // v-search
-storiesOf('UI KIT | Vuetify - ready / v-search', module)
+storiesOf('Library | UI KIT (vuetify ready)/ v-search', module)
     .addDecorator(appDecorator)
     .addParameters({
         readme: {
@@ -640,7 +645,7 @@ storiesOf('UI KIT | Vuetify - ready / v-search', module)
 
 
 // v-snackbar
-storiesOf('UI KIT | Vuetify - ready / v-snackbar', module)
+storiesOf('Library | UI KIT (vuetify ready)/ v-snackbar', module)
     .addDecorator(appDecorator)
     .addParameters({
         readme: {
@@ -680,7 +685,7 @@ storiesOf('UI KIT | Vuetify - ready / v-snackbar', module)
 
 
 // v-textarea
-storiesOf('UI KIT | Vuetify - ready / v-textarea', module)
+storiesOf('Library | UI KIT (vuetify ready)/ v-textarea', module)
     .addDecorator(appDecorator)
     .addParameters({
         readme: {
@@ -751,7 +756,7 @@ storiesOf('UI KIT | Vuetify - ready / v-textarea', module)
 
 
 // v-textfield
-storiesOf('UI KIT | Vuetify - ready / v-textfield', module)
+storiesOf('Library | UI KIT (vuetify ready)/ v-textfield', module)
     .addDecorator(appDecorator)
     .addParameters({
         readme: {
@@ -822,7 +827,7 @@ storiesOf('UI KIT | Vuetify - ready / v-textfield', module)
 
 
 // v-timeline
-storiesOf('UI KIT | Vuetify - ready / v-timeline', module)
+storiesOf('Library | UI KIT (vuetify ready)/ v-timeline', module)
     .addDecorator(appDecorator)
     .addParameters({
         readme: {
@@ -855,7 +860,7 @@ storiesOf('UI KIT | Vuetify - ready / v-timeline', module)
 
 
 // v-toggle
-storiesOf('UI KIT | Vuetify - ready / v-toggle', module)
+storiesOf('Library | UI KIT (vuetify ready)/ v-toggle', module)
     .addDecorator(appDecorator)
     .addParameters({
         readme: {
@@ -901,7 +906,7 @@ storiesOf('UI KIT | Vuetify - ready / v-toggle', module)
 
 
 // v-treeview
-storiesOf('UI KIT | Vuetify - ready / v-treeview', module)
+storiesOf('Library | UI KIT (vuetify ready)/ v-treeview', module)
     .addDecorator(appDecorator)
     .addParameters({
         readme: {
@@ -931,37 +936,5 @@ storiesOf('UI KIT | Vuetify - ready / v-treeview', module)
             notes: VTreeviewChangelog
         }
     ) 
-
-
-// v-treeview
-storiesOf('UI KIT | Vuetify - homebrewed / c-button', module)
-    .addDecorator(appDecorator)
-    .addParameters({
-        readme: {
-            codeTheme: 'monokai-sublime',
-            sidebar: VTreeviewSetup,
-            theme: {
-                textColor: '#bb255a'
-            },
-        },
-        info: {
-            components: {
-                'v-treeview': VTreeview
-            },
-            // docsInPanel: false,
-            // source: false,
-        },
-    })
-    .add('Icon', () => {
-        return {
-            components: {
-                'v-treeview': VTreeview
-            },
-            template: `<v-treeview :disable=true />`,
-        };
-    },
-        {
-            notes: VTreeviewChangelog
-        }
-    )             
+        
 /* eslint-enable react/react-in-jsx-scope */

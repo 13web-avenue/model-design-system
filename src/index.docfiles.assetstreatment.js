@@ -23,7 +23,9 @@ import assets from '../views/assets-treatment/images/images.vue'
 
 storiesOf('Asset Treatment | Images', module)
     .addParameters({
-        options: { showAddonPanel: false },
+        options: { 
+            showAddonPanel: false 
+        },
         info: {
             // wrapperComponent: VueInfoWrapper,
         },

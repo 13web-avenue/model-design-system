@@ -70,22 +70,22 @@ addParameters({
      * name to display in the top left corner
      * @type {String}
      */
-    name: 'UNIFY DESIGN SYSTEM',
+    brandTitle: 'UNIFY DESIGN SYSTEM',
     /**
      * URL for name in top left corner to link to
      * @type {String}
      */
-    url: '#',
+    brandUrl: '#',
     /**
      * show story component as full screen
      * @type {Boolean}
      */
-    goFullScreen: false,
+    isFullscreen: false,
     /**
      * display panel that shows a list of stories
      * @type {Boolean}
      */
-    showStoriesPanel: true,
+    showPanel: true,
     /**
      * display panel that shows addon configurations
      * @type {Boolean}
@@ -105,7 +105,7 @@ addParameters({
      * sorts stories
      * @type {Boolean}
      */
-    sortStoriesByKind: true,
+    panelPosition: 'bottom',
     /**
      * regex for finding the hierarchy separator
      * @example:
