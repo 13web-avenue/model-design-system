@@ -51,7 +51,7 @@ import CCheckBoxSetup from '../core/ui-kit-custom-components/c-checkbox/c-checkb
 
 
 // Add custom wrappers here 
-// import VueInfoWrapper from '../plugins/vue-info-wrapper/table.vue'
+import VueInfoWrapper from '../plugins/vue-info-wrapper/vue-info-wrapper.vue'
 
 import Vue from 'vue'
 import Vuetify from 'vuetify'
@@ -80,7 +80,7 @@ const appDecorator = () => {
         components: { VApp, VContent },
         template: `
         <v-app>
-            <div style="background-color: none; width: 100%; height: 100%;">
+            <div>
             <v-content>
                 <story/>
             </v-content>
@@ -107,7 +107,7 @@ storiesOf('UI KIT | Vuetify - homebrewed / c-callout', module)
             },
             docsInPanel: false,
             source: false,
-            // wrapperComponent: VueInfoWrapper,
+            wrapperComponent: VueInfoWrapper
         },
     })  
     .add('Default', () => {
@@ -145,8 +145,10 @@ storiesOf('UI KIT | Vuetify - homebrewed / c-checkbox', module)
             },
             docsInPanel: false,
             source: false,
-            // wrapperComponent: VueInfoWrapper,
+            wrapperComponent: VueInfoWrapper
         },
+        
+        
     })  
     .add('Default', () => {
         return {

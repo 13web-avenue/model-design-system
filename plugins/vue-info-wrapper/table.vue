@@ -1,21 +1,22 @@
 <script>
+import contentarea from '../../views/layouts/common/content-area'
 export default {
   props: {
     label: {
       type: String,
       default: null
-    }
+    },
+    components : {contentarea}
   }
 }
 </script>
 
 <template>
-  <div :class="$style.container">
-    <label v-if="label" :class="$style.label">{{ label }}</label>
-    <table :class="$style.table">
+  <div>
       <slot />
-    </table>
   </div>
+     
+
 </template>
 
 <style module src="./table.css" />

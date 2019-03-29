@@ -1,81 +1,141 @@
 <script>
-import XTable from './table.vue'
-
+import hljs from 'highlight.js'
+import marked from 'marked'
 export default {
-  components: { XTable },
   props: {
-    /**
-     * type: ComponentInfo
-     * See types/Info.ts
-     */
-    component: {
+    info: {
+      type: Object,
+      required: true
+    },
+    options: {
       type: Object,
       required: true
     }
   },
   computed: {
-    title() {
-      return `# <${this.component.name}/>`
+    summary() {
+      if (!this.info.summary) {
+        return ''
+      }
+      const renderer = new marked.Renderer()
+      renderer.code = (code, lang) =>
+        `<pre><code class="hljs">${
+          hljs.highlightAuto(code, lang ? [lang] : undefined).value
+        }</code></pre>`
+      marked.setOptions({ renderer })
+      return marked(this.info.summary)
+    }
+  },
+  mounted() {
+    this.highlight()
+    const link = document.createElement('link')
+    link.setAttribute('rel', 'stylesheet')
+    link.setAttribute('href', 'https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.14.2/styles/monokai.min.css')
+    link.dataset.saviHead = 'true'
+    document.head.appendChild(link)
+  },
+  beforeDestroy() {
+    const link = document.head.querySelector('link[data-savi-head]')
+    if (link) {
+      document.head.removeChild(link)
+    }
+  },
+  methods: {
+    highlight() {
+      if (!this.$refs.usage) {
+        return
+      }
+      hljs.highlightBlock(this.$refs.usage, {
+        languages: [this.info.jsxStory ? 'jsx' : 'html']
+      })
+    },
+    getPropText(p) {
+      const pretext = p.type + (p.required ? ', required' : p.default ? `, default to "${p.default}"` : '') + '. '
+      // Camelized
+      const pretext$ = pretext.slice(0, 1).toUpperCase() + pretext.slice(1)
+      return `${p.name} ... ${pretext$}${p.description}`
+    },
+    getEventText(e) {
+      if (!e.type && !e.description) {
+        return e.name
+      }
+      const pretext = e.type ? e.type + '. ' : ''
+      return `${e.name} ... ${pretext}${e.description}`
+    },
+    getSlotText(s) {
+      return s.description ? `${s.name} ... ${s.description}` : e.name
     }
   }
 }
 </script>
 
 <template>
-  <div :class="$style.container">
-    <h2 :class="$style.title">{{ title }}</h2>
-    <x-table v-if="component.props.length" label="Props">
-      <thead>
-        <tr>
-          <th>Name</th>
-          <th>Type</th>
-          <th>Default</th>
-          <th>Description</th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr v-for="prop in component.props" :key="prop.name">
-          <td>
-            {{ prop.name }}
-            <sup v-if="prop.required" :class="$style.required">*</sup>
-          </td>
-          <td>{{ prop.type }}</td>
-          <td>{{ prop.default }}</td>
-          <td>{{ prop.description }}</td>
-        </tr>
-      </tbody>
-    </x-table>
-    <x-table v-if="component.events.length" label="Events">
-      <thead>
-        <tr>
-          <th>Name</th>
-          <th>Type</th>
-          <th>Description</th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr v-for="event in component.events" :key="event.name">
-          <td>{{ event.name }}</td>
-          <td>{{ event.type }}</td>
-          <td>{{ event.description }}</td>
-        </tr>
-      </tbody>
-    </x-table>
-    <x-table v-if="component.slots.length" label="Slots">
-      <thead>
-        <tr>
-          <th>Name</th>
-          <th>Description</th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr v-for="slot in component.slots" :key="slot.name">
-          <td>{{ slot.name }}</td>
-          <td>{{ slot.description }}</td>
-        </tr>
-      </tbody>
-    </x-table>
+  <div class="savi-wrapper">
+    <div class="header">
+      <h1 class="title">{{ info.title }}</h1>
+      <p class="subtitle">{{ info.subtitle }}</p>
+    </div>
+    <div class="preview-container">
+      <div class="preview"><slot /></div>
+    </div>
+    <div class="info-body">
+      <div class="summary" v-html="summary" />
+
+
+<!--       
+      <div class="usage">
+        <h2 class="heading">Usage</h2>
+        <pre
+          ref="usage"
+          class="codeblock"
+        ><code>{{ info.storySource }}</code></pre>
+      </div> -->
+
+
+
+
+      <div v-for="c in info.components" :key="c.name" class="component">
+        <h2 class="heading">&lt;{{c.name}}&gt; component</h2>
+        <div v-if="c.props.length">
+          <h3 class="subheading">Props</h3>
+          <ul class="list">
+            <li
+              v-for="p in c.props"
+              :key="p.name"
+              class="item"
+            >
+              {{getPropText(p)}}
+            </li>
+          </ul>
+        </div>
+        <div v-if="c.events.length">
+          <h3 class="subheading">Events</h3>
+          <ul class="list">
+            <li
+              v-for="e in c.events"
+              :key="e.name"
+              class="item"
+            >
+              {{getEventText(e)}}
+            </li>
+          </ul>
+        </div>
+        <div v-if="c.slots.length">
+          <h3 class="subheading">Slots</h3>
+          <ul class="list">
+            <li
+              v-for="s in c.slots"
+              :key="s.name"
+              class="item"
+            >
+              {{getSlotText(s)}}
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
   </div>
 </template>
+
 
 <style module src="./vue-info-wrapper.css" />
