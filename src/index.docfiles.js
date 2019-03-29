@@ -1,11 +1,22 @@
 /* eslint-disable react/react-in-jsx-scope, react/no-this-in-sfc */
 import { storiesOf } from '@storybook/vue';
 
+/**
+ *
+ *  Author: Muniir Gopaul
+ *  E-mail: mgopaul1@amaris.com
+ *  Date: 20/03/2019
+ *
+ */
+
 import welcome from '../views/introduction/welcome.vue';
 
+/**
+ *  Markdown
+ */
 import CodeOfConduct from '../views/static/code-of-conduct.md'
 
-storiesOf('About UNIFY  / Introduction', module)
+storiesOf('About UNIFY | Introduction', module)
     .addParameters({
         options: {
             showAddonPanel: false,
@@ -27,10 +38,27 @@ storiesOf('About UNIFY  / Introduction', module)
         components: { welcome },
         template: `<welcome />`,
     }))
-    .add('UNIFY Technical / Component Driven Development', () => ({
+
+
+storiesOf('About UNIFY  | Introduction / Component Driven Development', module)
+    .addParameters({
+        options: {
+            showAddonPanel: false,
+            isToolshown: false
+        },
+        info: {
+            // base-static-layout: BaseStaticLayout,
+        },
+    })
+    .add('What is CDD?', () => ({
         components: { welcome },
         template: `<welcome />`,
     }))
+    .add('CDD Amaris Implementations', () => ({
+        components: { welcome },
+        template: `<welcome />`,
+    }))    
+
 
 storiesOf('About Unify | Timelines', module)
     .addParameters({
@@ -46,14 +74,31 @@ storiesOf('About Unify | Timelines', module)
         components: { welcome },
         template: `<welcome />`,
     }))
+    .add('What\'s next?', () => ({
+        components: { welcome },
+        template: `<welcome />`,
+    }))    
     .add('State Of The Art Practises', () => ({
         components: { welcome },
         template: `<welcome />`,
     }))    
-    .add('Releases', () => ({
+
+
+storiesOf('About Unify | Timelines / Releases', module)
+    .addParameters({
+        options: {
+            showAddonPanel: false,
+            isToolshown: false
+        },
+        info: {
+            // base-static-layout: BaseStaticLayout,
+        },
+    })
+    .add('V1.0.0', () => ({
         components: { welcome },
         template: `<welcome />`,
     }))
+
 
 storiesOf('About Unify | Design System', module)
     .addParameters({
@@ -104,6 +149,7 @@ storiesOf('User Manual | UDS platform', module)
     .add('Code of conduct', () => ({
         template: `<CodeOfConduct />`,
     }))
+
 
 storiesOf('User Manual | Collaboration', module)
     .addParameters({
@@ -156,6 +202,7 @@ storiesOf('User Manual | Contributing / Tecshare Development', module)
         template: `<welcome />`,
     }))  
 
+
 storiesOf('User Manual | Development Workflow', module)
     .addParameters({
         options: { 
@@ -182,11 +229,10 @@ storiesOf('User Manual | Development Workflow / Solution Architecture ', module)
             // base-static-layout: BaseStaticLayout,
         },
     })
-    .add('Integrating UNIFY Components', () => ({
+    .add('UDS Component Integration', () => ({
         components: { welcome },
         template: `<welcome />`,
     }))
-
 
 
 storiesOf('Author\'s note | Contributors', module)

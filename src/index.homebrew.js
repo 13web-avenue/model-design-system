@@ -91,7 +91,7 @@ const appDecorator = () => {
 };
 
 // c-callout 
-storiesOf('Library | ui kit (vuetify custom)/ c-callout', module)
+storiesOf('Library | UI KIT (vuetify custom)/ c-callout', module)
     .addDecorator(appDecorator) 
     .addParameters({
         readme: {
@@ -129,7 +129,7 @@ storiesOf('Library | ui kit (vuetify custom)/ c-callout', module)
     )
 
 // c-checkbox 
-storiesOf('Library | ui kit (vuetify custom) / c-checkbox', module)
+storiesOf('Library | UI KIT (vuetify custom) / c-checkbox', module)
     .addDecorator(appDecorator) 
     .addParameters({
         readme: {
@@ -170,7 +170,7 @@ storiesOf('Library | ui kit (vuetify custom) / c-checkbox', module)
     )
 
 // c-combobox-classic 
-storiesOf('Library | ui kit (vuetify custom)/ c-combobox-classic', module)
+storiesOf('Library | UI KIT (vuetify custom)/ c-combobox-classic', module)
     .addDecorator(appDecorator) 
     .addParameters({
         readme: {
@@ -214,7 +214,7 @@ storiesOf('Library | ui kit (vuetify custom)/ c-combobox-classic', module)
     )
 
 // c-modal
-storiesOf('Library | ui kit (vuetify custom)/ c-modal', module)
+storiesOf('Library | UI KIT (vuetify custom)/ c-modal', module)
     .addDecorator(appDecorator) 
     .addParameters({
         readme: {
@@ -255,7 +255,7 @@ storiesOf('Library | ui kit (vuetify custom)/ c-modal', module)
     )
 
 // c-status-pill
-storiesOf('Library | ui kit (vuetify custom)/ c-status-pill', module)
+storiesOf('Library | UI KIT (vuetify custom)/ c-status-pill', module)
     .addDecorator(appDecorator) 
     .addParameters({
         readme: {
@@ -302,7 +302,7 @@ storiesOf('Library | ui kit (vuetify custom)/ c-status-pill', module)
     )
 
 // c-tab
-storiesOf('Library | ui kit (vuetify custom)/ c-tab', module)
+storiesOf('Library | UI KIT (vuetify custom)/ c-tab', module)
     .addDecorator(appDecorator) 
     .addParameters({
         readme: {
@@ -341,7 +341,7 @@ storiesOf('Library | ui kit (vuetify custom)/ c-tab', module)
     )
 
 // c-textarea
-storiesOf('Library | ui kit (vuetify custom)/ c-textarea', module)
+storiesOf('Library | UI KIT (vuetify custom)/ c-textarea', module)
     .addDecorator(appDecorator) 
     .addParameters({
         readme: {
@@ -412,7 +412,7 @@ storiesOf('Library | ui kit (vuetify custom)/ c-textarea', module)
     )
 
 // c-textfield
-storiesOf('Library | ui kit (vuetify custom)/ c-textfield', module)
+storiesOf('Library | UI KIT (vuetify custom)/ c-textfield', module)
     .addDecorator(appDecorator) 
     .addParameters({
         readme: {
@@ -485,7 +485,7 @@ storiesOf('Library | ui kit (vuetify custom)/ c-textfield', module)
     )
 
 // c-toggle
-storiesOf('Library | ui kit (vuetify custom)/ c-toggle', module)
+storiesOf('Library | UI KIT (vuetify custom) / c-toggle', module)
     .addDecorator(appDecorator) 
     .addParameters({
         readme: {
