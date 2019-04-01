@@ -222,34 +222,34 @@ storiesOf('Library | UI KIT (vuetify custom)/ c-combobox-classic', module)
     )
 
 // c-inputgroups
-storiesOf('Library | UI KIT (vuetify custom)/ c-inputgroups', module)
+storiesOf('Library | UI KIT (vuetify custom)/ c-input-groups', module)
     .addDecorator(appDecorator) 
     .addParameters({
         readme: {
             codeTheme: 'monokai-sublime',
-            sidebar: CInputgroupsSetup,
+            sidebar: CInputGroupsSetup,
             theme: {
                 textColor: '#bb255a'
             },
         },
         info: {
             components: {
-                'c-inputgroups': CInputgroups
+                'c-input-groups': CInputGroups
             },
             docsInPanel: false,
             source: false,
-            // wrapperComponent: VueInfoWrapper,
+            wrapperComponent: VueInfoWrapper,
         },
     })  
     .add('classic', () => {
         return {
             components: {
-                'c-inputgroups': CInputgroups
+                'c-input-groups': CInputGroups
             },
-            template: `<c-inputgroups compStyle="classic" @change="log"/>`,
+            template: `<c-input-groups compStyle="classic" @change="log"/>`,
             methods:{log: action ('action')},
             propsDescription: {
-                CInputgroups: {
+                CInputGroups: {
                     label : 'Sets input label',
                     type : 'Sets input type',
                     rules : 'Accepts an array of functions that return either True or a String with an error message',
