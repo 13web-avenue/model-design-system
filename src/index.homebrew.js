@@ -53,6 +53,10 @@ import CRadioButton from '../core/ui-kit-custom-components/c-radio-button/packag
 import CRadioButtonChangelog from '../core/ui-kit-custom-components/c-radio-button/c-radio-button-changelog.md'
 import CRadioButtonSetup from '../core/ui-kit-custom-components/c-radio-button/c-radio-button-setup.md'
 
+import CInputgroups from '../core/ui-kit-custom-components/c-inputgroups/packages/dist/c-inputgroups.vue'
+import CInputgroupsChangelog from '../core/ui-kit-custom-components/c-inputgroups/c-inputgroups-changelog.md'
+import CInputgroupsSetup from '../core/ui-kit-custom-components/c-inputgroups/c-inputgroups-setup.md'
+
 // Add custom wrappers here 
 import VueInfoWrapper from '../plugins/vue-info-wrapper/vue-info-wrapper.vue'
 
@@ -215,6 +219,157 @@ storiesOf('Library | UI KIT (vuetify custom)/ c-combobox-classic', module)
         {
             notes: CComboBoxClassicChangelog
         }
+    )
+
+// c-inputgroups
+storiesOf('Library | UI KIT (vuetify custom)/ c-inputgroups', module)
+    .addDecorator(appDecorator) 
+    .addParameters({
+        readme: {
+            codeTheme: 'monokai-sublime',
+            sidebar: CInputgroupsSetup,
+            theme: {
+                textColor: '#bb255a'
+            },
+        },
+        info: {
+            components: {
+                'c-inputgroups': CInputgroups
+            },
+            docsInPanel: false,
+            source: false,
+            // wrapperComponent: VueInfoWrapper,
+        },
+    })  
+    .add('classic', () => {
+        return {
+            components: {
+                'c-inputgroups': CInputgroups
+            },
+            template: `<c-inputgroups compStyle="classic" @change="log"/>`,
+            methods:{log: action ('action')},
+            propsDescription: {
+                CInputgroups: {
+                    label : 'Sets input label',
+                    type : 'Sets input type',
+                    rules : 'Accepts an array of functions that return either True or a String with an error message',
+                    icon : "Prepends an icon inside the component's input",
+                    disabled : 'Disable the input',
+                    readonly : 'Puts input in readonly state',
+                },
+            }
+        };
+    },
+        {
+            notes: CInputgroupsChangelog
+        }
+    )
+    .add('minimalist', () => {
+        return {
+            components: {
+                'c-inputgroups': CInputgroups
+            },
+            template: `<c-inputgroups compStyle="minimal" @change="log"/>`,
+            methods:{log: action ('action')},
+            propsDescription: {
+                CInputgroups: {
+                    label : 'Sets input label',
+                    type : 'Sets input type',
+                    rules : 'Accepts an array of functions that return either True or a String with an error message',
+                    icon : "Prepends an icon inside the component's input",
+                    disabled : 'Disable the input',
+                    readonly : 'Puts input in readonly state',
+                },
+            }
+        };
+    },
+    {
+        notes: CInputgroupsChangelog
+    }
+    )
+    .add('append classic', () => {
+        return {
+            components: {
+                'c-inputgroups': CInputgroups
+            },
+            template: `<c-inputgroups compStyle="classicAppend" @change="log"/>`,
+            methods:{log: action ('action')},
+            propsDescription: {
+                CInputgroups: {
+                    label : 'Sets input label',
+                    type : 'Sets input type',
+                    rules : 'Accepts an array of functions that return either True or a String with an error message',
+                    disabled : 'Disable the input',
+                    readonly : 'Puts input in readonly state',
+                    selectItems : 'Can be an array of strings for Select component',
+                    selectValue : 'Input value for Select component',
+                },
+            }
+        };
+    },
+    {
+        notes: CInputgroupsChangelog
+    }
+    )
+    .add('append minimalist', () => {
+        return {
+            components: {
+                'c-inputgroups': CInputgroups
+            },
+            template: `<c-inputgroups compStyle="minimalAppend" @change="log"/>`,
+            methods:{log: action ('action')},
+            propsDescription: {
+                CInputgroups: {
+                    label : 'Sets input label',
+                    type : 'Sets input type',
+                    rules : 'Accepts an array of functions that return either True or a String with an error message',
+                    disabled : 'Disable the input',
+                    readonly : 'Puts input in readonly state',
+                    selectItems : 'Can be an array of strings for Select component',
+                    selectValue : 'Input value for Select component',
+                },
+            }
+        };
+    },
+    {
+        notes: CInputgroupsChangelog
+    }
+    )
+    .add('prepend classic', () => {
+        return {
+            components: {
+                'c-inputgroups': CInputgroups
+            },
+            template: `<c-inputgroups compStyle="classicPrepend" @change="log"/>`,
+            methods:{log: action ('action')},
+            propsDescription: {
+                CInputgroups: {
+                    selectData : 'Accepts an array - which contains values of items, value, color, solo, box, outline, label',
+                },
+            }
+        };
+    },
+    {
+        notes: CInputgroupsChangelog
+    }
+    )
+    .add('prepend minimalist', () => {
+        return {
+            components: {
+                'c-inputgroups': CInputgroups
+            },
+            template: `<c-inputgroups compStyle="minimalPrepend" @change="log"/>`,
+            methods:{log: action ('action')},
+            propsDescription: {
+                CInputgroups: {
+                    selectData : 'Accepts an array - which contains values of items, value, color, solo, box, outline, label',
+                },
+            }
+        };
+    },
+    {
+        notes: CInputgroupsChangelog
+    }
     )
 
 // c-modal
