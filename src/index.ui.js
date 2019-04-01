@@ -139,6 +139,7 @@ storiesOf('Library | UI KIT vuetify ready / v-alert', module)
             source: false,
             // wrapperComponent: VueInfoWrapper,
         },
+        
     })  
     .add('Default', () => {
         return {
