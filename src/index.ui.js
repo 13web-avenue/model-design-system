@@ -80,7 +80,7 @@ import VAlertChangelog from '../core/ui-kit-default-components/v-alert/v-alert-c
 import VAlertSetup from '../core/ui-kit-default-components/v-alert/v-alert-setup.md'
 
 // Add custom wrappers here 
-// import VueInfoWrapper from '../plugins/vue-info-wrapper/vue-info-wrapper.vue'
+import VueInfoWrapper from '../plugins/vue-info-wrapper/vue-info-wrapper.vue'
 
 
 import Vue from 'vue'
@@ -137,8 +137,9 @@ storiesOf('Library | UI KIT vuetify ready / v-alert', module)
             },
             docsInPanel: false,
             source: false,
-            // wrapperComponent: VueInfoWrapper,
+            wrapperComponent: VueInfoWrapper,
         },
+        
     })  
     .add('Default', () => {
         return {
