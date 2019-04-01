@@ -50,7 +50,7 @@ storiesOf('About UNIFY  | Introduction / Component Driven Development', module)
             // base-static-layout: BaseStaticLayout,
         },
     })
-    .add('What is CDD?', () => ({
+    .add('What is Component Driven Development(CDD)?', () => ({
         components: { welcome },
         template: `<welcome />`,
     }))
@@ -60,28 +60,28 @@ storiesOf('About UNIFY  | Introduction / Component Driven Development', module)
     }))    
 
 
-storiesOf('About Unify | Timelines', module)
-    .addParameters({
-        options: {
-            showAddonPanel: false,
-            isToolshown: false
-        },
-        info: {
-            // base-static-layout: BaseStaticLayout,
-        },
-    })
-    .add('A brief history', () => ({
-        components: { welcome },
-        template: `<welcome />`,
-    }))
-    .add('What\'s next?', () => ({
-        components: { welcome },
-        template: `<welcome />`,
-    }))    
-    .add('State Of The Art Practises', () => ({
-        components: { welcome },
-        template: `<welcome />`,
-    }))    
+// storiesOf('About Unify | Timelines', module)
+//     .addParameters({
+//         options: {
+//             showAddonPanel: false,
+//             isToolshown: false
+//         },
+//         info: {
+//             // base-static-layout: BaseStaticLayout,
+//         },
+//     })
+//     .add('A brief history', () => ({
+//         components: { welcome },
+//         template: `<welcome />`,
+//     }))
+//     .add('What\'s next?', () => ({
+//         components: { welcome },
+//         template: `<welcome />`,
+//     }))    
+//     .add('State Of The Art Practises', () => ({
+//         components: { welcome },
+//         template: `<welcome />`,
+//     }))    
 
 
 storiesOf('About Unify | Timelines / Releases', module)

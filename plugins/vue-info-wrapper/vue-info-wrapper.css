@@ -1,11 +1,7 @@
-.savi-wrapper {
-  position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  color: rgb(0, 0, 0);
-  font-family: Roboto, sans-serif;
+.layout-dynamic {
+  position: relative;
+
+  width: 80rem;
 }
 
 .header {

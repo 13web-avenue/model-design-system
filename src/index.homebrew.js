@@ -93,7 +93,7 @@ const appDecorator = () => {
 };
 
 // c-callout 
-storiesOf('Library | UI KIT (vuetify custom)/ c-callout', module)
+storiesOf('Library | UI KIT (vuetify custom) / c-callout', module)
     .addDecorator(appDecorator) 
     .addParameters({
         readme: {

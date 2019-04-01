@@ -1,37 +1,37 @@
 import { create } from '@storybook/theming';
 
 export default create({
-    base: 'light',
+    base: 'dark',
 
-    colorPrimary: 'hotpink',
-    colorSecondary: 'deepskyblue',
+    // colorPrimary: '#FF4785',
+    // colorSecondary: 'deepskyblue',
 
     // UI
-    appBg: 'white',
-    appContentBg: 'silver',
-    appBorderColor: 'grey',
-    appBorderRadius: 4,
+    appBg: '#2f2f2f',
+    appContentBg: 'whitesmoke',
+    // appBorderColor: 'grey',
+    // appBorderRadius: 4,
 
     // Typography
-    fontBase: '"Open Sans", sans-serif',
-    fontCode: 'monospace',
+    fontBase: '"Montserrat", sans-serif',
+    fontCode: '"Operator Mono", "Fira Code Retina", "Fira Code", "FiraCode - Retina", "Andale Mono", "Lucida Console", "Consolas", "Monaco", "monospace"',
 
     // Text colors
-    textColor: 'black',
-    textInverseColor: 'rgba(255,255,255,0.9)',
+    // textColor: '#000',
+    // textInverseColor: 'rgba(255,255,255,0.9)',
 
     // Toolbar default and active colors
-    barTextColor: 'silver',
-    barSelectedColor: 'black',
-    barBg: 'hotpink',
+    // barTextColor: '#999999',
+    // barSelectedColor: "#1EA7FD",
+    // barBg: 'hotpink',
 
     // Form colors
-    inputBg: 'white',
-    inputBorder: 'silver',
-    inputTextColor: 'black',
-    inputBorderRadius: 4,
+    inputBg: 'whitesmoke',
+    // inputBorder: 'silver',
+    // inputTextColor: 'black',
+    // inputBorderRadius: 4,
 
-    brandTitle: 'My custom storybook',
-    brandUrl: 'https://example.com',
-    brandImage: 'https://placehold.it/350x150',
+    brandTitle: 'UNIFY DESIGN SYSTEM',
+    brandUrl: 'https://arp.amaris.com/unify-design-system',
+    // brandImage: 'https://placehold.it/350x150',
 });
