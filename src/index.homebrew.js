@@ -283,7 +283,7 @@ storiesOf('Library | UI KIT (vuetify custom)/ c-radio-button', module)
             components: {
                 'c-radio-button': CRadioButton
             },
-            template: `<c-radio-button/>`,
+            template: `<c-radio-button />`,
             propsDescription: {
                 CRadioButton: {
                     disable : 'Disable the input',
