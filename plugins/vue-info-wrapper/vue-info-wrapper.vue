@@ -53,7 +53,7 @@ export default {
       const pretext = p.type + (p.required ? ', required' : p.default ? `, default to "${p.default}"` : '') + '. '
       // Camelized
       const pretext$ = pretext.slice(0, 1).toUpperCase() + pretext.slice(1)
-      return `${p.name} ... ${pretext$}${p.description}`
+      return `${p.name} | ${pretext$}${p.description}`
     },
     getEventText(e) {
       if (!e.type && !e.description) {
@@ -91,51 +91,68 @@ export default {
         ><code>{{ info.storySource }}</code></pre>
       </div> -->
 
-
-
-
       <div v-for="c in info.components" :key="c.name" class="component">
-        <h2 class="heading">&lt;{{c.name}}&gt; component</h2>
-        <div v-if="c.props.length">
-          <h3 class="subheading">Props</h3>
+        <!-- <div v-if="c.props.length">
+          <h2>Props :</h2>
           <ul class="list">
-            <li
-              v-for="p in c.props"
-              :key="p.name"
-              class="item"
-            >
+            <li v-for="p in c.props" :key="p.name" class="item">
               {{getPropText(p)}}
             </li>
           </ul>
-        </div>
+        </div> -->
+        <v-layout row>
+            <v-flex xs12>
+              <v-card>
+                <v-toolbar color="#1EA7FD" dark height="30px;">
+                  <v-toolbar-title>Props</v-toolbar-title>
+                  <v-spacer></v-spacer>
+                </v-toolbar>
+
+                <v-list two-line>
+                  <template>
+                    <div class="prop-table" v-for="(value,key) in c.props" :key="key">
+                        <div class="prop-container">
+                          <span class="prop-name">Name :</span>
+                          <span class="prop-value">{{value.name}}</span>
+                        </div>
+                        <div class="prop-container">
+                           <span class="prop-type">Type :</span>
+                           <span class="prop-value">{{value.type}}</span>
+                        </div>
+                        <div class="prop-container">
+                          <span class="prop_default">Default:</span>
+                          <span class="prop-value">{{value.default}}</span>
+                        </div>
+                    </div>
+                  </template>
+                </v-list>
+              </v-card>
+            </v-flex>
+         </v-layout>
+
         <div v-if="c.events.length">
           <h3 class="subheading">Events</h3>
           <ul class="list">
-            <li
-              v-for="e in c.events"
-              :key="e.name"
-              class="item"
-            >
+            <li v-for="e in c.events" :key="e.name" class="item">
               {{getEventText(e)}}
             </li>
           </ul>
         </div>
+
         <div v-if="c.slots.length">
           <h3 class="subheading">Slots</h3>
           <ul class="list">
-            <li
-              v-for="s in c.slots"
-              :key="s.name"
-              class="item"
-            >
+            <li v-for="s in c.slots" :key="s.name" class="item">
               {{getSlotText(s)}}
             </li>
           </ul>
         </div>
+
       </div>
+
     </div>
   </div>
+  
 </template>
 
-
-<style module src="./vue-info-wrapper.css" />
+<style scoped src="./vue-info-wrapper.css" />
