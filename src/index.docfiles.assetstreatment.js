@@ -14,6 +14,9 @@ import { storiesOf } from '@storybook/vue'
  *  
  */
 
+// Add custom wrappers here 
+import VueInfoWrapper from '../plugins/vue-info-wrapper/vue-info-wrapper.vue'
+
 import Typography from '../views/assets-treatment/typography/typography.vue'
 
 import icons from '../views/assets-treatment/icons/icons.vue'
@@ -27,7 +30,7 @@ storiesOf('Asset Treatment | Images', module)
             showAddonPanel: false 
         },
         info: {
-            // wrapperComponent: VueInfoWrapper,
+            wrapperComponent: VueInfoWrapper,
         },
     })  
     .add('Default', () => ({
@@ -67,7 +70,7 @@ storiesOf('Asset Treatment | Typography', module)
     .addParameters({
         options: { showAddonPanel: false },
         info: {
-            // wrapperComponent: VueInfoWrapper,
+            wrapperComponent: VueInfoWrapper,
         },
     })  
     .add('Base Font', () => ({

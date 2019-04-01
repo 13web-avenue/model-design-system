@@ -97,7 +97,7 @@ const appDecorator = () => {
 };
 
 // c-callout 
-storiesOf('Library | UI KIT (vuetify custom)/ c-callout', module)
+storiesOf('Library | UI KIT (vuetify custom) / c-callout', module)
     .addDecorator(appDecorator) 
     .addParameters({
         readme: {
@@ -194,7 +194,7 @@ storiesOf('Library | UI KIT (vuetify custom)/ c-combobox-classic', module)
             },
             docsInPanel: false,
             source: false,
-            // wrapperComponent: VueInfoWrapper,
+            wrapperComponent: VueInfoWrapper,
         },
     })  
     .add('classic', () => {
@@ -389,7 +389,7 @@ storiesOf('Library | UI KIT (vuetify custom)/ c-modal', module)
             },
             docsInPanel: false,
             source: false,
-            // wrapperComponent: VueInfoWrapper,
+            wrapperComponent: VueInfoWrapper,
         },
     })  
     .add('Classic', () => {
@@ -430,7 +430,7 @@ storiesOf('Library | UI KIT (vuetify custom)/ c-radio-button', module)
             },
             docsInPanel: false,
             source: false,
-            // wrapperComponent: VueInfoWrapper,
+            wrapperComponent: VueInfoWrapper,
         },
     })  
     .add('Default', () => {
@@ -470,7 +470,7 @@ storiesOf('Library | UI KIT (vuetify custom)/ c-status-pill', module)
             },
             docsInPanel: false,
             source: false,
-            // wrapperComponent: VueInfoWrapper,
+            wrapperComponent: VueInfoWrapper,
         },
     })  
     .add('Classic', () => {
@@ -517,7 +517,7 @@ storiesOf('Library | UI KIT (vuetify custom)/ c-tab', module)
             },
             docsInPanel: false,
             source: false,
-            // wrapperComponent: VueInfoWrapper,
+            wrapperComponent: VueInfoWrapper,
         },
     })  
     .add('Classic', () => {
@@ -556,7 +556,7 @@ storiesOf('Library | UI KIT (vuetify custom)/ c-textarea', module)
             },
             docsInPanel: false,
             source: false,
-            // wrapperComponent: VueInfoWrapper,
+            wrapperComponent: VueInfoWrapper,
         },
     })  
     .add('Classic', () => {
@@ -627,7 +627,7 @@ storiesOf('Library | UI KIT (vuetify custom)/ c-textfield', module)
             },
             docsInPanel: false,
             source: false,
-            // wrapperComponent: VueInfoWrapper,
+            wrapperComponent: VueInfoWrapper,
         },
     })  
     .add('Classic', () => {
@@ -700,7 +700,7 @@ storiesOf('Library | UI KIT (vuetify custom) / c-toggle', module)
             },
             docsInPanel: false,
             source: false,
-            // wrapperComponent: VueInfoWrapper,
+            wrapperComponent: VueInfoWrapper,
         },
     })  
     .add('Default', () => {

@@ -44,11 +44,11 @@ addDecorator(addReadme);
 import { themes } from '@storybook/theming'
 
 // Custom theme 
-// import UnifyTheme from './unify.theme.js';
 // default themes == themes.dark || themes.normal 
 // import { themes } from '@storybook/theming'
+import UnifyTheme from './unify.theme.js';
 
-
+console.log(themes)
 /** 
  * Importing the custom elements/components for UDS reuse
 */
@@ -75,7 +75,7 @@ addParameters({
      * URL for name in top left corner to link to
      * @type {String}
      */
-    brandUrl: '#',
+    brandUrl: 'https://arp.amaris.com/unify-design-system',
     /**
      * show story component as full screen
      * @type {Boolean}
@@ -85,12 +85,12 @@ addParameters({
      * display panel that shows a list of stories
      * @type {Boolean}
      */
-    showPanel: true,
+    showNav: true,
     /**
      * display panel that shows addon configurations
      * @type {Boolean}
      */
-    showAddonPanel: true,
+    showPanel: true,
     /**
      * display floating search box to search through stories
      * @type {Boolean}
@@ -100,12 +100,12 @@ addParameters({
      * show addon panel as a vertical panel on the right
      * @type {Boolean}
      */
-    addonPanelInRight: false,
+    panelPosition : 'bottom',
     /**
      * sorts stories
      * @type {Boolean}
      */
-    panelPosition: 'bottom',
+    sortStoriesByKind: true,
     /**
      * regex for finding the hierarchy separator
      * @example:
@@ -144,17 +144,13 @@ addParameters({
      * @type {Boolean}
      */
     isToolshown: true, // true by default
-    /**
-      * theme storybook, see link below
-      */
-    /**
-     * defaults: theme: themes.dark
-     * defaults: theme: themes.normal
-     */
-    theme: themes.normal,
+  /**
+   * default themes
+   * Custom themes will be applied form UnifyThemes
+   */
+    theme: UnifyTheme,
   },
 });
-
 
 
 const req = require.context('../../src/', true, /.js$/)
