@@ -80,7 +80,7 @@ import VAlertChangelog from '../core/ui-kit-default-components/v-alert/v-alert-c
 import VAlertSetup from '../core/ui-kit-default-components/v-alert/v-alert-setup.md'
 
 // Add custom wrappers here 
-// import VueInfoWrapper from '../plugins/vue-info-wrapper/vue-info-wrapper.vue'
+import VueInfoWrapper from '../plugins/vue-info-wrapper/vue-info-wrapper.vue'
 
 
 import Vue from 'vue'
@@ -138,7 +138,7 @@ storiesOf('Library | UI KIT vuetify ready / v-alert', module)
             },
             docsInPanel: false,
             source: false,
-            // wrapperComponent: VueInfoWrapper,
+            wrapperComponent: VueInfoWrapper,
         },
         
     })  
@@ -175,6 +175,7 @@ storiesOf('Library | UI KIT vuetify ready / v-alert', module)
                 },
                 docsInPanel: false,
                 source: false,
+                wrapperComponent: VueInfoWrapper,
             },
         }
     })     
@@ -220,6 +221,7 @@ storiesOf('Library | UI KIT (vuetify ready)/ v-badge', module)
             },
             docsInPanel: false,
             source: false,
+            wrapperComponent: VueInfoWrapper,
         },
     })
     .add('Default', () => {
@@ -261,6 +263,7 @@ storiesOf('Library | UI KIT (vuetify ready)/ v-breadcrumbs', module)
             },
             docsInPanel: false,
             source: false,
+            wrapperComponent: VueInfoWrapper,
         },
     })
     .add('Default', () => {
@@ -300,6 +303,7 @@ storiesOf('Library | UI KIT (vuetify ready)/ v-card', module)
             },
             docsInPanel: false,
             source: false,
+            wrapperComponent: VueInfoWrapper,
         },
     })
     .add('Default', () => {
@@ -340,6 +344,7 @@ storiesOf('Library | UI KIT (vuetify ready)/ v-combobox', module)
             },
             docsInPanel: false,
             source: false,
+            wrapperComponent: VueInfoWrapper,
         },
     })
     .add('Default', () => {
@@ -401,6 +406,7 @@ storiesOf('Library | UI KIT (vuetify ready)/ v-datatable', module)
             },
             docsInPanel: false,
             source: false,
+            wrapperComponent: VueInfoWrapper,
         },
     })
     .add('Default', () => {
@@ -442,6 +448,7 @@ storiesOf('Library | UI KIT (vuetify ready)/ v-divider', module)
             },
             // docsInPanel: false,
             // source: false,
+            wrapperComponent: VueInfoWrapper,
         },
     })
     .add('Default', () => {
@@ -479,6 +486,7 @@ storiesOf('Library | UI KIT (vuetify ready)/ v-expansion-panel', module)
             },
             docsInPanel: false,
             source: false,
+            wrapperComponent: VueInfoWrapper,
         },
     })
     .add('Default', () => {
@@ -527,7 +535,15 @@ storiesOf('Library | UI KIT (vuetify ready)/ v-navigation-drawer', module)
             theme: {
                 textColor: '#bb255a'
             },
-        }
+        },
+        info: {
+            components: {
+                'v-navigation-drawer': VNavigationDrawer
+            },
+            docsInPanel: false,
+            source: false,
+            wrapperComponent: VueInfoWrapper,
+        },
     })
     .add('Default', () => {
         return {
@@ -560,6 +576,7 @@ storiesOf('Library | UI KIT (vuetify ready)/ v-ratings', module)
             },
             docsInPanel: false,
             source: false,
+            wrapperComponent: VueInfoWrapper,
         }
     })
     .add('Default', () => {
@@ -604,6 +621,7 @@ storiesOf('Library | UI KIT (vuetify ready)/ v-search', module)
             },
             docsInPanel: false,
             source: false,
+            wrapperComponent: VueInfoWrapper,
         }
     })
     .add('Default', () => {
@@ -663,6 +681,7 @@ storiesOf('Library | UI KIT (vuetify ready)/ v-snackbar', module)
             },
             docsInPanel: false,
             source: false,
+            wrapperComponent: VueInfoWrapper,
         }
     })
     .add('Default', () => {
@@ -703,6 +722,7 @@ storiesOf('Library | UI KIT (vuetify ready)/ v-textarea', module)
             },
             docsInPanel: false,
             source: false,
+            wrapperComponent: VueInfoWrapper,
         }
     })
     .add('Default', () => {
@@ -774,6 +794,7 @@ storiesOf('Library | UI KIT (vuetify ready)/ v-textfield', module)
             },
             docsInPanel: false,
             source: false,
+            wrapperComponent: VueInfoWrapper,
         }
     })
     .add('Default', () => {
@@ -845,6 +866,7 @@ storiesOf('Library | UI KIT (vuetify ready)/ v-timeline', module)
             },
             // docsInPanel: false,
             // source: false,
+            wrapperComponent: VueInfoWrapper,
         },
     })
     .add('Default', () => {
@@ -878,6 +900,7 @@ storiesOf('Library | UI KIT (vuetify ready)/ v-toggle', module)
             },
             // docsInPanel: false,
             // source: false,
+            wrapperComponent: VueInfoWrapper,
         },
         
     })
@@ -922,8 +945,9 @@ storiesOf('Library | UI KIT (vuetify ready)/ v-treeview', module)
             components: {
                 'v-treeview': VTreeview
             },
-            // docsInPanel: false,
+            docsInPanel: false,
             // source: false,
+            wrapperComponent: VueInfoWrapper,
         },
     })
     .add('Default', () => {

@@ -70,12 +70,12 @@ addParameters({
      * name to display in the top left corner
      * @type {String}
      */
-    brandTitle: 'Storybook',
+    brandTitle: 'UNIFY DESIGN SYSTEM',
     /**
      * URL for name in top left corner to link to
      * @type {String}
      */
-    brandUrl: '#',
+    brandUrl: 'https://arp.amaris.com/unify-design-system',
     /**
      * show story component as full screen
      * @type {Boolean}
