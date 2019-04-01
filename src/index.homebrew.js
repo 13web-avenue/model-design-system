@@ -54,11 +54,12 @@ import CRadioButtonChangelog from '../core/ui-kit-custom-components/c-radio-butt
 import CRadioButtonSetup from '../core/ui-kit-custom-components/c-radio-button/c-radio-button-setup.md'
 
 // Add custom wrappers here 
-// import VueInfoWrapper from '../plugins/vue-info-wrapper/table.vue'
+import VueInfoWrapper from '../plugins/vue-info-wrapper/vue-info-wrapper.vue'
 
 import Vue from 'vue'
 import Vuetify from 'vuetify'
 import 'vuetify/dist/vuetify.min.css';
+import "./cssGlobalOverrides.scss";
 
 Vue.use(Vuetify)
 
@@ -83,11 +84,9 @@ const appDecorator = () => {
         components: { VApp, VContent },
         template: `
         <v-app>
-            <div style="background-color: none; width: 100%; height: 100%;">
             <v-content>
                 <story/>
             </v-content>
-            </div>
         </v-app>
         `,
     };
@@ -110,7 +109,7 @@ storiesOf('Library | UI KIT (vuetify custom)/ c-callout', module)
             },
             docsInPanel: false,
             source: false,
-            // wrapperComponent: VueInfoWrapper,
+            wrapperComponent: VueInfoWrapper
         },
     })  
     .add('Default', () => {
@@ -148,8 +147,10 @@ storiesOf('Library | UI KIT (vuetify custom) / c-checkbox', module)
             },
             docsInPanel: false,
             source: false,
-            // wrapperComponent: VueInfoWrapper,
+            wrapperComponent: VueInfoWrapper
         },
+        
+        
     })  
     .add('Default', () => {
         return {
