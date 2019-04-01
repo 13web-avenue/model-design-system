@@ -77,7 +77,7 @@ export default {
       return `${e.name} ... ${pretext}${e.description}`
     },
     getSlotText(s) {
-      return s.description ? `${s.name} ... ${s.description}` : e.name
+      return s.description ? `${s.name} ... ${s.description}` : s.name
     }
   }
 }
