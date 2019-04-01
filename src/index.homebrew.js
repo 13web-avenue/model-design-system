@@ -49,6 +49,9 @@ import CCheckBox from '../core/ui-kit-custom-components/c-checkbox/packages/dist
 import CCheckBoxChangelog from '../core/ui-kit-custom-components/c-checkbox/c-checkbox-changelog.md'
 import CCheckBoxSetup from '../core/ui-kit-custom-components/c-checkbox/c-checkbox-setup.md'
 
+import CRadioButton from '../core/ui-kit-custom-components/c-radio-button/packages/dist/c-radio-button.vue'
+import CRadioButtonChangelog from '../core/ui-kit-custom-components/c-radio-button/c-radio-button-changelog.md'
+import CRadioButtonSetup from '../core/ui-kit-custom-components/c-radio-button/c-radio-button-setup.md'
 
 // Add custom wrappers here 
 // import VueInfoWrapper from '../plugins/vue-info-wrapper/table.vue'
@@ -251,6 +254,46 @@ storiesOf('Library | UI KIT (vuetify custom)/ c-modal', module)
     },
         {
             notes: CModalChangelog
+        }
+    )
+
+// c-radio-button 
+storiesOf('Library | UI KIT (vuetify custom)/ c-radio-button', module)
+    .addDecorator(appDecorator) 
+    .addParameters({
+        readme: {
+            codeTheme: 'monokai-sublime',
+            sidebar: CRadioButtonSetup,
+            theme: {
+                textColor: '#bb255a'
+            },
+        },
+        info: {
+            components: {
+                'c-radio-button': CRadioButton
+            },
+            docsInPanel: false,
+            source: false,
+            // wrapperComponent: VueInfoWrapper,
+        },
+    })  
+    .add('Default', () => {
+        return {
+            components: {
+                'c-radio-button': CRadioButton
+            },
+            template: `<c-radio-button :radioOptions="{'Radio 1':'one'}"/>`,
+            propsDescription: {
+                CRadioButton: {
+                    disable : 'Disable the input',
+                    radioOptions : 'Sets input labels',
+                    selected : 'Sets the value of the selection control component',
+                },
+            }
+        };
+    },
+        {
+            notes: CRadioButtonChangelog
         }
     )
 
