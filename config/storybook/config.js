@@ -27,7 +27,7 @@ addParameters({
 
 // ------------------------------------------------------------------
 
-addParameters({ viewport: 'responsive' });
+// addParameters({ viewport: 'responsive' });
 
 // ------------------------------------------------------------------
 
@@ -67,7 +67,6 @@ addParameters({
      * name to display in the top left corner
      * @type {String}
      */
-    brandTitle: 'UNIFY DESIGN SYSTEM',
     /**
      * URL for name in top left corner to link to
      * @type {String}

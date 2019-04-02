@@ -31,7 +31,10 @@ export default create({
     // inputTextColor: 'black',
     // inputBorderRadius: 4,
 
+    // branding issues can be followed here
+    // and the proper solution implemented once the PR is merged.
+    // Github link: https://github.com/storybooks/storybook/issues/5866
     brandTitle: 'UNIFY DESIGN SYSTEM',
     brandUrl: 'https://arp.amaris.com/unify-design-system',
-    // brandImage: 'https://placehold.it/350x150',
+    brandImage: 'null',
 });
