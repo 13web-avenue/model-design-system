@@ -24,7 +24,7 @@ module.exports = async ({ config, mode }) => {
     },
     {
       test: /\.(png|jpg|gif)$/,
-      loader: 'file-loader'
+      loader: 'url-loader'
     },
     {
       test: /\.svg$/,
