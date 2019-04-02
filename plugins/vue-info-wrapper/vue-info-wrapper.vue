@@ -111,15 +111,15 @@ export default {
                 <v-list two-line>
                   <template>
                     <div class="prop-table" v-for="(value,key) in c.props" :key="key">
-                        <div class="prop-container">
+                        <div v-if="value.name && (value.name !=null)" class="prop-container">
                           <span class="prop-name">Name :</span>
                           <span class="prop-value">{{value.name}}</span>
                         </div>
-                        <div class="prop-container">
+                        <div class="prop-container" v-if="value.type && (value.type !=null)">
                            <span class="prop-type">Type :</span>
                            <span class="prop-value">{{value.type}}</span>
                         </div>
-                        <div class="prop-container">
+                        <div class="prop-container" v-if="value.default && (value.default !=null)">
                           <span class="prop_default">Default:</span>
                           <span class="prop-value">{{value.default}}</span>
                         </div>
