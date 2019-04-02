@@ -63,14 +63,14 @@ export default {
       return `${e.name} ... ${pretext}${e.description}`
     },
     getSlotText(s) {
-      return s.description ? `${s.name} ... ${s.description}` : e.name
+      return s.description ? `${s.name} ... ${s.description}` : s.name
     }
   }
 }
 </script>
 
 <template>
-  <div class="savi-wrapper">
+  <div class="layout-dynamic">
     <div class="header">
       <h1 class="title">{{ info.title }}</h1>
       <p class="subtitle">{{ info.subtitle }}</p>
@@ -80,16 +80,15 @@ export default {
     </div>
     <div class="info-body">
       <div class="summary" v-html="summary" />
-
-
-<!--       
+      <!--       
       <div class="usage">
         <h2 class="heading">Usage</h2>
         <pre
           ref="usage"
           class="codeblock"
         ><code>{{ info.storySource }}</code></pre>
-      </div> -->
+      </div> 
+      -->
 
       <div v-for="c in info.components" :key="c.name" class="component">
         <!-- <div v-if="c.props.length">

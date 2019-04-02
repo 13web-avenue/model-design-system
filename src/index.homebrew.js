@@ -53,6 +53,10 @@ import CRadioButton from '../core/ui-kit-custom-components/c-radio-button/packag
 import CRadioButtonChangelog from '../core/ui-kit-custom-components/c-radio-button/c-radio-button-changelog.md'
 import CRadioButtonSetup from '../core/ui-kit-custom-components/c-radio-button/c-radio-button-setup.md'
 
+// import CInputgroups from '../core/ui-kit-custom-components/c-inputgroups/packages/dist/c-inputgroups.vue'
+// import CInputGroupsChangelog from '../core/ui-kit-custom-components/c-inputgroups/c-inputgroups-changelog.md'
+// import CInputGroupsSetup from '../core/ui-kit-custom-components/c-inputgroups/c-inputgroups-setup.md'
+
 // Add custom wrappers here 
 import VueInfoWrapper from '../plugins/vue-info-wrapper/vue-info-wrapper.vue'
 
@@ -93,7 +97,7 @@ const appDecorator = () => {
 };
 
 // c-callout 
-storiesOf('Library | UI KIT (vuetify custom)/ c-callout', module)
+storiesOf('Library | UI KIT (vuetify custom) / c-callout', module)
     .addDecorator(appDecorator) 
     .addParameters({
         readme: {
@@ -190,7 +194,7 @@ storiesOf('Library | UI KIT (vuetify custom)/ c-combobox-classic', module)
             },
             docsInPanel: false,
             source: false,
-            // wrapperComponent: VueInfoWrapper,
+            wrapperComponent: VueInfoWrapper,
         },
     })  
     .add('classic', () => {
@@ -217,6 +221,157 @@ storiesOf('Library | UI KIT (vuetify custom)/ c-combobox-classic', module)
         }
     )
 
+// c-inputgroups
+// storiesOf('Library | UI KIT (vuetify custom)/ c-input-groups', module)
+//     .addDecorator(appDecorator) 
+//     .addParameters({
+//         readme: {
+//             codeTheme: 'monokai-sublime',
+//             sidebar: CInputGroupsSetup,
+//             theme: {
+//                 textColor: '#bb255a'
+//             },
+//         },
+//         info: {
+//             components: {
+//                 'c-input-groups': CInputGroups
+//             },
+//             docsInPanel: false,
+//             source: false,
+//             wrapperComponent: VueInfoWrapper,
+//         },
+//     })  
+//     .add('classic', () => {
+//         return {
+//             components: {
+//                 'c-input-groups': CInputGroups
+//             },
+//             template: `<c-input-groups compStyle="classic" @change="log"/>`,
+//             methods:{log: action ('action')},
+//             propsDescription: {
+//                 CInputGroups: {
+//                     label : 'Sets input label',
+//                     type : 'Sets input type',
+//                     rules : 'Accepts an array of functions that return either True or a String with an error message',
+//                     icon : "Prepends an icon inside the component's input",
+//                     disabled : 'Disable the input',
+//                     readonly : 'Puts input in readonly state',
+//                 },
+//             }
+//         };
+//     },
+//         {
+//             notes: CInputgroupsChangelog
+//         }
+//     )
+//     .add('minimalist', () => {
+//         return {
+//             components: {
+//                 'c-inputgroups': CInputgroups
+//             },
+//             template: `<c-inputgroups compStyle="minimal" @change="log"/>`,
+//             methods:{log: action ('action')},
+//             propsDescription: {
+//                 CInputgroups: {
+//                     label : 'Sets input label',
+//                     type : 'Sets input type',
+//                     rules : 'Accepts an array of functions that return either True or a String with an error message',
+//                     icon : "Prepends an icon inside the component's input",
+//                     disabled : 'Disable the input',
+//                     readonly : 'Puts input in readonly state',
+//                 },
+//             }
+//         };
+//     },
+//     {
+//         notes: CInputgroupsChangelog
+//     }
+//     )
+//     .add('append classic', () => {
+//         return {
+//             components: {
+//                 'c-inputgroups': CInputgroups
+//             },
+//             template: `<c-inputgroups compStyle="classicAppend" @change="log"/>`,
+//             methods:{log: action ('action')},
+//             propsDescription: {
+//                 CInputgroups: {
+//                     label : 'Sets input label',
+//                     type : 'Sets input type',
+//                     rules : 'Accepts an array of functions that return either True or a String with an error message',
+//                     disabled : 'Disable the input',
+//                     readonly : 'Puts input in readonly state',
+//                     selectItems : 'Can be an array of strings for Select component',
+//                     selectValue : 'Input value for Select component',
+//                 },
+//             }
+//         };
+//     },
+//     {
+//         notes: CInputgroupsChangelog
+//     }
+//     )
+//     .add('append minimalist', () => {
+//         return {
+//             components: {
+//                 'c-inputgroups': CInputgroups
+//             },
+//             template: `<c-inputgroups compStyle="minimalAppend" @change="log"/>`,
+//             methods:{log: action ('action')},
+//             propsDescription: {
+//                 CInputgroups: {
+//                     label : 'Sets input label',
+//                     type : 'Sets input type',
+//                     rules : 'Accepts an array of functions that return either True or a String with an error message',
+//                     disabled : 'Disable the input',
+//                     readonly : 'Puts input in readonly state',
+//                     selectItems : 'Can be an array of strings for Select component',
+//                     selectValue : 'Input value for Select component',
+//                 },
+//             }
+//         };
+//     },
+//     {
+//         notes: CInputgroupsChangelog
+//     }
+//     )
+//     .add('prepend classic', () => {
+//         return {
+//             components: {
+//                 'c-inputgroups': CInputgroups
+//             },
+//             template: `<c-inputgroups compStyle="classicPrepend" @change="log"/>`,
+//             methods:{log: action ('action')},
+//             propsDescription: {
+//                 CInputgroups: {
+//                     selectData : 'Accepts an array - which contains values of items, value, color, solo, box, outline, label',
+//                 },
+//             }
+//         };
+//     },
+//     {
+//         notes: CInputgroupsChangelog
+//     }
+//     )
+//     .add('prepend minimalist', () => {
+//         return {
+//             components: {
+//                 'c-inputgroups': CInputgroups
+//             },
+//             template: `<c-inputgroups compStyle="minimalPrepend" @change="log"/>`,
+//             methods:{log: action ('action')},
+//             propsDescription: {
+//                 CInputgroups: {
+//                     selectData : 'Accepts an array - which contains values of items, value, color, solo, box, outline, label',
+//                 },
+//             }
+//         };
+//     },
+//     {
+//         notes: CInputgroupsChangelog
+//     }
+// )
+
 // c-modal
 storiesOf('Library | UI KIT (vuetify custom)/ c-modal', module)
     .addDecorator(appDecorator) 
@@ -234,7 +389,7 @@ storiesOf('Library | UI KIT (vuetify custom)/ c-modal', module)
             },
             docsInPanel: false,
             source: false,
-            // wrapperComponent: VueInfoWrapper,
+            wrapperComponent: VueInfoWrapper,
         },
     })  
     .add('Classic', () => {
@@ -275,7 +430,7 @@ storiesOf('Library | UI KIT (vuetify custom)/ c-radio-button', module)
             },
             docsInPanel: false,
             source: false,
-            // wrapperComponent: VueInfoWrapper,
+            wrapperComponent: VueInfoWrapper,
         },
     })  
     .add('Default', () => {
@@ -283,7 +438,7 @@ storiesOf('Library | UI KIT (vuetify custom)/ c-radio-button', module)
             components: {
                 'c-radio-button': CRadioButton
             },
-            template: `<c-radio-button :radioOptions="{'Radio 1':'one'}"/>`,
+            template: `<c-radio-button />`,
             propsDescription: {
                 CRadioButton: {
                     disable : 'Disable the input',
@@ -315,7 +470,7 @@ storiesOf('Library | UI KIT (vuetify custom)/ c-status-pill', module)
             },
             docsInPanel: false,
             source: false,
-            // wrapperComponent: VueInfoWrapper,
+            wrapperComponent: VueInfoWrapper,
         },
     })  
     .add('Classic', () => {
@@ -362,7 +517,7 @@ storiesOf('Library | UI KIT (vuetify custom)/ c-tab', module)
             },
             docsInPanel: false,
             source: false,
-            // wrapperComponent: VueInfoWrapper,
+            wrapperComponent: VueInfoWrapper,
         },
     })  
     .add('Classic', () => {
@@ -401,7 +556,7 @@ storiesOf('Library | UI KIT (vuetify custom)/ c-textarea', module)
             },
             docsInPanel: false,
             source: false,
-            // wrapperComponent: VueInfoWrapper,
+            wrapperComponent: VueInfoWrapper,
         },
     })  
     .add('Classic', () => {
@@ -472,7 +627,7 @@ storiesOf('Library | UI KIT (vuetify custom)/ c-textfield', module)
             },
             docsInPanel: false,
             source: false,
-            // wrapperComponent: VueInfoWrapper,
+            wrapperComponent: VueInfoWrapper,
         },
     })  
     .add('Classic', () => {
@@ -545,7 +700,7 @@ storiesOf('Library | UI KIT (vuetify custom) / c-toggle', module)
             },
             docsInPanel: false,
             source: false,
-            // wrapperComponent: VueInfoWrapper,
+            wrapperComponent: VueInfoWrapper,
         },
     })  
     .add('Default', () => {
