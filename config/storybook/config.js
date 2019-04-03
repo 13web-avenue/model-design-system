@@ -6,11 +6,6 @@ import { configure, addDecorator, addParameters } from '@storybook/vue'
 
 // ------------------------------------------------------------------
 
-// import '../../plugins/vuetify';
-
-
-// ------------------------------------------------------------------
-
 import { withInfo } from 'storybook-addon-vue-info'
 addDecorator(withInfo)
 
@@ -20,17 +15,19 @@ import { withA11y } from '@storybook/addon-a11y'
 addDecorator(withA11y)
 
 addParameters({
+
   a11y: {
     // ... axe options
     element: '#root', // optional selector which element to inspect
     config: {}, // axe-core configurationOptions (https://github.com/dequelabs/axe-core/blob/develop/doc/API.md#parameters-1)
     options: {} // axe-core optionsParameter (https://github.com/dequelabs/axe-core/blob/develop/doc/API.md#options-parameter)
   },
+  
 });
 
 // ------------------------------------------------------------------
 
-addParameters({ viewport: 'responsive' });
+// addParameters({ viewport: 'responsive' });
 
 // ------------------------------------------------------------------
 
@@ -70,7 +67,6 @@ addParameters({
      * name to display in the top left corner
      * @type {String}
      */
-    brandTitle: 'UNIFY DESIGN SYSTEM',
     /**
      * URL for name in top left corner to link to
      * @type {String}

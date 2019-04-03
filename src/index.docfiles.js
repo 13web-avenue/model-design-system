@@ -10,6 +10,7 @@ import { storiesOf } from '@storybook/vue';
  */
 
 import welcome from '../views/introduction/welcome.vue';
+import BaseStaticLayout from '../views/layouts/base-layout-static.vue';
 
 /**
  *  Markdown
@@ -23,7 +24,7 @@ storiesOf('About UNIFY | Introduction', module)
             isToolshown: false
         },
         info: {
-            // base-static-layout: BaseStaticLayout,
+            wrapperComponent: BaseStaticLayout,
         },
     })
     .add('The UNIFY Project', () => ({
@@ -47,7 +48,7 @@ storiesOf('About UNIFY  | Introduction / Component Driven Development', module)
             isToolshown: false
         },
         info: {
-            // base-static-layout: BaseStaticLayout,
+             wrapperComponent: BaseStaticLayout,
         },
     })
     .add('What is Component Driven Development(CDD)?', () => ({
@@ -67,6 +68,7 @@ storiesOf('About UNIFY  | Introduction / Component Driven Development', module)
 //             isToolshown: false
 //         },
 //         info: {
+//              wrapperComponent: BaseStaticLayout,
 //             // base-static-layout: BaseStaticLayout,
 //         },
 //     })
@@ -91,7 +93,7 @@ storiesOf('About Unify | Timelines / Releases', module)
             isToolshown: false
         },
         info: {
-            // base-static-layout: BaseStaticLayout,
+            wrapperComponent: BaseStaticLayout,
         },
     })
     .add('V1.0.0', () => ({
@@ -107,7 +109,7 @@ storiesOf('About Unify | Design System', module)
             isToolshown: false
         },
         info: {
-            // base-static-layout: BaseStaticLayout,
+            wrapperComponent: BaseStaticLayout,
         },
     })   
     .add('What is a Design System?', () => ({
@@ -126,7 +128,7 @@ storiesOf('User Manual | UDS platform', module)
             isToolshown: false
         },
         info: {
-            // base-static-layout: BaseStaticLayout,
+            wrapperComponent: BaseStaticLayout,
         },
     })  
     .add('Usage', () => ({
@@ -143,7 +145,7 @@ storiesOf('User Manual | UDS platform', module)
             content: CodeOfConduct,
         },        
         info: {
-            // base-static-layout: BaseStaticLayout,
+            wrapperComponent: BaseStaticLayout,
         },
     }) 
     .add('Code of conduct', () => ({
@@ -158,7 +160,7 @@ storiesOf('User Manual | Collaboration', module)
             isToolshown: false
         },
         info: {
-            // base-static-layout: BaseStaticLayout,
+            wrapperComponent: BaseStaticLayout,
         },
     })
     .add('Support & Feedbacks', () => ({
@@ -178,7 +180,7 @@ storiesOf('User Manual | Contributing / Technical Workflow', module)
             isToolshown: false
         },
         info: {
-            // base-static-layout: BaseStaticLayout,
+            wrapperComponent: BaseStaticLayout,
         },
     })  
     .add('Working with pull requests', () => ({
@@ -194,7 +196,7 @@ storiesOf('User Manual | Contributing / Tecshare Development', module)
             isToolshown: false
         },
         info: {
-            // base-static-layout: BaseStaticLayout,
+            wrapperComponent: BaseStaticLayout,
         },
     })
     .add('DocFile', () => ({
@@ -210,7 +212,7 @@ storiesOf('User Manual | Development Workflow', module)
             isToolshown: false
         },
         info: {
-            // base-static-layout: BaseStaticLayout,
+            wrapperComponent: BaseStaticLayout,
         },
     })
     .add('Using the workflow', () => ({
@@ -226,7 +228,7 @@ storiesOf('User Manual | Development Workflow / Solution Architecture ', module)
             isToolshown: false
         },
         info: {
-            // base-static-layout: BaseStaticLayout,
+            wrapperComponent: BaseStaticLayout,
         },
     })
     .add('UDS Component Integration', () => ({
@@ -242,7 +244,7 @@ storiesOf('Author\'s note | Contributors', module)
             isToolshown: false
         },
         info: {
-            // base-static-layout: BaseStaticLayout,
+            wrapperComponent: BaseStaticLayout,
         },
     })
     .add('DocFile', () => ({

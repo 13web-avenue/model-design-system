@@ -1,5 +1,6 @@
 /* eslint-disable import/no-extraneous-dependencies */
 import { storiesOf } from '@storybook/vue'
+import 'flag-icon-css/css/flag-icon.min.css';
 
 /**
  * 
@@ -12,11 +13,10 @@ import { storiesOf } from '@storybook/vue'
  *  
  */
 
+import BFlag from '../core/ui-base-components/b-flag/packages/dist/b-flag.vue'
 
-import BButton from '../core/ui-base-components/b-button/packages/dist/b-button.vue'
-
-
-storiesOf('Base Components | Button', module)
+//b-flag
+storiesOf('Base Components | Flag', module)
     .addParameters({
         readme: {
             codeTheme: 'monokai-sublime',
@@ -27,15 +27,16 @@ storiesOf('Base Components | Button', module)
         },
         info: {
             components: {
-                'b-button': BButton
+                'b-flag': BFlag
             },
             docsInPanel: false,
             source: false,
         },
     })
-    .add('b-button', () => ({
-        components: { BButton },
-        template: `<b-button />`,
+    .add('b-flag', () => ({
+        components: { BFlag },
+        template: `<b-flag />`,
     }))
+
 
 /* eslint-enable react/react-in-jsx-scope */
