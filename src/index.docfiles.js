@@ -21,7 +21,6 @@ storiesOf('About UNIFY | Introduction', module)
     .addParameters({
         options: {
             showAddonPanel: false,
-            isToolshown: false
         },
         info: {
             wrapperComponent: BaseStaticLayout,
@@ -45,7 +44,6 @@ storiesOf('About UNIFY  | Introduction / Component Driven Development', module)
     .addParameters({
         options: {
             showAddonPanel: false,
-            isToolshown: false
         },
         info: {
              wrapperComponent: BaseStaticLayout,
@@ -90,7 +88,6 @@ storiesOf('About Unify | Timelines / Releases', module)
     .addParameters({
         options: {
             showAddonPanel: false,
-            isToolshown: false
         },
         info: {
             wrapperComponent: BaseStaticLayout,
@@ -106,7 +103,6 @@ storiesOf('About Unify | Design System', module)
     .addParameters({
         options: {
             showAddonPanel: false,
-            isToolshown: false
         },
         info: {
             wrapperComponent: BaseStaticLayout,
@@ -125,7 +121,6 @@ storiesOf('User Manual | UDS platform', module)
     .addParameters({
         options: {
             showAddonPanel: false,
-            isToolshown: false
         },
         info: {
             wrapperComponent: BaseStaticLayout,
@@ -138,7 +133,6 @@ storiesOf('User Manual | UDS platform', module)
     .addParameters({
         options: {
             showAddonPanel: false,
-            isToolshown: false
         },
         readme: {
             content: CodeOfConduct,
@@ -161,7 +155,6 @@ storiesOf('User Manual | Collaboration', module)
     .addParameters({
         options: {
             showAddonPanel: false,
-            isToolshown: false
         },
         info: {
             wrapperComponent: BaseStaticLayout,
@@ -181,7 +174,6 @@ storiesOf('User Manual | Contributing / Technical Workflow', module)
     .addParameters({
         options: {
             showAddonPanel: false,
-            isToolshown: false
         },
         info: {
             wrapperComponent: BaseStaticLayout,
@@ -197,7 +189,6 @@ storiesOf('User Manual | Contributing / Tecshare Development', module)
     .addParameters({
         options: {
             showAddonPanel: false,
-            isToolshown: false
         },
         info: {
             wrapperComponent: BaseStaticLayout,
@@ -213,7 +204,6 @@ storiesOf('User Manual | Development Workflow', module)
     .addParameters({
         options: { 
             showAddonPanel: false,
-            isToolshown: false
         },
         info: {
             wrapperComponent: BaseStaticLayout,
@@ -229,7 +219,6 @@ storiesOf('User Manual | Development Workflow / Solution Architecture ', module)
     .addParameters({
         options: {
             showAddonPanel: false,
-            isToolshown: false
         },
         info: {
             wrapperComponent: BaseStaticLayout,
@@ -245,7 +234,6 @@ storiesOf('Author\'s note | Contributors', module)
     .addParameters({
         options: {
             showAddonPanel: false,
-            isToolshown: false
         },
         info: {
             wrapperComponent: BaseStaticLayout,
