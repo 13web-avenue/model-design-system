@@ -1,5 +1,5 @@
 <template lang="pug">
-div
+base-layout-static.layout-static
   h2.title
     strong HTML element type : inline
   ul
@@ -80,41 +80,26 @@ div
 
 <script>
 
+import BaseLayoutStatic from '../../layouts/base-layout-static.vue'
+
 export default {
-  name: 'typography'
+  name: 'typography',
+  components: {
+    'base-layout-static': BaseLayoutStatic
+  }
 }
 
 </script>
 
 
 <style lang="scss" scoped>
-*{
+.layout-static {
   font-family: 'Montserrat', sans-serif;
+
+  width: 80vW;
+  margin: 0 auto;
 }
-.layout-uds-usg {
-  border-collapse: collapse;
 
-  text-align: left;
-  margin-top: 2rem;
-  width: 100%;
-
-  th{
-    background: #ccc;
-
-    padding: 1rem 5rem 1rem 1rem;
-  }
-
-  td{
-    padding: 1rem 3rem 1rem 1rem;
-    border-bottom: 1px dashed #ccc;
-    border-right: 1px dashed #ccc;
-
-    &:last-child {
-      border-right: 0
-    }
-  }
-
-}
 /* global heading sizing */
 h1 {
   font-size: 6rem;
