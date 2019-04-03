@@ -38,14 +38,15 @@ addDecorator(addReadme);
 
 // Storybook & unify design system theming
 // plug in the defaults or export a new theme as below
-import { themes } from '@storybook/theming'
+// import { themes } from '@storybook/theming'
+// console.log(themes)
 
 // Custom theme 
 // default themes == themes.dark || themes.normal 
 // import { themes } from '@storybook/theming'
 import UnifyTheme from './unify.theme.js';
 
-console.log(themes)
+
 /** 
  * Importing the custom elements/components for UDS reuse
 */
@@ -61,27 +62,97 @@ console.log(themes)
 
 
 // Option defaults:
+// addParameters({
+//   options: {
+//     /**
+//      * name to display in the top left corner
+//      * @type {String}
+//      */
+//     /**
+//      * URL for name in top left corner to link to
+//      * @type {String}
+//      */
+//     brandUrl: 'https://arp.amaris.com/unify-design-system',
+//     /**
+//      * show story component as full screen
+//      * @type {Boolean}
+//      */
+//     isFullscreen: false,
+//     /**
+//      * display panel that shows a list of stories
+//      * @type {Boolean}
+//      */
+//     showNav: true,
+//     /**
+//      * display panel that shows addon configurations
+//      * @type {Boolean}
+//      */
+//     showPanel: true,
+//     /**
+//      * display floating search box to search through stories
+//      * @type {Boolean}
+//      */
+//     showSearchBox: false,
+//     /**
+//      * show addon panel as a vertical panel on the right
+//      * @type {Boolean}
+//      */
+//     panelPosition : 'bottom',
+//     /**
+//      * sorts stories
+//      * @type {Boolean}
+//      */
+//     sortStoriesByKind: true,
+//     /**
+//      * regex for finding the hierarchy separator
+//      * @example:
+//      *   null - turn off hierarchy
+//      *   /\// - split by `/`
+//      *   /\./ - split by `.`
+//      *   /\/|\./ - split by `/` or `.`
+//      * @type {Regex}
+//      */
+//     hierarchySeparator: /\/|\./,
+//     /**
+//      * regex for finding the hierarchy root separator
+//      * @example:
+//      *   null - turn off multiple hierarchy roots
+//      *   /\|/ - split by `|`
+//      * @type {Regex}
+//      */
+//     hierarchyRootSeparator: /\|/,
+//     /**
+//      * sidebar tree animations
+//      * @type {Boolean}
+//      */
+//     sidebarAnimations: true,
+//     /**
+//      * id to select an addon panel
+//      * @type {String}
+//      */
+//     selectedPanel: undefined, // The order of addons in the "Addon panel" is the same as you import them in 'addons.js'. The first panel will be opened by default as you run Storybook
+//     /**
+//      * enable/disable shortcuts
+//      * @type {Boolean}
+//      */
+//     enableShortcuts: false, // true by default
+//     /**
+//      * show/hide tool bar
+//      * @type {Boolean}
+//      */
+//     isToolshown: true, // true by default
+//   /**
+//    * default themes
+//    * Custom themes will be applied form UnifyThemes
+//    */
+//     theme: UnifyTheme,
+//   },
+// });
+
+
+// Option defaults:
 addParameters({
   options: {
-    /**
-     * name to display in the top left corner
-     * @type {String}
-     */
-    /**
-     * URL for name in top left corner to link to
-     * @type {String}
-     */
-    brandUrl: 'https://arp.amaris.com/unify-design-system',
-    /**
-     * show story component as full screen
-     * @type {Boolean}
-     */
-    isFullscreen: false,
-    /**
-     * display panel that shows a list of stories
-     * @type {Boolean}
-     */
-    showNav: true,
     /**
      * display panel that shows addon configurations
      * @type {Boolean}
@@ -97,56 +168,18 @@ addParameters({
      * @type {Boolean}
      */
     panelPosition : 'bottom',
-    /**
-     * sorts stories
-     * @type {Boolean}
-     */
-    sortStoriesByKind: true,
-    /**
-     * regex for finding the hierarchy separator
-     * @example:
-     *   null - turn off hierarchy
-     *   /\// - split by `/`
-     *   /\./ - split by `.`
-     *   /\/|\./ - split by `/` or `.`
-     * @type {Regex}
-     */
-    hierarchySeparator: /\/|\./,
-    /**
-     * regex for finding the hierarchy root separator
-     * @example:
-     *   null - turn off multiple hierarchy roots
-     *   /\|/ - split by `|`
-     * @type {Regex}
-     */
-    hierarchyRootSeparator: /\|/,
-    /**
-     * sidebar tree animations
-     * @type {Boolean}
-     */
-    sidebarAnimations: true,
-    /**
-     * id to select an addon panel
-     * @type {String}
-     */
-    selectedPanel: undefined, // The order of addons in the "Addon panel" is the same as you import them in 'addons.js'. The first panel will be opened by default as you run Storybook
-    /**
-     * enable/disable shortcuts
-     * @type {Boolean}
-     */
-    enableShortcuts: false, // true by default
-    /**
-     * show/hide tool bar
-     * @type {Boolean}
-     */
-    isToolshown: true, // true by default
+  /**
+   * show/hide tool bar
+   * @type {Boolean}
+   */
+  isToolshown: true, // true by default
   /**
    * default themes
    * Custom themes will be applied form UnifyThemes
    */
     theme: UnifyTheme,
   },
-});
+})
 
 
 const req = require.context('../../src/', true, /.js$/)
