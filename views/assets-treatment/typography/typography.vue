@@ -121,12 +121,10 @@ export default {
 
 
 <style lang="scss" scoped>
-*{
-  font-family: 'Montserrat', sans-serif;
-}
 .layout-uds-usg {
   border-collapse: collapse;
 
+  font-family: 'Montserrat', sans-serif;
   text-align: left;
   margin-top: 2rem;
   width: 100%;

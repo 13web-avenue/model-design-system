@@ -1,29 +1,18 @@
 <template lang="pug">
 
-
 div(class="layout-default")
     header(class="heading")
         h1.header-title
         .content-area
             slot
-    footer(class="heading footer-note")
+    footer(class="footer-note")
         h3.footnote
 
 </template>
 
 <script>
 export default {
-  name: 'BaseStaticLayout',
-  props: {
-    header: {
-      default: 'DocFile Name',
-      type: String
-    },
-    footer: {
-      default: '',
-      type: String
-    }
-  }
+  name: 'BaseStaticLayout'
 }
 </script>
 
