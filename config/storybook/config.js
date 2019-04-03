@@ -38,13 +38,13 @@ addDecorator(addReadme);
 
 // Storybook & unify design system theming
 // plug in the defaults or export a new theme as below
-import { themes } from '@storybook/theming'
+// import { themes } from '@storybook/theming'
+// console.log(themes)
 
 // Custom theme 
 // default themes == themes.dark || themes.normal 
 // import { themes } from '@storybook/theming'
-// import UnifyTheme from './unify.theme.js';
-// console.log(themes)
+import UnifyTheme from './unify.theme.js';
 
 
 /** 
@@ -148,6 +148,38 @@ import { themes } from '@storybook/theming'
 //     theme: UnifyTheme,
 //   },
 // });
+
+
+// Option defaults:
+addParameters({
+  options: {
+    /**
+     * display panel that shows addon configurations
+     * @type {Boolean}
+     */
+    showPanel: true,
+    /**
+     * display floating search box to search through stories
+     * @type {Boolean}
+     */
+    showSearchBox: false,
+    /**
+     * show addon panel as a vertical panel on the right
+     * @type {Boolean}
+     */
+    panelPosition : 'bottom',
+  /**
+   * show/hide tool bar
+   * @type {Boolean}
+   */
+  isToolshown: true, // true by default
+  /**
+   * default themes
+   * Custom themes will be applied form UnifyThemes
+   */
+    theme: UnifyTheme,
+  },
+})
 
 
 const req = require.context('../../src/', true, /.js$/)

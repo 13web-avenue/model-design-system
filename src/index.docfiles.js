@@ -141,15 +141,19 @@ storiesOf('User Manual | UDS platform', module)
             isToolshown: false
         },
         readme: {
-            codeTheme: 'monokai-sublime',
             content: CodeOfConduct,
-        },        
-        info: {
-            wrapperComponent: BaseStaticLayout,
-        },
-    }) 
+            theme: {
+                textColor: '#212121'
+            },
+        }
+    })          
     .add('Code of conduct', () => ({
-        template: `<CodeOfConduct />`,
+        components: {
+            'base-layout-static': BaseStaticLayout
+        },
+        template: `
+            <base-layout-static>
+            </base-layout-static>`,
     }))
 
 
