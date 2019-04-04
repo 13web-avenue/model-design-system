@@ -20,6 +20,7 @@ import icons from '../views/assets-treatment/icons/icons.vue'
 
 import assets from '../views/assets-treatment/images/images.vue'
 
+import BaseStaticLayout from '../views/layouts/base-layout-static.vue';
 
 storiesOf('Asset Treatment | Images', module)
     .addParameters({
@@ -62,13 +63,21 @@ storiesOf('Asset Treatment | Images', module)
 
 storiesOf('Asset Treatment | Typography', module)
     .addParameters({
-        options: { showAddonPanel: false },
+        options: {
+            showAddonPanel: false,
+            isToolshown: false
+        }
     })  
     .add('Base Font', () => ({
         components: { 
+            'base-layout-static': BaseStaticLayout,
             'typo': Typography,
         },
-        template: `<typo />`,
+        template: `
+            <base-layout-static>
+                <typo />
+            </base-layout-static>
+            `,
     }))
 
 /* eslint-enable react/react-in-jsx-scope */

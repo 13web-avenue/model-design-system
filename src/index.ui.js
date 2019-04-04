@@ -119,12 +119,10 @@ const appDecorator = () => {
         `,
     };
 };
-
  
 storiesOf('Library | UI KIT vuetify ready / v-alert', module)
     .addDecorator(appDecorator) 
     .addParameters({
-
         readme: {
             codeTheme: 'monokai-sublime',
             sidebar: VAlertSetup,

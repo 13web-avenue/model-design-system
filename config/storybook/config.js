@@ -168,16 +168,16 @@ addParameters({
      * @type {Boolean}
      */
     panelPosition : 'bottom',
-  /**
-   * show/hide tool bar
-   * @type {Boolean}
-   */
-  isToolshown: true, // true by default
-  /**
-   * default themes
-   * Custom themes will be applied form UnifyThemes
-   */
-    theme: UnifyTheme,
+    /**
+     * show/hide tool bar
+     * @type {Boolean}
+     */
+    isToolshown: true, // true by default
+    /**
+     * default themes
+     * Custom themes will be applied form UnifyThemes
+     */
+      theme: UnifyTheme,
   },
 })
 
