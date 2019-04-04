@@ -1,5 +1,6 @@
 /* eslint-disable import/no-extraneous-dependencies */
 import { storiesOf } from '@storybook/vue'
+import 'flag-icon-css/css/flag-icon.min.css';
 
 /**
  * 
@@ -11,6 +12,8 @@ import { storiesOf } from '@storybook/vue'
  *  Date: 26/03/2019
  *  
  */
+
+ 
 
 import BFlag from '../core/ui-base-components/b-flag/packages/dist/b-flag.vue'
 

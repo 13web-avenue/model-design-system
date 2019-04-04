@@ -53,6 +53,14 @@ import CRadioButton from '../core/ui-kit-custom-components/c-radio-button/packag
 import CRadioButtonChangelog from '../core/ui-kit-custom-components/c-radio-button/c-radio-button-changelog.md'
 import CRadioButtonSetup from '../core/ui-kit-custom-components/c-radio-button/c-radio-button-setup.md'
 
+// import CInputGroups from '../core/ui-kit-custom-components/c-inputgroups/packages/dist/c-inputgroups.vue'
+// import CInputGroupsChangelog from '../core/ui-kit-custom-components/c-inputgroups/c-inputgroups-changelog.md'
+// import CInputGroupsSetup from '../core/ui-kit-custom-components/c-inputgroups/c-inputgroups-setup.md'
+
+import CButton from '../core/ui-kit-custom-components/c-button/packages/dist/c-button.vue'
+import CButtonChangelog from '../core/ui-kit-custom-components/c-button/c-button-changelog.md'
+import CButtonSetup from '../core/ui-kit-custom-components/c-button/c-button-setup.md'
+
 // Add custom wrappers here 
 import VueInfoWrapper from '../plugins/vue-info-wrapper/vue-info-wrapper.vue'
 
@@ -93,274 +101,274 @@ const appDecorator = () => {
 };
 
 //c-button
-// storiesOf('Library | UI KIT (vuetify custom) / c-button', module)
-//     .addDecorator(appDecorator) 
-//     .addParameters({
-//         readme: {
-//             codeTheme: 'monokai-sublime',
-//             sidebar: CButtonSetup,
-//             theme: {
-//                 textColor: '#bb255a'
-//             },
-//         },
-//         info: {
-//             components: {
-//                 'c-button': CButton
-//             },
-//             docsInPanel: false,
-//             source: false,
-//             wrapperComponent: VueInfoWrapper
-//         },
-//     })  
-//     .add('Icon', () => {
-//         return {
-//             components: {
-//                 'c-button': CButton
-//             },
-//             template: `<div>
-//                         <div>
-//                             <c-button comp="iconButton" :iconButtonSettings="{color:'#2196F3',state:false, iconName:'search'}" />
-//                             <c-button comp="iconButton" :iconButtonSettings="{color:'#4CAF50',state:false, iconName:'check'}" />
-//                             <c-button comp="iconButton" :iconButtonSettings="{color:'#FF9800',state:false, iconName:'priority_high'}" />
-//                             <c-button comp="iconButton" :iconButtonSettings="{color:'#F44336',state:false, iconName:'delete'}" />
-//                             <c-button comp="iconButton" :iconButtonSettings="{color:'#757575',state:false, iconName:'close'}" />
-//                         </div>
-//                         <div>
-//                             <c-button comp="iconButton" :iconButtonSettings="{state:true, iconName:'search'}" />
-//                             <c-button comp="iconButton" :iconButtonSettings="{state:true, iconName:'check'}" />
-//                             <c-button comp="iconButton" :iconButtonSettings="{state:true, iconName:'priority_high'}" />
-//                             <c-button comp="iconButton" :iconButtonSettings="{state:true, iconName:'delete'}" />
-//                             <c-button comp="iconButton" :iconButtonSettings="{state:true, iconName:'close'}" />
-//                         </div>
-//                     </div>`,
-//             propsDescription: {
-//                 CButton: {
-//                     iState: 'Button state for disabled',
-//                     iconColor: 'color of btn to be shown'
-//                 },
-//             }
-//         };
-//     },
-//         {
-//             notes: CButtonChangelog
-//         }
-//     )
-//     .add('Loading', () => {
-//         return {
-//             components: {
-//                 'c-button': CButton
-//             },
-//             template: `<div>
-//                         <div>
-//                             <c-button comp="loadingButton" :loadingButtonSettings="{color:'#4CAF50',bState:false,btnName:'Send'}" />
-//                             <c-button comp="loadingButton" :loadingButtonSettings="{color:'#2196F3',bState:false,btnName:'Send'}" />
-//                             <c-button comp="loadingButton" :loadingButtonSettings="{color:'#F44336',bState:false,btnName:'Destroy'}" />
-//                         </div>
-//                         <div>
-//                             <c-button comp="loadingButton" :loadingButtonSettings="{color:'#F44336',bState:false,btnName:'Send',clas:'noshadow'}" />
-//                             <c-button comp="loadingButton" :loadingButtonSettings="{color:'#2196F3',bState:false,btnName:'Send',clas:'noshadow'}" />
-//                             <c-button comp="loadingButton" :loadingButtonSettings="{color:'#F44336',bState:false,btnName:'Destroy',clas:'noshadow'}" />
-//                         </div>
-//                         <div>
-//                             <c-button comp="loadingButton" :loadingButtonSettings="{bState:true,btnName:'Send'}" />
-//                             <c-button comp="loadingButton" :loadingButtonSettings="{bState:true,btnName:'Send'}" />
-//                             <c-button comp="loadingButton" :loadingButtonSettings="{bState:true,btnName:'Destroy'}" />
-//                         </div>
-//                     </div>`,
-//             propsDescription: {
-//                 CButton: {
-//                     bState: 'Button state for disabled',
-//                     btnColor: 'color of btn to be shown',
-//                     noshadow : 'Hide shadow'
-//                 },
-//             }
-//         };
-//     },
-//         {
-//             notes: CButtonChangelog
-//         }
-//     )
-//     .add('Solid', () => {
-//         return {
-//             components: {
-//                 'c-button': CButton
-//             },
-//             template: `<div>
-//                         <div>
-//                             <c-button  comp="solidButton" :solidButtonSettings="{color:'#2196F3',bState:false,btnName:'Primary'}" />
-//                             <c-button  comp="solidButton" :solidButtonSettings="{color:'#4CAF50',bState:false,btnName:'Success'}" />
-//                             <c-button  comp="solidButton" :solidButtonSettings="{color:'#FF9800',bState:false,btnName:'Warning'}" />
-//                             <c-button  comp="solidButton" :solidButtonSettings="{color:'#F44336',bState:false,btnName:'Danger'}" />
-//                             <c-button  comp="solidButton" :solidButtonSettings="{color:'#757575',bState:false,btnName:'Secondary'}" />                 
-//                         </div>
-//                         <div>
-//                             <c-button  comp="solidButton" :solidButtonSettings="{color:'#2196F3',bState:false,btnName:'Primary',clas:'noshadow'}" />
-//                             <c-button  comp="solidButton" :solidButtonSettings="{color:'#4CAF50',bState:false,btnName:'Success',clas:'noshadow'}" />
-//                             <c-button  comp="solidButton" :solidButtonSettings="{color:'#FF9800',bState:false,btnName:'Warning',clas:'noshadow'}" />
-//                             <c-button  comp="solidButton" :solidButtonSettings="{color:'#F44336',bState:false,btnName:'Danger',clas:'noshadow'}" />
-//                             <c-button  comp="solidButton" :solidButtonSettings="{color:'#757575',bState:false,btnName:'Secondary',clas:'noshadow'}" />                 
-//                         </div>
-//                         <div>
-//                             <c-button  comp="solidButton" :solidButtonSettings="{bState:true,btnName:'Primary'}" />
-//                             <c-button  comp="solidButton" :solidButtonSettings="{bState:true,btnName:'Success'}" />
-//                             <c-button  comp="solidButton" :solidButtonSettings="{bState:true,btnName:'Warning'}" />
-//                             <c-button  comp="solidButton" :solidButtonSettings="{bState:true,btnName:'Danger'}" />
-//                             <c-button  comp="solidButton" :solidButtonSettings="{bState:true,btnName:'Secondary'}" />                 
-//                         </div> 
-//                     </div>`,
-//             propsDescription: {
-//                 CButton: {
-//                     bState: 'Button state for disabled',
-//                     btnColor: 'color of btn to be shown',
-//                     noshadow : 'Hide shadow'
-//                 },
-//             }
-//         };
-//     },
-//         {
-//             notes: CButtonChangelog
-//         }
-//     )
-//     .add('Text', () => {
-//         return {
-//             components: {
-//                 'c-button': CButton
-//             },
-//             template: `<div>
-//                         <div>
-//                             <c-button comp="textButton" :textButtonSettings="{color:'#2196F3',bState:false, btnName:'Primary'}" />
-//                             <c-button comp="textButton" :textButtonSettings="{color:'#4CAF50',bState:false, btnName:'Success'}" />
-//                             <c-button comp="textButton" :textButtonSettings="{color:'#FF9800',bState:false, btnName:'Warning'}" />
-//                             <c-button comp="textButton" :textButtonSettings="{color:'#F44336',bState:false, btnName:'Danger'}" />
-//                             <c-button comp="textButton" :textButtonSettings="{color:'#757575',bState:false, btnName:'Secondary'}" />                 
-//                         </div>
-//                         <div>
-//                             <c-button comp="textButton" :textButtonSettings="{bState:true, btnName:'Primary'}" />
-//                             <c-button comp="textButton" :textButtonSettings="{bState:true, btnName:'Success'}" />
-//                             <c-button comp="textButton" :textButtonSettings="{bState:true, btnName:'Warning'}" />
-//                             <c-button comp="textButton" :textButtonSettings="{bState:true, btnName:'Danger'}" />
-//                             <c-button comp="textButton" :textButtonSettings="{bState:true, btnName:'Secondary'}" />                 
-//                         </div>     
-//                     </div>`,
-//             propsDescription: {
-//                 CButton: {
-//                     bState: 'Button state for disabled',
-//                     btnColor: 'color of btn to be shown'
-//                 },
-//             }
-//         };
-//     },
-//         {
-//             notes: CButtonChangelog
-//         }
-//     )
-//     .add('Outlined', () => {
-//         return {
-//             components: {
-//                 'c-button': CButton
-//             },
-//             template: `<div>
-//                         <div>
-//                             <c-button comp="outlined" :outlinedSettings="{color:'#2196F3',bState:false, btnName:'Primary'}" />
-//                             <c-button comp="outlined" :outlinedSettings="{color:'#4CAF50',bState:false, btnName:'Success'}" />
-//                             <c-button comp="outlined" :outlinedSettings="{color:'#FF9800',bState:false, btnName:'Warning'}" />
-//                             <c-button comp="outlined" :outlinedSettings="{color:'#F44336',bState:false, btnName:'Danger'}" />
-//                             <c-button comp="outlined" :outlinedSettings="{color:'#757575',bState:false, btnName:'Secondary'}" />                 
-//                         </div>
-//                         <div>
-//                             <c-button comp="outlined" :outlinedSettings="{bState:true, btnName:'Primary'}" />
-//                             <c-button comp="outlined" :outlinedSettings="{bState:true, btnName:'Success'}" />
-//                             <c-button comp="outlined" :outlinedSettings="{bState:true, btnName:'Warning'}" />
-//                             <c-button comp="outlined" :outlinedSettings="{bState:true, btnName:'Danger'}" />
-//                             <c-button comp="outlined" :outlinedSettings="{bState:true, btnName:'Secondary'}" />                 
-//                         </div>  
-//                     </div>`,
-//             propsDescription: {
-//                 CButton: {
-//                     bState: 'Button state for disabled',
-//                     btnColor: 'color of btn to be shown'
-//                 },
-//             }
-//         };
-//     },
-//         {
-//             notes: CButtonChangelog
-//         }
-//     )
-//     .add('Rounded Outlined', () => {
-//         return {
-//             components: {
-//                 'c-button': CButton
-//             },
-//             template: `<div>
-//                         <div>
-//                             <c-button comp="outlineRounded" :outlineRoundedSettings="{color:'#2196F3',bState:false, iconName:'search'}" />
-//                             <c-button comp="outlineRounded" :outlineRoundedSettings="{color:'#4CAF50',bState:false, iconName:'check'}" />
-//                             <c-button comp="outlineRounded" :outlineRoundedSettings="{color:'#FF9800',bState:false, iconName:'priority_high'}" />
-//                             <c-button comp="outlineRounded" :outlineRoundedSettings="{color:'#F44336',bState:false, iconName:'delete'}" />
-//                             <c-button comp="outlineRounded" :outlineRoundedSettings="{color:'#757575',bState:false, iconName:'close'}" />                 
-//                         </div>
-//                         <div>
-//                             <c-button comp="outlineRounded" :outlineRoundedSettings="{bState:true, iconName:'search'}" />
-//                             <c-button comp="outlineRounded" :outlineRoundedSettings="{bState:true, iconName:'check'}" />
-//                             <c-button comp="outlineRounded" :outlineRoundedSettings="{bState:true, iconName:'priority_high'}" />
-//                             <c-button comp="outlineRounded" :outlineRoundedSettings="{bState:true, iconName:'delete'}" />
-//                             <c-button comp="outlineRounded" :outlineRoundedSettings="{bState:true, iconName:'close'}" />                 
-//                         </div>   
-//                     </div>`,
-//             propsDescription: {
-//                 CButton: {
-//                     bState: 'Button state for disabled',
-//                     btnColor: 'color of btn to be shown'
-//                 },
-//             }
-//         };
-//     },
-//         {
-//             notes: CButtonChangelog
-//         }
-//     )
-//     .add('Rounded Solid', () => {
-//         return {
-//             components: {
-//                 'c-button': CButton
-//             },
-//             template: `<div>
-//                         <div>
-//                             <c-button comp="solidRounded" :solidRoundedSettings="{color:'#2196F3',bState:false,iconName:'search'}" />
-//                             <c-button comp="solidRounded" :solidRoundedSettings="{color:'#4CAF50',bState:false,iconName:'check'}" />
-//                             <c-button comp="solidRounded" :solidRoundedSettings="{color:'#FF9800',bState:false,iconName:'priority_high'}" />
-//                             <c-button comp="solidRounded" :solidRoundedSettings="{color:'#F44336',bState:false,iconName:'delete'}" />
-//                             <c-button comp="solidRounded" :solidRoundedSettings="{color:'#757575',bState:false,iconName:'close'}" />  
-//                         </div>
-//                         <div>
-//                             <c-button comp="solidRounded" :solidRoundedSettings="{color:'#2196F3',bState:false, iconName:'search', clas:'noshadow'}" />
-//                             <c-button comp="solidRounded" :solidRoundedSettings="{color:'#4CAF50',bState:false, iconName:'check', clas:'noshadow'}" />
-//                             <c-button comp="solidRounded" :solidRoundedSettings="{color:'#FF9800',bState:false, iconName:'priority_high', clas:'noshadow'}" />
-//                             <c-button comp="solidRounded" :solidRoundedSettings="{color:'#F44336',bState:false, iconName:'delete', clas:'noshadow'}" />
-//                             <c-button comp="solidRounded" :solidRoundedSettings="{color:'#757575',bState:false, iconName:'close', clas:'noshadow'}" />  
-//                         </div>
-//                         <div>
-//                             <c-button comp="solidRounded" :solidRoundedSettings="{bState:true,iconName:'search'}" />
-//                             <c-button comp="solidRounded" :solidRoundedSettings="{bState:true,iconName:'check'}" />
-//                             <c-button comp="solidRounded" :solidRoundedSettings="{bState:true,iconName:'priority_high'}" />
-//                             <c-button comp="solidRounded" :solidRoundedSettings="{bState:true,iconName:'delete'}" />
-//                             <c-button comp="solidRounded" :solidRoundedSettings="{bState:true,iconName:'close'}" />                 
-//                         </div>    
-//                     </div>`,
-//             propsDescription: {
-//                 CButton: {
-//                     iState: 'Button state for disabled',
-//                     iconColor: 'color of btn to be shown',
-//                     noshadow : 'Hide shadow'
-//                 },
-//             }
-//         };
-//     },
-//         {
-//             notes: CButtonChangelog
-//         }
-//     )
+storiesOf('Library | UI KIT (vuetify custom) / c-button', module)
+    .addDecorator(appDecorator) 
+    .addParameters({
+        readme: {
+            codeTheme: 'monokai-sublime',
+            sidebar: CButtonSetup,
+            theme: {
+                textColor: '#bb255a'
+            },
+        },
+        info: {
+            components: {
+                'c-button': CButton
+            },
+            docsInPanel: false,
+            source: false,
+            wrapperComponent: VueInfoWrapper
+        },
+    })  
+    .add('Icon', () => {
+        return {
+            components: {
+                'c-button': CButton
+            },
+            template: `<div>
+                        <div>
+                            <c-button comp="iconButton" :iconButtonSettings="{color:'#2196F3',state:false, iconName:'search'}" />
+                            <c-button comp="iconButton" :iconButtonSettings="{color:'#4CAF50',state:false, iconName:'check'}" />
+                            <c-button comp="iconButton" :iconButtonSettings="{color:'#FF9800',state:false, iconName:'priority_high'}" />
+                            <c-button comp="iconButton" :iconButtonSettings="{color:'#F44336',state:false, iconName:'delete'}" />
+                            <c-button comp="iconButton" :iconButtonSettings="{color:'#757575',state:false, iconName:'close'}" />
+                        </div>
+                        <div>
+                            <c-button comp="iconButton" :iconButtonSettings="{state:true, iconName:'search'}" />
+                            <c-button comp="iconButton" :iconButtonSettings="{state:true, iconName:'check'}" />
+                            <c-button comp="iconButton" :iconButtonSettings="{state:true, iconName:'priority_high'}" />
+                            <c-button comp="iconButton" :iconButtonSettings="{state:true, iconName:'delete'}" />
+                            <c-button comp="iconButton" :iconButtonSettings="{state:true, iconName:'close'}" />
+                        </div>
+                    </div>`,
+            propsDescription: {
+                CButton: {
+                    iState: 'Button state for disabled',
+                    iconColor: 'color of btn to be shown'
+                },
+            }
+        };
+    },
+        {
+            notes: CButtonChangelog
+        }
+    )
+    .add('Loading', () => {
+        return {
+            components: {
+                'c-button': CButton
+            },
+            template: `<div>
+                        <div>
+                            <c-button comp="loadingButton" :loadingButtonSettings="{color:'#4CAF50',bState:false,btnName:'Send'}" />
+                            <c-button comp="loadingButton" :loadingButtonSettings="{color:'#2196F3',bState:false,btnName:'Send'}" />
+                            <c-button comp="loadingButton" :loadingButtonSettings="{color:'#F44336',bState:false,btnName:'Destroy'}" />
+                        </div>
+                        <div>
+                            <c-button comp="loadingButton" :loadingButtonSettings="{color:'#F44336',bState:false,btnName:'Send',clas:'noshadow'}" />
+                            <c-button comp="loadingButton" :loadingButtonSettings="{color:'#2196F3',bState:false,btnName:'Send',clas:'noshadow'}" />
+                            <c-button comp="loadingButton" :loadingButtonSettings="{color:'#F44336',bState:false,btnName:'Destroy',clas:'noshadow'}" />
+                        </div>
+                        <div>
+                            <c-button comp="loadingButton" :loadingButtonSettings="{bState:true,btnName:'Send'}" />
+                            <c-button comp="loadingButton" :loadingButtonSettings="{bState:true,btnName:'Send'}" />
+                            <c-button comp="loadingButton" :loadingButtonSettings="{bState:true,btnName:'Destroy'}" />
+                        </div>
+                    </div>`,
+            propsDescription: {
+                CButton: {
+                    bState: 'Button state for disabled',
+                    btnColor: 'color of btn to be shown',
+                    noshadow : 'Hide shadow'
+                },
+            }
+        };
+    },
+        {
+            notes: CButtonChangelog
+        }
+    )
+    .add('Solid', () => {
+        return {
+            components: {
+                'c-button': CButton
+            },
+            template: `<div>
+                        <div>
+                            <c-button  comp="solidButton" :solidButtonSettings="{color:'#2196F3',bState:false,btnName:'Primary'}" />
+                            <c-button  comp="solidButton" :solidButtonSettings="{color:'#4CAF50',bState:false,btnName:'Success'}" />
+                            <c-button  comp="solidButton" :solidButtonSettings="{color:'#FF9800',bState:false,btnName:'Warning'}" />
+                            <c-button  comp="solidButton" :solidButtonSettings="{color:'#F44336',bState:false,btnName:'Danger'}" />
+                            <c-button  comp="solidButton" :solidButtonSettings="{color:'#757575',bState:false,btnName:'Secondary'}" />                 
+                        </div>
+                        <div>
+                            <c-button  comp="solidButton" :solidButtonSettings="{color:'#2196F3',bState:false,btnName:'Primary',clas:'noshadow'}" />
+                            <c-button  comp="solidButton" :solidButtonSettings="{color:'#4CAF50',bState:false,btnName:'Success',clas:'noshadow'}" />
+                            <c-button  comp="solidButton" :solidButtonSettings="{color:'#FF9800',bState:false,btnName:'Warning',clas:'noshadow'}" />
+                            <c-button  comp="solidButton" :solidButtonSettings="{color:'#F44336',bState:false,btnName:'Danger',clas:'noshadow'}" />
+                            <c-button  comp="solidButton" :solidButtonSettings="{color:'#757575',bState:false,btnName:'Secondary',clas:'noshadow'}" />                 
+                        </div>
+                        <div>
+                            <c-button  comp="solidButton" :solidButtonSettings="{bState:true,btnName:'Primary'}" />
+                            <c-button  comp="solidButton" :solidButtonSettings="{bState:true,btnName:'Success'}" />
+                            <c-button  comp="solidButton" :solidButtonSettings="{bState:true,btnName:'Warning'}" />
+                            <c-button  comp="solidButton" :solidButtonSettings="{bState:true,btnName:'Danger'}" />
+                            <c-button  comp="solidButton" :solidButtonSettings="{bState:true,btnName:'Secondary'}" />                 
+                        </div> 
+                    </div>`,
+            propsDescription: {
+                CButton: {
+                    bState: 'Button state for disabled',
+                    btnColor: 'color of btn to be shown',
+                    noshadow : 'Hide shadow'
+                },
+            }
+        };
+    },
+        {
+            notes: CButtonChangelog
+        }
+    )
+    .add('Text', () => {
+        return {
+            components: {
+                'c-button': CButton
+            },
+            template: `<div>
+                        <div>
+                            <c-button comp="textButton" :textButtonSettings="{color:'#2196F3',bState:false, btnName:'Primary'}" />
+                            <c-button comp="textButton" :textButtonSettings="{color:'#4CAF50',bState:false, btnName:'Success'}" />
+                            <c-button comp="textButton" :textButtonSettings="{color:'#FF9800',bState:false, btnName:'Warning'}" />
+                            <c-button comp="textButton" :textButtonSettings="{color:'#F44336',bState:false, btnName:'Danger'}" />
+                            <c-button comp="textButton" :textButtonSettings="{color:'#757575',bState:false, btnName:'Secondary'}" />                 
+                        </div>
+                        <div>
+                            <c-button comp="textButton" :textButtonSettings="{bState:true, btnName:'Primary'}" />
+                            <c-button comp="textButton" :textButtonSettings="{bState:true, btnName:'Success'}" />
+                            <c-button comp="textButton" :textButtonSettings="{bState:true, btnName:'Warning'}" />
+                            <c-button comp="textButton" :textButtonSettings="{bState:true, btnName:'Danger'}" />
+                            <c-button comp="textButton" :textButtonSettings="{bState:true, btnName:'Secondary'}" />                 
+                        </div>     
+                    </div>`,
+            propsDescription: {
+                CButton: {
+                    bState: 'Button state for disabled',
+                    btnColor: 'color of btn to be shown'
+                },
+            }
+        };
+    },
+        {
+            notes: CButtonChangelog
+        }
+    )
+    .add('Outlined', () => {
+        return {
+            components: {
+                'c-button': CButton
+            },
+            template: `<div>
+                        <div>
+                            <c-button comp="outlined" :outlinedSettings="{color:'#2196F3',bState:false, btnName:'Primary'}" />
+                            <c-button comp="outlined" :outlinedSettings="{color:'#4CAF50',bState:false, btnName:'Success'}" />
+                            <c-button comp="outlined" :outlinedSettings="{color:'#FF9800',bState:false, btnName:'Warning'}" />
+                            <c-button comp="outlined" :outlinedSettings="{color:'#F44336',bState:false, btnName:'Danger'}" />
+                            <c-button comp="outlined" :outlinedSettings="{color:'#757575',bState:false, btnName:'Secondary'}" />                 
+                        </div>
+                        <div>
+                            <c-button comp="outlined" :outlinedSettings="{bState:true, btnName:'Primary'}" />
+                            <c-button comp="outlined" :outlinedSettings="{bState:true, btnName:'Success'}" />
+                            <c-button comp="outlined" :outlinedSettings="{bState:true, btnName:'Warning'}" />
+                            <c-button comp="outlined" :outlinedSettings="{bState:true, btnName:'Danger'}" />
+                            <c-button comp="outlined" :outlinedSettings="{bState:true, btnName:'Secondary'}" />                 
+                        </div>  
+                    </div>`,
+            propsDescription: {
+                CButton: {
+                    bState: 'Button state for disabled',
+                    btnColor: 'color of btn to be shown'
+                },
+            }
+        };
+    },
+        {
+            notes: CButtonChangelog
+        }
+    )
+    .add('Rounded Outlined', () => {
+        return {
+            components: {
+                'c-button': CButton
+            },
+            template: `<div>
+                        <div>
+                            <c-button comp="outlineRounded" :outlineRoundedSettings="{color:'#2196F3',bState:false, iconName:'search'}" />
+                            <c-button comp="outlineRounded" :outlineRoundedSettings="{color:'#4CAF50',bState:false, iconName:'check'}" />
+                            <c-button comp="outlineRounded" :outlineRoundedSettings="{color:'#FF9800',bState:false, iconName:'priority_high'}" />
+                            <c-button comp="outlineRounded" :outlineRoundedSettings="{color:'#F44336',bState:false, iconName:'delete'}" />
+                            <c-button comp="outlineRounded" :outlineRoundedSettings="{color:'#757575',bState:false, iconName:'close'}" />                 
+                        </div>
+                        <div>
+                            <c-button comp="outlineRounded" :outlineRoundedSettings="{bState:true, iconName:'search'}" />
+                            <c-button comp="outlineRounded" :outlineRoundedSettings="{bState:true, iconName:'check'}" />
+                            <c-button comp="outlineRounded" :outlineRoundedSettings="{bState:true, iconName:'priority_high'}" />
+                            <c-button comp="outlineRounded" :outlineRoundedSettings="{bState:true, iconName:'delete'}" />
+                            <c-button comp="outlineRounded" :outlineRoundedSettings="{bState:true, iconName:'close'}" />                 
+                        </div>   
+                    </div>`,
+            propsDescription: {
+                CButton: {
+                    bState: 'Button state for disabled',
+                    btnColor: 'color of btn to be shown'
+                },
+            }
+        };
+    },
+        {
+            notes: CButtonChangelog
+        }
+    )
+    .add('Rounded Solid', () => {
+        return {
+            components: {
+                'c-button': CButton
+            },
+            template: `<div>
+                        <div>
+                            <c-button comp="solidRounded" :solidRoundedSettings="{color:'#2196F3',bState:false,iconName:'search'}" />
+                            <c-button comp="solidRounded" :solidRoundedSettings="{color:'#4CAF50',bState:false,iconName:'check'}" />
+                            <c-button comp="solidRounded" :solidRoundedSettings="{color:'#FF9800',bState:false,iconName:'priority_high'}" />
+                            <c-button comp="solidRounded" :solidRoundedSettings="{color:'#F44336',bState:false,iconName:'delete'}" />
+                            <c-button comp="solidRounded" :solidRoundedSettings="{color:'#757575',bState:false,iconName:'close'}" />  
+                        </div>
+                        <div>
+                            <c-button comp="solidRounded" :solidRoundedSettings="{color:'#2196F3',bState:false, iconName:'search', clas:'noshadow'}" />
+                            <c-button comp="solidRounded" :solidRoundedSettings="{color:'#4CAF50',bState:false, iconName:'check', clas:'noshadow'}" />
+                            <c-button comp="solidRounded" :solidRoundedSettings="{color:'#FF9800',bState:false, iconName:'priority_high', clas:'noshadow'}" />
+                            <c-button comp="solidRounded" :solidRoundedSettings="{color:'#F44336',bState:false, iconName:'delete', clas:'noshadow'}" />
+                            <c-button comp="solidRounded" :solidRoundedSettings="{color:'#757575',bState:false, iconName:'close', clas:'noshadow'}" />  
+                        </div>
+                        <div>
+                            <c-button comp="solidRounded" :solidRoundedSettings="{bState:true,iconName:'search'}" />
+                            <c-button comp="solidRounded" :solidRoundedSettings="{bState:true,iconName:'check'}" />
+                            <c-button comp="solidRounded" :solidRoundedSettings="{bState:true,iconName:'priority_high'}" />
+                            <c-button comp="solidRounded" :solidRoundedSettings="{bState:true,iconName:'delete'}" />
+                            <c-button comp="solidRounded" :solidRoundedSettings="{bState:true,iconName:'close'}" />                 
+                        </div>    
+                    </div>`,
+            propsDescription: {
+                CButton: {
+                    iState: 'Button state for disabled',
+                    iconColor: 'color of btn to be shown',
+                    noshadow : 'Hide shadow'
+                },
+            }
+        };
+    },
+        {
+            notes: CButtonChangelog
+        }
+    )
 
 // c-callout 
 storiesOf('Library | UI KIT (vuetify custom) / c-callout', module)
