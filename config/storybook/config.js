@@ -43,7 +43,7 @@ addDecorator(addReadme);
 
 // Custom theme 
 // default themes == themes.dark || themes.normal 
-// import { themes } from '@storybook/theming'
+import { themes } from '@storybook/theming'
 // import UnifyTheme from './unify.theme.js';
 
 
@@ -87,7 +87,7 @@ addParameters({
      * default themes
      * Custom themes will be applied form UnifyThemes
      */
-      // theme: UnifyTheme,
+      theme: themes.normal,
   },
 })
 
