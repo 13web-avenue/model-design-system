@@ -63,7 +63,10 @@ import CButtonChangelog from '../core/ui-kit-custom-components/c-button/c-button
 import CButtonSetup from '../core/ui-kit-custom-components/c-button/c-button-setup.md'
 import CButtonContent from '../core/ui-kit-custom-components/c-button/c-button-content.md'
 import CButtonSolidContent from '../core/ui-kit-custom-components/c-button/c-button-solid-content.md'
+<<<<<<< HEAD
 
+=======
+>>>>>>> 2b241d7c4029b491407b3c3dfc83bc6aabc34d6b
 // Add custom wrappers here 
 import VueInfoWrapper from '../plugins/vue-info-wrapper/vue-info-wrapper.vue'
 
@@ -122,7 +125,7 @@ storiesOf('Library | UI KIT (vuetify custom) / button', module)
             theme: {
                 textColor: 'black'
             }
-        }       ,
+        }
     })  
     .add('Icon', () => {
         return {
