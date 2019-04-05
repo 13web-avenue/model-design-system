@@ -71,12 +71,6 @@ import Vuetify from 'vuetify'
 import 'vuetify/dist/vuetify.min.css';
 import "../assets/stylesheets/cssGlobalOverrides.scss";
 
-
-
-
-
-
-
 Vue.use(Vuetify)
 
 /**
