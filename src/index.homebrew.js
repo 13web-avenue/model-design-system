@@ -62,7 +62,7 @@ import CButton from '../core/ui-kit-custom-components/c-button/packages/dist/c-b
 import CButtonChangelog from '../core/ui-kit-custom-components/c-button/c-button-changelog.md'
 import CButtonSetup from '../core/ui-kit-custom-components/c-button/c-button-setup.md'
 import CButtonContent from '../core/ui-kit-custom-components/c-button/c-button-content.md'
-
+import CButtonSolidContent from '../core/ui-kit-custom-components/c-button/c-button-solid-content.md'
 // Add custom wrappers here 
 import VueInfoWrapper from '../plugins/vue-info-wrapper/vue-info-wrapper.vue'
 
@@ -121,7 +121,7 @@ storiesOf('Library | UI KIT (vuetify custom) / c-button', module)
             theme: {
                 textColor: 'black'
             }
-        }       ,
+        }
     })  
     .add('Icon', () => {
         return {
@@ -191,6 +191,11 @@ storiesOf('Library | UI KIT (vuetify custom) / c-button', module)
             notes: CButtonChangelog
         }
     )
+    .addParameters({
+        info: {
+            summary: CButtonSolidContent,
+        }
+    })  
     .add('Solid', () => {
         return {
             components: {
