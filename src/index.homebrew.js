@@ -2,6 +2,7 @@
 import { storiesOf } from '@storybook/vue'
 import { action } from '@storybook/addon-actions';
 
+
 /**
  * Import component variations
  * Import .md files for:
@@ -60,6 +61,7 @@ import CRadioButtonSetup from '../core/ui-kit-custom-components/c-radio-button/c
 import CButton from '../core/ui-kit-custom-components/c-button/packages/dist/c-button.vue'
 import CButtonChangelog from '../core/ui-kit-custom-components/c-button/c-button-changelog.md'
 import CButtonSetup from '../core/ui-kit-custom-components/c-button/c-button-setup.md'
+import CButtonContent from '../core/ui-kit-custom-components/c-button/c-button-content.md'
 
 // Add custom wrappers here 
 import VueInfoWrapper from '../plugins/vue-info-wrapper/vue-info-wrapper.vue'
@@ -68,6 +70,12 @@ import Vue from 'vue'
 import Vuetify from 'vuetify'
 import 'vuetify/dist/vuetify.min.css';
 import "../assets/stylesheets/cssGlobalOverrides.scss";
+
+
+
+
+
+
 
 Vue.use(Vuetify)
 
@@ -106,16 +114,17 @@ storiesOf('Library | UI KIT (vuetify custom) / c-button', module)
     .addParameters({
         readme: {
             codeTheme: 'monokai-sublime',
-            sidebar: CButtonSetup,
+            content: CButtonSetup,
+            sidebar: CButtonContent,
             theme: {
-                textColor: '#bb255a'
+                textColor: 'black'
             },
         },
         info: {
             components: {
                 'c-button': CButton
             },
-            docsInPanel: false,
+            docsInPanel: true,
             source: false,
             wrapperComponent: VueInfoWrapper
         },
