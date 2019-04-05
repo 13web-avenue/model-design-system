@@ -112,22 +112,22 @@ const appDecorator = () => {
 storiesOf('Library | UI KIT (vuetify custom) / c-button', module)
     .addDecorator(appDecorator) 
     .addParameters({
+        info: {
+            components: {
+                'c-button': CButton,
+            },
+            docsInPanel: false,
+            source: false,
+            summary: CButtonSetup,
+            wrapperComponent: VueInfoWrapper
+        },
         readme: {
             codeTheme: 'monokai-sublime',
-            content: CButtonSetup,
             sidebar: CButtonContent,
             theme: {
                 textColor: 'black'
-            },
-        },
-        info: {
-            components: {
-                'c-button': CButton
-            },
-            docsInPanel: true,
-            source: false,
-            wrapperComponent: VueInfoWrapper
-        },
+            }
+        }       ,
     })  
     .add('Icon', () => {
         return {

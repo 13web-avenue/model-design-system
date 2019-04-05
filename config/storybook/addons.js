@@ -7,7 +7,7 @@
 
 // https://github.com/pocka/storybook-addon-vue-info
 // Here we have replaced the addon with @storybook/addon-info
-import 'storybook-addon-vue-info/lib/register'
+// import 'storybook-addon-vue-info/lib/register'
 
 // https://github.com/tuchk4/storybook-readme
 import 'storybook-readme/register'
