@@ -112,12 +112,12 @@ storiesOf('Library | UI KIT (vuetify custom) / c-button', module)
             },
             docsInPanel: false,
             source: false,
-            summary: CButtonSetup,
+            summary: CButtonContent,
             wrapperComponent: VueInfoWrapper
         },
         readme: {
             codeTheme: 'monokai-sublime',
-            sidebar: CButtonContent,
+            sidebar: CButtonSetup,
             theme: {
                 textColor: 'black'
             }
@@ -193,9 +193,22 @@ storiesOf('Library | UI KIT (vuetify custom) / c-button', module)
     )
     .addParameters({
         info: {
+            components: {
+                'c-button': CButton,
+            },
+            docsInPanel: false,
+            source: false,
             summary: CButtonSolidContent,
+            wrapperComponent: VueInfoWrapper
+        },
+        readme: {
+            codeTheme: 'monokai-sublime',
+            sidebar: CButtonSetup,
+            theme: {
+                textColor: 'black'
+            }
         }
-    })  
+    }) 
     .add('Solid', () => {
         return {
             components: {
