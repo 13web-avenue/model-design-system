@@ -14,10 +14,11 @@ export default {
 </script>
 
 <style lang="scss">
+
 .base-layout {
   margin: 2rem;
   line-height: 1.4;
-  font-family: Segoe Ui, "Helvetica Neue", Helvetica, "Segoe UI", Arial, freesans,sans-serif;
+  font-family: "Montserrat", Helvetica, "Segoe UI", Arial, freesans,sans-serif;
   font-size: 1.3rem
 }
 

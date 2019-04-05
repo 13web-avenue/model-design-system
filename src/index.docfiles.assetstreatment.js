@@ -22,7 +22,7 @@ import assets from '../views/assets-treatment/images/images.vue'
 
 import BaseStaticLayout from '../views/layouts/base-layout-static.vue';
 
-storiesOf('Asset Treatment | Images', module)
+storiesOf('web app | Assets / Images', module)
     .addParameters({
         options: { 
             showAddonPanel: false 
@@ -61,7 +61,7 @@ storiesOf('Asset Treatment | Images', module)
 //         template: `<assets />`,
 //     }))
 
-storiesOf('Asset Treatment | Typography', module)
+storiesOf('web app | Assets / Typography', module)
     .addParameters({
         options: {
             showAddonPanel: false,
