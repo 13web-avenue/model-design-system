@@ -11,11 +11,15 @@ import { storiesOf } from '@storybook/vue';
 
 import welcome from '../views/introduction/welcome.vue';
 import BaseStaticLayout from '../views/layouts/base-layout-static.vue';
-import CodeOfConduct from '../views/static/code-of-conduct.vue'
+import CodeOfConduct from '../views/static/code-of-conduct.md'
+
+// Add custom wrappers here 
+import VueInfoWrapper from '../plugins/vue-info-wrapper/vue-info-wrapper.vue'
 
 storiesOf('About UNIFY | Introduction', module)
     .addParameters({
         options: {
+            isToolshown: false,
             showAddonPanel: false,
         },
         info: {
@@ -120,6 +124,7 @@ storiesOf('About UNIFY | Introduction', module)
 storiesOf('User Manual | UDS platform', module)
     .addParameters({
         options: {
+            isToolshown: false,
             showAddonPanel: false,
         },
         info: {
@@ -131,12 +136,18 @@ storiesOf('User Manual | UDS platform', module)
         template: `<welcome />`,
     }))
     .addParameters({
+        info: {
+            summary: CodeOfConduct,
+            docsInPanel: false,
+            source: false,            
+            wrapperComponent: VueInfoWrapper
+        },        
         options: {
+            isToolshown: false,
             showAddonPanel: false,
         },
         readme: {
             wrapperComponent: BaseStaticLayout,
-            content: CodeOfConduct,
             theme: {
                 textColor: '#212121'
             },
@@ -144,12 +155,10 @@ storiesOf('User Manual | UDS platform', module)
     })          
     .add('Code of conduct', () => ({
         components: {
-            'base-layout-static': BaseStaticLayout,
-            'code-of-conduct': CodeOfConduct,
+            'base-layout-static': BaseStaticLayout
         },
         template: `
             <base-layout-static>
-            <code-of-conduct />
             </base-layout-static>`,
     }))
 

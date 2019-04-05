@@ -62,6 +62,7 @@ import CButton from '../core/ui-kit-custom-components/c-button/packages/dist/c-b
 import CButtonChangelog from '../core/ui-kit-custom-components/c-button/c-button-changelog.md'
 import CButtonSetup from '../core/ui-kit-custom-components/c-button/c-button-setup.md'
 import CButtonContent from '../core/ui-kit-custom-components/c-button/c-button-content.md'
+import CButtonSolidContent from '../core/ui-kit-custom-components/c-button/c-button-solid-content.md'
 
 // Add custom wrappers here 
 import VueInfoWrapper from '../plugins/vue-info-wrapper/vue-info-wrapper.vue'
@@ -103,7 +104,7 @@ const appDecorator = () => {
 };
 
 //c-button
-storiesOf('Library | UI KIT (vuetify custom) / c-button', module)
+storiesOf('Library | UI KIT (vuetify custom) / button', module)
     .addDecorator(appDecorator) 
     .addParameters({
         info: {
@@ -112,12 +113,12 @@ storiesOf('Library | UI KIT (vuetify custom) / c-button', module)
             },
             docsInPanel: false,
             source: false,
-            summary: CButtonSetup,
+            summary: CButtonContent,
             wrapperComponent: VueInfoWrapper
         },
         readme: {
             codeTheme: 'monokai-sublime',
-            sidebar: CButtonContent,
+            sidebar: CButtonSetup,
             theme: {
                 textColor: 'black'
             }
@@ -191,6 +192,24 @@ storiesOf('Library | UI KIT (vuetify custom) / c-button', module)
             notes: CButtonChangelog
         }
     )
+    .addParameters({
+        info: {
+            components: {
+                'c-button': CButton,
+            },
+            docsInPanel: false,
+            source: false,
+            summary: CButtonSolidContent,
+            wrapperComponent: VueInfoWrapper
+        },
+        readme: {
+            codeTheme: 'monokai-sublime',
+            sidebar: CButtonSetup,
+            theme: {
+                textColor: 'black'
+            }
+        }
+    })      
     .add('Solid', () => {
         return {
             components: {
@@ -374,7 +393,7 @@ storiesOf('Library | UI KIT (vuetify custom) / c-button', module)
     )
 
 // c-callout 
-storiesOf('Library | UI KIT (vuetify custom) / c-callout', module)
+storiesOf('Library | UI KIT (vuetify custom) / callout', module)
     .addDecorator(appDecorator) 
     .addParameters({
         readme: {
@@ -412,7 +431,7 @@ storiesOf('Library | UI KIT (vuetify custom) / c-callout', module)
     )
 
 // c-checkbox 
-storiesOf('Library | UI KIT (vuetify custom) / c-checkbox', module)
+storiesOf('Library | UI KIT (vuetify custom) / checkbox', module)
     .addDecorator(appDecorator) 
     .addParameters({
         readme: {
@@ -455,7 +474,7 @@ storiesOf('Library | UI KIT (vuetify custom) / c-checkbox', module)
     )
 
 // c-combobox-classic 
-storiesOf('Library | UI KIT (vuetify custom)/ c-combobox-classic', module)
+storiesOf('Library | UI KIT (vuetify custom)/ combobox-classic', module)
     .addDecorator(appDecorator) 
     .addParameters({
         readme: {
@@ -650,7 +669,7 @@ storiesOf('Library | UI KIT (vuetify custom)/ c-combobox-classic', module)
 // )
 
 // c-modal
-storiesOf('Library | UI KIT (vuetify custom)/ c-modal', module)
+storiesOf('Library | UI KIT (vuetify custom)/ modal', module)
     .addDecorator(appDecorator) 
     .addParameters({
         readme: {
@@ -691,7 +710,7 @@ storiesOf('Library | UI KIT (vuetify custom)/ c-modal', module)
     )
 
 // c-radio-button 
-storiesOf('Library | UI KIT (vuetify custom)/ c-radio-button', module)
+storiesOf('Library | UI KIT (vuetify custom)/ radio-button', module)
     .addDecorator(appDecorator) 
     .addParameters({
         readme: {
@@ -731,7 +750,7 @@ storiesOf('Library | UI KIT (vuetify custom)/ c-radio-button', module)
     )
 
 // c-status-pill
-storiesOf('Library | UI KIT (vuetify custom)/ c-status-pill', module)
+storiesOf('Library | UI KIT (vuetify custom)/ status-pill', module)
     .addDecorator(appDecorator) 
     .addParameters({
         readme: {
@@ -778,7 +797,7 @@ storiesOf('Library | UI KIT (vuetify custom)/ c-status-pill', module)
     )
 
 // c-tab
-storiesOf('Library | UI KIT (vuetify custom)/ c-tab', module)
+storiesOf('Library | UI KIT (vuetify custom)/ tab', module)
     .addDecorator(appDecorator) 
     .addParameters({
         readme: {
@@ -817,7 +836,7 @@ storiesOf('Library | UI KIT (vuetify custom)/ c-tab', module)
     )
 
 // c-textarea
-storiesOf('Library | UI KIT (vuetify custom)/ c-textarea', module)
+storiesOf('Library | UI KIT (vuetify custom)/ textarea', module)
     .addDecorator(appDecorator) 
     .addParameters({
         readme: {
@@ -888,7 +907,7 @@ storiesOf('Library | UI KIT (vuetify custom)/ c-textarea', module)
     )
 
 // c-textfield
-storiesOf('Library | UI KIT (vuetify custom)/ c-textfield', module)
+storiesOf('Library | UI KIT (vuetify custom)/ textfield', module)
     .addDecorator(appDecorator) 
     .addParameters({
         readme: {
@@ -961,7 +980,7 @@ storiesOf('Library | UI KIT (vuetify custom)/ c-textfield', module)
     )
 
 // c-toggle
-storiesOf('Library | UI KIT (vuetify custom) / c-toggle', module)
+storiesOf('Library | UI KIT (vuetify custom) / toggle', module)
     .addDecorator(appDecorator) 
     .addParameters({
         readme: {
