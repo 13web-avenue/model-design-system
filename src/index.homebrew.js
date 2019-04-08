@@ -63,6 +63,7 @@ import CButtonChangelog from '../core/ui-kit-custom-components/c-button/c-button
 import CButtonSetup from '../core/ui-kit-custom-components/c-button/c-button-setup.md'
 import CButtonContent from '../core/ui-kit-custom-components/c-button/c-button-content.md'
 import CButtonSolidContent from '../core/ui-kit-custom-components/c-button/c-button-solid-content.md'
+
 // Add custom wrappers here 
 import VueInfoWrapper from '../plugins/vue-info-wrapper/vue-info-wrapper.vue'
 
@@ -103,7 +104,7 @@ const appDecorator = () => {
 };
 
 //c-button
-storiesOf('Library | UI KIT (vuetify custom) /button', module)
+storiesOf('Library | UI KIT (vuetify custom) / button', module)
     .addDecorator(appDecorator) 
     .addParameters({
         info: {
@@ -216,11 +217,11 @@ storiesOf('Library | UI KIT (vuetify custom) /button', module)
             },
             template: `<div>
                         <div>
-                            <c-button  comp="solidButton" :solidButtonSettings="{color:'#2196F3',bState:false,btnName:'Primary'}" />
-                            <c-button  comp="solidButton" :solidButtonSettings="{color:'#4CAF50',bState:false,btnName:'Success'}" />
-                            <c-button  comp="solidButton" :solidButtonSettings="{color:'#FF9800',bState:false,btnName:'Warning'}" />
-                            <c-button  comp="solidButton" :solidButtonSettings="{color:'#F44336',bState:false,btnName:'Danger'}" />
-                            <c-button  comp="solidButton" :solidButtonSettings="{color:'#757575',bState:false,btnName:'Secondary'}" />                 
+                            <c-button comp="solidButton" :solidButtonSettings="{color:'#2196F3',bState:false,btnName:'Primary'}" />
+                            <c-button comp="solidButton" :solidButtonSettings="{color:'#4CAF50',bState:false,btnName:'Success'}" />
+                            <c-button comp="solidButton" :solidButtonSettings="{color:'#FF9800',bState:false,btnName:'Warning'}" />
+                            <c-button comp="solidButton" :solidButtonSettings="{color:'#F44336',bState:false,btnName:'Danger'}" />
+                            <c-button comp="solidButton" :solidButtonSettings="{color:'#757575',bState:false,btnName:'Secondary'}" />                 
                         </div>
                         <div>
                             <c-button  comp="solidButton" :solidButtonSettings="{color:'#2196F3',bState:false,btnName:'Primary',clas:'noshadow'}" />
@@ -241,7 +242,7 @@ storiesOf('Library | UI KIT (vuetify custom) /button', module)
                 CButton: {
                     bState: 'Button state for disabled',
                     btnColor: 'color of btn to be shown',
-                    noshadow : 'Hide shadow'
+                    noshadow: 'Hide shadow'
                 },
             }
         };
@@ -392,7 +393,7 @@ storiesOf('Library | UI KIT (vuetify custom) /button', module)
     )
 
 // c-callout 
-storiesOf('Library  / UI KIT (vuetify custom) | c-callout', module)
+storiesOf('Library  / UI KIT (vuetify custom) | callout', module)
     .addDecorator(appDecorator) 
     .addParameters({
         readme: {
