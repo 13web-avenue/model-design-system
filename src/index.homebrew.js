@@ -164,19 +164,19 @@ storiesOf('Library | UI KIT (vuetify custom) / button', module)
             },
             template: `<div>
                         <div>
-                            <c-button comp="loadingButton" :loadingButtonSettings="{color:'#4CAF50',bState:false,btnName:'Send'}" />
-                            <c-button comp="loadingButton" :loadingButtonSettings="{color:'#2196F3',bState:false,btnName:'Send'}" />
-                            <c-button comp="loadingButton" :loadingButtonSettings="{color:'#F44336',bState:false,btnName:'Destroy'}" />
+                            <c-button comp="loadingButton" :loadingButtonSettings="{color:'#4CAF50',bState:false,icnName:'send',btnName:'Send'}" />
+                            <c-button comp="loadingButton" :loadingButtonSettings="{color:'#2196F3',bState:false,icnName:'send',btnName:'Send'}" />
+                            <c-button comp="loadingButton" :loadingButtonSettings="{color:'#F44336',bState:false,icnName:'send',btnName:'Destroy'}" />
                         </div>
                         <div>
-                            <c-button comp="loadingButton" :loadingButtonSettings="{color:'#F44336',bState:false,btnName:'Send',clas:'noshadow'}" />
-                            <c-button comp="loadingButton" :loadingButtonSettings="{color:'#2196F3',bState:false,btnName:'Send',clas:'noshadow'}" />
-                            <c-button comp="loadingButton" :loadingButtonSettings="{color:'#F44336',bState:false,btnName:'Destroy',clas:'noshadow'}" />
+                            <c-button comp="loadingButton" :loadingButtonSettings="{color:'#F44336',bState:false,icnName:'send',btnName:'Send',clas:'noshadow'}" />
+                            <c-button comp="loadingButton" :loadingButtonSettings="{color:'#2196F3',bState:false,icnName:'send',btnName:'Send',clas:'noshadow'}" />
+                            <c-button comp="loadingButton" :loadingButtonSettings="{color:'#F44336',bState:false,icnName:'send',btnName:'Destroy',clas:'noshadow'}" />
                         </div>
                         <div>
-                            <c-button comp="loadingButton" :loadingButtonSettings="{bState:true,btnName:'Send'}" />
-                            <c-button comp="loadingButton" :loadingButtonSettings="{bState:true,btnName:'Send'}" />
-                            <c-button comp="loadingButton" :loadingButtonSettings="{bState:true,btnName:'Destroy'}" />
+                            <c-button comp="loadingButton" :loadingButtonSettings="{bState:true,icnName:'send',btnName:'Send'}" />
+                            <c-button comp="loadingButton" :loadingButtonSettings="{bState:true,icnName:'send',btnName:'Send'}" />
+                            <c-button comp="loadingButton" :loadingButtonSettings="{bState:true,icnName:'send',btnName:'Destroy'}" />
                         </div>
                     </div>`,
             propsDescription: {
