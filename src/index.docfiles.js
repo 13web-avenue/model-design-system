@@ -11,7 +11,7 @@ import { storiesOf } from '@storybook/vue';
 
 import welcome from '../views/introduction/welcome.vue';
 import BaseStaticLayout from '../views/layouts/base-layout-static.vue';
-import CodeOfConduct from '../views/static/code-of-conduct.vue'
+import CodeOfConduct from '../views/static/code-of-conduct.md'
 
 storiesOf('About UNIFY | Introduction', module)
     .addParameters({
