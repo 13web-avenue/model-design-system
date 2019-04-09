@@ -1,6 +1,7 @@
 /* eslint-disable import/no-extraneous-dependencies */
 import { storiesOf } from '@storybook/vue'
 import { action } from '@storybook/addon-actions';
+import '@fortawesome/fontawesome-free/css/all.css'
 
 
 /**
@@ -41,9 +42,9 @@ import CComboBoxClassic from '../core/ui-kit-custom-components/c-combobox/packag
 import CComboBoxClassicChangelog from '../core/ui-kit-custom-components/c-combobox/c-combobox-changelog.md'
 import CComboBoxClassicSetup from '../core/ui-kit-custom-components/c-combobox/c-combobox-setup.md'
 
-import CCallOut from '../core/ui-kit-custom-components/c-callout/packages/dist/c-callout.vue'
-import CCallOutChangelog from '../core/ui-kit-custom-components/c-callout/c-callout-changelog.md'
-import CCallOutSetup from '../core/ui-kit-custom-components/c-callout/c-callout-setup.md'
+import CTooltip from '../core/ui-kit-custom-components/c-tooltip/packages/dist/c-tooltip.vue'
+import CTooltipChangelog from '../core/ui-kit-custom-components/c-tooltip/c-tooltip-changelog.md'
+import CTooltipSetup from '../core/ui-kit-custom-components/c-tooltip/c-tooltip-setup.md'
 
 
 import CCheckBox from '../core/ui-kit-custom-components/c-checkbox/packages/dist/c-checkbox.vue'
@@ -71,7 +72,9 @@ import Vuetify from 'vuetify'
 import 'vuetify/dist/vuetify.min.css';
 import "../assets/stylesheets/cssGlobalOverrides.scss";
 
-Vue.use(Vuetify)
+Vue.use(Vuetify, {
+    iconfont: 'fa' // 'md' || 'mdi' || 'fa' || 'fa4'
+  })
 
 /**
  * 
@@ -392,19 +395,19 @@ storiesOf('Library | UI KIT (vuetify custom) / c-button', module)
     )
 
 // c-callout 
-storiesOf('Library | UI KIT (vuetify custom) / c-callout', module)
+storiesOf('Library | UI KIT (vuetify custom) / c-tooltip', module)
     .addDecorator(appDecorator) 
     .addParameters({
         readme: {
             codeTheme: 'monokai-sublime',
-            sidebar: CCallOutSetup,
+            sidebar: CTooltipSetup,
             theme: {
                 textColor: '#bb255a'
             },
         },
         info: {
             components: {
-                'c-callout': CCallOut
+                'c-tooltip': CTooltip
             },
             docsInPanel: false,
             source: false,
@@ -414,9 +417,9 @@ storiesOf('Library | UI KIT (vuetify custom) / c-callout', module)
     .add('Default', () => {
         return {
             components: {
-                'c-callout': CCallOut
+                'c-tooltip': CTooltip
             },
-            template: `<c-callout />`,
+            template: `<c-tooltip />`,
             propsDescription: {
                 VAlert: {
                     bottom: 'Button state for disabled',
@@ -425,7 +428,7 @@ storiesOf('Library | UI KIT (vuetify custom) / c-callout', module)
         };
     },
         {
-            notes: CCallOutChangelog
+            notes: CTooltipChangelog
         }
     )
 
