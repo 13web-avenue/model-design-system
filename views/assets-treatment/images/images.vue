@@ -1,80 +1,67 @@
 <template lang="pug">
-base-layout-static.layout-static
-  h2.title
-    strong HTML element type : inline
-  ul
-    li https://developer.mozilla.org/en-US/docs/Web/HTML/Inline_elements
-  h4
-    em Dealing with fluid images
-  p
-    | Example :
-    strong
-      img.img-responsive(
-        src='http://lorempixel.com/1920/1080/sports/1/',
-        style='max-width:100%;height:auto;',
-        width='1920',
-        height='1080',
-        alt='my test image'
-      )
+base-layout-static
+  header(class="heading")
+    h4.header-title
+      | HTML element type : inline
+    
+  p https://developer.mozilla.org/en-US/docs/Web/HTML/Inline_elements
 
-  p 
-    | Above image code:
-  pre
-    code
-      img(
-          src="http://lorempixel.com/1920/1080/sports/1/", 
-          style="max-width:100%;height:auto;",
-          width="1920",
-          height="1080", 
-          alt="my test image"
+  h5 
+    Strong 
+      | Dealing with fluid images
+  
+  .body
+    p
+      strong
+        img.img-responsive(
+          src='http://lorempixel.com/1920/1080/sports/1/',
+          style='max-width:100%;height:auto;',
+          width='1920',
+          height='1080',
+          alt='my test image'
         )
 
-  h4 Test it :
-  blockquote
+    h4.header-title Test it : 
     p
-      em
-        | Inspect the image above with your most favorite browser debugger and play with the inline style attributes and see how the responsive behaves when you resize !
-  p
-    | Note that the CSS is inline for the purpose of this demo.
-    | In most CSS frameworks where there is a
-     
-    strong normalize.css
-    |  or a
+      | Note that the CSS is inline for the purpose of this demo.
+      | In most CSS frameworks where there is a
+      strong 
+        | normalize.css 
+      | or a
+      strong 
+        | reset.css 
+      | these inline CSS would show up for an image as :
 
-    strong reset.css
-    |  these inline CSS would show up for an image as :
+    pre.code-toolbar.language-markup.
+      img, object {
+          max-width: 100%
+      }
+      img {
+          height: auto
+      }    
+    p
+      | These selectors &amp; properties should not be removed from any CSS frameworks as they are used to make fluid images
 
-  pre.code-toolbar.language-markup.
-    img, object {
-        max-width: 100%
-    }
-    img {
-        height: auto
-    }    
-  p
-    | These selectors &amp; properties should not be removed from any CSS frameworks as they are used to make fluid images
+    p 
+      | Images rules to follow while developping :
 
-  p 
-    | Images rules to follow while developping :
+    ul
+      li set proper width and height attributes for loading time.
+      li set alternate text and do not leave it blank.
+      li DO NOT set height attributes in CSS
+      li
+        | make an assessment on the weight of the image before pushing to production, optimization is mandatory although we need to have a balance between quality and performance.
+    p
+      strong 
+        | Multiple images techniques for multiple resolutions with new HTML5 markup.
+      strong 
+        | An overview of what an ideal implementation of responsive image
 
-  ul
-    li set proper width and height attributes for loading time.
-    li set alternate text and do not leave it blank.
-    li DO NOT set height attributes in CSS
-    li
-      | make an assessment on the weight of the image before pushing to production, optimization is mandatory although we need to have a balance between quality and performance.
-  p
-    strong 
-      | Multiple images techniques for multiple resolutions with new HTML5 markup.
-    strong 
-      | An overview of what an ideal implementation of responsive image
-
-  pre.code-toolbar.language-markup.
-    
-  p More information about the above :
-  ul
-    li
-      | https://developer.mozilla.org/en-US/docs/Learn/HTML/Multimedia_and_embedding/Responsive_images
+    p 
+      | More information about the above :
+    ul
+      li
+        | https://developer.mozilla.org/en-US/docs/Learn/HTML/Multimedia_and_embedding/Responsive_images
 
 </template>
 
@@ -94,10 +81,14 @@ export default {
 
 <style lang="scss" scoped>
 .layout-static {
+
+  max-width: 80rem;
+  margin: 0 auto;
+
+  > {
   font-family: 'Montserrat', sans-serif;
 
-  width: 80vW;
-  margin: 0 auto;
+  }
 }
 
 /* global heading sizing */
@@ -135,13 +126,7 @@ h6 {
   font-weight: 600;
 }
 
-button,
-.body,
-.labels-1,
-.labels-2,
-.subtitle-1,
-.subtitle-2,
-.subtitle-2 {
+.body {
   font-family: 'Open Sans', sans-serif;
 }
 

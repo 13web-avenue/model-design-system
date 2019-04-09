@@ -64,6 +64,7 @@ import CButtonChangelog from '../core/ui-kit-custom-components/c-button/c-button
 import CButtonSetup from '../core/ui-kit-custom-components/c-button/c-button-setup.md'
 import CButtonContent from '../core/ui-kit-custom-components/c-button/c-button-content.md'
 import CButtonSolidContent from '../core/ui-kit-custom-components/c-button/c-button-solid-content.md'
+
 // Add custom wrappers here 
 import VueInfoWrapper from '../plugins/vue-info-wrapper/vue-info-wrapper.vue'
 
@@ -106,7 +107,7 @@ const appDecorator = () => {
 };
 
 //c-button
-storiesOf('Library | UI KIT (vuetify custom) / c-button', module)
+storiesOf('Library | UI KIT (vuetify custom) / button', module)
     .addDecorator(appDecorator) 
     .addParameters({
         info: {
@@ -166,19 +167,19 @@ storiesOf('Library | UI KIT (vuetify custom) / c-button', module)
             },
             template: `<div>
                         <div>
-                            <c-button comp="loadingButton" :loadingButtonSettings="{color:'#4CAF50',bState:false,btnName:'Send'}" />
-                            <c-button comp="loadingButton" :loadingButtonSettings="{color:'#2196F3',bState:false,btnName:'Send'}" />
-                            <c-button comp="loadingButton" :loadingButtonSettings="{color:'#F44336',bState:false,btnName:'Destroy'}" />
+                            <c-button comp="loadingButton" :loadingButtonSettings="{color:'#4CAF50',bState:false,icnName:'fab fa-telegram-plane',btnName:'Send'}" />
+                            <c-button comp="loadingButton" :loadingButtonSettings="{color:'#2196F3',bState:false,icnName:'fab fa-telegram-plane',btnName:'Send'}" />
+                            <c-button comp="loadingButton" :loadingButtonSettings="{color:'#F44336',bState:false,icnName:'fab fa-telegram-plane',btnName:'Destroy'}" />
                         </div>
                         <div>
-                            <c-button comp="loadingButton" :loadingButtonSettings="{color:'#F44336',bState:false,btnName:'Send',clas:'noshadow'}" />
-                            <c-button comp="loadingButton" :loadingButtonSettings="{color:'#2196F3',bState:false,btnName:'Send',clas:'noshadow'}" />
-                            <c-button comp="loadingButton" :loadingButtonSettings="{color:'#F44336',bState:false,btnName:'Destroy',clas:'noshadow'}" />
+                            <c-button comp="loadingButton" :loadingButtonSettings="{color:'#F44336',bState:false,icnName:'fab fa-telegram-plane',btnName:'Send',clas:'noshadow'}" />
+                            <c-button comp="loadingButton" :loadingButtonSettings="{color:'#2196F3',bState:false,icnName:'fab fa-telegram-plane',btnName:'Send',clas:'noshadow'}" />
+                            <c-button comp="loadingButton" :loadingButtonSettings="{color:'#F44336',bState:false,icnName:'fab fa-telegram-plane',btnName:'Destroy',clas:'noshadow'}" />
                         </div>
                         <div>
-                            <c-button comp="loadingButton" :loadingButtonSettings="{bState:true,btnName:'Send'}" />
-                            <c-button comp="loadingButton" :loadingButtonSettings="{bState:true,btnName:'Send'}" />
-                            <c-button comp="loadingButton" :loadingButtonSettings="{bState:true,btnName:'Destroy'}" />
+                            <c-button comp="loadingButton" :loadingButtonSettings="{bState:true,icnName:'fab fa-telegram-plane',btnName:'Send'}" />
+                            <c-button comp="loadingButton" :loadingButtonSettings="{bState:true,icnName:'fab fa-telegram-plane',btnName:'Send'}" />
+                            <c-button comp="loadingButton" :loadingButtonSettings="{bState:true,icnName:'fab fa-telegram-plane',btnName:'Destroy'}" />
                         </div>
                     </div>`,
             propsDescription: {
@@ -219,11 +220,11 @@ storiesOf('Library | UI KIT (vuetify custom) / c-button', module)
             },
             template: `<div>
                         <div>
-                            <c-button  comp="solidButton" :solidButtonSettings="{color:'#2196F3',bState:false,btnName:'Primary'}" />
-                            <c-button  comp="solidButton" :solidButtonSettings="{color:'#4CAF50',bState:false,btnName:'Success'}" />
-                            <c-button  comp="solidButton" :solidButtonSettings="{color:'#FF9800',bState:false,btnName:'Warning'}" />
-                            <c-button  comp="solidButton" :solidButtonSettings="{color:'#F44336',bState:false,btnName:'Danger'}" />
-                            <c-button  comp="solidButton" :solidButtonSettings="{color:'#757575',bState:false,btnName:'Secondary'}" />                 
+                            <c-button comp="solidButton" :solidButtonSettings="{color:'#2196F3',bState:false,btnName:'Primary'}" />
+                            <c-button comp="solidButton" :solidButtonSettings="{color:'#4CAF50',bState:false,btnName:'Success'}" />
+                            <c-button comp="solidButton" :solidButtonSettings="{color:'#FF9800',bState:false,btnName:'Warning'}" />
+                            <c-button comp="solidButton" :solidButtonSettings="{color:'#F44336',bState:false,btnName:'Danger'}" />
+                            <c-button comp="solidButton" :solidButtonSettings="{color:'#757575',bState:false,btnName:'Secondary'}" />                 
                         </div>
                         <div>
                             <c-button  comp="solidButton" :solidButtonSettings="{color:'#2196F3',bState:false,btnName:'Primary',clas:'noshadow'}" />
@@ -244,7 +245,7 @@ storiesOf('Library | UI KIT (vuetify custom) / c-button', module)
                 CButton: {
                     bState: 'Button state for disabled',
                     btnColor: 'color of btn to be shown',
-                    noshadow : 'Hide shadow'
+                    noshadow: 'Hide shadow'
                 },
             }
         };
@@ -433,7 +434,7 @@ storiesOf('Library | UI KIT (vuetify custom) / c-tooltip', module)
     )
 
 // c-checkbox 
-storiesOf('Library | UI KIT (vuetify custom) / c-checkbox', module)
+storiesOf('Library | UI KIT (vuetify custom) /checkbox', module)
     .addDecorator(appDecorator) 
     .addParameters({
         readme: {
@@ -476,7 +477,7 @@ storiesOf('Library | UI KIT (vuetify custom) / c-checkbox', module)
     )
 
 // c-combobox-classic 
-storiesOf('Library | UI KIT (vuetify custom)/ c-combobox-classic', module)
+storiesOf('Library / UI KIT (vuetify custom)/ combobox-classic', module)
     .addDecorator(appDecorator) 
     .addParameters({
         readme: {
@@ -520,7 +521,7 @@ storiesOf('Library | UI KIT (vuetify custom)/ c-combobox-classic', module)
     )
 
 // c-inputgroups
-// storiesOf('Library | UI KIT (vuetify custom)/ c-input-groups', module)
+// storiesOf('Library / UI KIT (vuetify custom) /  input-groups', module)
 //     .addDecorator(appDecorator) 
 //     .addParameters({
 //         readme: {
@@ -671,7 +672,7 @@ storiesOf('Library | UI KIT (vuetify custom)/ c-combobox-classic', module)
 // )
 
 // c-modal
-storiesOf('Library | UI KIT (vuetify custom)/ c-modal', module)
+storiesOf('Library | UI KIT (vuetify custom) /modal', module)
     .addDecorator(appDecorator) 
     .addParameters({
         readme: {
@@ -712,7 +713,7 @@ storiesOf('Library | UI KIT (vuetify custom)/ c-modal', module)
     )
 
 // c-radio-button 
-storiesOf('Library | UI KIT (vuetify custom)/ c-radio-button', module)
+storiesOf('Library | UI KIT (vuetify custom) /radio-button', module)
     .addDecorator(appDecorator) 
     .addParameters({
         readme: {
@@ -752,7 +753,7 @@ storiesOf('Library | UI KIT (vuetify custom)/ c-radio-button', module)
     )
 
 // c-status-pill
-storiesOf('Library | UI KIT (vuetify custom)/ c-status-pill', module)
+storiesOf('Library | UI KIT (vuetify custom) /status-pill', module)
     .addDecorator(appDecorator) 
     .addParameters({
         readme: {
@@ -799,7 +800,7 @@ storiesOf('Library | UI KIT (vuetify custom)/ c-status-pill', module)
     )
 
 // c-tab
-storiesOf('Library | UI KIT (vuetify custom)/ c-tab', module)
+storiesOf('Library | UI KIT (vuetify custom) /tab', module)
     .addDecorator(appDecorator) 
     .addParameters({
         readme: {
@@ -838,7 +839,7 @@ storiesOf('Library | UI KIT (vuetify custom)/ c-tab', module)
     )
 
 // c-textarea
-storiesOf('Library | UI KIT (vuetify custom)/ c-textarea', module)
+storiesOf('Library | UI KIT (vuetify custom) /textarea', module)
     .addDecorator(appDecorator) 
     .addParameters({
         readme: {
@@ -909,7 +910,7 @@ storiesOf('Library | UI KIT (vuetify custom)/ c-textarea', module)
     )
 
 // c-textfield
-storiesOf('Library | UI KIT (vuetify custom)/ c-textfield', module)
+storiesOf('Library | UI KIT (vuetify custom) /textfield', module)
     .addDecorator(appDecorator) 
     .addParameters({
         readme: {
@@ -982,7 +983,7 @@ storiesOf('Library | UI KIT (vuetify custom)/ c-textfield', module)
     )
 
 // c-toggle
-storiesOf('Library | UI KIT (vuetify custom) / c-toggle', module)
+storiesOf('Library | UI KIT (vuetify custom) / toggle', module)
     .addDecorator(appDecorator) 
     .addParameters({
         readme: {

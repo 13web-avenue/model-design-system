@@ -3,8 +3,8 @@
 div(class="layout-default")
     header(class="heading")
         h1.header-title
-        .content-area
-            slot
+    .content-area
+        slot
     footer(class="footer-note")
         h3.footnote
 
