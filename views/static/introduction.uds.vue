@@ -1,11 +1,31 @@
 <template lang="pug">
-section.base-layout
-  p
-    | The UNIFY DESIGN SYSTEM is a Design System for ARP applications that will   serve as a base to build the interface & interactions on our products. It   is not just a typical Style Guide, UI Kit or Pattern Library. 
-  p
-    | It will serve as the ‘single source of truth’ for all our UI/UX  components, and will include all the documentation, guidelines & reference files needed. This will eventually replace the UX wiki & whitebook. The UDS eventually help us have a comprehensible design language that will provide a seamless experience for users, and improve the Scrum & Product team’s workflow.  All frontend standards will also be documented on UDS.
-  p
-    | The UDS will be a module owned by the UX/UI and will serve as a tool that will allow Scrum & Product teams to build better products. It is a product serving products.
+
+base-layout-static
+
+  section.component-wrapper
+    p
+      strong 
+        | Unify Design System 
+      | is a Design System for ERP applications that will be served as a base to build the interface & interaction on our products. It is not just a typical Style Guide, UI Kit or Pattern Library. 
+    p
+      | It serves as the ‘single source of truth’ for all our UI/UX  components, It will later replace the UX wiki & whitebook. 
+      strong 
+        | Unify Design System 
+      | eventually helps us have a comprehensible design language that will provide a seamless experience for users, and improve the Scrum & Product team’s workflow.
+    P
+      | In this component driven development era, front-end engineering has been forever a valuable asset in Mantu's swiss army knife... 
+      strong
+        | Unify Design System
+      |  covers the front-end standards that drives our applications client-side's strategy.
+
+    p(class="welcome-note")
+      span crafted with 
+          svg(class="icon-svg-heart", viewBox="0 0 32 29.6")
+            path(d="M23.6,0c-3.4,0-6.3,2.7-7.6,5.6C14.7,2.7,11.8,0,8.4,0C3.8,0,0,3.8,0,8.4c0,9.4,9.5,11.9,16,21.2c6.1-9.3,16-12.1,16-21.2C32,3.8,28.2,0,23.6,0z")
+      | UNIFY team
+
+
+
 </template>
 
 <script>
@@ -21,10 +41,10 @@ export default {
 
 <style lang="scss">
 
-.base-layout {
+.component-wrapper {
   margin: 2rem;
   line-height: 1.4;
-  font-family: 'Montserrat', Helvetica, "Segoe UI", Arial,sans-serif;
+  font-family: 'Open Sans', Helvetica, "Segoe UI", Arial,sans-serif;
   font-size: 1.3rem
 }
 
