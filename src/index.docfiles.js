@@ -12,20 +12,16 @@ import { storiesOf } from '@storybook/vue';
 import welcome from '../views/introduction/welcome.vue';
 import BaseStaticLayout from '../views/layouts/base-layout-static.vue';
 import IntroductionWelcome from '../views/static/introduction.uds.vue'
+import DocComponentPurpose from '../views/static/purpose.vue'
 
 import CodeOfConduct from '../views/static/code-of-conduct.md'
 
 
 storiesOf('About UNIFY | Introduction', module)
     .addParameters({
-        info: {
-            docsInPanel: false,
-            source: false,
-            content: IntroductionWelcome,
-            wrapperComponent: BaseStaticLayout
-        },
         options: {
-            showAddonPanel: false
+            showAddonPanel: false,
+            isToolshown: false
         }
     })
     .add('The UNIFY Project', () => ({
@@ -40,18 +36,14 @@ storiesOf('About UNIFY | Introduction', module)
             'welcome': welcome,
             'base-layout-static': BaseStaticLayout,
         },
-        template: `<base-layout-static>
-                    <welcome />
-                </base-layout-static>`,
-    }))    
+        template: ` <welcome />`,
+    }))
     .add('Purpose & Objectives', () => ({
         components: {
-            'welcome': welcome,
+            'doc-component-purpose': DocComponentPurpose,
             'base-layout-static': BaseStaticLayout,
         },
-        template: `<base-layout-static>
-                    <welcome />
-                </base-layout-static>`,
+        template: ` <doc-component-purpose />`
     }))
 
 
