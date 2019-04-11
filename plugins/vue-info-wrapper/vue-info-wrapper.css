@@ -1,5 +1,5 @@
 .layout-dynamic {
-  position: relative;
+  /* position: relative; */
 
   max-width: 80rem;
 }
@@ -32,11 +32,11 @@
   background-color: #fff;
 }
 
-.preview {
+/* .preview {
   all: initial;
   display: block;
   position: relative;
-}
+} */
 
 
 .info-body > :not(:first-child) {

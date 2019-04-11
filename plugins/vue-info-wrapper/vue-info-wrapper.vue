@@ -75,8 +75,8 @@ export default {
       <h1 class="title">{{ info.title }}</h1>
       <p class="subtitle">{{ info.subtitle }}</p>
     </div>
-    <div class="preview-container">
-      <div class="preview"><slot /></div>
+    <div>
+      <slot/>
     </div>
     <div class="info-body">
       <div class="summary" v-html="summary" />
