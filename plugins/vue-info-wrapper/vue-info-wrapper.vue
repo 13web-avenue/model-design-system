@@ -133,7 +133,7 @@ export default {
           <h3 class="subheading">Events</h3>
           <ul class="list">
             <li v-for="e in c.events" :key="e.name" class="item">
-              {{getEventText(e)}}
+              {{ getEventText(e) }}
             </li>
           </ul>
         </div>

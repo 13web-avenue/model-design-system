@@ -8,11 +8,11 @@ div(class="layout-default layout-default--static")
     footer(class="footer")
         h3.footnote
         .footer--baseline-tag
-            p
-                span(class="uppercased letter-spacing-1") crafted with 
-                    svg(class="icon-svg-heart", viewBox="0 0 32 29.6")
-                        path(d="M23.6,0c-3.4,0-6.3,2.7-7.6,5.6C14.7,2.7,11.8,0,8.4,0C3.8,0,0,3.8,0,8.4c0,9.4,9.5,11.9,16,21.2c6.1-9.3,16-12.1,16-21.2C32,3.8,28.2,0,23.6,0z")
-                    | UNIFY DESIGN SYSTEM
+          p
+            span(class="uppercased letter-spacing-1") crafted with 
+              svg(class="icon-svg-heart", viewBox="0 0 32 29.6")
+                path(d="M23.6,0c-3.4,0-6.3,2.7-7.6,5.6C14.7,2.7,11.8,0,8.4,0C3.8,0,0,3.8,0,8.4c0,9.4,9.5,11.9,16,21.2c6.1-9.3,16-12.1,16-21.2C32,3.8,28.2,0,23.6,0z")
+              | UNIFY DESIGN SYSTEM
 </template>
 
 <script>
@@ -30,6 +30,7 @@ export default {
 .layout-default {
 
     background: #fff;
+    border: 1px solid #cccccc6e;
 
     margin: 0 auto;
     max-width: 100%;
@@ -41,12 +42,12 @@ export default {
       0px 0px 0px 0px rgba(0, 0, 0, 0.03), 
       0px 0px 0px 0px rgba(0, 0, 0, 0.05);
 
-        &--table-full-screen,
-        &--static {
-                        
-          max-width: 80rem;
+      &--table-full-screen,
+      &--static {
+                      
+        max-width: 80rem;
 
-        }
+      }
 }
 
 // content-area
@@ -86,6 +87,7 @@ export default {
 .footer {
 
   &--baseline-tag {
+
     border-top: #f5f5f5 1px solid;
 
     font-family: 'Open Sans', Helvetica, "Segoe UI", Arial, sans-serif;
@@ -97,6 +99,7 @@ export default {
     position: fixed;
     right: 1%;
     bottom: 0;
+
   }
 
 }
