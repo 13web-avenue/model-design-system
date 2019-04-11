@@ -134,18 +134,18 @@ storiesOf('Library | UI KIT (vuetify custom) / button', module)
             },
             template: `<div>
                         <div>
-                            <c-button comp="iconButton" :iconButtonSettings="{color:'#2196F3',state:false, iconName:'search'}" />
-                            <c-button comp="iconButton" :iconButtonSettings="{color:'#4CAF50',state:false, iconName:'check'}" />
-                            <c-button comp="iconButton" :iconButtonSettings="{color:'#FF9800',state:false, iconName:'priority_high'}" />
-                            <c-button comp="iconButton" :iconButtonSettings="{color:'#F44336',state:false, iconName:'delete'}" />
-                            <c-button comp="iconButton" :iconButtonSettings="{color:'#757575',state:false, iconName:'close'}" />
+                            <c-button comp="iconButton" :iconButtonSettings="{color:'#2196F3',state:false, iconName:'fas fa-search'}" />
+                            <c-button comp="iconButton" :iconButtonSettings="{color:'#4CAF50',state:false, iconName:'fas fa-check'}" />
+                            <c-button comp="iconButton" :iconButtonSettings="{color:'#FF9800',state:false, iconName:'fas fa-exclamation'}" />
+                            <c-button comp="iconButton" :iconButtonSettings="{color:'#F44336',state:false, iconName:'fas fa-trash-alt'}" />
+                            <c-button comp="iconButton" :iconButtonSettings="{color:'#757575',state:false, iconName:'fas fa-times'}" />
                         </div>
                         <div>
-                            <c-button comp="iconButton" :iconButtonSettings="{state:true, iconName:'search'}" />
-                            <c-button comp="iconButton" :iconButtonSettings="{state:true, iconName:'check'}" />
-                            <c-button comp="iconButton" :iconButtonSettings="{state:true, iconName:'priority_high'}" />
-                            <c-button comp="iconButton" :iconButtonSettings="{state:true, iconName:'delete'}" />
-                            <c-button comp="iconButton" :iconButtonSettings="{state:true, iconName:'close'}" />
+                            <c-button comp="iconButton" :iconButtonSettings="{state:true, iconName:'fas fa-search'}" />
+                            <c-button comp="iconButton" :iconButtonSettings="{state:true, iconName:'fas fa-check'}" />
+                            <c-button comp="iconButton" :iconButtonSettings="{state:true, iconName:'fas fa-exclamation'}" />
+                            <c-button comp="iconButton" :iconButtonSettings="{state:true, iconName:'fas fa-trash-alt'}" />
+                            <c-button comp="iconButton" :iconButtonSettings="{state:true, iconName:'fas fa-times'}" />
                         </div>
                     </div>`,
             propsDescription: {
@@ -169,17 +169,17 @@ storiesOf('Library | UI KIT (vuetify custom) / button', module)
                         <div>
                             <c-button comp="loadingButton" :loadingButtonSettings="{color:'#4CAF50',bState:false,icnName:'fab fa-telegram-plane',btnName:'Send'}" />
                             <c-button comp="loadingButton" :loadingButtonSettings="{color:'#2196F3',bState:false,icnName:'fab fa-telegram-plane',btnName:'Send'}" />
-                            <c-button comp="loadingButton" :loadingButtonSettings="{color:'#F44336',bState:false,icnName:'fab fa-telegram-plane',btnName:'Destroy'}" />
+                            <c-button comp="loadingButton" :loadingButtonSettings="{color:'#F44336',bState:false,icnName:'fas fa-bomb',btnName:'Destroy'}" />
                         </div>
                         <div>
                             <c-button comp="loadingButton" :loadingButtonSettings="{color:'#F44336',bState:false,icnName:'fab fa-telegram-plane',btnName:'Send',clas:'noshadow'}" />
                             <c-button comp="loadingButton" :loadingButtonSettings="{color:'#2196F3',bState:false,icnName:'fab fa-telegram-plane',btnName:'Send',clas:'noshadow'}" />
-                            <c-button comp="loadingButton" :loadingButtonSettings="{color:'#F44336',bState:false,icnName:'fab fa-telegram-plane',btnName:'Destroy',clas:'noshadow'}" />
+                            <c-button comp="loadingButton" :loadingButtonSettings="{color:'#F44336',bState:false,icnName:'fas fa-bomb',btnName:'Destroy',clas:'noshadow'}" />
                         </div>
                         <div>
                             <c-button comp="loadingButton" :loadingButtonSettings="{bState:true,icnName:'fab fa-telegram-plane',btnName:'Send'}" />
                             <c-button comp="loadingButton" :loadingButtonSettings="{bState:true,icnName:'fab fa-telegram-plane',btnName:'Send'}" />
-                            <c-button comp="loadingButton" :loadingButtonSettings="{bState:true,icnName:'fab fa-telegram-plane',btnName:'Destroy'}" />
+                            <c-button comp="loadingButton" :loadingButtonSettings="{bState:true,icnName:'fas fa-bomb',btnName:'Destroy'}" />
                         </div>
                     </div>`,
             propsDescription: {
@@ -327,18 +327,18 @@ storiesOf('Library | UI KIT (vuetify custom) / button', module)
             },
             template: `<div>
                         <div>
-                            <c-button comp="outlineRounded" :outlineRoundedSettings="{color:'#2196F3',bState:false, iconName:'search'}" />
-                            <c-button comp="outlineRounded" :outlineRoundedSettings="{color:'#4CAF50',bState:false, iconName:'check'}" />
-                            <c-button comp="outlineRounded" :outlineRoundedSettings="{color:'#FF9800',bState:false, iconName:'priority_high'}" />
-                            <c-button comp="outlineRounded" :outlineRoundedSettings="{color:'#F44336',bState:false, iconName:'delete'}" />
-                            <c-button comp="outlineRounded" :outlineRoundedSettings="{color:'#757575',bState:false, iconName:'close'}" />                 
+                            <c-button comp="outlineRounded" :outlineRoundedSettings="{color:'#2196F3',bState:false, iconName:'fas fa-search'}" />
+                            <c-button comp="outlineRounded" :outlineRoundedSettings="{color:'#4CAF50',bState:false, iconName:'fas fa-check'}" />
+                            <c-button comp="outlineRounded" :outlineRoundedSettings="{color:'#FF9800',bState:false, iconName:'fas fa-exclamation'}" />
+                            <c-button comp="outlineRounded" :outlineRoundedSettings="{color:'#F44336',bState:false, iconName:'fas fa-trash-alt'}" />
+                            <c-button comp="outlineRounded" :outlineRoundedSettings="{color:'#757575',bState:false, iconName:'fas fa-times'}" />                 
                         </div>
                         <div>
-                            <c-button comp="outlineRounded" :outlineRoundedSettings="{bState:true, iconName:'search'}" />
-                            <c-button comp="outlineRounded" :outlineRoundedSettings="{bState:true, iconName:'check'}" />
-                            <c-button comp="outlineRounded" :outlineRoundedSettings="{bState:true, iconName:'priority_high'}" />
-                            <c-button comp="outlineRounded" :outlineRoundedSettings="{bState:true, iconName:'delete'}" />
-                            <c-button comp="outlineRounded" :outlineRoundedSettings="{bState:true, iconName:'close'}" />                 
+                            <c-button comp="outlineRounded" :outlineRoundedSettings="{bState:true, iconName:'fas fa-search'}" />
+                            <c-button comp="outlineRounded" :outlineRoundedSettings="{bState:true, iconName:'fas fa-check'}" />
+                            <c-button comp="outlineRounded" :outlineRoundedSettings="{bState:true, iconName:'fas fa-exclamation'}" />
+                            <c-button comp="outlineRounded" :outlineRoundedSettings="{bState:true, iconName:'fas fa-trash-alt'}" />
+                            <c-button comp="outlineRounded" :outlineRoundedSettings="{bState:true, iconName:'fas fa-times'}" />                 
                         </div>   
                     </div>`,
             propsDescription: {
@@ -360,25 +360,25 @@ storiesOf('Library | UI KIT (vuetify custom) / button', module)
             },
             template: `<div>
                         <div>
-                            <c-button comp="solidRounded" :solidRoundedSettings="{color:'#2196F3',bState:false,iconName:'search'}" />
-                            <c-button comp="solidRounded" :solidRoundedSettings="{color:'#4CAF50',bState:false,iconName:'check'}" />
-                            <c-button comp="solidRounded" :solidRoundedSettings="{color:'#FF9800',bState:false,iconName:'priority_high'}" />
-                            <c-button comp="solidRounded" :solidRoundedSettings="{color:'#F44336',bState:false,iconName:'delete'}" />
-                            <c-button comp="solidRounded" :solidRoundedSettings="{color:'#757575',bState:false,iconName:'close'}" />  
+                            <c-button comp="solidRounded" :solidRoundedSettings="{color:'#2196F3',bState:false,iconName:'fas fa-search'}" />
+                            <c-button comp="solidRounded" :solidRoundedSettings="{color:'#4CAF50',bState:false,iconName:'fas fa-check'}" />
+                            <c-button comp="solidRounded" :solidRoundedSettings="{color:'#FF9800',bState:false,iconName:'fas fa-exclamation'}" />
+                            <c-button comp="solidRounded" :solidRoundedSettings="{color:'#F44336',bState:false,iconName:'fas fa-trash-alt'}" />
+                            <c-button comp="solidRounded" :solidRoundedSettings="{color:'#757575',bState:false,iconName:'fas fa-times'}" />  
                         </div>
                         <div>
-                            <c-button comp="solidRounded" :solidRoundedSettings="{color:'#2196F3',bState:false, iconName:'search', clas:'noshadow'}" />
-                            <c-button comp="solidRounded" :solidRoundedSettings="{color:'#4CAF50',bState:false, iconName:'check', clas:'noshadow'}" />
-                            <c-button comp="solidRounded" :solidRoundedSettings="{color:'#FF9800',bState:false, iconName:'priority_high', clas:'noshadow'}" />
-                            <c-button comp="solidRounded" :solidRoundedSettings="{color:'#F44336',bState:false, iconName:'delete', clas:'noshadow'}" />
-                            <c-button comp="solidRounded" :solidRoundedSettings="{color:'#757575',bState:false, iconName:'close', clas:'noshadow'}" />  
+                            <c-button comp="solidRounded" :solidRoundedSettings="{color:'#2196F3',bState:false, iconName:'fas fa-search', clas:'noshadow'}" />
+                            <c-button comp="solidRounded" :solidRoundedSettings="{color:'#4CAF50',bState:false, iconName:'fas fa-check', clas:'noshadow'}" />
+                            <c-button comp="solidRounded" :solidRoundedSettings="{color:'#FF9800',bState:false, iconName:'fas fa-exclamation', clas:'noshadow'}" />
+                            <c-button comp="solidRounded" :solidRoundedSettings="{color:'#F44336',bState:false, iconName:'fas fa-trash-alt', clas:'noshadow'}" />
+                            <c-button comp="solidRounded" :solidRoundedSettings="{color:'#757575',bState:false, iconName:'fas fa-times', clas:'noshadow'}" />  
                         </div>
                         <div>
-                            <c-button comp="solidRounded" :solidRoundedSettings="{bState:true,iconName:'search'}" />
-                            <c-button comp="solidRounded" :solidRoundedSettings="{bState:true,iconName:'check'}" />
-                            <c-button comp="solidRounded" :solidRoundedSettings="{bState:true,iconName:'priority_high'}" />
-                            <c-button comp="solidRounded" :solidRoundedSettings="{bState:true,iconName:'delete'}" />
-                            <c-button comp="solidRounded" :solidRoundedSettings="{bState:true,iconName:'close'}" />                 
+                            <c-button comp="solidRounded" :solidRoundedSettings="{bState:true,iconName:'fas fa-search'}" />
+                            <c-button comp="solidRounded" :solidRoundedSettings="{bState:true,iconName:'fas fa-check'}" />
+                            <c-button comp="solidRounded" :solidRoundedSettings="{bState:true,iconName:'fas fa-exclamation'}" />
+                            <c-button comp="solidRounded" :solidRoundedSettings="{bState:true,iconName:'fas fa-trash-alt'}" />
+                            <c-button comp="solidRounded" :solidRoundedSettings="{bState:true,iconName:'fas fa-times'}" />                 
                         </div>    
                     </div>`,
             propsDescription: {
