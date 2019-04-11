@@ -1,7 +1,6 @@
 /* eslint-disable import/no-extraneous-dependencies */
 import { storiesOf } from '@storybook/vue'
 import { action } from '@storybook/addon-actions';
-import '@fortawesome/fontawesome-free/css/all.css'
 
 
 /**
@@ -71,11 +70,10 @@ import VueInfoWrapper from '../plugins/vue-info-wrapper/vue-info-wrapper.vue'
 import Vue from 'vue'
 import Vuetify from 'vuetify'
 import 'vuetify/dist/vuetify.min.css';
-import "../assets/stylesheets/cssGlobalOverrides.scss";
 
 Vue.use(Vuetify, {
     iconfont: 'fa' // 'md' || 'mdi' || 'fa' || 'fa4'
-  })
+})
 
 /**
  * 
@@ -90,17 +88,21 @@ Vue.use(Vuetify, {
  */
 
 // import the default Vuetify wrappers 
-import { VApp, VContent } from 'vuetify/lib'
+import { VApp, VContainer, VLayout, VFlex } from 'vuetify/lib'
 
 // add the decorator
 const appDecorator = () => {
     return {
-        components: { VApp, VContent },
+        components: { VApp, VContainer, VLayout, VFlex },
         template: `
         <v-app>
-            <v-content>
-                <story/>
-            </v-content>
+            <v-container fluid>
+                <v-layout>
+                    <v-flex>
+                        <story/>
+                    </v-flex>
+                </v-layout>
+            </v-container>
         </v-app>
         `,
     };
@@ -220,7 +222,7 @@ storiesOf('Library | UI KIT (vuetify custom) / button', module)
             },
             template: `<div>
                         <div>
-                            <c-button comp="solidButton" :solidButtonSettings="{color:'#2196F3',bState:false,btnName:'Primary'}" />
+                            <c-button comp="solidButton" :solidButtonSettings="{color:'#2196F3',bState:false, btnName:'Primary'}" />
                             <c-button comp="solidButton" :solidButtonSettings="{color:'#4CAF50',bState:false,btnName:'Success'}" />
                             <c-button comp="solidButton" :solidButtonSettings="{color:'#FF9800',bState:false,btnName:'Warning'}" />
                             <c-button comp="solidButton" :solidButtonSettings="{color:'#F44336',bState:false,btnName:'Danger'}" />
@@ -396,7 +398,7 @@ storiesOf('Library | UI KIT (vuetify custom) / button', module)
     )
 
 // c-callout 
-storiesOf('Library | UI KIT (vuetify custom) / c-tooltip', module)
+storiesOf('Library | UI KIT (vuetify custom) / tooltip', module)
     .addDecorator(appDecorator) 
     .addParameters({
         readme: {
@@ -753,7 +755,7 @@ storiesOf('Library | UI KIT (vuetify custom) /radio-button', module)
     )
 
 // c-status-pill
-storiesOf('Library | UI KIT (vuetify custom) /status-pill', module)
+storiesOf('Library | UI KIT (vuetify custom) / status-pill', module)
     .addDecorator(appDecorator) 
     .addParameters({
         readme: {
@@ -800,7 +802,7 @@ storiesOf('Library | UI KIT (vuetify custom) /status-pill', module)
     )
 
 // c-tab
-storiesOf('Library | UI KIT (vuetify custom) /tab', module)
+storiesOf('Library | UI KIT (vuetify custom) / tab', module)
     .addDecorator(appDecorator) 
     .addParameters({
         readme: {
@@ -839,7 +841,7 @@ storiesOf('Library | UI KIT (vuetify custom) /tab', module)
     )
 
 // c-textarea
-storiesOf('Library | UI KIT (vuetify custom) /textarea', module)
+storiesOf('Library | UI KIT (vuetify custom) / textarea', module)
     .addDecorator(appDecorator) 
     .addParameters({
         readme: {

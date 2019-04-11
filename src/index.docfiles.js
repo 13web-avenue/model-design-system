@@ -13,8 +13,9 @@ import welcome from '../views/introduction/welcome.vue';
 import BaseStaticLayout from '../views/layouts/base-layout-static.vue';
 import IntroductionWelcome from '../views/static/introduction.uds.vue'
 import DocComponentPurpose from '../views/static/purpose.vue'
+import DocComponenUsage from '../views/static/usage.vue'
 
-import CodeOfConduct from '../views/static/code-of-conduct.md'
+import DocComponentConduct from '../views/static/code-of-conduct.vue'
 
 
 storiesOf('About UNIFY | Introduction', module)
@@ -27,21 +28,18 @@ storiesOf('About UNIFY | Introduction', module)
     .add('The UNIFY Project', () => ({
         components: { 
             'welcome': IntroductionWelcome,
-            'base-layout-static': BaseStaticLayout,
         },
         template: `<welcome />`,
     }))
     .add('Value Driven Development', () => ({
         components: {
-            'welcome': welcome,
-            'base-layout-static': BaseStaticLayout,
+            'welcome': IntroductionWelcome,
         },
         template: ` <welcome />`,
     }))
     .add('Purpose & Objectives', () => ({
         components: {
             'doc-component-purpose': DocComponentPurpose,
-            'base-layout-static': BaseStaticLayout,
         },
         template: ` <doc-component-purpose />`
     }))
@@ -144,34 +142,20 @@ storiesOf('User Manual | UDS platform', module)
     .addParameters({
         options: {
             showAddonPanel: false,
+            isToolshown: false
         }
     })  
     .add('Usage', () => ({
         components: {
-            'welcome': welcome,
-            'base-layout-static': BaseStaticLayout,
+            'doc-component-usage': DocComponenUsage,
         },
-        template: `<base-layout-static>
-                    <welcome />
-                </base-layout-static>`,
+        template: `<doc-component-usage />`,
     }))
-    .addParameters({
-        options: {
-            showAddonPanel: false,
-        },
-        readme: {
-            wrapperComponent: BaseStaticLayout,
-            content: CodeOfConduct,
-            theme: {
-                textColor: '#212121'
-            },
-        }
-    })          
     .add('Code of conduct', () => ({
         components: {
-            'base-layout-static': BaseStaticLayout,
+            'doc-component-conduct': DocComponentConduct
         },
-        template: `<base-layout-static />`,
+        template: `<doc-component-conduct />`,
     }))
 
 

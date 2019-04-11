@@ -1,7 +1,7 @@
 .layout-dynamic {
   position: relative;
 
-  width: 80rem;
+  max-width: 80rem;
 }
 
 .header {
@@ -38,9 +38,6 @@
   position: relative;
 }
 
-.info-body {
-  padding: 10px;
-}
 
 .info-body > :not(:first-child) {
   padding-top: 32px;
@@ -119,4 +116,74 @@
 
 .prop-table:not(:first-child){
   border-top: 1px solid #9dd2fb;
+}
+
+
+.info-body {
+  
+  font-family: 'Open Sans', Helvetica, "Segoe UI", Arial, sans-serif;
+
+  background: #fff;
+
+  margin: 0 auto;
+  max-width: 100%;
+  padding: 2rem;
+
+  box-shadow: 
+    0px 1px 0px -2px rgba(0, 0, 0, 0.2), 
+    0px 0px 0px 0px rgba(0, 0, 0, 0.03), 
+    0px 0px 0px 0px rgba(0, 0, 0, 0.05);
+
+}
+ul,
+P {
+
+    color: #414141;
+
+    font-family: 'Open Sans', Helvetica, "Segoe UI", Arial, sans-serif;
+    font-size: 1.2rem;
+
+    line-height: 1.5;
+    margin-bottom: 1.5rem;
+}
+
+/** 
+*  typography definitions 
+*  global heading sizing 
+*/
+h1 {
+  font-size: 3.8em;
+  font-weight: bold
+}
+
+h2 {
+  font-size: 3.75rem;
+  font-weight: bold
+}
+
+h3 {
+  font-size: 3rem;
+  font-weight: bold
+}
+
+h4 {
+  font-size: 2.125rem;
+  font-weight: bold
+}
+
+h5 {
+  font-size: 1.5rem;
+  font-weight: bold
+}
+
+h6 {
+  font-size: 1.25rem;
+  font-weight: 600
+}
+
+h1, h2, h3, h4, h5, h6 {
+
+    font-family: 'Montserrat', sans-serif;
+
+    margin-bottom: 1.2rem
 }

@@ -2,27 +2,78 @@
 
 base-layout-static
 
-  section.component-wrapper
+  h1.border-bottom What is Unify Design System?
+
+  .content-area--block
+    h4 Introduction
     p
       strong 
         | Unify Design System 
-      | is a Design System for ERP applications that will be served as a base to build the interface & interaction on our products. It is not just a typical Style Guide, UI Kit or Pattern Library. 
+      | is a Design System for ERP applications that will be used as a base to build the interface & interaction on our products. It is not just a typical Style Guide, UI Kit or Pattern Library. It serves as the 'single source of truth' for all our UI/UX  components.
     p
-      | It serves as the ‘single source of truth’ for all our UI/UX  components, It will later replace the UX wiki & whitebook. 
       strong 
         | Unify Design System 
-      | eventually helps us have a comprehensible design language that will provide a seamless experience for users, and improve the Scrum & Product team’s workflow.
+      | houses a comprehensible design language that will provide a seamless experience for users, and improve the Scrum & Product team’s workflow.
     P
-      | In this component driven development era, front-end engineering has been forever a valuable asset in Mantu's swiss army knife... 
+      | In this Component Driven Development era, front-end engineering has been more than ever a valuable asset in Mantu's toolset...<br /> 
       strong
         | Unify Design System
-      |  covers the front-end standards that drives our applications client-side's strategy.
+      |  also covers those front-end standards that powers our applications client-side's strategy.
 
-    p(class="welcome-note")
-      span crafted with 
-          svg(class="icon-svg-heart", viewBox="0 0 32 29.6")
-            path(d="M23.6,0c-3.4,0-6.3,2.7-7.6,5.6C14.7,2.7,11.8,0,8.4,0C3.8,0,0,3.8,0,8.4c0,9.4,9.5,11.9,16,21.2c6.1-9.3,16-12.1,16-21.2C32,3.8,28.2,0,23.6,0z")
-      | UNIFY team
+  .content-area--block
+    h4 Objective
+    p
+      strong 
+        | Unify Design System 
+      | will save your precious time and resources when building new digital assets or updating previous ones. Whether you are a product owner, a designer or a developer, references in this application are here to make sure you are aware of all the tools and resources that are available to you, how to get in touch with us and how the 
+      strong Unify Design System 
+      | process works.
+
+    p
+      strong
+        | Designers<br /> 
+      | As a designer UDS should be added to your favorites right away as it will be a real time savior as instead of starting your production from scratch you'll start based on a global library.
+      | Now you can re-invest your time in what really matters: conducting user research, addressing specific needs for your end users… 
+
+    p
+      strong
+        | Developers<br /> 
+      | As a developer you work hand in hand with designers. To you the most valuable assets here would be:
+    ul
+      li General information about structure, typography, colors, templates… 
+      li Re-usable components that are flexible to be modified 
+      li A relevant documentation(technical and functional) for each component 
+
+    p
+      strong
+        | Product Owners<br /> 
+      | Consider UDS as your digital handbook that will guide you in the creation of your project. It will help you save precious time and allocate resources knowing what is already available in terms of components, colors, typography and templates. 
+      | Take your time to read the platform and then brief your team by showing them the specific sections that best fit your need (users need) 
+
+
+  .content-area--block
+    h3.border-bottom Current achievements
+
+  .content-area--block
+    h3.border-bottom Long-term goals & vision
+  
+  .content-area--block
+    h3.border-bottom Standards & Advocacy
+
+    .content-area--block
+      h4.border-bottom
+        strong 
+          | UX standards
+
+    .content-area--block
+      h4
+        strong 
+          | Front-end standards
+
+    .content-area--block
+
+
+
 
 
 
@@ -41,29 +92,6 @@ export default {
 
 <style lang="scss">
 
-.component-wrapper {
-  margin: 2rem;
-  line-height: 1.4;
-  font-family: 'Open Sans', Helvetica, "Segoe UI", Arial,sans-serif;
-  font-size: 1.3rem
-}
 
-.welcome-note {
-  font-weight: 400;
-  font-size: .75rem;
-}
-
-.icon-svg-heart {
-  display: inline-block;
-  fill: #b505a8;
-  /* stroke: #000000; */
-  /* stroke-width: 1px; */
-  position: relative;
-  /* top: 5px; */
-  /* height: 14px; */
-  width: 14px;
-  animation: pulse 1s ease infinite;
-  margin: 0 .5rem;
-}
 
 </style>
