@@ -1,7 +1,6 @@
 /* eslint-disable import/no-extraneous-dependencies */
 import { storiesOf } from '@storybook/vue'
 import { action } from '@storybook/addon-actions';
-import '@fortawesome/fontawesome-free/css/all.css'
 
 
 /**
@@ -55,7 +54,7 @@ import CRadioButton from '../core/ui-kit-custom-components/c-radio-button/packag
 import CRadioButtonChangelog from '../core/ui-kit-custom-components/c-radio-button/c-radio-button-changelog.md'
 import CRadioButtonSetup from '../core/ui-kit-custom-components/c-radio-button/c-radio-button-setup.md'
 
-// import CInputGroups from '../core/ui-kit-custom-components/c-inputgroups/packages/dist/c-inputgroups.vue'
+import CInputGroups from '../core/ui-kit-custom-components/c-inputgroups/packages/dist/c-inputgroups.vue'
 // import CInputGroupsChangelog from '../core/ui-kit-custom-components/c-inputgroups/c-inputgroups-changelog.md'
 // import CInputGroupsSetup from '../core/ui-kit-custom-components/c-inputgroups/c-inputgroups-setup.md'
 
@@ -71,11 +70,10 @@ import VueInfoWrapper from '../plugins/vue-info-wrapper/vue-info-wrapper.vue'
 import Vue from 'vue'
 import Vuetify from 'vuetify'
 import 'vuetify/dist/vuetify.min.css';
-import "../assets/stylesheets/cssGlobalOverrides.scss";
 
 Vue.use(Vuetify, {
     iconfont: 'fa' // 'md' || 'mdi' || 'fa' || 'fa4'
-  })
+})
 
 /**
  * 
@@ -90,17 +88,21 @@ Vue.use(Vuetify, {
  */
 
 // import the default Vuetify wrappers 
-import { VApp, VContent } from 'vuetify/lib'
+import { VApp, VContainer, VLayout, VFlex } from 'vuetify/lib'
 
 // add the decorator
 const appDecorator = () => {
     return {
-        components: { VApp, VContent },
+        components: { VApp, VContainer, VLayout, VFlex },
         template: `
         <v-app>
-            <v-content>
-                <story/>
-            </v-content>
+            <v-container fluid>
+                <v-layout>
+                    <v-flex>
+                        <story/>
+                    </v-flex>
+                </v-layout>
+            </v-container>
         </v-app>
         `,
     };
@@ -220,7 +222,7 @@ storiesOf('Library | UI KIT (vuetify custom) / button', module)
             },
             template: `<div>
                         <div>
-                            <c-button comp="solidButton" :solidButtonSettings="{color:'#2196F3',bState:false,btnName:'Primary'}" />
+                            <c-button comp="solidButton" :solidButtonSettings="{color:'#2196F3',bState:false, btnName:'Primary'}" />
                             <c-button comp="solidButton" :solidButtonSettings="{color:'#4CAF50',bState:false,btnName:'Success'}" />
                             <c-button comp="solidButton" :solidButtonSettings="{color:'#FF9800',bState:false,btnName:'Warning'}" />
                             <c-button comp="solidButton" :solidButtonSettings="{color:'#F44336',bState:false,btnName:'Danger'}" />
@@ -396,7 +398,7 @@ storiesOf('Library | UI KIT (vuetify custom) / button', module)
     )
 
 // c-callout 
-storiesOf('Library | UI KIT (vuetify custom) / c-tooltip', module)
+storiesOf('Library | UI KIT (vuetify custom) / tooltip', module)
     .addDecorator(appDecorator) 
     .addParameters({
         readme: {
@@ -521,155 +523,136 @@ storiesOf('Library / UI KIT (vuetify custom)/ combobox-classic', module)
     )
 
 // c-inputgroups
-// storiesOf('Library / UI KIT (vuetify custom) /  input-groups', module)
-//     .addDecorator(appDecorator) 
-//     .addParameters({
-//         readme: {
-//             codeTheme: 'monokai-sublime',
-//             sidebar: CInputGroupsSetup,
-//             theme: {
-//                 textColor: '#bb255a'
-//             },
-//         },
-//         info: {
-//             components: {
-//                 'c-input-groups': CInputGroups
-//             },
-//             docsInPanel: false,
-//             source: false,
-//             wrapperComponent: VueInfoWrapper,
-//         },
-//     })  
-//     .add('classic', () => {
-//         return {
-//             components: {
-//                 'c-input-groups': CInputGroups
-//             },
-//             template: `<c-input-groups compStyle="classic" @change="log"/>`,
-//             methods:{log: action ('action')},
-//             propsDescription: {
-//                 CInputGroups: {
-//                     label : 'Sets input label',
-//                     type : 'Sets input type',
-//                     rules : 'Accepts an array of functions that return either True or a String with an error message',
-//                     icon : "Prepends an icon inside the component's input",
-//                     disabled : 'Disable the input',
-//                     readonly : 'Puts input in readonly state',
-//                 },
-//             }
-//         };
-//     },
-//         {
-//             notes: CInputGroupsChangelog
-//         }
-//     )
-//     .add('minimalist', () => {
-//         return {
-//             components: {
-//                 'c-inputgroups': CInputGroups
-//             },
-//             template: `<c-inputgroups compStyle="minimal" @change="log"/>`,
-//             methods:{log: action ('action')},
-//             propsDescription: {
-//                 CInputGroups: {
-//                     label : 'Sets input label',
-//                     type : 'Sets input type',
-//                     rules : 'Accepts an array of functions that return either True or a String with an error message',
-//                     icon : "Prepends an icon inside the component's input",
-//                     disabled : 'Disable the input',
-//                     readonly : 'Puts input in readonly state',
-//                 },
-//             }
-//         };
-//     },
-//     {
-//         notes: CInputGroupsChangelog
-//     }
-//     )
-//     .add('append classic', () => {
-//         return {
-//             components: {
-//                 'c-inputgroups': CInputGroups
-//             },
-//             template: `<c-inputgroups compStyle="classicAppend" @change="log"/>`,
-//             methods:{log: action ('action')},
-//             propsDescription: {
-//                 CInputGroups: {
-//                     label : 'Sets input label',
-//                     type : 'Sets input type',
-//                     rules : 'Accepts an array of functions that return either True or a String with an error message',
-//                     disabled : 'Disable the input',
-//                     readonly : 'Puts input in readonly state',
-//                     selectItems : 'Can be an array of strings for Select component',
-//                     selectValue : 'Input value for Select component',
-//                 },
-//             }
-//         };
-//     },
-//     {
-//         notes: CInputGroupsChangelog
-//     }
-//     )
-//     .add('append minimalist', () => {
-//         return {
-//             components: {
-//                 'c-inputgroups': CInputGroups
-//             },
-//             template: `<c-inputgroups compStyle="minimalAppend" @change="log"/>`,
-//             methods:{log: action ('action')},
-//             propsDescription: {
-//                 CInputGroups: {
-//                     label : 'Sets input label',
-//                     type : 'Sets input type',
-//                     rules : 'Accepts an array of functions that return either True or a String with an error message',
-//                     disabled : 'Disable the input',
-//                     readonly : 'Puts input in readonly state',
-//                     selectItems : 'Can be an array of strings for Select component',
-//                     selectValue : 'Input value for Select component',
-//                 },
-//             }
-//         };
-//     },
-//     {
-//         notes: CInputGroupsChangelog
-//     }
-//     )
-//     .add('prepend classic', () => {
-//         return {
-//             components: {
-//                 'c-inputgroups': CInputGroups
-//             },
-//             template: `<c-inputgroups compStyle="classicPrepend" @change="log"/>`,
-//             methods:{log: action ('action')},
-//             propsDescription: {
-//                 CInputGroups: {
-//                     selectData : 'Accepts an array - which contains values of items, value, color, solo, box, outline, label',
-//                 },
-//             }
-//         };
-//     },
-//     {
-//         notes: CInputGroupsChangelog
-//     }
-//     )
-//     .add('prepend minimalist', () => {
-//         return {
-//             components: {
-//                 'c-inputgroups': CInputGroups
-//             },
-//             template: `<c-inputgroups compStyle="minimalPrepend" @change="log"/>`,
-//             methods:{log: action ('action')},
-//             propsDescription: {
-//                 CInputGroups: {
-//                     selectData : 'Accepts an array - which contains values of items, value, color, solo, box, outline, label',
-//                 },
-//             }
-//         };
-//     },
-//     {
-//         notes: CInputGroupsChangelog
-//     }
-// )
+storiesOf('Library / UI KIT (vuetify custom) /  input-groups', module)
+    .addDecorator(appDecorator) 
+    .addParameters({
+        readme: {
+            codeTheme: 'monokai-sublime',
+            theme: {
+                textColor: '#bb255a'
+            },
+        },
+        info: {
+            components: {
+                'c-input-groups': CInputGroups
+            },
+            docsInPanel: false,
+            source: false,
+            wrapperComponent: VueInfoWrapper,
+        },
+    })  
+    .add('classic', () => {
+        return {
+            components: {
+                'c-input-groups': CInputGroups
+            },
+            template: `<c-input-groups compStyle="classic" @change="log"/>`,
+            methods:{log: action ('action')},
+            propsDescription: {
+                CInputGroups: {
+                    label : 'Sets input label',
+                    type : 'Sets input type',
+                    rules : 'Accepts an array of functions that return either True or a String with an error message',
+                    icon : "Prepends an icon inside the component's input",
+                    disabled : 'Disable the input',
+                    readonly : 'Puts input in readonly state',
+                },
+            }
+        };
+    }
+    )
+    .add('minimalist', () => {
+        return {
+            components: {
+                'c-inputgroups': CInputGroups
+            },
+            template: `<c-inputgroups compStyle="minimal" @change="log"/>`,
+            methods:{log: action ('action')},
+            propsDescription: {
+                CInputGroups: {
+                    label : 'Sets input label',
+                    type : 'Sets input type',
+                    rules : 'Accepts an array of functions that return either True or a String with an error message',
+                    icon : "Prepends an icon inside the component's input",
+                    disabled : 'Disable the input',
+                    readonly : 'Puts input in readonly state',
+                },
+            }
+        };
+    }
+    )
+    .add('append classic', () => {
+        return {
+            components: {
+                'c-inputgroups': CInputGroups
+            },
+            template: `<c-inputgroups compStyle="classicAppend" @change="log"/>`,
+            methods:{log: action ('action')},
+            propsDescription: {
+                CInputGroups: {
+                    label : 'Sets input label',
+                    type : 'Sets input type',
+                    rules : 'Accepts an array of functions that return either True or a String with an error message',
+                    disabled : 'Disable the input',
+                    readonly : 'Puts input in readonly state',
+                    selectItems : 'Can be an array of strings for Select component',
+                    selectValue : 'Input value for Select component',
+                },
+            }
+        };
+    }
+    )
+    .add('append minimalist', () => {
+        return {
+            components: {
+                'c-inputgroups': CInputGroups
+            },
+            template: `<c-inputgroups compStyle="minimalAppend" @change="log"/>`,
+            methods:{log: action ('action')},
+            propsDescription: {
+                CInputGroups: {
+                    label : 'Sets input label',
+                    type : 'Sets input type',
+                    rules : 'Accepts an array of functions that return either True or a String with an error message',
+                    disabled : 'Disable the input',
+                    readonly : 'Puts input in readonly state',
+                    selectItems : 'Can be an array of strings for Select component',
+                    selectValue : 'Input value for Select component',
+                },
+            }
+        };
+    }
+    )
+    .add('prepend classic', () => {
+        return {
+            components: {
+                'c-inputgroups': CInputGroups
+            },
+            template: `<c-inputgroups compStyle="classicPrepend" @change="log"/>`,
+            methods:{log: action ('action')},
+            propsDescription: {
+                CInputGroups: {
+                    selectData : 'Accepts an array - which contains values of items, value, color, solo, box, outline, label',
+                },
+            }
+        };
+    }
+    )
+    .add('prepend minimalist', () => {
+        return {
+            components: {
+                'c-inputgroups': CInputGroups
+            },
+            template: `<c-inputgroups compStyle="minimalPrepend" @change="log"/>`,
+            methods:{log: action ('action')},
+            propsDescription: {
+                CInputGroups: {
+                    selectData : 'Accepts an array - which contains values of items, value, color, solo, box, outline, label',
+                },
+            }
+        };
+    }
+)
 
 // c-modal
 storiesOf('Library | UI KIT (vuetify custom) /modal', module)
@@ -753,7 +736,7 @@ storiesOf('Library | UI KIT (vuetify custom) /radio-button', module)
     )
 
 // c-status-pill
-storiesOf('Library | UI KIT (vuetify custom) /status-pill', module)
+storiesOf('Library | UI KIT (vuetify custom) / status-pill', module)
     .addDecorator(appDecorator) 
     .addParameters({
         readme: {
@@ -800,7 +783,7 @@ storiesOf('Library | UI KIT (vuetify custom) /status-pill', module)
     )
 
 // c-tab
-storiesOf('Library | UI KIT (vuetify custom) /tab', module)
+storiesOf('Library | UI KIT (vuetify custom) / tab', module)
     .addDecorator(appDecorator) 
     .addParameters({
         readme: {
@@ -839,7 +822,7 @@ storiesOf('Library | UI KIT (vuetify custom) /tab', module)
     )
 
 // c-textarea
-storiesOf('Library | UI KIT (vuetify custom) /textarea', module)
+storiesOf('Library | UI KIT (vuetify custom) / textarea', module)
     .addDecorator(appDecorator) 
     .addParameters({
         readme: {

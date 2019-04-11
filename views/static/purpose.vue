@@ -2,7 +2,8 @@
 <template lang="pug">
 
 base-layout-static
-  section.component-wrapper
+
+  .content-area--block
     ul    
       li
         | To have a uniform & consistent user experience across our ARP applications.
@@ -42,16 +43,6 @@ export default {
 
 <style lang="scss">
 
-.component-wrapper {
-  margin: 2rem;
-  line-height: 1.4;
-  font-family: 'Open Sans', Helvetica, "Segoe UI", Arial,sans-serif;
-  font-size: 1.5rem
-}
 
-.welcome-note {
-  font-weight: 400;
-  font-size: .75rem;
-}
 
 </style>

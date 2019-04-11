@@ -18,22 +18,22 @@ import Typography from '../views/assets-treatment/typography/typography.vue'
 
 // import icons from '../views/assets-treatment/icons/icons.vue'
 
-import assets from '../views/assets-treatment/images/images.vue'
+// import assets from '../views/assets-treatment/images/images.vue'
 
 import BaseStaticLayout from '../views/layouts/base-layout-static.vue';
 
-storiesOf('Asset | Images', module)
-    .addParameters({
-        options: { 
-            showAddonPanel: false 
-        },
-    })  
-    .add('Default', () => ({
-        components: {
-            'assets': assets,
-        },
-        template: `<assets />`,
-    }))
+// storiesOf('Asset | Images', module)
+//     .addParameters({
+//         options: { 
+//             showAddonPanel: false 
+//         },
+//     })  
+//     .add('Default', () => ({
+//         components: {
+//             'assets': assets,
+//         },
+//         template: `<assets />`,
+//     }))
 
 // storiesOf('Asset Treatment | Iconset', module)
 //     .addParameters({
@@ -70,14 +70,9 @@ storiesOf('Asset | Typography', module)
     })  
     .add('Base Font', () => ({
         components: { 
-            'base-layout-static': BaseStaticLayout,
             'typo': Typography,
         },
-        template: `
-            <base-layout-static>
-                <typo />
-            </base-layout-static>
-            `,
+        template: `<typo />`,
     }))
 
 /* eslint-enable react/react-in-jsx-scope */

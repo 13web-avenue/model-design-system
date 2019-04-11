@@ -81,13 +81,15 @@ import VAlertSetup from '../core/ui-kit-default-components/v-alert/v-alert-setup
 
 // Add custom wrappers here 
 import VueInfoWrapper from '../plugins/vue-info-wrapper/vue-info-wrapper.vue'
-
+import BaseLayoutStatic from '../views/layouts/base-layout-static.vue';
 
 import Vue from 'vue'
 import Vuetify from 'vuetify'
 import 'vuetify/dist/vuetify.min.css';
 
-Vue.use(Vuetify)
+Vue.use(Vuetify, {
+    iconfont: 'fa' // 'md' || 'mdi' || 'fa' || 'fa4'
+})
 
 /**
  * 
@@ -102,18 +104,20 @@ Vue.use(Vuetify)
  */
 
 // import the default Vuetify wrappers 
-import { VApp, VContent } from 'vuetify/lib'
+import { VApp, VContainer, VLayout, VFlex } from 'vuetify/lib'
 
 // add the decorator
 const appDecorator = () => {
     return {
-        components: { VApp, VContent },
+        components: { VApp, VContainer, VLayout, VFlex },
         template: `
         <v-app>
             <div style="background-color: none; width: 100%; height: 100%;">
-            <v-content>
-                <story/>
-            </v-content>
+                    <v-layout>
+                        <v-flex>
+                            <story/>
+                        </v-flex>
+                    </v-layout>
             </div>
         </v-app>
         `,
@@ -180,14 +184,17 @@ storiesOf('Library | UI KIT vuetify ready / v-alert', module)
     .add('Basic', () => {
         return {
             components: {
-                'v-alert': VAlert
+                'v-alert': VAlert,
+                'base-layout-static': BaseLayoutStatic
             },
             template: `
                 <div>
+                    <base-layout-static>
                     <v-alert type="success">This is a success alert.</v-alert>
                     <v-alert type="info">This is a info alert.</v-alert>
                     <v-alert type="warning">This is a warning alert.</v-alert>
                     <v-alert type="error">This is a error alert.</v-alert>
+                    </base-layout-static>
                 </div>           
             `,
             propsDescription: {
@@ -663,7 +670,7 @@ storiesOf('Library | UI KIT (vuetify ready)/ v-search', module)
 
 
 // v-snackbar
-storiesOf('Library | UI KIT (vuetify ready)/ v-snackbar', module)
+storiesOf('Library | UI KIT (vuetify ready) / v-snackbar', module)
     .addDecorator(appDecorator)
     .addParameters({
         readme: {
