@@ -11,7 +11,7 @@
     "deploy-uds": "build-storybook -c config/storybook -o .out"
   },
   "dependencies": {
-    "core-js": "3",
+    "core-js": "3.0.1",
     "covgen": "^3.1.0",
     "vue": "^2.6.10",
     "vuex": "^3.1.0"
@@ -64,7 +64,7 @@
     "pug-plain-loader": "^1.0.0",
     "sass-loader": "^7.1.0",
     "storybook-addon-vue-info": "^1.0.1",
-    "storybook-readme": "^5.0.1",
+    "storybook-readme": "^5.0.2",
     "style-loader": "^0.23.1",
     "stylus": "^0.54.5",
     "stylus-loader": "^3.0.2",
@@ -72,7 +72,7 @@
     "vue-cli-plugin-vuetify": "^0.5.0",
     "vue-loader": "^15.7.0",
     "vue-template-compiler": "^2.6.10",
-    "vuetify": "^1.5.8",
+    "vuetify": "^1.5.11",
     "vuetify-loader": "^1.2.1",
     "webpack": "^4.29.0"
   },

@@ -1,7 +1,7 @@
 .layout-dynamic {
   /* position: relative; */
-
-  width: 80vw
+  margin: 0 auto;
+  width: 80vw;
 }
 
 .header {
