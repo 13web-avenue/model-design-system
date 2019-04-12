@@ -84,12 +84,17 @@ addParameters({
      * show/hide tool bar
      * @type {Boolean}
      */
+    /**
+     * sorts stories
+     * @type {Boolean}
+     */
+    sortStoriesByKind: true,    
     isToolshown: true, // true by default
     /**
      * default themes
      * Custom themes will be applied form UnifyThemes
      */
-      theme: UnifyTheme,
+    theme: UnifyTheme,
   },
 })
 

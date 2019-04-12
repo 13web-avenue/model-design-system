@@ -124,7 +124,7 @@ const appDecorator = () => {
     };
 };
  
-storiesOf('Library | UI KIT vuetify ready / v-alert', module)
+storiesOf('UI KIT | Vuetify default / v-alert', module)
     .addDecorator(appDecorator) 
     .addParameters({
         readme: {
@@ -210,7 +210,7 @@ storiesOf('Library | UI KIT vuetify ready / v-alert', module)
         }
     )
 
-storiesOf('Library | UI KIT (vuetify ready)/ v-badge', module)
+storiesOf('UI KIT | Vuetify default/ v-badge', module)
     .addDecorator(appDecorator)
     .addParameters({
         readme: {
@@ -252,7 +252,7 @@ storiesOf('Library | UI KIT (vuetify ready)/ v-badge', module)
     )    
 
 // v-breadcrumbs
-storiesOf('Library | UI KIT (vuetify ready)/ v-breadcrumbs', module)
+storiesOf('UI KIT | Vuetify default/ v-breadcrumbs', module)
     .addDecorator(appDecorator)
     .addParameters({
         readme: {
@@ -292,7 +292,7 @@ storiesOf('Library | UI KIT (vuetify ready)/ v-breadcrumbs', module)
         }
     )
 
-storiesOf('Library | UI KIT (vuetify ready)/ v-card', module)
+storiesOf('UI KIT | Vuetify default/ v-card', module)
     .addDecorator(appDecorator)
     .addParameters({
         readme: {
@@ -333,7 +333,7 @@ storiesOf('Library | UI KIT (vuetify ready)/ v-card', module)
     ) 
     
 // v-combobox
-storiesOf('Library | UI KIT (vuetify ready)/ v-combobox', module)
+storiesOf('UI KIT | Vuetify default/ v-combobox', module)
     .addDecorator(appDecorator)
     .addParameters({
         readme: {
@@ -395,7 +395,7 @@ storiesOf('Library | UI KIT (vuetify ready)/ v-combobox', module)
 
     
 // v-datable
-storiesOf('Library | UI KIT (vuetify ready)/ v-datatable', module)
+storiesOf('UI KIT | Vuetify default/ v-datatable', module)
     .addDecorator(appDecorator)
     .addParameters({
         readme: {
@@ -437,7 +437,7 @@ storiesOf('Library | UI KIT (vuetify ready)/ v-datatable', module)
 
     
 // v-divider
-storiesOf('Library | UI KIT (vuetify ready)/ v-divider', module)
+storiesOf('UI KIT | Vuetify default/ v-divider', module)
     .addDecorator(appDecorator)
     .addParameters({
         readme: {
@@ -475,7 +475,7 @@ storiesOf('Library | UI KIT (vuetify ready)/ v-divider', module)
 
     
 // v-expansion-panel
-storiesOf('Library | UI KIT (vuetify ready)/ v-expansion-panel', module)
+storiesOf('UI KIT | Vuetify default/ v-expansion-panel', module)
     .addDecorator(appDecorator)
     .addParameters({
         readme: {
@@ -531,7 +531,7 @@ storiesOf('Library | UI KIT (vuetify ready)/ v-expansion-panel', module)
 
     
 // v-navigation-drawer
-storiesOf('Library | UI KIT (vuetify ready)/ v-navigation-drawer', module)
+storiesOf('UI KIT | Vuetify default/ v-navigation-drawer', module)
     .addDecorator(appDecorator)
     .addParameters({
         readme: {
@@ -565,7 +565,7 @@ storiesOf('Library | UI KIT (vuetify ready)/ v-navigation-drawer', module)
 
     
 // v-ratings
-storiesOf('Library | UI KIT (vuetify ready)/ v-ratings', module)
+storiesOf('UI KIT | Vuetify default/ v-ratings', module)
     .addDecorator(appDecorator)
     .addParameters({
         readme: {
@@ -610,7 +610,7 @@ storiesOf('Library | UI KIT (vuetify ready)/ v-ratings', module)
 
     
 // v-search
-storiesOf('Library | UI KIT (vuetify ready)/ v-search', module)
+storiesOf('UI KIT | Vuetify default/ v-search', module)
     .addDecorator(appDecorator)
     .addParameters({
         readme: {
@@ -670,7 +670,7 @@ storiesOf('Library | UI KIT (vuetify ready)/ v-search', module)
 
 
 // v-snackbar
-storiesOf('Library | UI KIT (vuetify ready) / v-snackbar', module)
+storiesOf('UI KIT | Vuetify default / v-snackbar', module)
     .addDecorator(appDecorator)
     .addParameters({
         readme: {
@@ -711,7 +711,7 @@ storiesOf('Library | UI KIT (vuetify ready) / v-snackbar', module)
 
 
 // v-textarea
-storiesOf('Library | UI KIT (vuetify ready)/ v-textarea', module)
+storiesOf('UI KIT | Vuetify default/ v-textarea', module)
     .addDecorator(appDecorator)
     .addParameters({
         readme: {
@@ -783,7 +783,7 @@ storiesOf('Library | UI KIT (vuetify ready)/ v-textarea', module)
 
 
 // v-textfield
-storiesOf('Library | UI KIT (vuetify ready)/ v-textfield', module)
+storiesOf('UI KIT | Vuetify default/ v-textfield', module)
     .addDecorator(appDecorator)
     .addParameters({
         readme: {
@@ -855,7 +855,7 @@ storiesOf('Library | UI KIT (vuetify ready)/ v-textfield', module)
 
 
 // v-timeline
-storiesOf('Library | UI KIT (vuetify ready)/ v-timeline', module)
+storiesOf('UI KIT | Vuetify default/ v-timeline', module)
     .addDecorator(appDecorator)
     .addParameters({
         readme: {
@@ -889,7 +889,7 @@ storiesOf('Library | UI KIT (vuetify ready)/ v-timeline', module)
 
 
 // v-toggle
-storiesOf('Library | UI KIT (vuetify ready)/ v-toggle', module)
+storiesOf('UI KIT | Vuetify default/ v-toggle', module)
     .addDecorator(appDecorator)
     .addParameters({
         readme: {
@@ -936,7 +936,7 @@ storiesOf('Library | UI KIT (vuetify ready)/ v-toggle', module)
 
 
 // v-treeview
-storiesOf('Library | UI KIT (vuetify ready)/ v-treeview', module)
+storiesOf('UI KIT | Vuetify default/ v-treeview', module)
     .addDecorator(appDecorator)
     .addParameters({
         readme: {

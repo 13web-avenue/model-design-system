@@ -20,7 +20,7 @@ import Typography from '../views/assets-treatment/typography/typography.vue'
 
 // import assets from '../views/assets-treatment/images/images.vue'
 
-import BaseStaticLayout from '../views/layouts/base-layout-static.vue';
+// import BaseStaticLayout from '../views/layouts/base-layout-static.vue';
 
 // storiesOf('Asset | Images', module)
 //     .addParameters({

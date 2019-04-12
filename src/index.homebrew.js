@@ -109,7 +109,7 @@ const appDecorator = () => {
 };
 
 //c-button
-storiesOf('Library | UI KIT (vuetify custom) / button', module)
+storiesOf('UI KIT | Vuetify custom/ button', module)
     .addDecorator(appDecorator) 
     .addParameters({
         info: {
@@ -398,7 +398,7 @@ storiesOf('Library | UI KIT (vuetify custom) / button', module)
     )
 
 // c-callout 
-storiesOf('Library | UI KIT (vuetify custom) / tooltip', module)
+storiesOf('UI KIT | Vuetify custom/ tooltip', module)
     .addDecorator(appDecorator) 
     .addParameters({
         readme: {
@@ -436,7 +436,7 @@ storiesOf('Library | UI KIT (vuetify custom) / tooltip', module)
     )
 
 // c-checkbox 
-storiesOf('Library | UI KIT (vuetify custom) /checkbox', module)
+storiesOf('UI KIT | Vuetify custom/checkbox', module)
     .addDecorator(appDecorator) 
     .addParameters({
         readme: {
@@ -479,7 +479,7 @@ storiesOf('Library | UI KIT (vuetify custom) /checkbox', module)
     )
 
 // c-combobox-classic 
-storiesOf('Library / UI KIT (vuetify custom)/ combobox-classic', module)
+storiesOf('UI KIT | Vuetify custom / combobox-classic', module)
     .addDecorator(appDecorator) 
     .addParameters({
         readme: {
@@ -523,7 +523,7 @@ storiesOf('Library / UI KIT (vuetify custom)/ combobox-classic', module)
     )
 
 // c-inputgroups
-storiesOf('Library / UI KIT (vuetify custom) /  input-groups', module)
+storiesOf('UI KIT | Vuetify custom  /  input-groups', module)
     .addDecorator(appDecorator) 
     .addParameters({
         readme: {
@@ -655,7 +655,7 @@ storiesOf('Library / UI KIT (vuetify custom) /  input-groups', module)
 )
 
 // c-modal
-storiesOf('Library | UI KIT (vuetify custom) /modal', module)
+storiesOf('UI KIT | Vuetify custom/modal', module)
     .addDecorator(appDecorator) 
     .addParameters({
         readme: {
@@ -696,7 +696,7 @@ storiesOf('Library | UI KIT (vuetify custom) /modal', module)
     )
 
 // c-radio-button 
-storiesOf('Library | UI KIT (vuetify custom) /radio-button', module)
+storiesOf('UI KIT | Vuetify custom/radio-button', module)
     .addDecorator(appDecorator) 
     .addParameters({
         readme: {
@@ -736,7 +736,7 @@ storiesOf('Library | UI KIT (vuetify custom) /radio-button', module)
     )
 
 // c-status-pill
-storiesOf('Library | UI KIT (vuetify custom) / status-pill', module)
+storiesOf('UI KIT | Vuetify custom/ status-pill', module)
     .addDecorator(appDecorator) 
     .addParameters({
         readme: {
@@ -783,7 +783,7 @@ storiesOf('Library | UI KIT (vuetify custom) / status-pill', module)
     )
 
 // c-tab
-storiesOf('Library | UI KIT (vuetify custom) / tab', module)
+storiesOf('UI KIT | Vuetify custom/ tab', module)
     .addDecorator(appDecorator) 
     .addParameters({
         readme: {
@@ -822,7 +822,7 @@ storiesOf('Library | UI KIT (vuetify custom) / tab', module)
     )
 
 // c-textarea
-storiesOf('Library | UI KIT (vuetify custom) / textarea', module)
+storiesOf('UI KIT | Vuetify custom/ textarea', module)
     .addDecorator(appDecorator) 
     .addParameters({
         readme: {
@@ -893,7 +893,7 @@ storiesOf('Library | UI KIT (vuetify custom) / textarea', module)
     )
 
 // c-textfield
-storiesOf('Library | UI KIT (vuetify custom) /textfield', module)
+storiesOf('UI KIT | Vuetify custom/textfield', module)
     .addDecorator(appDecorator) 
     .addParameters({
         readme: {
@@ -966,7 +966,7 @@ storiesOf('Library | UI KIT (vuetify custom) /textfield', module)
     )
 
 // c-toggle
-storiesOf('Library | UI KIT (vuetify custom) / toggle', module)
+storiesOf('UI KIT | Vuetify custom/ toggle', module)
     .addDecorator(appDecorator) 
     .addParameters({
         readme: {

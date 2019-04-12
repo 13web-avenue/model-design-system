@@ -45,7 +45,7 @@ export default {
       &--table-full-screen,
       &--static {
                       
-        max-width: 80rem;
+        width: 80vw;
 
       }
 }
