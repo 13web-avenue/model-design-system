@@ -174,7 +174,7 @@ storiesOf('UI KIT | Vuetify custom/ button', module)
                             <c-button comp="loadingButton" :loadingButtonSettings="{color:'#F44336',bState:false,icnName:'fas fa-bomb',btnName:'Destroy'}" />
                         </div>
                         <div>
-                            <c-button comp="loadingButton" :loadingButtonSettings="{color:'#F44336',bState:false,icnName:'fab fa-telegram-plane',btnName:'Send',clas:'noshadow'}" />
+                            <c-button comp="loadingButton" :loadingButtonSettings="{color:'#4CAF50',bState:false,icnName:'fab fa-telegram-plane',btnName:'Send',clas:'noshadow'}" />
                             <c-button comp="loadingButton" :loadingButtonSettings="{color:'#2196F3',bState:false,icnName:'fab fa-telegram-plane',btnName:'Send',clas:'noshadow'}" />
                             <c-button comp="loadingButton" :loadingButtonSettings="{color:'#F44336',bState:false,icnName:'fas fa-bomb',btnName:'Destroy',clas:'noshadow'}" />
                         </div>
