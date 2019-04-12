@@ -75,8 +75,8 @@ export default {
       <h1 class="title">{{ info.title }}</h1>
       <p class="subtitle">{{ info.subtitle }}</p>
     </div>
-    <div class="preview-container">
-      <div class="preview"><slot /></div>
+    <div>
+      <slot/>
     </div>
     <div class="info-body">
       <div class="summary" v-html="summary" />
@@ -133,7 +133,7 @@ export default {
           <h3 class="subheading">Events</h3>
           <ul class="list">
             <li v-for="e in c.events" :key="e.name" class="item">
-              {{getEventText(e)}}
+              {{ getEventText(e) }}
             </li>
           </ul>
         </div>

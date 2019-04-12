@@ -41,9 +41,9 @@ import CComboBoxClassic from '../core/ui-kit-custom-components/c-combobox/packag
 import CComboBoxClassicChangelog from '../core/ui-kit-custom-components/c-combobox/c-combobox-changelog.md'
 import CComboBoxClassicSetup from '../core/ui-kit-custom-components/c-combobox/c-combobox-setup.md'
 
-import CCallOut from '../core/ui-kit-custom-components/c-callout/packages/dist/c-callout.vue'
-import CCallOutChangelog from '../core/ui-kit-custom-components/c-callout/c-callout-changelog.md'
-import CCallOutSetup from '../core/ui-kit-custom-components/c-callout/c-callout-setup.md'
+import CTooltip from '../core/ui-kit-custom-components/c-tooltip/packages/dist/c-tooltip.vue'
+import CTooltipChangelog from '../core/ui-kit-custom-components/c-tooltip/c-tooltip-changelog.md'
+import CTooltipSetup from '../core/ui-kit-custom-components/c-tooltip/c-tooltip-setup.md'
 
 
 import CCheckBox from '../core/ui-kit-custom-components/c-checkbox/packages/dist/c-checkbox.vue'
@@ -54,7 +54,7 @@ import CRadioButton from '../core/ui-kit-custom-components/c-radio-button/packag
 import CRadioButtonChangelog from '../core/ui-kit-custom-components/c-radio-button/c-radio-button-changelog.md'
 import CRadioButtonSetup from '../core/ui-kit-custom-components/c-radio-button/c-radio-button-setup.md'
 
-// import CInputGroups from '../core/ui-kit-custom-components/c-inputgroups/packages/dist/c-inputgroups.vue'
+import CInputGroups from '../core/ui-kit-custom-components/c-inputgroups/packages/dist/c-inputgroups.vue'
 // import CInputGroupsChangelog from '../core/ui-kit-custom-components/c-inputgroups/c-inputgroups-changelog.md'
 // import CInputGroupsSetup from '../core/ui-kit-custom-components/c-inputgroups/c-inputgroups-setup.md'
 
@@ -63,15 +63,17 @@ import CButtonChangelog from '../core/ui-kit-custom-components/c-button/c-button
 import CButtonSetup from '../core/ui-kit-custom-components/c-button/c-button-setup.md'
 import CButtonContent from '../core/ui-kit-custom-components/c-button/c-button-content.md'
 import CButtonSolidContent from '../core/ui-kit-custom-components/c-button/c-button-solid-content.md'
+
 // Add custom wrappers here 
 import VueInfoWrapper from '../plugins/vue-info-wrapper/vue-info-wrapper.vue'
 
 import Vue from 'vue'
 import Vuetify from 'vuetify'
 import 'vuetify/dist/vuetify.min.css';
-import "../assets/stylesheets/cssGlobalOverrides.scss";
 
-Vue.use(Vuetify)
+Vue.use(Vuetify, {
+    iconfont: 'fa' // 'md' || 'mdi' || 'fa' || 'fa4'
+})
 
 /**
  * 
@@ -86,24 +88,28 @@ Vue.use(Vuetify)
  */
 
 // import the default Vuetify wrappers 
-import { VApp, VContent } from 'vuetify/lib'
+import { VApp, VContainer, VLayout, VFlex } from 'vuetify/lib'
 
 // add the decorator
 const appDecorator = () => {
     return {
-        components: { VApp, VContent },
+        components: { VApp, VContainer, VLayout, VFlex },
         template: `
         <v-app>
-            <v-content>
-                <story/>
-            </v-content>
+            <v-container fluid>
+                <v-layout>
+                    <v-flex>
+                        <story/>
+                    </v-flex>
+                </v-layout>
+            </v-container>
         </v-app>
         `,
     };
 };
 
 //c-button
-storiesOf('Library | UI KIT (vuetify custom) / button', module)
+storiesOf('UI KIT | Vuetify custom/ button', module)
     .addDecorator(appDecorator) 
     .addParameters({
         info: {
@@ -130,18 +136,18 @@ storiesOf('Library | UI KIT (vuetify custom) / button', module)
             },
             template: `<div>
                         <div>
-                            <c-button comp="iconButton" :iconButtonSettings="{color:'#2196F3',state:false, iconName:'search'}" />
-                            <c-button comp="iconButton" :iconButtonSettings="{color:'#4CAF50',state:false, iconName:'check'}" />
-                            <c-button comp="iconButton" :iconButtonSettings="{color:'#FF9800',state:false, iconName:'priority_high'}" />
-                            <c-button comp="iconButton" :iconButtonSettings="{color:'#F44336',state:false, iconName:'delete'}" />
-                            <c-button comp="iconButton" :iconButtonSettings="{color:'#757575',state:false, iconName:'close'}" />
+                            <c-button comp="iconButton" :iconButtonSettings="{color:'#2196F3',state:false, iconName:'fas fa-search'}" />
+                            <c-button comp="iconButton" :iconButtonSettings="{color:'#4CAF50',state:false, iconName:'fas fa-check'}" />
+                            <c-button comp="iconButton" :iconButtonSettings="{color:'#FF9800',state:false, iconName:'fas fa-exclamation'}" />
+                            <c-button comp="iconButton" :iconButtonSettings="{color:'#F44336',state:false, iconName:'fas fa-trash-alt'}" />
+                            <c-button comp="iconButton" :iconButtonSettings="{color:'#757575',state:false, iconName:'fas fa-times'}" />
                         </div>
                         <div>
-                            <c-button comp="iconButton" :iconButtonSettings="{state:true, iconName:'search'}" />
-                            <c-button comp="iconButton" :iconButtonSettings="{state:true, iconName:'check'}" />
-                            <c-button comp="iconButton" :iconButtonSettings="{state:true, iconName:'priority_high'}" />
-                            <c-button comp="iconButton" :iconButtonSettings="{state:true, iconName:'delete'}" />
-                            <c-button comp="iconButton" :iconButtonSettings="{state:true, iconName:'close'}" />
+                            <c-button comp="iconButton" :iconButtonSettings="{state:true, iconName:'fas fa-search'}" />
+                            <c-button comp="iconButton" :iconButtonSettings="{state:true, iconName:'fas fa-check'}" />
+                            <c-button comp="iconButton" :iconButtonSettings="{state:true, iconName:'fas fa-exclamation'}" />
+                            <c-button comp="iconButton" :iconButtonSettings="{state:true, iconName:'fas fa-trash-alt'}" />
+                            <c-button comp="iconButton" :iconButtonSettings="{state:true, iconName:'fas fa-times'}" />
                         </div>
                     </div>`,
             propsDescription: {
@@ -163,19 +169,19 @@ storiesOf('Library | UI KIT (vuetify custom) / button', module)
             },
             template: `<div>
                         <div>
-                            <c-button comp="loadingButton" :loadingButtonSettings="{color:'#4CAF50',bState:false,btnName:'Send'}" />
-                            <c-button comp="loadingButton" :loadingButtonSettings="{color:'#2196F3',bState:false,btnName:'Send'}" />
-                            <c-button comp="loadingButton" :loadingButtonSettings="{color:'#F44336',bState:false,btnName:'Destroy'}" />
+                            <c-button comp="loadingButton" :loadingButtonSettings="{color:'#4CAF50',bState:false,icnName:'fab fa-telegram-plane',btnName:'Send'}" />
+                            <c-button comp="loadingButton" :loadingButtonSettings="{color:'#2196F3',bState:false,icnName:'fab fa-telegram-plane',btnName:'Send'}" />
+                            <c-button comp="loadingButton" :loadingButtonSettings="{color:'#F44336',bState:false,icnName:'fas fa-bomb',btnName:'Destroy'}" />
                         </div>
                         <div>
-                            <c-button comp="loadingButton" :loadingButtonSettings="{color:'#F44336',bState:false,btnName:'Send',clas:'noshadow'}" />
-                            <c-button comp="loadingButton" :loadingButtonSettings="{color:'#2196F3',bState:false,btnName:'Send',clas:'noshadow'}" />
-                            <c-button comp="loadingButton" :loadingButtonSettings="{color:'#F44336',bState:false,btnName:'Destroy',clas:'noshadow'}" />
+                            <c-button comp="loadingButton" :loadingButtonSettings="{color:'#F44336',bState:false,icnName:'fab fa-telegram-plane',btnName:'Send',clas:'noshadow'}" />
+                            <c-button comp="loadingButton" :loadingButtonSettings="{color:'#2196F3',bState:false,icnName:'fab fa-telegram-plane',btnName:'Send',clas:'noshadow'}" />
+                            <c-button comp="loadingButton" :loadingButtonSettings="{color:'#F44336',bState:false,icnName:'fas fa-bomb',btnName:'Destroy',clas:'noshadow'}" />
                         </div>
                         <div>
-                            <c-button comp="loadingButton" :loadingButtonSettings="{bState:true,btnName:'Send'}" />
-                            <c-button comp="loadingButton" :loadingButtonSettings="{bState:true,btnName:'Send'}" />
-                            <c-button comp="loadingButton" :loadingButtonSettings="{bState:true,btnName:'Destroy'}" />
+                            <c-button comp="loadingButton" :loadingButtonSettings="{bState:true,icnName:'fab fa-telegram-plane',btnName:'Send'}" />
+                            <c-button comp="loadingButton" :loadingButtonSettings="{bState:true,icnName:'fab fa-telegram-plane',btnName:'Send'}" />
+                            <c-button comp="loadingButton" :loadingButtonSettings="{bState:true,icnName:'fas fa-bomb',btnName:'Destroy'}" />
                         </div>
                     </div>`,
             propsDescription: {
@@ -216,11 +222,11 @@ storiesOf('Library | UI KIT (vuetify custom) / button', module)
             },
             template: `<div>
                         <div>
-                            <c-button  comp="solidButton" :solidButtonSettings="{color:'#2196F3',bState:false,btnName:'Primary'}" />
-                            <c-button  comp="solidButton" :solidButtonSettings="{color:'#4CAF50',bState:false,btnName:'Success'}" />
-                            <c-button  comp="solidButton" :solidButtonSettings="{color:'#FF9800',bState:false,btnName:'Warning'}" />
-                            <c-button  comp="solidButton" :solidButtonSettings="{color:'#F44336',bState:false,btnName:'Danger'}" />
-                            <c-button  comp="solidButton" :solidButtonSettings="{color:'#757575',bState:false,btnName:'Secondary'}" />                 
+                            <c-button comp="solidButton" :solidButtonSettings="{color:'#2196F3',bState:false, btnName:'Primary'}" />
+                            <c-button comp="solidButton" :solidButtonSettings="{color:'#4CAF50',bState:false,btnName:'Success'}" />
+                            <c-button comp="solidButton" :solidButtonSettings="{color:'#FF9800',bState:false,btnName:'Warning'}" />
+                            <c-button comp="solidButton" :solidButtonSettings="{color:'#F44336',bState:false,btnName:'Danger'}" />
+                            <c-button comp="solidButton" :solidButtonSettings="{color:'#757575',bState:false,btnName:'Secondary'}" />                 
                         </div>
                         <div>
                             <c-button  comp="solidButton" :solidButtonSettings="{color:'#2196F3',bState:false,btnName:'Primary',clas:'noshadow'}" />
@@ -241,7 +247,7 @@ storiesOf('Library | UI KIT (vuetify custom) / button', module)
                 CButton: {
                     bState: 'Button state for disabled',
                     btnColor: 'color of btn to be shown',
-                    noshadow : 'Hide shadow'
+                    noshadow: 'Hide shadow'
                 },
             }
         };
@@ -323,18 +329,18 @@ storiesOf('Library | UI KIT (vuetify custom) / button', module)
             },
             template: `<div>
                         <div>
-                            <c-button comp="outlineRounded" :outlineRoundedSettings="{color:'#2196F3',bState:false, iconName:'search'}" />
-                            <c-button comp="outlineRounded" :outlineRoundedSettings="{color:'#4CAF50',bState:false, iconName:'check'}" />
-                            <c-button comp="outlineRounded" :outlineRoundedSettings="{color:'#FF9800',bState:false, iconName:'priority_high'}" />
-                            <c-button comp="outlineRounded" :outlineRoundedSettings="{color:'#F44336',bState:false, iconName:'delete'}" />
-                            <c-button comp="outlineRounded" :outlineRoundedSettings="{color:'#757575',bState:false, iconName:'close'}" />                 
+                            <c-button comp="outlineRounded" :outlineRoundedSettings="{color:'#2196F3',bState:false, iconName:'fas fa-search'}" />
+                            <c-button comp="outlineRounded" :outlineRoundedSettings="{color:'#4CAF50',bState:false, iconName:'fas fa-check'}" />
+                            <c-button comp="outlineRounded" :outlineRoundedSettings="{color:'#FF9800',bState:false, iconName:'fas fa-exclamation'}" />
+                            <c-button comp="outlineRounded" :outlineRoundedSettings="{color:'#F44336',bState:false, iconName:'fas fa-trash-alt'}" />
+                            <c-button comp="outlineRounded" :outlineRoundedSettings="{color:'#757575',bState:false, iconName:'fas fa-times'}" />                 
                         </div>
                         <div>
-                            <c-button comp="outlineRounded" :outlineRoundedSettings="{bState:true, iconName:'search'}" />
-                            <c-button comp="outlineRounded" :outlineRoundedSettings="{bState:true, iconName:'check'}" />
-                            <c-button comp="outlineRounded" :outlineRoundedSettings="{bState:true, iconName:'priority_high'}" />
-                            <c-button comp="outlineRounded" :outlineRoundedSettings="{bState:true, iconName:'delete'}" />
-                            <c-button comp="outlineRounded" :outlineRoundedSettings="{bState:true, iconName:'close'}" />                 
+                            <c-button comp="outlineRounded" :outlineRoundedSettings="{bState:true, iconName:'fas fa-search'}" />
+                            <c-button comp="outlineRounded" :outlineRoundedSettings="{bState:true, iconName:'fas fa-check'}" />
+                            <c-button comp="outlineRounded" :outlineRoundedSettings="{bState:true, iconName:'fas fa-exclamation'}" />
+                            <c-button comp="outlineRounded" :outlineRoundedSettings="{bState:true, iconName:'fas fa-trash-alt'}" />
+                            <c-button comp="outlineRounded" :outlineRoundedSettings="{bState:true, iconName:'fas fa-times'}" />                 
                         </div>   
                     </div>`,
             propsDescription: {
@@ -356,25 +362,25 @@ storiesOf('Library | UI KIT (vuetify custom) / button', module)
             },
             template: `<div>
                         <div>
-                            <c-button comp="solidRounded" :solidRoundedSettings="{color:'#2196F3',bState:false,iconName:'search'}" />
-                            <c-button comp="solidRounded" :solidRoundedSettings="{color:'#4CAF50',bState:false,iconName:'check'}" />
-                            <c-button comp="solidRounded" :solidRoundedSettings="{color:'#FF9800',bState:false,iconName:'priority_high'}" />
-                            <c-button comp="solidRounded" :solidRoundedSettings="{color:'#F44336',bState:false,iconName:'delete'}" />
-                            <c-button comp="solidRounded" :solidRoundedSettings="{color:'#757575',bState:false,iconName:'close'}" />  
+                            <c-button comp="solidRounded" :solidRoundedSettings="{color:'#2196F3',bState:false,iconName:'fas fa-search'}" />
+                            <c-button comp="solidRounded" :solidRoundedSettings="{color:'#4CAF50',bState:false,iconName:'fas fa-check'}" />
+                            <c-button comp="solidRounded" :solidRoundedSettings="{color:'#FF9800',bState:false,iconName:'fas fa-exclamation'}" />
+                            <c-button comp="solidRounded" :solidRoundedSettings="{color:'#F44336',bState:false,iconName:'fas fa-trash-alt'}" />
+                            <c-button comp="solidRounded" :solidRoundedSettings="{color:'#757575',bState:false,iconName:'fas fa-times'}" />  
                         </div>
                         <div>
-                            <c-button comp="solidRounded" :solidRoundedSettings="{color:'#2196F3',bState:false, iconName:'search', clas:'noshadow'}" />
-                            <c-button comp="solidRounded" :solidRoundedSettings="{color:'#4CAF50',bState:false, iconName:'check', clas:'noshadow'}" />
-                            <c-button comp="solidRounded" :solidRoundedSettings="{color:'#FF9800',bState:false, iconName:'priority_high', clas:'noshadow'}" />
-                            <c-button comp="solidRounded" :solidRoundedSettings="{color:'#F44336',bState:false, iconName:'delete', clas:'noshadow'}" />
-                            <c-button comp="solidRounded" :solidRoundedSettings="{color:'#757575',bState:false, iconName:'close', clas:'noshadow'}" />  
+                            <c-button comp="solidRounded" :solidRoundedSettings="{color:'#2196F3',bState:false, iconName:'fas fa-search', clas:'noshadow'}" />
+                            <c-button comp="solidRounded" :solidRoundedSettings="{color:'#4CAF50',bState:false, iconName:'fas fa-check', clas:'noshadow'}" />
+                            <c-button comp="solidRounded" :solidRoundedSettings="{color:'#FF9800',bState:false, iconName:'fas fa-exclamation', clas:'noshadow'}" />
+                            <c-button comp="solidRounded" :solidRoundedSettings="{color:'#F44336',bState:false, iconName:'fas fa-trash-alt', clas:'noshadow'}" />
+                            <c-button comp="solidRounded" :solidRoundedSettings="{color:'#757575',bState:false, iconName:'fas fa-times', clas:'noshadow'}" />  
                         </div>
                         <div>
-                            <c-button comp="solidRounded" :solidRoundedSettings="{bState:true,iconName:'search'}" />
-                            <c-button comp="solidRounded" :solidRoundedSettings="{bState:true,iconName:'check'}" />
-                            <c-button comp="solidRounded" :solidRoundedSettings="{bState:true,iconName:'priority_high'}" />
-                            <c-button comp="solidRounded" :solidRoundedSettings="{bState:true,iconName:'delete'}" />
-                            <c-button comp="solidRounded" :solidRoundedSettings="{bState:true,iconName:'close'}" />                 
+                            <c-button comp="solidRounded" :solidRoundedSettings="{bState:true,iconName:'fas fa-search'}" />
+                            <c-button comp="solidRounded" :solidRoundedSettings="{bState:true,iconName:'fas fa-check'}" />
+                            <c-button comp="solidRounded" :solidRoundedSettings="{bState:true,iconName:'fas fa-exclamation'}" />
+                            <c-button comp="solidRounded" :solidRoundedSettings="{bState:true,iconName:'fas fa-trash-alt'}" />
+                            <c-button comp="solidRounded" :solidRoundedSettings="{bState:true,iconName:'fas fa-times'}" />                 
                         </div>    
                     </div>`,
             propsDescription: {
@@ -392,19 +398,19 @@ storiesOf('Library | UI KIT (vuetify custom) / button', module)
     )
 
 // c-callout 
-storiesOf('Library | UI KIT (vuetify custom) / callout', module)
+storiesOf('UI KIT | Vuetify custom/ tooltip', module)
     .addDecorator(appDecorator) 
     .addParameters({
         readme: {
             codeTheme: 'monokai-sublime',
-            sidebar: CCallOutSetup,
+            sidebar: CTooltipSetup,
             theme: {
                 textColor: '#bb255a'
             },
         },
         info: {
             components: {
-                'c-callout': CCallOut
+                'c-tooltip': CTooltip
             },
             docsInPanel: false,
             source: false,
@@ -414,9 +420,9 @@ storiesOf('Library | UI KIT (vuetify custom) / callout', module)
     .add('Default', () => {
         return {
             components: {
-                'c-callout': CCallOut
+                'c-tooltip': CTooltip
             },
-            template: `<c-callout />`,
+            template: `<c-tooltip />`,
             propsDescription: {
                 VAlert: {
                     bottom: 'Button state for disabled',
@@ -425,12 +431,12 @@ storiesOf('Library | UI KIT (vuetify custom) / callout', module)
         };
     },
         {
-            notes: CCallOutChangelog
+            notes: CTooltipChangelog
         }
     )
 
 // c-checkbox 
-storiesOf('Library | UI KIT (vuetify custom) / checkbox', module)
+storiesOf('UI KIT | Vuetify custom/checkbox', module)
     .addDecorator(appDecorator) 
     .addParameters({
         readme: {
@@ -473,7 +479,7 @@ storiesOf('Library | UI KIT (vuetify custom) / checkbox', module)
     )
 
 // c-combobox-classic 
-storiesOf('Library | UI KIT (vuetify custom)/ combobox-classic', module)
+storiesOf('UI KIT | Vuetify custom / combobox-classic', module)
     .addDecorator(appDecorator) 
     .addParameters({
         readme: {
@@ -517,158 +523,139 @@ storiesOf('Library | UI KIT (vuetify custom)/ combobox-classic', module)
     )
 
 // c-inputgroups
-// storiesOf('Library | UI KIT (vuetify custom)/ c-input-groups', module)
-//     .addDecorator(appDecorator) 
-//     .addParameters({
-//         readme: {
-//             codeTheme: 'monokai-sublime',
-//             sidebar: CInputGroupsSetup,
-//             theme: {
-//                 textColor: '#bb255a'
-//             },
-//         },
-//         info: {
-//             components: {
-//                 'c-input-groups': CInputGroups
-//             },
-//             docsInPanel: false,
-//             source: false,
-//             wrapperComponent: VueInfoWrapper,
-//         },
-//     })  
-//     .add('classic', () => {
-//         return {
-//             components: {
-//                 'c-input-groups': CInputGroups
-//             },
-//             template: `<c-input-groups compStyle="classic" @change="log"/>`,
-//             methods:{log: action ('action')},
-//             propsDescription: {
-//                 CInputGroups: {
-//                     label : 'Sets input label',
-//                     type : 'Sets input type',
-//                     rules : 'Accepts an array of functions that return either True or a String with an error message',
-//                     icon : "Prepends an icon inside the component's input",
-//                     disabled : 'Disable the input',
-//                     readonly : 'Puts input in readonly state',
-//                 },
-//             }
-//         };
-//     },
-//         {
-//             notes: CInputGroupsChangelog
-//         }
-//     )
-//     .add('minimalist', () => {
-//         return {
-//             components: {
-//                 'c-inputgroups': CInputGroups
-//             },
-//             template: `<c-inputgroups compStyle="minimal" @change="log"/>`,
-//             methods:{log: action ('action')},
-//             propsDescription: {
-//                 CInputGroups: {
-//                     label : 'Sets input label',
-//                     type : 'Sets input type',
-//                     rules : 'Accepts an array of functions that return either True or a String with an error message',
-//                     icon : "Prepends an icon inside the component's input",
-//                     disabled : 'Disable the input',
-//                     readonly : 'Puts input in readonly state',
-//                 },
-//             }
-//         };
-//     },
-//     {
-//         notes: CInputGroupsChangelog
-//     }
-//     )
-//     .add('append classic', () => {
-//         return {
-//             components: {
-//                 'c-inputgroups': CInputGroups
-//             },
-//             template: `<c-inputgroups compStyle="classicAppend" @change="log"/>`,
-//             methods:{log: action ('action')},
-//             propsDescription: {
-//                 CInputGroups: {
-//                     label : 'Sets input label',
-//                     type : 'Sets input type',
-//                     rules : 'Accepts an array of functions that return either True or a String with an error message',
-//                     disabled : 'Disable the input',
-//                     readonly : 'Puts input in readonly state',
-//                     selectItems : 'Can be an array of strings for Select component',
-//                     selectValue : 'Input value for Select component',
-//                 },
-//             }
-//         };
-//     },
-//     {
-//         notes: CInputGroupsChangelog
-//     }
-//     )
-//     .add('append minimalist', () => {
-//         return {
-//             components: {
-//                 'c-inputgroups': CInputGroups
-//             },
-//             template: `<c-inputgroups compStyle="minimalAppend" @change="log"/>`,
-//             methods:{log: action ('action')},
-//             propsDescription: {
-//                 CInputGroups: {
-//                     label : 'Sets input label',
-//                     type : 'Sets input type',
-//                     rules : 'Accepts an array of functions that return either True or a String with an error message',
-//                     disabled : 'Disable the input',
-//                     readonly : 'Puts input in readonly state',
-//                     selectItems : 'Can be an array of strings for Select component',
-//                     selectValue : 'Input value for Select component',
-//                 },
-//             }
-//         };
-//     },
-//     {
-//         notes: CInputGroupsChangelog
-//     }
-//     )
-//     .add('prepend classic', () => {
-//         return {
-//             components: {
-//                 'c-inputgroups': CInputGroups
-//             },
-//             template: `<c-inputgroups compStyle="classicPrepend" @change="log"/>`,
-//             methods:{log: action ('action')},
-//             propsDescription: {
-//                 CInputGroups: {
-//                     selectData : 'Accepts an array - which contains values of items, value, color, solo, box, outline, label',
-//                 },
-//             }
-//         };
-//     },
-//     {
-//         notes: CInputGroupsChangelog
-//     }
-//     )
-//     .add('prepend minimalist', () => {
-//         return {
-//             components: {
-//                 'c-inputgroups': CInputGroups
-//             },
-//             template: `<c-inputgroups compStyle="minimalPrepend" @change="log"/>`,
-//             methods:{log: action ('action')},
-//             propsDescription: {
-//                 CInputGroups: {
-//                     selectData : 'Accepts an array - which contains values of items, value, color, solo, box, outline, label',
-//                 },
-//             }
-//         };
-//     },
-//     {
-//         notes: CInputGroupsChangelog
-//     }
-// )
+storiesOf('UI KIT | Vuetify custom  /  input-groups', module)
+    .addDecorator(appDecorator) 
+    .addParameters({
+        readme: {
+            codeTheme: 'monokai-sublime',
+            theme: {
+                textColor: '#bb255a'
+            },
+        },
+        info: {
+            components: {
+                'c-input-groups': CInputGroups
+            },
+            docsInPanel: false,
+            source: false,
+            wrapperComponent: VueInfoWrapper,
+        },
+    })  
+    .add('classic', () => {
+        return {
+            components: {
+                'c-input-groups': CInputGroups
+            },
+            template: `<c-input-groups compStyle="classic" @change="log"/>`,
+            methods:{log: action ('action')},
+            propsDescription: {
+                CInputGroups: {
+                    label : 'Sets input label',
+                    type : 'Sets input type',
+                    rules : 'Accepts an array of functions that return either True or a String with an error message',
+                    icon : "Prepends an icon inside the component's input",
+                    disabled : 'Disable the input',
+                    readonly : 'Puts input in readonly state',
+                },
+            }
+        };
+    }
+    )
+    .add('minimalist', () => {
+        return {
+            components: {
+                'c-inputgroups': CInputGroups
+            },
+            template: `<c-inputgroups compStyle="minimal" @change="log"/>`,
+            methods:{log: action ('action')},
+            propsDescription: {
+                CInputGroups: {
+                    label : 'Sets input label',
+                    type : 'Sets input type',
+                    rules : 'Accepts an array of functions that return either True or a String with an error message',
+                    icon : "Prepends an icon inside the component's input",
+                    disabled : 'Disable the input',
+                    readonly : 'Puts input in readonly state',
+                },
+            }
+        };
+    }
+    )
+    .add('append classic', () => {
+        return {
+            components: {
+                'c-inputgroups': CInputGroups
+            },
+            template: `<c-inputgroups compStyle="classicAppend" @change="log"/>`,
+            methods:{log: action ('action')},
+            propsDescription: {
+                CInputGroups: {
+                    label : 'Sets input label',
+                    type : 'Sets input type',
+                    rules : 'Accepts an array of functions that return either True or a String with an error message',
+                    disabled : 'Disable the input',
+                    readonly : 'Puts input in readonly state',
+                    selectItems : 'Can be an array of strings for Select component',
+                    selectValue : 'Input value for Select component',
+                },
+            }
+        };
+    }
+    )
+    .add('append minimalist', () => {
+        return {
+            components: {
+                'c-inputgroups': CInputGroups
+            },
+            template: `<c-inputgroups compStyle="minimalAppend" @change="log"/>`,
+            methods:{log: action ('action')},
+            propsDescription: {
+                CInputGroups: {
+                    label : 'Sets input label',
+                    type : 'Sets input type',
+                    rules : 'Accepts an array of functions that return either True or a String with an error message',
+                    disabled : 'Disable the input',
+                    readonly : 'Puts input in readonly state',
+                    selectItems : 'Can be an array of strings for Select component',
+                    selectValue : 'Input value for Select component',
+                },
+            }
+        };
+    }
+    )
+    .add('prepend classic', () => {
+        return {
+            components: {
+                'c-inputgroups': CInputGroups
+            },
+            template: `<c-inputgroups compStyle="classicPrepend" @change="log"/>`,
+            methods:{log: action ('action')},
+            propsDescription: {
+                CInputGroups: {
+                    selectData : 'Accepts an array - which contains values of items, value, color, solo, box, outline, label',
+                },
+            }
+        };
+    }
+    )
+    .add('prepend minimalist', () => {
+        return {
+            components: {
+                'c-inputgroups': CInputGroups
+            },
+            template: `<c-inputgroups compStyle="minimalPrepend" @change="log"/>`,
+            methods:{log: action ('action')},
+            propsDescription: {
+                CInputGroups: {
+                    selectData : 'Accepts an array - which contains values of items, value, color, solo, box, outline, label',
+                },
+            }
+        };
+    }
+)
 
 // c-modal
-storiesOf('Library | UI KIT (vuetify custom)/ modal', module)
+storiesOf('UI KIT | Vuetify custom/modal', module)
     .addDecorator(appDecorator) 
     .addParameters({
         readme: {
@@ -709,7 +696,7 @@ storiesOf('Library | UI KIT (vuetify custom)/ modal', module)
     )
 
 // c-radio-button 
-storiesOf('Library | UI KIT (vuetify custom)/ radio-button', module)
+storiesOf('UI KIT | Vuetify custom/radio-button', module)
     .addDecorator(appDecorator) 
     .addParameters({
         readme: {
@@ -749,7 +736,7 @@ storiesOf('Library | UI KIT (vuetify custom)/ radio-button', module)
     )
 
 // c-status-pill
-storiesOf('Library | UI KIT (vuetify custom)/ status-pill', module)
+storiesOf('UI KIT | Vuetify custom/ status-pill', module)
     .addDecorator(appDecorator) 
     .addParameters({
         readme: {
@@ -796,7 +783,7 @@ storiesOf('Library | UI KIT (vuetify custom)/ status-pill', module)
     )
 
 // c-tab
-storiesOf('Library | UI KIT (vuetify custom)/ tab', module)
+storiesOf('UI KIT | Vuetify custom/ tab', module)
     .addDecorator(appDecorator) 
     .addParameters({
         readme: {
@@ -835,7 +822,7 @@ storiesOf('Library | UI KIT (vuetify custom)/ tab', module)
     )
 
 // c-textarea
-storiesOf('Library | UI KIT (vuetify custom)/ textarea', module)
+storiesOf('UI KIT | Vuetify custom/ textarea', module)
     .addDecorator(appDecorator) 
     .addParameters({
         readme: {
@@ -906,7 +893,7 @@ storiesOf('Library | UI KIT (vuetify custom)/ textarea', module)
     )
 
 // c-textfield
-storiesOf('Library | UI KIT (vuetify custom)/ textfield', module)
+storiesOf('UI KIT | Vuetify custom / textfield', module)
     .addDecorator(appDecorator) 
     .addParameters({
         readme: {
@@ -979,7 +966,7 @@ storiesOf('Library | UI KIT (vuetify custom)/ textfield', module)
     )
 
 // c-toggle
-storiesOf('Library | UI KIT (vuetify custom) / toggle', module)
+storiesOf('UI KIT | Vuetify custom/ toggle', module)
     .addDecorator(appDecorator) 
     .addParameters({
         readme: {

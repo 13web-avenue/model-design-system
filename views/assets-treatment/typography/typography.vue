@@ -1,6 +1,7 @@
 <template lang="pug">
 
-  table.layout-uds-usg
+base-layout-static
+  table.typography-grid
     colgroup
       col.col-header
       col.col-header
@@ -109,33 +110,34 @@
         td.labels-2 12
         td.labels-2 Sentence
 
+
 </template>
 
 <script>
+import BaseLayoutStatic from '../../layouts/base-layout-static.vue';
 
 export default {
-  name: 'typography'
+  name: 'typography',
+  components: {
+    'base-layout-static': BaseLayoutStatic
+  }
 }
 
 </script>
 
 
 <style lang="scss" scoped>
-.layout-uds-usg {
+.typography-grid {
   border-collapse: collapse;
 
-  font-family: 'Montserrat', sans-serif;
-  text-align: left;
-  margin-top: 2rem;
-  width: 100%;
+  width: 70rem;
 
-  th{
+  th {
     background: #ccc;
-
     padding: 1rem 5rem 1rem 1rem;
   }
 
-  td{
+  td {
     padding: 1rem 3rem 1rem 1rem;
     border-bottom: 1px dashed #ccc;
     border-right: 1px dashed #ccc;
@@ -177,18 +179,5 @@ h6 {
   font-weight: 600
 }
 
-.semi-bold {
-  font-weight: 600;
-}
-
-button,
-.body,
-.labels-1,
-.labels-2,
-.subtitle-1,
-.subtitle-2,
-.subtitle-2 {
-  font-family: 'Open Sans', sans-serif;
-}
 
 </style>

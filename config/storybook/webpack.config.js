@@ -23,7 +23,7 @@ module.exports = async ({ config, mode }) => {
       exclude: /node_modules/,
     },
     {
-      test: /\.(png|jpg|gif)$/,
+      test: /\.(gif)$/,
       loader: 'url-loader'
     },
     {
