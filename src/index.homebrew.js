@@ -462,7 +462,13 @@ storiesOf('UI KIT | Vuetify custom/checkbox', module)
             components: {
                 'c-checkbox': CCheckBox
             },
-            template: `<c-checkbox @change="log"/>`,
+            template: `<div>
+                        <c-checkbox @change="log" label="First"/>
+                        <c-checkbox @change="log" label="Second"/>
+                        <c-checkbox @change="log" label="Third"/>
+                        <c-checkbox @change="log" label="Fourth"/>
+                        <c-checkbox @change="log" label="Disabled" :disable=true />
+                      </div>`,
             methods: { log: action('action') },
             propsDescription: {
                 CCheckBox: {
