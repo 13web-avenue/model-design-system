@@ -109,7 +109,7 @@ const appDecorator = () => {
 };
 
 //c-button
-storiesOf('UI KIT | Vuetify Custom/ Button', module)
+storiesOf('UI KIT | Vuetify Custom / Button', module)
     .addDecorator(appDecorator) 
     .addParameters({
         info: {
