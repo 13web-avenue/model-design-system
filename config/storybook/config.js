@@ -69,7 +69,7 @@ addParameters({
      * sorts stories
      * @type {Boolean}
      */
-    sortStoriesByKind: true,    
+    // sortStoriesByKind: true,    
     /**
      * display panel that shows addon configurations
      * @type {Boolean}
@@ -79,7 +79,7 @@ addParameters({
      * display floating search box to search through stories
      * @type {Boolean}
      */
-    showSearchBox: false,
+    showSearchBox: true,
     /**
      * show addon panel as a vertical panel on the right
      * @type {Boolean}
@@ -94,7 +94,7 @@ addParameters({
      * default themes
      * Custom themes will be applied form UnifyThemes
      */
-      theme: UnifyTheme,
+    theme: UnifyTheme,
   },
 })
 

@@ -7,7 +7,7 @@ div(class="layout-default layout-default--static")
         slot
     footer(class="footer")
         h3.footnote
-        .footer--baseline-tag
+        .footer--unify
           p
             span(class="uppercased letter-spacing-1") crafted with 
               svg(class="icon-svg-heart", viewBox="0 0 32 29.6")
@@ -86,7 +86,7 @@ export default {
 //footer
 .footer {
 
-  &--baseline-tag {
+  &--unify {
 
     border-top: #f5f5f5 1px solid;
 
