@@ -151,7 +151,7 @@ storiesOf('User Manual | UDS platform', module)
         },
         template: `<doc-component-usage />`,
     }))
-    .add('Code of conduct', () => ({
+    .add('Code Of Conduct', () => ({
         components: {
             'doc-component-conduct': DocComponentConduct
         },
@@ -191,7 +191,7 @@ storiesOf('User Manual | Contributing / Technical Workflow', module)
             showAddonPanel: false,
         }
     })  
-    .add('Working with pull requests', () => ({
+    .add('Working With Pull Requests', () => ({
         components: {
             'welcome': welcome,
             'base-layout-static': BaseStaticLayout,
@@ -225,7 +225,7 @@ storiesOf('User Manual | Development Workflow', module)
             showAddonPanel: false,
         }
     })
-    .add('Using the workflow', () => ({
+    .add('Using The Workflow', () => ({
         components: {
             'welcome': welcome,
             'base-layout-static': BaseStaticLayout,
