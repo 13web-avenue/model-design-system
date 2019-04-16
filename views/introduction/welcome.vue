@@ -9,8 +9,9 @@
     | Unify Design Systems & Style Guide is the ultimate resource for front end & full stack chaps, where coding gets faster, cleaner and under the same standards !
   p(class="welcome-note")
     span crafted with
-      svg(class="icon-svg-heart", viewBox="0 0 496 512")
-        path(d="M23.6,0c-3.4,0-6.3,2.7-7.6,5.6C14.7,2.7,11.8,0,8.4,0C3.8,0,0,3.8,0,8.4c0,9.4,9.5,11.9,16,21.2c6.1-9.3,16-12.1,16-21.2C32,3.8,28.2,0,23.6,0z")
+      svg.icon-svg-heart(data-v-eedd18ec='', viewBox='0 0 32 29.6')
+        path(data-v-eedd18ec='', d='M23.6,0c-3.4,0-6.3,2.7-7.6,5.6C14.7,2.7,11.8,0,8.4,0C3.8,0,0,3.8,0,8.4c0,9.4,9.5,11.9,16,21.2c6.1-9.3,16-12.1,16-21.2C32,3.8,28.2,0,23.6,0z')
+
     span
       | UNIFY team
 </template>
@@ -44,5 +45,16 @@ export default {
     width: 14px;
     animation: pulse 1s ease infinite;
     margin: 0 .5rem;
+}
+h1{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 3rem;
+    font-weight: bold;
+}
+p,span{
+    color: #414141;
+    font-family: 'Open Sans', Helvetica, "Segoe UI", Arial, sans-serif;
+    font-size: 1.2rem;
+    line-height: 1.5;
 }
 </style>
