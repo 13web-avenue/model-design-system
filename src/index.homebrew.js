@@ -109,7 +109,7 @@ const appDecorator = () => {
 };
 
 //c-button
-storiesOf('UI PATTERN | Vuetify Custom / Button', module)
+storiesOf('UI COMPONENT   | Vuetify Custom / Button', module)
     .addDecorator(appDecorator) 
     .addParameters({
         info: {
@@ -398,7 +398,7 @@ storiesOf('UI PATTERN | Vuetify Custom / Button', module)
     )
 
 // c-checkbox 
-storiesOf('UI PATTERN | Vuetify Custom/Checkbox', module)
+storiesOf('UI COMPONENT   | Vuetify Custom/Checkbox', module)
     .addDecorator(appDecorator) 
     .addParameters({
         readme: {
@@ -447,7 +447,7 @@ storiesOf('UI PATTERN | Vuetify Custom/Checkbox', module)
     )
 
 // c-combobox-classic 
-storiesOf('UI PATTERN | Vuetify Custom / Combobox-classic', module)
+storiesOf('UI COMPONENT   | Vuetify Custom / Combobox-classic', module)
     .addDecorator(appDecorator) 
     .addParameters({
         readme: {
@@ -491,7 +491,7 @@ storiesOf('UI PATTERN | Vuetify Custom / Combobox-classic', module)
     )
 
 // c-inputgroups
-storiesOf('UI PATTERN | Vuetify Custom  /  Input-groups', module)
+storiesOf('UI COMPONENT   | Vuetify Custom  /  Input-groups', module)
     .addDecorator(appDecorator) 
     .addParameters({
         readme: {
@@ -623,7 +623,7 @@ storiesOf('UI PATTERN | Vuetify Custom  /  Input-groups', module)
 )
 
 // c-modal
-storiesOf('UI PATTERN | Vuetify Custom/Modal', module)
+storiesOf('UI COMPONENT   | Vuetify Custom/Modal', module)
     .addDecorator(appDecorator) 
     .addParameters({
         readme: {
@@ -664,7 +664,7 @@ storiesOf('UI PATTERN | Vuetify Custom/Modal', module)
     )
 
 // c-radio-button 
-storiesOf('UI PATTERN | Vuetify Custom/Radio-button', module)
+storiesOf('UI COMPONENT   | Vuetify Custom/Radio-button', module)
     .addDecorator(appDecorator) 
     .addParameters({
         readme: {
@@ -704,7 +704,7 @@ storiesOf('UI PATTERN | Vuetify Custom/Radio-button', module)
     )
 
 // c-status-pill
-storiesOf('UI PATTERN | Vuetify Custom/ Status-pill', module)
+storiesOf('UI COMPONENT   | Vuetify Custom/ Status-pill', module)
     .addDecorator(appDecorator) 
     .addParameters({
         readme: {
@@ -751,7 +751,7 @@ storiesOf('UI PATTERN | Vuetify Custom/ Status-pill', module)
     )
 
 // c-tab
-storiesOf('UI PATTERN | Vuetify Custom/ Tab', module)
+storiesOf('UI COMPONENT   | Vuetify Custom/ Tab', module)
     .addDecorator(appDecorator) 
     .addParameters({
         readme: {
@@ -790,7 +790,7 @@ storiesOf('UI PATTERN | Vuetify Custom/ Tab', module)
     )
 
 // c-textarea
-storiesOf('UI PATTERN | Vuetify Custom/ Textarea', module)
+storiesOf('UI COMPONENT   | Vuetify Custom/ Textarea', module)
     .addDecorator(appDecorator) 
     .addParameters({
         readme: {
@@ -861,7 +861,7 @@ storiesOf('UI PATTERN | Vuetify Custom/ Textarea', module)
     )
 
 // c-textfield
-storiesOf('UI PATTERN | Vuetify Custom/Textfield', module)
+storiesOf('UI COMPONENT   | Vuetify Custom/Textfield', module)
     .addDecorator(appDecorator) 
     .addParameters({
         readme: {
@@ -934,7 +934,7 @@ storiesOf('UI PATTERN | Vuetify Custom/Textfield', module)
     )
 
 // c-toggle
-storiesOf('UI PATTERN | Vuetify Custom/ Toggle', module)
+storiesOf('UI COMPONENT   | Vuetify Custom/ Toggle', module)
     .addDecorator(appDecorator) 
     .addParameters({
         readme: {
@@ -977,7 +977,7 @@ storiesOf('UI PATTERN | Vuetify Custom/ Toggle', module)
     )
 
 // c-tooltip 
-storiesOf('UI PATTERN | Vuetify Custom/ Tooltip', module)
+storiesOf('UI COMPONENT   | Vuetify Custom/ Tooltip', module)
     .addDecorator(appDecorator) 
     .addParameters({
         readme: {
