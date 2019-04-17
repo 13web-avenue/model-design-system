@@ -953,7 +953,7 @@ storiesOf('UI COMPONENT   | Vuetify Custom/Textfield', module)
     )
 
 // c-toggle
-storiesOf('UI COMPONENT   | Vuetify Custom/ Toggle', module)
+storiesOf('UI COMPONENT | Vuetify Custom / Toggle', module)
     .addDecorator(appDecorator) 
     .addParameters({
         readme: {

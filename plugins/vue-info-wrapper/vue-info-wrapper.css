@@ -1,9 +1,8 @@
 .layout-dynamic {
-  /* position: relative; */
   margin: 0 auto;
   width: 80vw;
 }
-
+ 
 .header {
   padding: 10px;
   padding-bottom: 18px;
@@ -32,12 +31,6 @@
   background-color: #fff;
 }
 
-/* .preview {
-  all: initial;
-  display: block;
-  position: relative;
-} */
-
 
 .heading {
   margin: 0;
@@ -63,10 +56,6 @@
   background-color: #444;
   border-radius: 4px;
 }
-
-/* .component > :not(:first-child) {
-  margin-top: 16px;
-} */
 
 .component {
   border: 2px solid #353b48;
@@ -146,10 +135,10 @@
 }
 .summary {
 
-    color: #414141;
+  color: #414141;
 
-    font-family: 'Open Sans', Helvetica, "Segoe UI", Arial, sans-serif;
-    font-size: 1.2rem;
+  font-family: 'Open Sans', Helvetica, "Segoe UI", Arial, sans-serif;
+  font-size: 1.2rem;
 
-    line-height: 1.5;
+  line-height: 1.5;
 }

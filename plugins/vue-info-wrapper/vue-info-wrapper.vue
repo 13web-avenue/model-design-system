@@ -73,7 +73,9 @@ export default {
 <template>
   <div class="layout-dynamic">
     <div class="header">
-      <h1 class="title">{{ /[^|]*[/]/.exec(this.info.title)[0].replace("/", " >") }} {{ this.info.title.replace(/[^\/]*[\/]/, " ") }} {{" > "+this.info.subtitle}}</h1>
+      <h1 class="title">
+        {{ /[^|]*[/]/.exec(this.info.title)[0].replace("/", " >") }} {{ this.info.title.replace(/[^\/]*[\/]/, " ") }} {{" > "+ this.info.subtitle}}
+        </h1>
     </div>
     <div>
       <slot/>
@@ -93,11 +95,11 @@ export default {
       <div v-for="c in info.components" :key="c.name" class="component">
          <h2 class="propTableHeader">Props</h2>
          <div class="prop-table" v-for="(value,key) in c.props" :key="key">
-            <div v-if="value.name && (value.name !=null)" class="prop-container">
+            <div v-if="value.name && (value.name != null)" class="prop-container">
               <span class="prop-name">Name :</span>
               <span class="prop-value">{{value.name}}</span>
             </div>
-            <div class="prop-container" v-if="value.type && (value.type !=null)">
+            <div class="prop-container" v-if="value.type && (value.type != null)">
                 <span class="prop-type">Type :</span>
                 <span class="prop-value">{{value.type}}</span>
             </div>

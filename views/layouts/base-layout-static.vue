@@ -4,7 +4,7 @@ div(class="layout-default layout-default--static")
     header(class="heading")
         h1.header-title
     section(class="content-area")
-        slot
+      slot
     footer(class="footer")
         h3.footnote
         .footer--baseline
@@ -48,6 +48,7 @@ export default {
         width: 80vw;
 
       }
+
 }
 
 // content-area
