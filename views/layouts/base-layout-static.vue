@@ -99,7 +99,13 @@ export default {
 
     &__tag {
 
-    font-size: .8rem;
+      margin-bottom: 0;
+
+      span {
+
+      font-size: .8rem;
+
+      }
 
     }
 
