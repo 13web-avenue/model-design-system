@@ -109,7 +109,7 @@ const appDecorator = () => {
 };
 
 //c-button
-storiesOf('UI KIT | Vuetify custom/ button', module)
+storiesOf('UI KIT | Vuetify Custom / Button', module)
     .addDecorator(appDecorator) 
     .addParameters({
         info: {
@@ -397,46 +397,8 @@ storiesOf('UI KIT | Vuetify custom/ button', module)
         }
     )
 
-// c-callout 
-storiesOf('UI KIT | Vuetify custom/ tooltip', module)
-    .addDecorator(appDecorator) 
-    .addParameters({
-        readme: {
-            codeTheme: 'monokai-sublime',
-            sidebar: CTooltipSetup,
-            theme: {
-                textColor: '#bb255a'
-            },
-        },
-        info: {
-            components: {
-                'c-tooltip': CTooltip
-            },
-            docsInPanel: false,
-            source: false,
-            wrapperComponent: VueInfoWrapper
-        },
-    })  
-    .add('Default', () => {
-        return {
-            components: {
-                'c-tooltip': CTooltip
-            },
-            template: `<c-tooltip />`,
-            propsDescription: {
-                VAlert: {
-                    bottom: 'Button state for disabled',
-                },
-            }
-        };
-    },
-        {
-            notes: CTooltipChangelog
-        }
-    )
-
 // c-checkbox 
-storiesOf('UI KIT | Vuetify custom/checkbox', module)
+storiesOf('UI KIT | Vuetify Custom/Checkbox', module)
     .addDecorator(appDecorator) 
     .addParameters({
         readme: {
@@ -462,7 +424,13 @@ storiesOf('UI KIT | Vuetify custom/checkbox', module)
             components: {
                 'c-checkbox': CCheckBox
             },
-            template: `<c-checkbox @change="log"/>`,
+            template: `<div>
+                        <c-checkbox @change="log" label="First"/>
+                        <c-checkbox @change="log" label="Second"/>
+                        <c-checkbox @change="log" label="Third"/>
+                        <c-checkbox @change="log" label="Fourth"/>
+                        <c-checkbox @change="log" label="Disabled" :disable=true />
+                      </div>`,
             methods: { log: action('action') },
             propsDescription: {
                 CCheckBox: {
@@ -479,7 +447,7 @@ storiesOf('UI KIT | Vuetify custom/checkbox', module)
     )
 
 // c-combobox-classic 
-storiesOf('UI KIT | Vuetify custom / combobox-classic', module)
+storiesOf('UI KIT | Vuetify Custom / Combobox-classic', module)
     .addDecorator(appDecorator) 
     .addParameters({
         readme: {
@@ -498,7 +466,7 @@ storiesOf('UI KIT | Vuetify custom / combobox-classic', module)
             wrapperComponent: VueInfoWrapper,
         },
     })  
-    .add('classic', () => {
+    .add('Classic', () => {
         return {
             components: {
                 'c-combobox-classic': CComboBoxClassic
@@ -523,7 +491,7 @@ storiesOf('UI KIT | Vuetify custom / combobox-classic', module)
     )
 
 // c-inputgroups
-storiesOf('UI KIT | Vuetify custom  /  input-groups', module)
+storiesOf('UI KIT | Vuetify Custom  /  Input-groups', module)
     .addDecorator(appDecorator) 
     .addParameters({
         readme: {
@@ -541,7 +509,7 @@ storiesOf('UI KIT | Vuetify custom  /  input-groups', module)
             wrapperComponent: VueInfoWrapper,
         },
     })  
-    .add('classic', () => {
+    .add('Classic', () => {
         return {
             components: {
                 'c-input-groups': CInputGroups
@@ -561,7 +529,7 @@ storiesOf('UI KIT | Vuetify custom  /  input-groups', module)
         };
     }
     )
-    .add('minimalist', () => {
+    .add('Minimalist', () => {
         return {
             components: {
                 'c-inputgroups': CInputGroups
@@ -581,7 +549,7 @@ storiesOf('UI KIT | Vuetify custom  /  input-groups', module)
         };
     }
     )
-    .add('append classic', () => {
+    .add('Append Classic', () => {
         return {
             components: {
                 'c-inputgroups': CInputGroups
@@ -602,7 +570,7 @@ storiesOf('UI KIT | Vuetify custom  /  input-groups', module)
         };
     }
     )
-    .add('append minimalist', () => {
+    .add('Append Minimalist', () => {
         return {
             components: {
                 'c-inputgroups': CInputGroups
@@ -623,7 +591,7 @@ storiesOf('UI KIT | Vuetify custom  /  input-groups', module)
         };
     }
     )
-    .add('prepend classic', () => {
+    .add('Prepend Classic', () => {
         return {
             components: {
                 'c-inputgroups': CInputGroups
@@ -638,7 +606,7 @@ storiesOf('UI KIT | Vuetify custom  /  input-groups', module)
         };
     }
     )
-    .add('prepend minimalist', () => {
+    .add('Prepend Minimalist', () => {
         return {
             components: {
                 'c-inputgroups': CInputGroups
@@ -655,7 +623,7 @@ storiesOf('UI KIT | Vuetify custom  /  input-groups', module)
 )
 
 // c-modal
-storiesOf('UI KIT | Vuetify custom/modal', module)
+storiesOf('UI KIT | Vuetify Custom/Modal', module)
     .addDecorator(appDecorator) 
     .addParameters({
         readme: {
@@ -696,7 +664,7 @@ storiesOf('UI KIT | Vuetify custom/modal', module)
     )
 
 // c-radio-button 
-storiesOf('UI KIT | Vuetify custom/radio-button', module)
+storiesOf('UI KIT | Vuetify Custom/Radio-button', module)
     .addDecorator(appDecorator) 
     .addParameters({
         readme: {
@@ -736,7 +704,7 @@ storiesOf('UI KIT | Vuetify custom/radio-button', module)
     )
 
 // c-status-pill
-storiesOf('UI KIT | Vuetify custom/ status-pill', module)
+storiesOf('UI KIT | Vuetify Custom/ Status-pill', module)
     .addDecorator(appDecorator) 
     .addParameters({
         readme: {
@@ -783,7 +751,7 @@ storiesOf('UI KIT | Vuetify custom/ status-pill', module)
     )
 
 // c-tab
-storiesOf('UI KIT | Vuetify custom/ tab', module)
+storiesOf('UI KIT | Vuetify Custom/ Tab', module)
     .addDecorator(appDecorator) 
     .addParameters({
         readme: {
@@ -822,7 +790,7 @@ storiesOf('UI KIT | Vuetify custom/ tab', module)
     )
 
 // c-textarea
-storiesOf('UI KIT | Vuetify custom/ textarea', module)
+storiesOf('UI KIT | Vuetify Custom/ Textarea', module)
     .addDecorator(appDecorator) 
     .addParameters({
         readme: {
@@ -893,7 +861,7 @@ storiesOf('UI KIT | Vuetify custom/ textarea', module)
     )
 
 // c-textfield
-storiesOf('UI KIT | Vuetify custom/textfield', module)
+storiesOf('UI KIT | Vuetify Custom/Textfield', module)
     .addDecorator(appDecorator) 
     .addParameters({
         readme: {
@@ -966,7 +934,7 @@ storiesOf('UI KIT | Vuetify custom/textfield', module)
     )
 
 // c-toggle
-storiesOf('UI KIT | Vuetify custom/ toggle', module)
+storiesOf('UI KIT | Vuetify Custom/ Toggle', module)
     .addDecorator(appDecorator) 
     .addParameters({
         readme: {
@@ -1007,4 +975,43 @@ storiesOf('UI KIT | Vuetify custom/ toggle', module)
             notes: CToggleChangelog
         }
     )
+
+// c-tooltip 
+storiesOf('UI KIT | Vuetify Custom/ Tooltip', module)
+    .addDecorator(appDecorator) 
+    .addParameters({
+        readme: {
+            codeTheme: 'monokai-sublime',
+            sidebar: CTooltipSetup,
+            theme: {
+                textColor: '#bb255a'
+            },
+        },
+        info: {
+            components: {
+                'c-tooltip': CTooltip
+            },
+            docsInPanel: false,
+            source: false,
+            wrapperComponent: VueInfoWrapper
+        },
+    })  
+    .add('Default', () => {
+        return {
+            components: {
+                'c-tooltip': CTooltip
+            },
+            template: `<c-tooltip />`,
+            propsDescription: {
+                VAlert: {
+                    bottom: 'Button state for disabled',
+                },
+            }
+        };
+    },
+        {
+            notes: CTooltipChangelog
+        }
+    )
+
 /* eslint-enable react/react-in-jsx-scope */
