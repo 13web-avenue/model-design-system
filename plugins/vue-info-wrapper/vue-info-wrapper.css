@@ -6,15 +6,15 @@
 
 .header {
   padding: 10px;
-  padding-bottom: 60px;
+  padding-bottom: 18px;
 }
 
 .title {
   margin: 0;
   font-size: 32px;
   line-height: 1.1875;
-  color:#039dfc;
-  font-weight: 500;
+  color:#4d4d4d;
+  font-weight: 600;
 }
 
 .subtitle {
@@ -38,10 +38,6 @@
   position: relative;
 } */
 
-
-.info-body > :not(:first-child) {
-  padding-top: 32px;
-}
 
 .heading {
   margin: 0;
@@ -68,8 +64,19 @@
   border-radius: 4px;
 }
 
-.component > :not(:first-child) {
+/* .component > :not(:first-child) {
   margin-top: 16px;
+} */
+
+.component {
+  border: 2px solid #353b48;
+  border-radius: 2px;
+}
+
+.propTableHeader{
+  color: #ffffff;
+  background-color: #353b48;
+  padding: 4px;
 }
 
 .list {
@@ -97,27 +104,28 @@
 }
 
 .prop-container{
-  padding: 10px;
+  padding: 6px;
+  width: 300px;
 }
 
 .prop-name{
-  color: #ff7675;
+  color: #273c75;
 }
 
 .prop-type{
-  color : #0984e3;
+  color : #8c7ae6;
 }
 
 .prop_default{
-  color : #e84393;
+  color : #44bd32;
 }
 .prop-value {
-  color: #404040;
+  color: #4d4d4d;
   padding: 5px;
 }
 
 .prop-table:not(:first-child){
-  border-top: 1px solid #9dd2fb;
+  border-top: 1px solid #808080;
 }
 
 

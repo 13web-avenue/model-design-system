@@ -91,44 +91,21 @@ export default {
       -->
 
       <div v-for="c in info.components" :key="c.name" class="component">
-        <!-- <div v-if="c.props.length">
-          <h2>Props :</h2>
-          <ul class="list">
-            <li v-for="p in c.props" :key="p.name" class="item">
-              {{getPropText(p)}}
-            </li>
-          </ul>
-        </div> -->
-        <v-layout row>
-            <v-flex xs12>
-              <v-card>
-                <v-toolbar color="#1EA7FD" dark height="30px;">
-                  <v-toolbar-title>Props</v-toolbar-title>
-                  <v-spacer></v-spacer>
-                </v-toolbar>
-
-                <v-list two-line>
-                  <template>
-                    <div class="prop-table" v-for="(value,key) in c.props" :key="key">
-                        <div v-if="value.name && (value.name !=null)" class="prop-container">
-                          <span class="prop-name">Name :</span>
-                          <span class="prop-value">{{value.name}}</span>
-                        </div>
-                        <div class="prop-container" v-if="value.type && (value.type !=null)">
-                           <span class="prop-type">Type :</span>
-                           <span class="prop-value">{{value.type}}</span>
-                        </div>
-                        <div class="prop-container" v-if="value.default && (value.default !=null)">
-                          <span class="prop_default">Default:</span>
-                          <span class="prop-value">{{value.default}}</span>
-                        </div>
-                    </div>
-                  </template>
-                </v-list>
-              </v-card>
-            </v-flex>
-         </v-layout>
-
+         <h2 class="propTableHeader">Props</h2>
+         <div class="prop-table" v-for="(value,key) in c.props" :key="key">
+            <div v-if="value.name && (value.name !=null)" class="prop-container">
+              <span class="prop-name">Name :</span>
+              <span class="prop-value">{{value.name}}</span>
+            </div>
+            <div class="prop-container" v-if="value.type && (value.type !=null)">
+                <span class="prop-type">Type :</span>
+                <span class="prop-value">{{value.type}}</span>
+            </div>
+            <div class="prop-container" v-if="value.default && (value.default !=null)">
+              <span class="prop_default">Default:</span>
+              <span class="prop-value">{{value.default}}</span>
+            </div>
+        </div>
         <div v-if="c.events.length">
           <h3 class="subheading">Events</h3>
           <ul class="list">
@@ -137,7 +114,6 @@ export default {
             </li>
           </ul>
         </div>
-
         <div v-if="c.slots.length">
           <h3 class="subheading">Slots</h3>
           <ul class="list">
@@ -146,9 +122,7 @@ export default {
             </li>
           </ul>
         </div>
-
       </div>
-
     </div>
   </div>
   
