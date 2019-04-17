@@ -7,8 +7,8 @@ div(class="layout-default layout-default--static")
         slot
     footer(class="footer")
         h3.footnote
-        .footer--baseline-tag
-          p
+        .footer--baseline
+          p.footer--baseline__tag
             span(class="uppercased letter-spacing-1") crafted with 
               svg(class="icon-svg-heart", viewBox="0 0 32 29.6")
                 path(d="M23.6,0c-3.4,0-6.3,2.7-7.6,5.6C14.7,2.7,11.8,0,8.4,0C3.8,0,0,3.8,0,8.4c0,9.4,9.5,11.9,16,21.2c6.1-9.3,16-12.1,16-21.2C32,3.8,28.2,0,23.6,0z")
@@ -86,19 +86,28 @@ export default {
 //footer
 .footer {
 
-  &--baseline-tag {
-
-    border-top: #f5f5f5 1px solid;
+  &--baseline {
 
     font-family: 'Open Sans', Helvetica, "Segoe UI", Arial, sans-serif;
     font-weight: 400;
-    font-size: .8rem;
 
     padding-top: .5rem;
 
     position: fixed;
     right: 1%;
     bottom: 0;
+
+    &__tag {
+
+      margin-bottom: 0;
+
+      span {
+
+      font-size: .8rem;
+
+      }
+
+    }
 
   }
 
