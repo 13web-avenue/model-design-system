@@ -16,47 +16,57 @@ import { action } from '@storybook/addon-actions';
 import CToggle from '../core/ui-kit-custom-components/c-toggle/packages/dist/c-toggle.vue'
 import CToggleChangelog from '../core/ui-kit-custom-components/c-toggle/c-toggle-changelog.md'
 import CToggleSetup from '../core/ui-kit-custom-components/c-toggle/c-toggle-setup.md'
+import CToggleContent from '../core/ui-kit-custom-components/c-toggle/c-toggle-content.md'
 
 import CTextfield from '../core/ui-kit-custom-components/c-textfield/packages/dist/c-textfield.vue'
 import CTextfieldChangelog from '../core/ui-kit-custom-components/c-textfield/c-textfield-changelog.md'
 import CTextfieldSetup from '../core/ui-kit-custom-components/c-textfield/c-textfield-setup.md'
+import CTextfieldContent from '../core/ui-kit-custom-components/c-textfield/c-textfield-content.md'
 
 import CTextarea from '../core/ui-kit-custom-components/c-textarea/packages/dist/c-textarea.vue'
 import CTextareaChangelog from '../core/ui-kit-custom-components/c-textarea/c-textarea-changelog.md'
 import CTextareaSetup from '../core/ui-kit-custom-components/c-textarea/c-textarea-setup.md'
+import CTextareaContent from '../core/ui-kit-custom-components/c-textarea/c-textarea-content.md'
 
 import CTab from '../core/ui-kit-custom-components/c-tab/packages/dist/c-tab.vue'
 import CTabChangelog from '../core/ui-kit-custom-components/c-tab/c-tab-changelog.md'
 import CTabSetup from '../core/ui-kit-custom-components/c-tab/c-tab-setup.md'
+import CTabContent from '../core/ui-kit-custom-components/c-tab/c-tab-content.md'
 
 import CStatusPill from '../core/ui-kit-custom-components/c-status-pill/packages/dist/c-status-pill.vue'
 import CStatusPillChangelog from '../core/ui-kit-custom-components/c-status-pill/c-status-pill-changelog.md'
 import CStatusPillSetup from '../core/ui-kit-custom-components/c-status-pill/c-status-pill-setup.md'
+import CStatusPillContent from '../core/ui-kit-custom-components/c-status-pill/c-status-pill-content.md'
 
 import CModal from '../core/ui-kit-custom-components/c-modal/packages/dist/c-modal.vue'
 import CModalChangelog from '../core/ui-kit-custom-components/c-modal/c-modal-changelog.md'
 import CModalSetup from '../core/ui-kit-custom-components/c-modal/c-modal-setup.md'
+import CModalContent from '../core/ui-kit-custom-components/c-modal/c-modal-content.md'
 
 import CComboBoxClassic from '../core/ui-kit-custom-components/c-combobox/packages/dist/c-combobox--classic.vue'
 import CComboBoxClassicChangelog from '../core/ui-kit-custom-components/c-combobox/c-combobox-changelog.md'
 import CComboBoxClassicSetup from '../core/ui-kit-custom-components/c-combobox/c-combobox-setup.md'
+import CComboboxContent from '../core/ui-kit-custom-components/c-combobox/c-combobox-content.md'
 
 import CTooltip from '../core/ui-kit-custom-components/c-tooltip/packages/dist/c-tooltip.vue'
 import CTooltipChangelog from '../core/ui-kit-custom-components/c-tooltip/c-tooltip-changelog.md'
 import CTooltipSetup from '../core/ui-kit-custom-components/c-tooltip/c-tooltip-setup.md'
-
+import CTooltipContent from '../core/ui-kit-custom-components/c-tooltip/c-tooltip-content.md'
 
 import CCheckBox from '../core/ui-kit-custom-components/c-checkbox/packages/dist/c-checkbox.vue'
 import CCheckBoxChangelog from '../core/ui-kit-custom-components/c-checkbox/c-checkbox-changelog.md'
 import CCheckBoxSetup from '../core/ui-kit-custom-components/c-checkbox/c-checkbox-setup.md'
+import CCheckBoxContent from '../core/ui-kit-custom-components/c-checkbox/c-checkbox-content.md'
 
 import CRadioButton from '../core/ui-kit-custom-components/c-radio-button/packages/dist/c-radio-button.vue'
 import CRadioButtonChangelog from '../core/ui-kit-custom-components/c-radio-button/c-radio-button-changelog.md'
 import CRadioButtonSetup from '../core/ui-kit-custom-components/c-radio-button/c-radio-button-setup.md'
+import CRadioButtonContent from '../core/ui-kit-custom-components/c-radio-button/c-radio-button-content.md'
 
 import CInputGroups from '../core/ui-kit-custom-components/c-inputgroups/packages/dist/c-inputgroups.vue'
 // import CInputGroupsChangelog from '../core/ui-kit-custom-components/c-inputgroups/c-inputgroups-changelog.md'
 // import CInputGroupsSetup from '../core/ui-kit-custom-components/c-inputgroups/c-inputgroups-setup.md'
+import CInputGroupsContent from '../core/ui-kit-custom-components/c-inputgroups/c-inputgroups-content.md'
 
 import CButton from '../core/ui-kit-custom-components/c-button/packages/dist/c-button.vue'
 import CButtonChangelog from '../core/ui-kit-custom-components/c-button/c-button-changelog.md'
@@ -414,6 +424,7 @@ storiesOf('UI COMPONENT   | Vuetify Custom/Checkbox', module)
             },
             docsInPanel: false,
             source: false,
+            summary: CCheckBoxContent,
             wrapperComponent: VueInfoWrapper
         },
         
@@ -463,6 +474,7 @@ storiesOf('UI COMPONENT   | Vuetify Custom / Combobox-classic', module)
             },
             docsInPanel: false,
             source: false,
+            summary: CComboboxContent,
             wrapperComponent: VueInfoWrapper,
         },
     })  
@@ -506,6 +518,7 @@ storiesOf('UI COMPONENT   | Vuetify Custom  /  Input-groups', module)
             },
             docsInPanel: false,
             source: false,
+            summary: CInputGroupsContent,
             wrapperComponent: VueInfoWrapper,
         },
     })  
@@ -639,15 +652,16 @@ storiesOf('UI COMPONENT   | Vuetify Custom/Modal', module)
             },
             docsInPanel: false,
             source: false,
+            summary: CModalContent,
             wrapperComponent: VueInfoWrapper,
         },
     })  
-    .add('Classic', () => {
+    .add('Default', () => {
         return {
             components: {
                 'c-modal': CModal
             },
-            template: `<c-modal @secondaryClick="secondaryClick"        @primaryClick="primaryClick"/>`,
+            template: `<c-modal @secondaryClick="secondaryClick" @primaryClick="primaryClick"/>`,
             methods: { secondaryClick: action(), primaryClick: action() },
             propsDescription: {
                 CModal: {
@@ -680,6 +694,7 @@ storiesOf('UI COMPONENT   | Vuetify Custom/Radio-button', module)
             },
             docsInPanel: false,
             source: false,
+            summary: CRadioButtonContent,
             wrapperComponent: VueInfoWrapper,
         },
     })  
@@ -720,6 +735,7 @@ storiesOf('UI COMPONENT   | Vuetify Custom/ Status-pill', module)
             },
             docsInPanel: false,
             source: false,
+            summary: CStatusPillContent,
             wrapperComponent: VueInfoWrapper,
         },
     })  
@@ -767,6 +783,7 @@ storiesOf('UI COMPONENT   | Vuetify Custom/ Tab', module)
             },
             docsInPanel: false,
             source: false,
+            summary: CTabContent,
             wrapperComponent: VueInfoWrapper,
         },
     })  
@@ -806,6 +823,7 @@ storiesOf('UI COMPONENT   | Vuetify Custom/ Textarea', module)
             },
             docsInPanel: false,
             source: false,
+            summary: CTextareaContent,
             wrapperComponent: VueInfoWrapper,
         },
     })  
@@ -877,6 +895,7 @@ storiesOf('UI COMPONENT   | Vuetify Custom/Textfield', module)
             },
             docsInPanel: false,
             source: false,
+            summary: CTextfieldContent,
             wrapperComponent: VueInfoWrapper,
         },
     })  
@@ -950,6 +969,7 @@ storiesOf('UI COMPONENT   | Vuetify Custom/ Toggle', module)
             },
             docsInPanel: false,
             source: false,
+            summary: CToggleContent,
             wrapperComponent: VueInfoWrapper,
         },
     })  
@@ -993,6 +1013,7 @@ storiesOf('UI COMPONENT   | Vuetify Custom/ Tooltip', module)
             },
             docsInPanel: false,
             source: false,
+            summary: CTooltipContent,
             wrapperComponent: VueInfoWrapper
         },
     })  
