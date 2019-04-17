@@ -24,6 +24,7 @@ export default {
         }</code></pre>`
       marked.setOptions({ renderer })
       return marked(this.info.summary)
+      
     }
   },
   mounted() {
@@ -72,8 +73,7 @@ export default {
 <template>
   <div class="layout-dynamic">
     <div class="header">
-      <h1 class="title">{{ info.title }}</h1>
-      <p class="subtitle">{{ info.subtitle }}</p>
+      <h1 class="title">{{ /[^|]*[/]/.exec(this.info.title)[0].replace("/", " >") }} {{ this.info.title.replace(/[^\/]*[\/]/, " ") }} {{" > "+this.info.subtitle}}</h1>
     </div>
     <div>
       <slot/>
