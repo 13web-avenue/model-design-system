@@ -87,13 +87,7 @@ export default {
 //footer
 .footer {
 
-<<<<<<< HEAD
-  &--unify {
-
-    border-top: #f5f5f5 1px solid;
-=======
   &--baseline {
->>>>>>> a46ed687f043dfc1d210af3c98895b83b80942b0
 
     font-family: 'Open Sans', Helvetica, "Segoe UI", Arial, sans-serif;
     font-weight: 400;
