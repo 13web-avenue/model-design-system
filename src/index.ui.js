@@ -594,10 +594,10 @@ storiesOf('UI COMPONENT   | Vuetify Default/ v-ratings', module)
                 VRatings: {
                     value: 'Sets Number type',
                     color: 'Sets String type',
-                    background_color : 'Sets String type',
+                    background_color: 'Sets String type',
                     large: 'Sets Boolean type',
                     small: 'Sets Boolean type',
-                    medium : 'Sets Boolean type',
+                    medium: 'Sets Boolean type',
                     x_large: 'Sets Boolean type'
                 }
             }            
@@ -639,7 +639,7 @@ storiesOf('UI COMPONENT   | Vuetify Default/ v-search', module)
                 VSearch: {
                     disable: 'Sets Boolean type',
                     label: 'Sets String type',
-                    clear : 'Sets Boolean type',
+                    clear: 'Sets Boolean type',
                 }
             }            
         };
@@ -658,7 +658,7 @@ storiesOf('UI COMPONENT   | Vuetify Default/ v-search', module)
                 VSearch: {
                     disable: 'Sets Boolean type',
                     label: 'Sets String type',
-                    clear : 'Sets Boolean type',
+                    clear: 'Sets Boolean type',
                 }
             }            
         };
@@ -670,7 +670,7 @@ storiesOf('UI COMPONENT   | Vuetify Default/ v-search', module)
 
 
 // v-snackbar
-storiesOf('UI COMPONENT   | Vuetify Default / v-snackbar', module)
+storiesOf('UI COMPONENT | Vuetify Default / v-snackbar', module)
     .addDecorator(appDecorator)
     .addParameters({
         readme: {
@@ -711,7 +711,7 @@ storiesOf('UI COMPONENT   | Vuetify Default / v-snackbar', module)
 
 
 // v-textarea
-storiesOf('UI COMPONENT   | Vuetify Default/ v-textarea', module)
+storiesOf('UI COMPONENT | Vuetify Default/ v-textarea', module)
     .addDecorator(appDecorator)
     .addParameters({
         readme: {
@@ -783,7 +783,7 @@ storiesOf('UI COMPONENT   | Vuetify Default/ v-textarea', module)
 
 
 // v-textfield
-storiesOf('UI COMPONENT   | Vuetify Default/ v-textfield', module)
+storiesOf('UI COMPONENT | Vuetify Default/ v-textfield', module)
     .addDecorator(appDecorator)
     .addParameters({
         readme: {

@@ -39,7 +39,6 @@ storiesOf('Icons & Assets | Iconset', module)
     .addParameters({
         readme: {
             codeTheme: 'monokai-sublime',
-            // sidebar: BButtontSetup,
             theme: {
                 textColor: '#bb255a'
             },

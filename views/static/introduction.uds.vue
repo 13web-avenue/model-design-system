@@ -15,7 +15,7 @@ base-layout-static
         | Unify Design System 
       | houses a comprehensible design language that will provide a seamless experience for users, and improve the Scrum & Product team’s workflow.
     P
-      | In this Component Driven Development era, front-end engineering has been more than ever a valuable asset in Mantu's toolset...<br /> 
+      | In this Component Driven Development era, front-end engineering has been more than ever a valuable asset in Mantu's toolset...
       strong
         | Unify Design System
       |  also covers those front-end standards that powers our applications client-side's strategy.
@@ -49,33 +49,6 @@ base-layout-static
         | Product Owners<br /> 
       | Consider UDS as your digital handbook that will guide you in the creation of your project. It will help you save precious time and allocate resources knowing what is already available in terms of components, colors, typography and templates. 
       | Take your time to read the platform and then brief your team by showing them the specific sections that best fit your need (users need) 
-
-
-  .content-area--block
-    h3.border-bottom Current achievements
-
-  .content-area--block
-    h3.border-bottom Long-term goals & vision
-  
-  .content-area--block
-    h3.border-bottom Standards & Advocacy
-
-    .content-area--block
-      h4.border-bottom
-        strong 
-          | UX standards
-
-    .content-area--block
-      h4
-        strong 
-          | Front-end standards
-
-    .content-area--block
-
-
-
-
-
 
 </template>
 
