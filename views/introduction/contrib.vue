@@ -27,7 +27,7 @@ export default {
 }
 </script>
 
-<style lang="scss">
+<style lang="scss" scoped>
 .base-layout {
   margin: 2rem;
   line-height: 1.4;
