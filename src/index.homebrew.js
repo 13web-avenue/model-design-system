@@ -703,7 +703,10 @@ storiesOf('UI COMPONENT   | Vuetify Custom/Radio-button', module)
             components: {
                 'c-radio-button': CRadioButton
             },
-            template: `<c-radio-button />`,
+            template: `<div>
+                            <c-radio-button :radioOptions="{'Unselected option':'one','Selected option': 'two'}" selected="two"/>
+                            <c-radio-button :radioOptions="{'Disabled Unselected':'one','Disabled Selected': 'two'}" selected="two" :disable="true"/>
+                        </div>`,
             propsDescription: {
                 CRadioButton: {
                     disable : 'Disable the input',
