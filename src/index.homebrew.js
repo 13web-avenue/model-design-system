@@ -425,13 +425,16 @@ storiesOf('UI PATTERN | Vuetify Custom/Checkbox', module)
                 'c-checkbox': CCheckBox
             },
             template: `<div>
-                        <c-checkbox @change="log" label="First"/>
-                        <c-checkbox @change="log" label="Second"/>
-                        <c-checkbox @change="log" label="Third"/>
-                        <c-checkbox @change="log" label="Fourth"/>
-                        <c-checkbox @change="log" label="Disabled" :disable=true />
+                        <c-checkbox @change="log" id="First" label="First"/>
+                        <c-checkbox @change="log" id="Second" label="Second" :selected=true />
+                        <c-checkbox @change="log" id="Third" label="Third"/>
+                        <c-checkbox @change="log" id="Fourth" label="Fourth"/>
+                        <c-checkbox @change="log" id="Fifth" label="Disabled" :disable=true />
+                        <c-checkbox @change="log" id="Sixth" label="Indeterminate" :indeterminate=true />
                       </div>`,
-            methods: { log: action('action') },
+            methods: { log: function(value){
+                console.log(value)
+            } },
             propsDescription: {
                 CCheckBox: {
                     disable: 'Disable the input',
