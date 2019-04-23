@@ -112,7 +112,7 @@ const appDecorator = () => {
         components: { VApp, VContainer, VLayout, VFlex },
         template: `
         <v-app>
-            <div style="background-color: none; width: 100%; height: 100%;">
+            <div style="background-color: none; width: 100%; height: 100%; padding: 2rem; text-align: center">
                     <v-layout>
                         <v-flex>
                             <story/>
@@ -189,12 +189,10 @@ storiesOf('UI COMPONENT   | Vuetify Default / v-alert', module)
             },
             template: `
                 <div>
-                    <base-layout-static>
                     <v-alert type="success">This is a success alert.</v-alert>
                     <v-alert type="info">This is a info alert.</v-alert>
                     <v-alert type="warning">This is a warning alert.</v-alert>
                     <v-alert type="error">This is a error alert.</v-alert>
-                    </base-layout-static>
                 </div>           
             `,
             propsDescription: {
@@ -377,7 +375,7 @@ storiesOf('UI COMPONENT   | Vuetify Default/ v-combobox', module)
             components: {
                 'v-combobox': VCombobox
             },
-            template: `<v-combobox disabled="true"/>`,
+            template: `<v-combobox :disabled=true />`,
             propsDescription: {
                 VCombobox: {
                     disable : 'Sets Boolean type',
@@ -451,8 +449,8 @@ storiesOf('UI COMPONENT   | Vuetify Default/ v-divider', module)
             components: {
                 'v-divider': VDivider
             },
-            // docsInPanel: false,
-            // source: false,
+            docsInPanel: false,
+            source: false,
             wrapperComponent: VueInfoWrapper,
         },
     })
@@ -516,7 +514,7 @@ storiesOf('UI COMPONENT   | Vuetify Default/ v-expansion-panel', module)
             components: {
                 'v-expansion-panel': VExpansionPanel
             },
-            template: `<v-expansion-panel disable="true"/>`,
+            template: `<v-expansion-panel :disable=true />`,
             propsDescription : {
                 VExpansionPanel: {
                     disable : 'Sets Boolean type',
@@ -610,7 +608,7 @@ storiesOf('UI COMPONENT   | Vuetify Default/ v-ratings', module)
 
     
 // v-search
-storiesOf('UI COMPONENT   | Vuetify Default/ v-search', module)
+storiesOf('UI COMPONENT | Vuetify Default/ v-search', module)
     .addDecorator(appDecorator)
     .addParameters({
         readme: {
@@ -869,8 +867,8 @@ storiesOf('UI COMPONENT   | Vuetify Default/ v-timeline', module)
             components: {
                 'v-timeline': VTimeline
             },
-            // docsInPanel: false,
-            // source: false,
+            docsInPanel: false,
+            source: false,
             wrapperComponent: VueInfoWrapper,
         },
     })
@@ -889,7 +887,7 @@ storiesOf('UI COMPONENT   | Vuetify Default/ v-timeline', module)
 
 
 // v-toggle
-storiesOf('UI COMPONENT   | Vuetify Default/ v-toggle', module)
+storiesOf('UI COMPONENT | Vuetify Default/ v-toggle', module)
     .addDecorator(appDecorator)
     .addParameters({
         readme: {
@@ -903,8 +901,8 @@ storiesOf('UI COMPONENT   | Vuetify Default/ v-toggle', module)
             components: {
                 'v-toggle': VToggle
             },
-            // docsInPanel: false,
-            // source: false,
+            docsInPanel: false,
+            source: false,
             wrapperComponent: VueInfoWrapper,
         },
         

@@ -9,11 +9,12 @@ import { storiesOf } from '@storybook/vue';
  *
  */
 
-import welcome from '../views/introduction/welcome.vue';
-import BaseStaticLayout from '../views/layouts/base-layout-static.vue';
-import IntroductionWelcome from '../views/static/introduction.uds.vue'
+import contrib from '../views/introduction/contrib.vue'
+import BaseStaticLayout from '../views/layouts/base-layout-static.vue'
+import Introduction from '../views/static/introduction.uds.vue'
 import DocComponenUsage from '../views/static/usage.vue'
 import DocValueDrivenDevelopment from '../views/static/value-driven-development.vue'
+import DocReleases from '../views/static/release.vue'
 
 import DocComponentConduct from '../views/static/code-of-conduct.vue'
 
@@ -25,11 +26,11 @@ storiesOf('About UNIFY | Introduction', module)
             isToolshown: false
         }
     })
-    .add('The UNIFY Project', () => ({
+    .add('The Unify Project', () => ({
         components: { 
-            'welcome': IntroductionWelcome,
+            'introduction': Introduction,
         },
-        template: `<welcome />`,
+        template: `<introduction />`,
     }))
     .add('Value Driven Development', () => ({
         components: {
@@ -98,11 +99,11 @@ storiesOf('About Unify | Timelines / Releases', module)
     })
     .add('v1.0.0', () => ({
         components: {
-            'welcome': welcome,
+            'doc-releases': DocReleases,
             'base-layout-static': BaseStaticLayout,
         },
         template: `<base-layout-static>
-                    <welcome />
+                    <doc-releases />
                 </base-layout-static>`,
     }))
 
@@ -132,14 +133,14 @@ storiesOf('About Unify | Timelines / Releases', module)
 //                 </base-layout-static>`,
 //     }))    
 
-storiesOf('User Guide | UDS platform', module)
+storiesOf('User Guide | Using the platform', module)
     .addParameters({
         options: {
             showAddonPanel: false,
             isToolshown: false
         }
     })  
-    .add('Using the platform', () => ({
+    .add('How to?', () => ({
         components: {
             'doc-component-usage': DocComponenUsage,
         },
@@ -153,98 +154,98 @@ storiesOf('User Guide | UDS platform', module)
     }))
 
 
-storiesOf('User Manual | Collaboration', module)
-    .addParameters({
-        options: {
-            showAddonPanel: false,
-        }
-    })
-    .add('Support & Feedbacks', () => ({
-        components: {
-            'welcome': welcome,
-            'base-layout-static': BaseStaticLayout,
-        },
-        template: `<base-layout-static>
-                    <welcome />
-                </base-layout-static>`,
-    }))
-    .add('Innovate', () => ({
-        components: {
-            'welcome': welcome,
-            'base-layout-static': BaseStaticLayout,
-        },
-        template: `<base-layout-static>
-                    <welcome />
-                </base-layout-static>`,
-    }))
+// storiesOf('User Manual | Collaboration', module)
+//     .addParameters({
+//         options: {
+//             showAddonPanel: false,
+//         }
+//     })
+//     .add('Support & Feedbacks', () => ({
+//         components: {
+//             'welcome': welcome,
+//             'base-layout-static': BaseStaticLayout,
+//         },
+//         template: `<base-layout-static>
+//                     <welcome />
+//                 </base-layout-static>`,
+//     }))
+//     .add('Innovate', () => ({
+//         components: {
+//             'welcome': welcome,
+//             'base-layout-static': BaseStaticLayout,
+//         },
+//         template: `<base-layout-static>
+//                     <welcome />
+//                 </base-layout-static>`,
+//     }))
 
     
-storiesOf('User Manual | Contributing / Technical Workflow', module)
-    .addParameters({
-        options: {
-            showAddonPanel: false,
-        }
-    })  
-    .add('Working With Pull Requests', () => ({
-        components: {
-            'welcome': welcome,
-            'base-layout-static': BaseStaticLayout,
-        },
-        template: `<base-layout-static>
-                    <welcome />
-                </base-layout-static>`,
-    }))  
+// storiesOf('User Manual | Contributing / Technical Workflow', module)
+//     .addParameters({
+//         options: {
+//             showAddonPanel: false,
+//         }
+//     })  
+//     .add('Working With Pull Requests', () => ({
+//         components: {
+//             'welcome': welcome,
+//             'base-layout-static': BaseStaticLayout,
+//         },
+//         template: `<base-layout-static>
+//                     <welcome />
+//                 </base-layout-static>`,
+//     }))  
 
 
-storiesOf('User Manual | Contributing / Tecshare Development', module)
-    .addParameters({
-        options: {
-            showAddonPanel: false,
-        }
-    })
-    .add('DocFile', () => ({
-        components: {
-            'welcome': welcome,
-            'base-layout-static': BaseStaticLayout,
-        },
-        template: `<base-layout-static>
-                    <welcome />
-                </base-layout-static>`,
-    }))  
+// storiesOf('User Manual | Contributing / Tecshare Development', module)
+//     .addParameters({
+//         options: {
+//             showAddonPanel: false,
+//         }
+//     })
+//     .add('DocFile', () => ({
+//         components: {
+//             'welcome': welcome,
+//             'base-layout-static': BaseStaticLayout,
+//         },
+//         template: `<base-layout-static>
+//                     <welcome />
+//                 </base-layout-static>`,
+//     }))  
 
 
-storiesOf('User Manual | Development Workflow', module)
-    .addParameters({
-        options: { 
-            showAddonPanel: false,
-        }
-    })
-    .add('Using The Workflow', () => ({
-        components: {
-            'welcome': welcome,
-            'base-layout-static': BaseStaticLayout,
-        },
-        template: `<base-layout-static>
-                    <welcome />
-                </base-layout-static>`,
-    }))      
+// storiesOf('User Manual | Development Workflow', module)
+//     .addParameters({
+//         options: { 
+//             showAddonPanel: false,
+//         }
+//     })
+//     .add('Using The Workflow', () => ({
+//         components: {
+//             'welcome': welcome,
+//             'base-layout-static': BaseStaticLayout,
+//         },
+//         template: `<base-layout-static>
+//                     <welcome />
+//                 </base-layout-static>`,
+//     }))      
 
 
-storiesOf('User Manual | Development Workflow / Solution Architecture ', module)
-    .addParameters({
-        options: {
-            showAddonPanel: false,
-        }
-    })
-    .add('UDS Component Integration', () => ({
-        components: {
-            'welcome': welcome,
-            'base-layout-static': BaseStaticLayout,
-        },
-        template: `<base-layout-static>
-                    <welcome />
-                </base-layout-static>`,
-    }))
+// storiesOf('User Manual | Development Workflow / Solution Architecture ', module)
+//     .addParameters({
+//         options: {
+//             showAddonPanel: false,
+//         }
+//     })
+//     .add('UDS Component Integration', () => ({
+//         components: {
+//             'welcome': welcome,
+//             'base-layout-static': BaseStaticLayout,
+//         },
+//         template: `<base-layout-static>
+//                     <welcome />
+//                 </base-layout-static>`,
+//     }))
 
 
 storiesOf('Author\'s note | Contributors', module)
@@ -255,11 +256,11 @@ storiesOf('Author\'s note | Contributors', module)
     })
     .add('DocFile', () => ({
         components: {
-            'welcome': welcome,
+            'contrib': contrib,
             'base-layout-static': BaseStaticLayout,
         },
         template: `<base-layout-static>
-                    <welcome />
+                    <contrib />
                 </base-layout-static>`,
     }))
 /* eslint-enable react/react-in-jsx-scope */

@@ -408,7 +408,7 @@ storiesOf('UI COMPONENT   | Vuetify Custom / Button', module)
     )
 
 // c-checkbox 
-storiesOf('UI COMPONENT   | Vuetify Custom/Checkbox', module)
+storiesOf('UI COMPONENT | Vuetify Custom/Checkbox', module)
     .addDecorator(appDecorator) 
     .addParameters({
         readme: {
@@ -1000,7 +1000,7 @@ storiesOf('UI COMPONENT | Vuetify Custom / Toggle', module)
     )
 
 // c-tooltip 
-storiesOf('UI COMPONENT   | Vuetify Custom/ Tooltip', module)
+storiesOf('UI COMPONENT | Vuetify Custom / Tooltip', module)
     .addDecorator(appDecorator) 
     .addParameters({
         readme: {
