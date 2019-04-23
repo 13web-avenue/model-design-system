@@ -130,7 +130,7 @@ export default {
 .typography-grid {
   border-collapse: collapse;
 
-  width: 70rem;
+  width: 100%;
 
   th {
     background: #ccc;

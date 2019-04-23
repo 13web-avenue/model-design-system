@@ -124,7 +124,7 @@ const appDecorator = () => {
     };
 };
  
-storiesOf('UI PATTERN | Vuetify Default / v-alert', module)
+storiesOf('UI COMPONENT   | Vuetify Default / v-alert', module)
     .addDecorator(appDecorator) 
     .addParameters({
         readme: {
@@ -210,7 +210,7 @@ storiesOf('UI PATTERN | Vuetify Default / v-alert', module)
         }
     )
 
-storiesOf('UI PATTERN | Vuetify Default/ v-badge', module)
+storiesOf('UI COMPONENT   | Vuetify Default/ v-badge', module)
     .addDecorator(appDecorator)
     .addParameters({
         readme: {
@@ -252,7 +252,7 @@ storiesOf('UI PATTERN | Vuetify Default/ v-badge', module)
     )    
 
 // v-breadcrumbs
-storiesOf('UI PATTERN | Vuetify Default/ v-breadcrumbs', module)
+storiesOf('UI COMPONENT   | Vuetify Default/ v-breadcrumbs', module)
     .addDecorator(appDecorator)
     .addParameters({
         readme: {
@@ -292,7 +292,7 @@ storiesOf('UI PATTERN | Vuetify Default/ v-breadcrumbs', module)
         }
     )
 
-storiesOf('UI PATTERN | Vuetify Default/ v-card', module)
+storiesOf('UI COMPONENT   | Vuetify Default/ v-card', module)
     .addDecorator(appDecorator)
     .addParameters({
         readme: {
@@ -333,7 +333,7 @@ storiesOf('UI PATTERN | Vuetify Default/ v-card', module)
     ) 
     
 // v-combobox
-storiesOf('UI PATTERN | Vuetify Default/ v-combobox', module)
+storiesOf('UI COMPONENT   | Vuetify Default/ v-combobox', module)
     .addDecorator(appDecorator)
     .addParameters({
         readme: {
@@ -395,7 +395,7 @@ storiesOf('UI PATTERN | Vuetify Default/ v-combobox', module)
 
     
 // v-datable
-storiesOf('UI PATTERN | Vuetify Default/ v-datatable', module)
+storiesOf('UI COMPONENT   | Vuetify Default/ v-datatable', module)
     .addDecorator(appDecorator)
     .addParameters({
         readme: {
@@ -437,7 +437,7 @@ storiesOf('UI PATTERN | Vuetify Default/ v-datatable', module)
 
     
 // v-divider
-storiesOf('UI PATTERN | Vuetify Default/ v-divider', module)
+storiesOf('UI COMPONENT   | Vuetify Default/ v-divider', module)
     .addDecorator(appDecorator)
     .addParameters({
         readme: {
@@ -475,7 +475,7 @@ storiesOf('UI PATTERN | Vuetify Default/ v-divider', module)
 
     
 // v-expansion-panel
-storiesOf('UI PATTERN | Vuetify Default/ v-expansion-panel', module)
+storiesOf('UI COMPONENT   | Vuetify Default/ v-expansion-panel', module)
     .addDecorator(appDecorator)
     .addParameters({
         readme: {
@@ -531,7 +531,7 @@ storiesOf('UI PATTERN | Vuetify Default/ v-expansion-panel', module)
 
     
 // v-navigation-drawer
-storiesOf('UI PATTERN | Vuetify Default/ v-navigation-drawer', module)
+storiesOf('UI COMPONENT   | Vuetify Default/ v-navigation-drawer', module)
     .addDecorator(appDecorator)
     .addParameters({
         readme: {
@@ -565,7 +565,7 @@ storiesOf('UI PATTERN | Vuetify Default/ v-navigation-drawer', module)
 
     
 // v-ratings
-storiesOf('UI PATTERN | Vuetify Default/ v-ratings', module)
+storiesOf('UI COMPONENT   | Vuetify Default/ v-ratings', module)
     .addDecorator(appDecorator)
     .addParameters({
         readme: {
@@ -594,10 +594,10 @@ storiesOf('UI PATTERN | Vuetify Default/ v-ratings', module)
                 VRatings: {
                     value: 'Sets Number type',
                     color: 'Sets String type',
-                    background_color : 'Sets String type',
+                    background_color: 'Sets String type',
                     large: 'Sets Boolean type',
                     small: 'Sets Boolean type',
-                    medium : 'Sets Boolean type',
+                    medium: 'Sets Boolean type',
                     x_large: 'Sets Boolean type'
                 }
             }            
@@ -610,7 +610,7 @@ storiesOf('UI PATTERN | Vuetify Default/ v-ratings', module)
 
     
 // v-search
-storiesOf('UI PATTERN | Vuetify Default/ v-search', module)
+storiesOf('UI COMPONENT   | Vuetify Default/ v-search', module)
     .addDecorator(appDecorator)
     .addParameters({
         readme: {
@@ -639,7 +639,7 @@ storiesOf('UI PATTERN | Vuetify Default/ v-search', module)
                 VSearch: {
                     disable: 'Sets Boolean type',
                     label: 'Sets String type',
-                    clear : 'Sets Boolean type',
+                    clear: 'Sets Boolean type',
                 }
             }            
         };
@@ -658,7 +658,7 @@ storiesOf('UI PATTERN | Vuetify Default/ v-search', module)
                 VSearch: {
                     disable: 'Sets Boolean type',
                     label: 'Sets String type',
-                    clear : 'Sets Boolean type',
+                    clear: 'Sets Boolean type',
                 }
             }            
         };
@@ -670,7 +670,7 @@ storiesOf('UI PATTERN | Vuetify Default/ v-search', module)
 
 
 // v-snackbar
-storiesOf('UI PATTERN | Vuetify Default / v-snackbar', module)
+storiesOf('UI COMPONENT | Vuetify Default / v-snackbar', module)
     .addDecorator(appDecorator)
     .addParameters({
         readme: {
@@ -711,7 +711,7 @@ storiesOf('UI PATTERN | Vuetify Default / v-snackbar', module)
 
 
 // v-textarea
-storiesOf('UI PATTERN | Vuetify Default/ v-textarea', module)
+storiesOf('UI COMPONENT | Vuetify Default/ v-textarea', module)
     .addDecorator(appDecorator)
     .addParameters({
         readme: {
@@ -783,7 +783,7 @@ storiesOf('UI PATTERN | Vuetify Default/ v-textarea', module)
 
 
 // v-textfield
-storiesOf('UI PATTERN | Vuetify Default/ v-textfield', module)
+storiesOf('UI COMPONENT | Vuetify Default/ v-textfield', module)
     .addDecorator(appDecorator)
     .addParameters({
         readme: {
@@ -855,7 +855,7 @@ storiesOf('UI PATTERN | Vuetify Default/ v-textfield', module)
 
 
 // v-timeline
-storiesOf('UI PATTERN | Vuetify Default/ v-timeline', module)
+storiesOf('UI COMPONENT   | Vuetify Default/ v-timeline', module)
     .addDecorator(appDecorator)
     .addParameters({
         readme: {
@@ -889,7 +889,7 @@ storiesOf('UI PATTERN | Vuetify Default/ v-timeline', module)
 
 
 // v-toggle
-storiesOf('UI PATTERN | Vuetify Default/ v-toggle', module)
+storiesOf('UI COMPONENT   | Vuetify Default/ v-toggle', module)
     .addDecorator(appDecorator)
     .addParameters({
         readme: {
@@ -936,7 +936,7 @@ storiesOf('UI PATTERN | Vuetify Default/ v-toggle', module)
 
 
 // v-treeview
-storiesOf('UI PATTERN | Vuetify Default/ v-treeview', module)
+storiesOf('UI COMPONENT   | Vuetify Default/ v-treeview', module)
     .addDecorator(appDecorator)
     .addParameters({
         readme: {

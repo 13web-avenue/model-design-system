@@ -12,8 +12,8 @@ import { storiesOf } from '@storybook/vue';
 import welcome from '../views/introduction/welcome.vue';
 import BaseStaticLayout from '../views/layouts/base-layout-static.vue';
 import IntroductionWelcome from '../views/static/introduction.uds.vue'
-import DocComponentPurpose from '../views/static/purpose.vue'
 import DocComponenUsage from '../views/static/usage.vue'
+import DocValueDrivenDevelopment from '../views/static/value-driven-development.vue'
 
 import DocComponentConduct from '../views/static/code-of-conduct.vue'
 
@@ -33,42 +33,36 @@ storiesOf('About UNIFY | Introduction', module)
     }))
     .add('Value Driven Development', () => ({
         components: {
-            'welcome': IntroductionWelcome,
+            'doc-value-driven-development': DocValueDrivenDevelopment,
         },
-        template: ` <welcome />`,
-    }))
-    .add('Purpose & Objectives', () => ({
-        components: {
-            'doc-component-purpose': DocComponentPurpose,
-        },
-        template: ` <doc-component-purpose />`
+        template: `<doc-value-driven-development />`,
     }))
 
 
-storiesOf('About UNIFY | Introduction / Component Driven Development', module)
-    .addParameters({
-        options: {
-            showAddonPanel: false,
-        }
-    })
-    .add('What is Component Driven Development(CDD)?', () => ({
-        components: {
-            'welcome': welcome,
-            'base-layout-static': BaseStaticLayout,
-        },
-        template: `<base-layout-static>
-                    <welcome />
-                </base-layout-static>`,
-    }))
-    .add('CDD Amaris Implementations', () => ({
-        components: {
-            'welcome': welcome,
-            'base-layout-static': BaseStaticLayout,
-        },
-        template: `<base-layout-static>
-                    <welcome />
-                </base-layout-static>`,
-    }))    
+// storiesOf('About UNIFY | Introduction / Component Driven Development', module)
+//     .addParameters({
+//         options: {
+//             showAddonPanel: false,
+//         }
+//     })
+//     .add('What is Component Driven Development(CDD)?', () => ({
+//         components: {
+//             'welcome': welcome,
+//             'base-layout-static': BaseStaticLayout,
+//         },
+//         template: `<base-layout-static>
+//                     <welcome />
+//                 </base-layout-static>`,
+//     }))
+//     .add('CDD Amaris Implementations', () => ({
+//         components: {
+//             'welcome': welcome,
+//             'base-layout-static': BaseStaticLayout,
+//         },
+//         template: `<base-layout-static>
+//                     <welcome />
+//                 </base-layout-static>`,
+//     }))    
 
 
 // storiesOf('About Unify | Timelines', module)
@@ -102,7 +96,7 @@ storiesOf('About Unify | Timelines / Releases', module)
             showAddonPanel: false,
         }
     })
-    .add('V1.0.0', () => ({
+    .add('v1.0.0', () => ({
         components: {
             'welcome': welcome,
             'base-layout-static': BaseStaticLayout,
@@ -138,14 +132,14 @@ storiesOf('About Unify | Timelines / Releases', module)
 //                 </base-layout-static>`,
 //     }))    
 
-storiesOf('User Manual | UDS platform', module)
+storiesOf('User Guide | UDS platform', module)
     .addParameters({
         options: {
             showAddonPanel: false,
             isToolshown: false
         }
     })  
-    .add('Usage', () => ({
+    .add('Using the platform', () => ({
         components: {
             'doc-component-usage': DocComponenUsage,
         },
