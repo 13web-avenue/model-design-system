@@ -441,7 +441,7 @@ storiesOf('UI COMPONENT | Vuetify Custom/Checkbox', module)
                         <c-checkbox @change="log" id="Third" label="Third"/>
                         <c-checkbox @change="log" id="Fourth" label="Fourth"/>
                         <c-checkbox @change="log" id="Fifth" label="Disabled" :disable=true />
-                        <c-checkbox @change="log" id="Sixth" label="Indeterminate" :indeterminate=true />
+                        <c-checkbox @change="log" id="Sixth" label="Partially Selected [Indeterminate]" :indeterminate=true />
                       </div>`,
             methods: { log: function(value){
                 console.log(value)
