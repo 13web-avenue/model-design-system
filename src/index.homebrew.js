@@ -443,7 +443,7 @@ storiesOf('UI COMPONENT | Vuetify Custom/Checkbox', module)
                         <c-checkbox @change="log" id="Fifth" label="Disabled" :disable=true />
                         <c-checkbox @change="log" id="Sixth" label="Partially Selected [Indeterminate]" :indeterminate=true />
                       </div>`,
-            methods: { log: function(value){
+            methods: { log: function(value) {
                 console.log(value)
             } },
             propsDescription: {
@@ -461,7 +461,7 @@ storiesOf('UI COMPONENT | Vuetify Custom/Checkbox', module)
     )
 
 // c-combobox-classic 
-storiesOf('UI COMPONENT   | Vuetify Custom / Combobox-classic', module)
+storiesOf('UI COMPONENT | Vuetify Custom / Combobox-classic', module)
     .addDecorator(appDecorator) 
     .addParameters({
         readme: {
@@ -773,7 +773,7 @@ storiesOf('UI COMPONENT   | Vuetify Custom/ Status-pill', module)
     )
 
 // c-tab
-storiesOf('UI COMPONENT   | Vuetify Custom/ Tab', module)
+storiesOf('UI COMPONENT | Vuetify Custom/ Tab', module)
     .addDecorator(appDecorator) 
     .addParameters({
         readme: {
@@ -813,7 +813,7 @@ storiesOf('UI COMPONENT   | Vuetify Custom/ Tab', module)
     )
 
 // c-textarea
-storiesOf('UI COMPONENT   | Vuetify Custom/ Textarea', module)
+storiesOf('UI COMPONENT | Vuetify Custom/ Textarea', module)
     .addDecorator(appDecorator) 
     .addParameters({
         readme: {
@@ -885,7 +885,7 @@ storiesOf('UI COMPONENT   | Vuetify Custom/ Textarea', module)
     )
 
 // c-textfield
-storiesOf('UI COMPONENT   | Vuetify Custom/Textfield', module)
+storiesOf('UI COMPONENT | Vuetify Custom/Textfield', module)
     .addDecorator(appDecorator) 
     .addParameters({
         readme: {

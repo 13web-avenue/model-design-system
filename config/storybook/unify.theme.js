@@ -13,8 +13,8 @@ export default create({
     // appBorderRadius: 4,
 
     // Typography
-    fontBase: '"Open Sans", sans-serif',
-    fontCode: '"Operator Mono", "Fira Code Retina", "Fira Code", "FiraCode - Retina", "Andale Mono", "Lucida Console", "Consolas", "Monaco", "monospace"',
+    // fontBase: '"Open Sans", sans-serif',
+    // fontCode: '"Operator Mono", "Fira Code Retina", "Fira Code", "FiraCode - Retina", "Andale Mono", "Lucida Console", "Consolas", "Monaco", "monospace"',
 
     // Text colors
     // textColor: '#000',
@@ -35,6 +35,6 @@ export default create({
     // and the proper solution implemented once the PR is merged.
     // Github link: https://github.com/storybooks/storybook/issues/5866
     brandTitle: 'UNIFY DESIGN SYSTEM',
-    brandUrl: 'https://arp.amaris.com/unify-design-system',
+    brandUrl: 'https://arp.amaris.com/unify/design-system',
     brandImage: null
 });
