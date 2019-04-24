@@ -142,7 +142,7 @@ addParameters({
     /**
      * theme storybook, see link below
      */
-    theme: undefined,
+    theme: UnifyTheme,
   },
 });
 

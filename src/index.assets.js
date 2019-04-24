@@ -16,7 +16,7 @@ import { storiesOf } from '@storybook/vue'
 
 import Typography from '../views/assets-treatment/typography/typography.vue'
 
-import icons from '../views/assets-treatment/icons/icons.vue'
+// import icons from '../views/assets-treatment/icons/icons.vue'
 
 import assets from '../views/assets-treatment/images/images.vue'
 
