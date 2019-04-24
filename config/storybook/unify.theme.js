@@ -13,8 +13,8 @@ export default create({
     // appBorderRadius: 4,
 
     // Typography
-    fontBase: '"Open Sans", sans-serif',
-    fontCode: '"Operator Mono", "Fira Code Retina", "Fira Code", "FiraCode - Retina", "Andale Mono", "Lucida Console", "Consolas", "Monaco", "monospace"',
+    // fontBase: '"Open Sans", sans-serif',
+    // fontCode: '"Operator Mono", "Fira Code Retina", "Fira Code", "FiraCode - Retina", "Andale Mono", "Lucida Console", "Consolas", "Monaco", "monospace"',
 
     // Text colors
     // textColor: '#000',

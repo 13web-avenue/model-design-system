@@ -773,7 +773,7 @@ storiesOf('UI COMPONENT   | Vuetify Custom/ Status-pill', module)
     )
 
 // c-tab
-storiesOf('UI COMPONENT   | Vuetify Custom/ Tab', module)
+storiesOf('UI COMPONENT | Vuetify Custom/ Tab', module)
     .addDecorator(appDecorator) 
     .addParameters({
         readme: {
@@ -813,7 +813,7 @@ storiesOf('UI COMPONENT   | Vuetify Custom/ Tab', module)
     )
 
 // c-textarea
-storiesOf('UI COMPONENT   | Vuetify Custom/ Textarea', module)
+storiesOf('UI COMPONENT | Vuetify Custom/ Textarea', module)
     .addDecorator(appDecorator) 
     .addParameters({
         readme: {
@@ -885,7 +885,7 @@ storiesOf('UI COMPONENT   | Vuetify Custom/ Textarea', module)
     )
 
 // c-textfield
-storiesOf('UI COMPONENT   | Vuetify Custom/Textfield', module)
+storiesOf('UI COMPONENT | Vuetify Custom/Textfield', module)
     .addDecorator(appDecorator) 
     .addParameters({
         readme: {
