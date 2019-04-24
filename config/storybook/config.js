@@ -67,12 +67,6 @@ import '../../assets/stylesheets/cssGlobalOverrides.scss'
 addParameters({
   options: {
     /**
-<<<<<<< HEAD
-     * sorts stories
-     * @type {Boolean}
-     */
-    // sortStoriesByKind: true,    
-=======
      * show story component as full screen
      * @type {Boolean}
      */
@@ -82,7 +76,6 @@ addParameters({
      * @type {Boolean}
      */
     showNav: true,
->>>>>>> master
     /**
      * display panel that shows addon configurations
      * @type {Boolean}
@@ -97,11 +90,7 @@ addParameters({
      * sorts stories
      * @type {Boolean}
      */
-<<<<<<< HEAD
-    showSearchBox: true,
-=======
     sortStoriesByKind: true,
->>>>>>> master
     /**
      * regex for finding the hierarchy separator
      * @example:
@@ -129,16 +118,12 @@ addParameters({
      * enable/disable shortcuts
      * @type {Boolean}
      */
-<<<<<<< HEAD
-    isToolshown: true, // true by default
-=======
     enableShortcuts: false,
     /**
      * show/hide tool bar
      * @type {Boolean}
      */
     isToolshown: true,
->>>>>>> master
     /**
      * theme storybook, see link below
      */
