@@ -408,7 +408,7 @@ storiesOf('UI COMPONENT   | Vuetify Custom / Button', module)
     )
 
 // c-checkbox 
-storiesOf('UI COMPONENT   | Vuetify Custom/Checkbox', module)
+storiesOf('UI COMPONENT | Vuetify Custom/Checkbox', module)
     .addDecorator(appDecorator) 
     .addParameters({
         readme: {
@@ -436,13 +436,16 @@ storiesOf('UI COMPONENT   | Vuetify Custom/Checkbox', module)
                 'c-checkbox': CCheckBox
             },
             template: `<div>
-                        <c-checkbox @change="log" label="First"/>
-                        <c-checkbox @change="log" label="Second"/>
-                        <c-checkbox @change="log" label="Third"/>
-                        <c-checkbox @change="log" label="Fourth"/>
-                        <c-checkbox @change="log" label="Disabled" :disable=true />
+                        <c-checkbox @change="log" id="First" label="First"/>
+                        <c-checkbox @change="log" id="Second" label="Second" :selected=true />
+                        <c-checkbox @change="log" id="Third" label="Third"/>
+                        <c-checkbox @change="log" id="Fourth" label="Fourth"/>
+                        <c-checkbox @change="log" id="Fifth" label="Disabled" :disable=true />
+                        <c-checkbox @change="log" id="Sixth" label="Indeterminate" :indeterminate=true />
                       </div>`,
-            methods: { log: action('action') },
+            methods: { log: function(value){
+                console.log(value)
+            } },
             propsDescription: {
                 CCheckBox: {
                     disable: 'Disable the input',
@@ -703,7 +706,10 @@ storiesOf('UI COMPONENT   | Vuetify Custom/Radio-button', module)
             components: {
                 'c-radio-button': CRadioButton
             },
-            template: `<c-radio-button />`,
+            template: `<div>
+                            <c-radio-button :radioOptions="{'Unselected option':'one','Selected option': 'two'}" selected="two"/>
+                            <c-radio-button :radioOptions="{'Disabled Unselected':'one','Disabled Selected': 'two'}" selected="two" :disable="true"/>
+                        </div>`,
             propsDescription: {
                 CRadioButton: {
                     disable : 'Disable the input',
@@ -997,7 +1003,7 @@ storiesOf('UI COMPONENT | Vuetify Custom / Toggle', module)
     )
 
 // c-tooltip 
-storiesOf('UI COMPONENT | Vuetify Custom/ Tooltip', module)
+storiesOf('UI COMPONENT | Vuetify Custom / Tooltip', module)
     .addDecorator(appDecorator) 
     .addParameters({
         readme: {

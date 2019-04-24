@@ -67,38 +67,84 @@ import '../../assets/stylesheets/cssGlobalOverrides.scss'
 addParameters({
   options: {
     /**
+<<<<<<< HEAD
      * sorts stories
      * @type {Boolean}
      */
     // sortStoriesByKind: true,    
+=======
+     * show story component as full screen
+     * @type {Boolean}
+     */
+    isFullScreen: false,
+    /**
+     * display panel that shows a list of stories
+     * @type {Boolean}
+     */
+    showNav: true,
+>>>>>>> master
     /**
      * display panel that shows addon configurations
      * @type {Boolean}
      */
     showPanel: true,
     /**
-     * display floating search box to search through stories
-     * @type {Boolean}
+     * where to show the addon panel
+     * @type {('bottom'|'right')}
      */
-    showSearchBox: true,
+    panelPosition: 'bottom',
     /**
-     * show addon panel as a vertical panel on the right
+     * sorts stories
      * @type {Boolean}
      */
-    panelPosition : 'bottom',
+<<<<<<< HEAD
+    showSearchBox: true,
+=======
+    sortStoriesByKind: true,
+>>>>>>> master
+    /**
+     * regex for finding the hierarchy separator
+     * @example:
+     *   null - turn off hierarchy
+     *   /\// - split by `/`
+     *   /\./ - split by `.`
+     *   /\/|\./ - split by `/` or `.`
+     * @type {Regex}
+     */
+    hierarchySeparator: /\/|\./,
+    /**
+     * regex for finding the hierarchy root separator
+     * @example:
+     *   null - turn off multiple hierarchy roots
+     *   /\|/ - split by `|`
+     * @type {Regex}
+     */
+    hierarchyRootSeparator: /\|/,
+    /**
+     * sidebar tree animations
+     * @type {Boolean}
+     */
+    sidebarAnimations: true,
+    /**
+     * enable/disable shortcuts
+     * @type {Boolean}
+     */
+<<<<<<< HEAD
+    isToolshown: true, // true by default
+=======
+    enableShortcuts: false,
     /**
      * show/hide tool bar
      * @type {Boolean}
      */
-    isToolshown: true, // true by default
+    isToolshown: true,
+>>>>>>> master
     /**
-     * default themes
-     * Custom themes will be applied form UnifyThemes
+     * theme storybook, see link below
      */
-    theme: UnifyTheme,
+    theme: undefined,
   },
-})
-
+});
 
 const req = require.context('../../src/', true, /.js$/)
 

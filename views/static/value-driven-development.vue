@@ -26,9 +26,6 @@ base-layout-static
         h4.border-bottom  Is it simple enough?
 
         p We wanted to build something that would be simple to use for everyone, whatever their goal on UDS was and this is why we often refused to build features or use complicated frameworks that would only add a layer of complexity on what we are building.
-
-    .content-area--block
-        h4.border-bottom Long-term goals & vision
     
     .content-area--block
         h4.border-bottom Standards & Advocacy

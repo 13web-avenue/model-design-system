@@ -35,28 +35,28 @@ storiesOf('Icons & Assets | Images', module)
         template: `<assets />`,
     }))
 
-storiesOf('Icons & Assets | Iconset', module)
-    .addParameters({
-        readme: {
-            codeTheme: 'monokai-sublime',
-            theme: {
-                textColor: '#bb255a'
-            },
-        },
-        info: {
-            components: {
-                'assets': assets,
-            },
-            docsInPanel: false,
-            source: false,
-        },
-    })
-    .add('FontAwesome v5', () => ({
-        components: { 
-            'icons': icons,
-         },
-        template: `<assets />`,
-    }))
+// storiesOf('Icons & Assets | Iconset', module)
+//     .addParameters({
+//         readme: {
+//             codeTheme: 'monokai-sublime',
+//             theme: {
+//                 textColor: '#bb255a'
+//             },
+//         },
+//         info: {
+//             components: {
+//                 'assets': assets,
+//             },
+//             docsInPanel: false,
+//             source: false,
+//         },
+//     })
+//     .add('FontAwesome v5', () => ({
+//         components: { 
+//             'icons': icons,
+//          },
+//         template: `<assets />`,
+//     }))
 
 storiesOf('Typographic Scales | Base font', module)
     .addParameters({
@@ -71,30 +71,30 @@ storiesOf('Typographic Scales | Base font', module)
         },
         template: `<typo />`,
     }))
-    .add('Scaling', () => ({
-        components: {
-            'typo': Typography,
-        },
-        template: `<typo />`,
-    }))    
+    // .add('Scaling', () => ({
+    //     components: {
+    //         'typo': Typography,
+    //     },
+    //     template: `<typo />`,
+    // }))    
 
-storiesOf('Typographic Scales | Text Components', module)
-    .addParameters({
-        options: {
-            showAddonPanel: false,
-            isToolshown: false
-        }
-    })
-    .add('Note', () => ({
-        components: {
-            'typo': Typography,
-        },
-        template: `<typo />`,
-    }))
-    .add('Usage', () => ({
-        components: {
-            'typo': Typography,
-        },
-        template: `<typo />`,
-    })) 
+// storiesOf('Typographic Scales | Text Components', module)
+//     .addParameters({
+//         options: {
+//             showAddonPanel: false,
+//             isToolshown: false
+//         }
+//     })
+//     .add('Note', () => ({
+//         components: {
+//             'typo': Typography,
+//         },
+//         template: `<typo />`,
+//     }))
+//     .add('Usage', () => ({
+//         components: {
+//             'typo': Typography,
+//         },
+//         template: `<typo />`,
+//     })) 
 /* eslint-enable react/react-in-jsx-scope */
