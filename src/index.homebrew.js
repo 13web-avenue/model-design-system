@@ -443,7 +443,7 @@ storiesOf('UI COMPONENT | Vuetify Custom/Checkbox', module)
                         <c-checkbox @change="log" id="Fifth" label="Disabled" :disable=true />
                         <c-checkbox @change="log" id="Sixth" label="Indeterminate" :indeterminate=true />
                       </div>`,
-            methods: { log: function(value){
+            methods: { log: function(value) {
                 console.log(value)
             } },
             propsDescription: {
@@ -461,7 +461,7 @@ storiesOf('UI COMPONENT | Vuetify Custom/Checkbox', module)
     )
 
 // c-combobox-classic 
-storiesOf('UI COMPONENT   | Vuetify Custom / Combobox-classic', module)
+storiesOf('UI COMPONENT | Vuetify Custom / Combobox-classic', module)
     .addDecorator(appDecorator) 
     .addParameters({
         readme: {

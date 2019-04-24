@@ -127,7 +127,7 @@ addParameters({
     /**
      * theme storybook, see link below
      */
-    // theme: UnifyTheme,
+    theme: UnifyTheme,
   },
 });
 

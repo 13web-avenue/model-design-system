@@ -35,6 +35,6 @@ export default create({
     // and the proper solution implemented once the PR is merged.
     // Github link: https://github.com/storybooks/storybook/issues/5866
     brandTitle: 'UNIFY DESIGN SYSTEM',
-    brandUrl: 'https://arp.amaris.com/unify-design-system',
+    brandUrl: 'https://arp.amaris.com/unify/design-system',
     brandImage: null
 });
