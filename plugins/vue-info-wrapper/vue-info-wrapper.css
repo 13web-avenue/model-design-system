@@ -7,7 +7,7 @@
   margin: 0 auto;
   max-width: 100%;
   width: 80vw;
-  padding: 4rem;
+  padding: 2rem;
 
   box-shadow: 
     0px 1px 0px -2px rgba(0, 0, 0, 0.2), 
@@ -20,15 +20,6 @@
   padding-bottom: 18px;
 }
 
-h1.title {
-  margin: 0;
-  font-size: 32px;
-  line-height: 1.1875;
-  color:#4d4d4d;
-  font-weight: 600;
-  font-family: 'Montserrat', sans-serif;
-  margin-bottom: 1.2rem;  
-}
 
 .subtitle {
   margin: 0;
@@ -103,28 +94,36 @@ h1.title {
   display: flex;
   flex-wrap: wrap;
   
-  font-size: 1.3em;
+  font-size: 1em;
 }
 
 .prop-container{
-  padding: 6px;
+  font-family: 'Open Sans', Helvetica, "Segoe UI", Arial, sans-serif;
+  padding: .5em;
   width: 300px;
 }
 
-.prop-name{
+.prop-name {
+  font-family: 'Open Sans', Helvetica, "Segoe UI", Arial, sans-serif;
   color: #273c75;
+  font-weight: bold;
+  font-size: 1rem;
 }
 
 .prop-type{
+  font-family: 'Open Sans', Helvetica, "Segoe UI", Arial, sans-serif;
   color : #8c7ae6;
 }
 
 .prop_default{
+  font-family: 'Open Sans', Helvetica, "Segoe UI", Arial, sans-serif;
   color : #44bd32;
 }
 .prop-value {
-  color: #4d4d4d;
-  padding: 5px;
+  font-family: 'Open Sans', Helvetica, "Segoe UI", Arial, sans-serif;
+  color: #444;
+  font-size: 1rem;
+  padding: 1em;
 }
 
 .prop-table:not(:first-child){
@@ -155,9 +154,12 @@ h1.title {
   line-height: 1.5;
 }
 
-h1, h2, h3, h4, h5, h6 {
-
-    font-family: 'Montserrat', sans-serif;
-
-    margin-bottom: 1.2rem
+.header  >  h1.title {
+  margin: 0;
+  font-size: 32px;
+  line-height: 1.1875;
+  color:#4d4d4d;
+  font-weight: 600;
+  font-family: 'Montserrat', sans-serif;
+  margin-bottom: 1.2rem;  
 }
