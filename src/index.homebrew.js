@@ -712,9 +712,9 @@ storiesOf('UI COMPONENT   | Vuetify Custom/Radio-button', module)
                         </div>`,
             propsDescription: {
                 CRadioButton: {
-                    disable : 'Disable the input',
-                    radioOptions : 'Sets input labels',
-                    selected : 'Sets the value of the selection control component',
+                    disable: 'Disable the input',
+                    radioOptions: 'Sets input labels',
+                    selected: 'Sets the value of the selection control component',
                 },
             }
         };
@@ -725,7 +725,7 @@ storiesOf('UI COMPONENT   | Vuetify Custom/Radio-button', module)
     )
 
 // c-status-pill
-storiesOf('UI COMPONENT   | Vuetify Custom/ Status-pill', module)
+storiesOf('UI COMPONENT | Vuetify Custom / Status-pill', module)
     .addDecorator(appDecorator) 
     .addParameters({
         readme: {
@@ -773,7 +773,7 @@ storiesOf('UI COMPONENT   | Vuetify Custom/ Status-pill', module)
     )
 
 // c-tab
-storiesOf('UI COMPONENT | Vuetify Custom/ Tab', module)
+storiesOf('UI COMPONENT | Vuetify Custom / Tab', module)
     .addDecorator(appDecorator) 
     .addParameters({
         readme: {
@@ -788,7 +788,7 @@ storiesOf('UI COMPONENT | Vuetify Custom/ Tab', module)
                 'c-tab': CTab
             },
             docsInPanel: false,
-            source: false,
+            source: true,
             summary: CTabContent,
             wrapperComponent: VueInfoWrapper,
         },
