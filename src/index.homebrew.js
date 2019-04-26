@@ -414,9 +414,6 @@ storiesOf('UI COMPONENT | Vuetify Custom/Checkbox', module)
         readme: {
             codeTheme: 'monokai-sublime',
             sidebar: CCheckBoxSetup,
-            theme: {
-                textColor: '#bb255a'
-            },
         },
         info: {
             components: {
@@ -441,7 +438,7 @@ storiesOf('UI COMPONENT | Vuetify Custom/Checkbox', module)
                         <c-checkbox @change="log" id="Third" label="Third"/>
                         <c-checkbox @change="log" id="Fourth" label="Fourth"/>
                         <c-checkbox @change="log" id="Fifth" label="Disabled" :disable=true />
-                        <c-checkbox @change="log" id="Sixth" label="Indeterminate" :indeterminate=true />
+                        <c-checkbox @change="log" id="Sixth" label="Partially Selected [Indeterminate]" :indeterminate=true />
                       </div>`,
             methods: { log: function(value) {
                 console.log(value)
@@ -467,9 +464,6 @@ storiesOf('UI COMPONENT | Vuetify Custom / Combobox-classic', module)
         readme: {
             codeTheme: 'monokai-sublime',
             sidebar: CComboBoxClassicSetup,
-            theme: {
-                textColor: '#bb255a'
-            },
         },
         info: {
             components: {
@@ -511,9 +505,6 @@ storiesOf('UI COMPONENT   | Vuetify Custom  /  Input-groups', module)
     .addParameters({
         readme: {
             codeTheme: 'monokai-sublime',
-            theme: {
-                textColor: '#bb255a'
-            },
         },
         info: {
             components: {
@@ -645,9 +636,6 @@ storiesOf('UI COMPONENT   | Vuetify Custom/Modal', module)
         readme: {
             codeTheme: 'monokai-sublime',
             sidebar: CModalSetup,
-            theme: {
-                textColor: '#bb255a'
-            },
         },
         info: {
             components: {
@@ -687,9 +675,6 @@ storiesOf('UI COMPONENT   | Vuetify Custom/Radio-button', module)
         readme: {
             codeTheme: 'monokai-sublime',
             sidebar: CRadioButtonSetup,
-            theme: {
-                textColor: '#bb255a'
-            },
         },
         info: {
             components: {
@@ -712,9 +697,9 @@ storiesOf('UI COMPONENT   | Vuetify Custom/Radio-button', module)
                         </div>`,
             propsDescription: {
                 CRadioButton: {
-                    disable : 'Disable the input',
-                    radioOptions : 'Sets input labels',
-                    selected : 'Sets the value of the selection control component',
+                    disable: 'Disable the input',
+                    radioOptions: 'Sets input labels',
+                    selected: 'Sets the value of the selection control component',
                 },
             }
         };
@@ -725,15 +710,12 @@ storiesOf('UI COMPONENT   | Vuetify Custom/Radio-button', module)
     )
 
 // c-status-pill
-storiesOf('UI COMPONENT   | Vuetify Custom/ Status-pill', module)
+storiesOf('UI COMPONENT | Vuetify Custom / Status-pill', module)
     .addDecorator(appDecorator) 
     .addParameters({
         readme: {
             codeTheme: 'monokai-sublime',
             sidebar: CStatusPillSetup,
-            theme: {
-                textColor: '#bb255a'
-            },
         },
         info: {
             components: {
@@ -773,22 +755,19 @@ storiesOf('UI COMPONENT   | Vuetify Custom/ Status-pill', module)
     )
 
 // c-tab
-storiesOf('UI COMPONENT | Vuetify Custom/ Tab', module)
+storiesOf('UI COMPONENT | Vuetify Custom / Tab', module)
     .addDecorator(appDecorator) 
     .addParameters({
         readme: {
             codeTheme: 'monokai-sublime',
             sidebar: CTabSetup,
-            theme: {
-                textColor: '#bb255a'
-            },
         },
         info: {
             components: {
                 'c-tab': CTab
             },
             docsInPanel: false,
-            source: false,
+            source: true,
             summary: CTabContent,
             wrapperComponent: VueInfoWrapper,
         },
@@ -819,9 +798,6 @@ storiesOf('UI COMPONENT | Vuetify Custom/ Textarea', module)
         readme: {
             codeTheme: 'monokai-sublime',
             sidebar: CTextareaSetup,
-            theme: {
-                textColor: '#bb255a'
-            },
         },
         info: {
             components: {
@@ -891,9 +867,6 @@ storiesOf('UI COMPONENT | Vuetify Custom/Textfield', module)
         readme: {
             codeTheme: 'monokai-sublime',
             sidebar: CTextfieldSetup,
-            theme: {
-                textColor: '#bb255a'
-            },
         },
         info: {
             components: {
@@ -965,9 +938,6 @@ storiesOf('UI COMPONENT | Vuetify Custom / Toggle', module)
         readme: {
             codeTheme: 'monokai-sublime',
             sidebar: CToggleSetup,
-            theme: {
-                textColor: '#bb255a'
-            },
         },
         info: {
             components: {
@@ -1009,9 +979,6 @@ storiesOf('UI COMPONENT | Vuetify Custom / Tooltip', module)
         readme: {
             codeTheme: 'monokai-sublime',
             sidebar: CTooltipSetup,
-            theme: {
-                textColor: '#bb255a'
-            },
         },
         info: {
             components: {

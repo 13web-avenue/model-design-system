@@ -130,9 +130,6 @@ storiesOf('UI COMPONENT   | Vuetify Default / v-alert', module)
         readme: {
             codeTheme: 'monokai-sublime',
             sidebar: VAlertSetup,
-            theme: {
-                textColor: '#bb255a'
-            },
         },
         info: {
             components: {
@@ -168,9 +165,6 @@ storiesOf('UI COMPONENT   | Vuetify Default / v-alert', module)
         readme: {
             codeTheme: 'monokai-sublime',
             sidebar: VAlertSetup,
-            theme: {
-                textColor: '#bb255a'
-            },
             info: {
                 components: {
                     'v-alert': VAlert
@@ -214,9 +208,6 @@ storiesOf('UI COMPONENT   | Vuetify Default/ v-badge', module)
         readme: {
             codeTheme: 'monokai-sublime',
             sidebar: VBadgeSetup,
-            theme: {
-                textColor: '#bb255a'
-            },
         },
         info: {
             components: {
@@ -256,9 +247,6 @@ storiesOf('UI COMPONENT   | Vuetify Default/ v-breadcrumbs', module)
         readme: {
             codeTheme: 'monokai-sublime',
             sidebar: VBreadcrumbsSetup,
-            theme: {
-                textColor: '#bb255a'
-            },
         },
         info: {
             components: {
@@ -296,9 +284,6 @@ storiesOf('UI COMPONENT   | Vuetify Default/ v-card', module)
         readme: {
             codeTheme: 'monokai-sublime',
             sidebar: VCardSetup,
-            theme: {
-                textColor: '#bb255a'
-            },
         },
         info: {
             components: {
@@ -337,9 +322,6 @@ storiesOf('UI COMPONENT   | Vuetify Default/ v-combobox', module)
         readme: {
             codeTheme: 'monokai-sublime',
             sidebar: VComboboxSetup,
-            theme: {
-                textColor: '#bb255a'
-            },
         },
         info: {
             components: {
@@ -399,9 +381,6 @@ storiesOf('UI COMPONENT   | Vuetify Default/ v-datatable', module)
         readme: {
             codeTheme: 'monokai-sublime',
             sidebar: VDatatableSetup,
-            theme: {
-                textColor: '#bb255a'
-            },
         },
         info: {
             components: {
@@ -441,9 +420,6 @@ storiesOf('UI COMPONENT   | Vuetify Default/ v-divider', module)
         readme: {
             codeTheme: 'monokai-sublime',
             sidebar: VDividerSetup,
-            theme: {
-                textColor: '#bb255a'
-            },
         },
         info: {
             components: {
@@ -479,9 +455,6 @@ storiesOf('UI COMPONENT   | Vuetify Default/ v-expansion-panel', module)
         readme: {
             codeTheme: 'monokai-sublime',
             sidebar: VExpansionPanelSetup,
-            theme: {
-                textColor: '#bb255a'
-            },
         },
         info: {
             components: {
@@ -535,9 +508,6 @@ storiesOf('UI COMPONENT   | Vuetify Default/ v-navigation-drawer', module)
         readme: {
             codeTheme: 'monokai-sublime',
             sidebar: VNavigationDrawerSetup,
-            theme: {
-                textColor: '#bb255a'
-            },
         },
         info: {
             components: {
@@ -569,9 +539,6 @@ storiesOf('UI COMPONENT   | Vuetify Default/ v-ratings', module)
         readme: {
             codeTheme: 'monokai-sublime',
             sidebar: VRatingsSetup,
-            theme: {
-                textColor: '#bb255a'
-            },
         },
         info: {
             components: {
@@ -614,9 +581,6 @@ storiesOf('UI COMPONENT | Vuetify Default/ v-search', module)
         readme: {
             codeTheme: 'monokai-sublime',
             sidebar: VSearchSetup,
-            theme: {
-                textColor: '#bb255a'
-            },
         },
         info: {
             components: {
@@ -674,9 +638,6 @@ storiesOf('UI COMPONENT | Vuetify Default / v-snackbar', module)
         readme: {
             codeTheme: 'monokai-sublime',
             sidebar: VSnackbarSetup,
-            theme: {
-                textColor: '#bb255a'
-            },
         },
         info: {
             components: {
@@ -715,9 +676,6 @@ storiesOf('UI COMPONENT | Vuetify Default/ v-textarea', module)
         readme: {
             codeTheme: 'monokai-sublime',
             sidebar: VTextareaSetup,
-            theme: {
-                textColor: '#bb255a'
-            },
         },
         info: {
             components: {
@@ -787,9 +745,6 @@ storiesOf('UI COMPONENT | Vuetify Default/ v-textfield', module)
         readme: {
             codeTheme: 'monokai-sublime',
             sidebar: VTextfieldSetup,
-            theme: {
-                textColor: '#bb255a'
-            },
         },
         info: {
             components: {
@@ -859,9 +814,6 @@ storiesOf('UI COMPONENT   | Vuetify Default/ v-timeline', module)
         readme: {
             codeTheme: 'monokai-sublime',
             sidebar: VTimelineSetup,
-            theme: {
-                textColor: '#bb255a'
-            },
         },
         info: {
             components: {
@@ -893,9 +845,6 @@ storiesOf('UI COMPONENT | Vuetify Default/ v-toggle', module)
         readme: {
             codeTheme: 'monokai-sublime',
             sidebar: VToggleSetup,
-            theme: {
-                textColor: '#bb255a'
-            },
         },
         info: {
             components: {
@@ -940,9 +889,6 @@ storiesOf('UI COMPONENT   | Vuetify Default/ v-treeview', module)
         readme: {
             codeTheme: 'monokai-sublime',
             sidebar: VTreeviewSetup,
-            theme: {
-                textColor: '#bb255a'
-            },
         },
         info: {
             components: {
