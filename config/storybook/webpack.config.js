@@ -22,10 +22,10 @@ module.exports = async ({ config, mode }) => {
       loader: 'babel-loader',
       exclude: /node_modules/,
     },
-    {
-      test: /\.(gif)$/,
-      loader: 'url-loader'
-    },
+    // {
+    //   test: /\.(gif)$/,
+    //   loader: 'url-loader'
+    // },
     {
       test: /\.svg$/,
       loader: 'svg-url-loader',
