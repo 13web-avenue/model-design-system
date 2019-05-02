@@ -65,7 +65,7 @@ import CRadioButtonContent from '../core/ui-kit-custom-components/c-radio-button
 
 import CInputGroups from '../core/ui-kit-custom-components/c-inputgroups/packages/dist/c-inputgroups.vue'
 // import CInputGroupsChangelog from '../core/ui-kit-custom-components/c-inputgroups/c-inputgroups-changelog.md'
-// import CInputGroupsSetup from '../core/ui-kit-custom-components/c-inputgroups/c-inputgroups-setup.md'
+import CInputGroupsSetup from '../core/ui-kit-custom-components/c-inputgroups/c-inputgroups-setup.md'
 import CInputGroupsContent from '../core/ui-kit-custom-components/c-inputgroups/c-inputgroups-content.md'
 
 import CButton from '../core/ui-kit-custom-components/c-button/packages/dist/c-button.vue'
@@ -505,6 +505,7 @@ storiesOf('UI COMPONENT   | Vuetify Custom  /  Input-groups', module)
     .addParameters({
         readme: {
             codeTheme: 'monokai-sublime',
+            sidebar : CInputGroupsSetup
         },
         info: {
             components: {
