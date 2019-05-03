@@ -133,14 +133,14 @@ storiesOf('About Unify | Timelines / Releases', module)
 //                 </base-layout-static>`,
 //     }))    
 
-storiesOf('User Guide | Using the platform', module)
+storiesOf('User Guide | UDS platform', module)
     .addParameters({
         options: {
             isToolshown: false,
             showAddonPanel: false,
         }
     })  
-    .add('Usage', () => ({
+    .add('Sections usage', () => ({
         components: {
             'doc-component-usage': DocComponenUsage,
         },

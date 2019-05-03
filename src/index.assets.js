@@ -18,7 +18,7 @@ import Typography from '../views/assets-treatment/typography/typography.vue'
 
 // import icons from '../views/assets-treatment/icons/icons.vue'
 
-import assets from '../views/assets-treatment/images/images.vue'
+import DocImages from '../views/assets-treatment/images/images.vue'
 
 // import BaseStaticLayout from '../views/layouts/base-layout-static.vue';
 
@@ -30,9 +30,9 @@ storiesOf('Icons & Assets | Images', module)
     })  
     .add('Basics', () => ({
         components: {
-            'assets': assets,
+            'doc-images': DocImages,
         },
-        template: `<assets />`,
+        template: `<doc-images />`,
     }))
 
 // storiesOf('Icons & Assets | Iconset', module)

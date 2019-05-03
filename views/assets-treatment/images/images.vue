@@ -51,17 +51,6 @@ base-layout-static
       li DO NOT set height attributes in CSS
       li
         | make an assessment on the weight of the image before pushing to production, optimization is mandatory although we need to have a balance between quality and performance.
-    p
-      strong 
-        | Multiple images techniques for multiple resolutions with new HTML5 markup.
-      strong 
-        | An overview of what an ideal implementation of responsive image
-
-    p 
-      | More information about the above :
-    ul
-      li
-        | https://developer.mozilla.org/en-US/docs/Learn/HTML/Multimedia_and_embedding/Responsive_images
 
 </template>
 
@@ -70,7 +59,7 @@ base-layout-static
 import BaseLayoutStatic from '../../layouts/base-layout-static.vue'
 
 export default {
-  name: 'typography',
+  name: 'DocImages',
   components: {
     'base-layout-static': BaseLayoutStatic
   }

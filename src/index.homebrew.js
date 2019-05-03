@@ -119,7 +119,7 @@ const appDecorator = () => {
 };
 
 //c-button
-storiesOf('UI COMPONENT   | Vuetify Custom / Button', module)
+storiesOf('UI COMPONENT | Vuetify Custom / Button', module)
     .addDecorator(appDecorator) 
     .addParameters({
         info: {
@@ -139,6 +139,57 @@ storiesOf('UI COMPONENT   | Vuetify Custom / Button', module)
             }
         }
     })  
+    .add('General Information', () => {
+        return {
+            components: {
+                'c-button': CButton
+            },
+            template: `<div>
+                        <div style="display:none">
+                            <c-button comp="iconButton" :iconButtonSettings="{color:'#2196F3',state:false, iconName:'fas fa-search'}" />
+                            <c-button comp="iconButton" :iconButtonSettings="{color:'#4CAF50',state:false, iconName:'fas fa-check'}" />
+                            <c-button comp="iconButton" :iconButtonSettings="{color:'#FF9800',state:false, iconName:'fas fa-exclamation'}" />
+                            <c-button comp="iconButton" :iconButtonSettings="{color:'#F44336',state:false, iconName:'fas fa-trash-alt'}" />
+                            <c-button comp="iconButton" :iconButtonSettings="{color:'#757575',state:false, iconName:'fas fa-times'}" />
+                        </div>
+                        <div style="display:none">
+                            <c-button comp="iconButton" :iconButtonSettings="{state:true, iconName:'fas fa-search'}" />
+                            <c-button comp="iconButton" :iconButtonSettings="{state:true, iconName:'fas fa-check'}" />
+                            <c-button comp="iconButton" :iconButtonSettings="{state:true, iconName:'fas fa-exclamation'}" />
+                            <c-button comp="iconButton" :iconButtonSettings="{state:true, iconName:'fas fa-trash-alt'}" />
+                            <c-button comp="iconButton" :iconButtonSettings="{state:true, iconName:'fas fa-times'}" />
+                        </div>
+                    </div>`,
+            // propsDescription: {
+            //     CButton: {
+            //         iState: 'Button state for disabled',
+            //         iconColor: 'color of btn to be shown'
+            //     },
+            // }
+        };
+    },
+        {
+            notes: CButtonChangelog
+        }
+    )
+    .addParameters({
+        info: {
+            components: {
+                'c-button': CButton,
+            },
+            docsInPanel: false,
+            source: false,
+            // summary: CButtonContent,
+            wrapperComponent: VueInfoWrapper
+        },
+        readme: {
+            codeTheme: 'monokai-sublime',
+            sidebar: CButtonSetup,
+            theme: {
+                textColor: 'black'
+            }
+        }
+    })      
     .add('Icon', () => {
         return {
             components: {
@@ -171,7 +222,7 @@ storiesOf('UI COMPONENT   | Vuetify Custom / Button', module)
         {
             notes: CButtonChangelog
         }
-    )
+    )    
     .add('Loading', () => {
         return {
             components: {
@@ -266,6 +317,24 @@ storiesOf('UI COMPONENT   | Vuetify Custom / Button', module)
             notes: CButtonChangelog
         }
     )
+    .addParameters({
+        info: {
+            components: {
+                'c-button': CButton,
+            },
+            docsInPanel: false,
+            source: false,
+            // summary: CButtonSolidContent,
+            wrapperComponent: VueInfoWrapper
+        },
+        readme: {
+            codeTheme: 'monokai-sublime',
+            sidebar: CButtonSetup,
+            theme: {
+                textColor: 'black'
+            }
+        }
+    })      
     .add('Text', () => {
         return {
             components: {
@@ -631,7 +700,7 @@ storiesOf('UI COMPONENT   | Vuetify Custom  /  Input-groups', module)
 )
 
 // c-modal
-storiesOf('UI COMPONENT   | Vuetify Custom/Modal', module)
+storiesOf('UI COMPONENT  | Vuetify Custom/Modal', module)
     .addDecorator(appDecorator) 
     .addParameters({
         readme: {
@@ -670,7 +739,7 @@ storiesOf('UI COMPONENT   | Vuetify Custom/Modal', module)
     )
 
 // c-radio-button 
-storiesOf('UI COMPONENT   | Vuetify Custom/Radio-button', module)
+storiesOf('UI COMPONENT  | Vuetify Custom/Radio-button', module)
     .addDecorator(appDecorator) 
     .addParameters({
         readme: {

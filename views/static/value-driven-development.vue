@@ -27,16 +27,15 @@ base-layout-static
 
         p We wanted to build something that would be simple to use for everyone, whatever their goal on UDS was and this is why we often refused to build features or use complicated frameworks that would only add a layer of complexity on what we are building.
     
-    .content-area--block
-        h4.border-bottom Standards & Advocacy
+    //- .content-area--block
+    //-     h4.border-bottom Standards & Advocacy
 
-        .content-area--block
-            h5.border-bottom
-                | UX standards
-
-        .content-area--block
-            h5.border-bottom
-                | Front-end standards
+    //-     .content-area--block
+    //-         h5.border-bottom
+    //-             | UX standards
+    //-     .content-area--block
+    //-         h5.border-bottom
+    //-             | Front-end standards
 
 
 
