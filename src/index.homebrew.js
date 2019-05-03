@@ -137,7 +137,11 @@ storiesOf('UI COMPONENT | Vuetify Custom / Button', module)
             theme: {
                 textColor: 'black'
             }
-        }
+        },
+        options: {
+            isToolshown: false,
+            showAddonPanel: false,
+        }        
     })  
     .add('General Information', () => {
         return {
@@ -188,7 +192,11 @@ storiesOf('UI COMPONENT | Vuetify Custom / Button', module)
             theme: {
                 textColor: 'black'
             }
-        }
+        },
+        options: {
+            isToolshown: true,
+            showAddonPanel: true,
+        }          
     })      
     .add('Icon', () => {
         return {

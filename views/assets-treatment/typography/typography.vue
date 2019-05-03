@@ -151,7 +151,7 @@ export default {
 }
 /* global heading sizing */
 h1 {
-  font-size: 6rem;
+  font-size: 4.5rem;
   font-weight: bold
 }
 

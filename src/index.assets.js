@@ -25,7 +25,8 @@ import DocImages from '../views/assets-treatment/images/images.vue'
 storiesOf('Icons & Assets | Images', module)
     .addParameters({
         options: { 
-            showAddonPanel: false 
+            showAddonPanel: false,
+            isToolshown: false
         },
     })  
     .add('Basics', () => ({

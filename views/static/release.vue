@@ -60,6 +60,7 @@ base-layout-static
         li 
           i(class="fas fa-angle-double-right")
           span.list-items-text Components ready for packaging
+
   .content-area--block
     ul(class="uds-list-items")
       li.list-items--header 
@@ -74,7 +75,8 @@ base-layout-static
           span.list-items-text Source code + built files inclusion in /dist folder
         li 
           i(class="fas fa-angle-double-right")
-          span.list-items-text Components ready for packaging
+          span.list-items-text Components ready for consumption
+
   .content-area--block
     ul(class="uds-list-items")
       li.list-items--header 
@@ -88,6 +90,18 @@ base-layout-static
           i(class="fas fa-angle-double-right")
           span.list-items-text Front-end/UI/UX standards definitions
 
+  .content-area--block
+    ul(class="uds-list-items")
+      li.list-items--header 
+        i(class="fas fa-angle-double-right")
+        span.list-items-text.text-bold UDS Platform version v2.9.0
+      ul(class="uds-list-items")
+        li 
+          i(class="fas fa-angle-double-right")
+          span.list-items-text Global UDS Platform performance in production mode
+        li 
+          i(class="fas fa-angle-double-right")
+          span.list-items-text Open Source UDS platform improvements
 
 </template>
 
