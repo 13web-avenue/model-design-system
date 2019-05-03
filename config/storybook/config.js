@@ -118,7 +118,7 @@ addParameters({
      * enable/disable shortcuts
      * @type {Boolean}
      */
-    enableShortcuts: false,
+    enableShortcuts: true,
     /**
      * show/hide tool bar
      * @type {Boolean}

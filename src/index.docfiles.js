@@ -9,8 +9,8 @@ import { storiesOf } from '@storybook/vue';
  *
  */
 
-import contrib from '../views/introduction/contrib.vue'
-import BaseStaticLayout from '../views/layouts/base-layout-static.vue'
+// import contrib from '../views/introduction/contrib.vue'
+// import BaseStaticLayout from '../views/layouts/base-layout-static.vue'
 import Introduction from '../views/static/introduction.uds.vue'
 import DocComponenUsage from '../views/static/usage.vue'
 import DocValueDrivenDevelopment from '../views/static/value-driven-development.vue'
@@ -94,17 +94,15 @@ storiesOf('About UNIFY | Introduction', module)
 storiesOf('About Unify | Timelines / Releases', module)
     .addParameters({
         options: {
+            isToolshown: false,
             showAddonPanel: false,
         }
     })
     .add('v1.0.0', () => ({
         components: {
             'doc-releases': DocReleases,
-            'base-layout-static': BaseStaticLayout,
         },
-        template: `<base-layout-static>
-                    <doc-releases />
-                </base-layout-static>`,
+        template: `<doc-releases />`,
     }))
 
 
@@ -248,19 +246,19 @@ storiesOf('User Guide | UDS platform', module)
 //     }))
 
 
-storiesOf('Author\'s note | Contributors', module)
-    .addParameters({
-        options: {
-            showAddonPanel: false,
-        }
-    })
-    .add('DocFile', () => ({
-        components: {
-            'contrib': contrib,
-            'base-layout-static': BaseStaticLayout,
-        },
-        template: `<base-layout-static>
-                    <contrib />
-                </base-layout-static>`,
-    }))
+// storiesOf('Author\'s note | Contributors', module)
+//     .addParameters({
+//         options: {
+//             showAddonPanel: false,
+//         }
+//     })
+//     .add('DocFile', () => ({
+//         components: {
+//             'contrib': contrib,
+//             'base-layout-static': BaseStaticLayout,
+//         },
+//         template: `<base-layout-static>
+//                     <contrib />
+//                 </base-layout-static>`,
+//     }))
 /* eslint-enable react/react-in-jsx-scope */

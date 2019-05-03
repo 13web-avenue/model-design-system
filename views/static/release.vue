@@ -1,22 +1,93 @@
 <template lang="pug">
 
-div
-  h1.border-bottom Usage of the platform
+base-layout-static
+  h1.border-bottom Release Notes v1.0.0 - Quarter #1
 
   .content-area--block
-    p
-      strong 
-        | Unify Design System 
-      | is a Design System for ERP applications that will be used as a base to build the interface & interaction on our products. It is not just a typical Style Guide, UI Kit or Pattern Library. It serves as the 'single source of truth' for all our UI/UX  components.
-    p
-      strong 
-        | Unify Design System 
-      | houses a comprehensible design language that will provide a seamless experience for users, and improve the Scrum & Product team’s workflow.
-    P
-      | In this Component Driven Development era, front-end engineering has been more than ever a valuable asset in Mantu's toolset...<br /> 
-      strong
-        | Unify Design System
-      |  also covers those front-end standards that powers our applications client-side's strategy.
+    ul(class="uds-list-items")
+      li.list-items--header 
+        i(class="fas fa-angle-double-right")
+        span.list-items-text.text-bold UDS Platform version v2.0.0
+      ul(class="uds-list-items")
+        li 
+          i(class="fas fa-angle-double-right")
+          span.list-items-text Custom components list added - Vuetify customs 
+        li 
+          i(class="fas fa-angle-double-right")
+          span.list-items-text Default components list added - Vuetify default 
+        li 
+          i(class="fas fa-angle-double-right")
+          span.list-items-text UX standards within components as docs 
+        li 
+          i(class="fas fa-angle-double-right")
+          span.list-items-text Technical usage of props within components in tables
+        li 
+          i(class="fas fa-angle-double-right")
+          span.list-items-text Navigation toolsets & panels
+        li 
+          i(class="fas fa-angle-double-right")
+          span.list-items-text Complementatry infos in the Addons panels added at the bottom
+
+  .content-area--block
+    ul(class="uds-list-items")
+      li.list-items--header 
+        i(class="fas fa-angle-double-right")
+        span.list-items-text.text-bold Components version v1.0.0
+      ul(class="uds-list-items")
+        li 
+          i(class="fas fa-angle-double-right")
+          span.list-items-text Setup & Change logs added
+        li 
+          i(class="fas fa-angle-double-right")
+          span.list-items-text Repositories setup with Git Strategies
+        li 
+          i(class="fas fa-angle-double-right")
+          span.list-items-textComponents ready for packaging
+
+  h1.border-bottom Upcoming Features - Quarter #2
+  .content-area--block
+    ul(class="uds-list-items")
+      li.list-items--header 
+        i(class="fas fa-angle-double-right")
+        span.list-items-text.text-bold Components Delivery - JSPM(JavaScript Package Management)
+      ul(class="uds-list-items")
+        li 
+          i(class="fas fa-angle-double-right")
+          span.list-items-text Distribution through Amaris NPM Proxy
+        li 
+          i(class="fas fa-angle-double-right")
+          span.list-items-text Source code + built files inclusion in /dist folder
+        li 
+          i(class="fas fa-angle-double-right")
+          span.list-items-text Components ready for packaging
+  .content-area--block
+    ul(class="uds-list-items")
+      li.list-items--header 
+        i(class="fas fa-angle-double-right")
+        span.list-items-text.text-bold Components Delivery - JSPM(JavaScript Package Management)
+      ul(class="uds-list-items")
+        li 
+          i(class="fas fa-angle-double-right")
+          span.list-items-text Distribution through Amaris NPM Proxy & TFS repositories public
+        li 
+          i(class="fas fa-angle-double-right")
+          span.list-items-text Source code + built files inclusion in /dist folder
+        li 
+          i(class="fas fa-angle-double-right")
+          span.list-items-text Components ready for packaging
+  .content-area--block
+    ul(class="uds-list-items")
+      li.list-items--header 
+        i(class="fas fa-angle-double-right")
+        span.list-items-text.text-bold Components version v1.0.1
+      ul(class="uds-list-items")
+        li 
+          i(class="fas fa-angle-double-right")
+          span.list-items-text Base generic & re-usable components
+        li 
+          i(class="fas fa-angle-double-right")
+          span.list-items-text Front-end/UI/UX standards definitions
+
 
 </template>
 
@@ -33,6 +104,29 @@ export default {
 
 <style lang="scss">
 
+.uds-list-items {
+  list-style: none;
+  margin: 0;
+  padding: 0;
 
+  ul {
+    margin-top: 1em;
+    margin-left: 1.3em  
+  }
+
+  li {
+    font-size: 1.2rem;
+    font-weight: 300;
+    line-height: 1;
+
+    margin-bottom: .5em;
+    padding: 0;
+
+  }
+}
+
+.list-items-text {
+  padding-left: .5rem;
+}
 
 </style>

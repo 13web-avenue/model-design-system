@@ -112,7 +112,7 @@ const appDecorator = () => {
         components: { VApp, VContainer, VLayout, VFlex },
         template: `
         <v-app>
-            <div style="background-color: none; width: 100%; height: 100%; padding: 2rem; text-align: center">
+            <div style="background-color: none; width: 100%; height: 100%; padding: 2rem;">
                     <v-layout>
                         <v-flex>
                             <story/>
@@ -124,7 +124,7 @@ const appDecorator = () => {
     };
 };
  
-storiesOf('UI COMPONENT   | Vuetify Default / v-alert', module)
+storiesOf('UI COMPONENT | Vuetify Default / v-alert', module)
     .addDecorator(appDecorator) 
     .addParameters({
         readme: {

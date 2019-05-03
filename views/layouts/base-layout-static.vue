@@ -64,11 +64,6 @@ export default {
       line-height: 1.5;
       margin-bottom: 1.5rem;
 
-      &:last-child {
-
-          margin: 0;
-
-      }
   }
 
   &--block {
@@ -177,6 +172,10 @@ button,
 }
 .letter-spacing-1 {
     letter-spacing: 1px
+}
+
+.text-bold {
+  font-weight: bold;
 }
 
 // helpers

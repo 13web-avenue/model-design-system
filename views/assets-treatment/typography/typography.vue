@@ -1,6 +1,7 @@
 <template lang="pug">
 
 base-layout-static
+  h1.border-bottom Typography Grid
   table.typography-grid
     colgroup
       col.col-header
