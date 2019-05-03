@@ -140,7 +140,7 @@ storiesOf('User Guide | Using the platform', module)
             showAddonPanel: false,
         }
     })  
-    .add('How to?', () => ({
+    .add('Usage', () => ({
         components: {
             'doc-component-usage': DocComponenUsage,
         },
